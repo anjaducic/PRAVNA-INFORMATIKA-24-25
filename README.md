@@ -1,4 +1,4 @@
 # PRAVNA-INFORMATIKA-24-25
 
 Tabela gde se unose propročitane presude i izvučeni atributi:
-https://docs.google.com/spreadsheets/d/1nVmvSCT4QmFl5O9IHEXigqKGuZqQIB2EzEw0EWK81VA/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1fdq9U3EUvDAP7QddTocFKfsJBPymeu5aqWngosjF-dY/edit?gid=0#gid=0
