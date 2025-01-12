@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd">
+	<act id="krivicni" name="Krivicni zakonik Crne Gore">
+		<meta>
+			<identification source="#dunje">
+				<FRBRWork>
+					<FRBRthis value="/akn/krivicni/!main" />
+					<FRBRuri value="/krivicni" />
+					<FRBRdate date="2023-12-19" name="Generation" />
+					<FRBRauthor href="#congress" as="#author" />
+					<FRBRcountry value="cg" />
+					<FRBRnumber value="110/2023" />
+					<FRBRname value="Krivični zakonik Crne Gore" />
+					<FRBRprescriptive value="true" />
+					<FRBRauthoritative value="true" />
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRdate date="2023-12-19" name="Generation" />
+					<FRBRauthor href="#dunje" as="#editor" />
+					<FRBRlanguage language="cg" />
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRdate date="2023-12-19" name="Generation" />
+					<FRBRauthor href="#dunje" as="#generator" />
+					<FRBRformat value="xml" />
+				</FRBRManifestation>
+			</identification>
+			<publication name="sl" date="2008-08-11" showAs="Službeni list Crne Gore" number="76/2008" />
+			<classification source="#dunje">
+				<keyword value="krivicni" showAs="krivicni" dictionary="CG" />
+			</classification>
+			<references>
+				<TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg" showAs="Službeni list Crne Gore" />
+			</references>
+		</meta>
+		<body>
+        </body>
+    </act>
+</akomaNtoso>
+    

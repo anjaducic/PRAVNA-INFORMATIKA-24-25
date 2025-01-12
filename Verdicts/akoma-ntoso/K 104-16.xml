@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
     <judgement>
         <meta>
             <identification source="#court">
@@ -10,7 +10,7 @@
                     <FRBRdate date="2016-07-05"> 
                         2016-07-05
                     </FRBRdate>
-                    <FRBRtitle> <!--ne prepoznaje tag i nema ga ni u akomantoso30.xsd-->
+                    <FRBRtitle>                      
                         K 104/2016
                     </FRBRtitle>
                     <FRBRcountry>
@@ -18,15 +18,35 @@
                     </FRBRcountry>
                 </FRBRWork>
             </identification>
-            <references>
-                <TLCOrganization eId="os" href="" />
-            </references> 
+            <references>                    <!--PROVJERITI STA SVE-->
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="dmrdak" href="/ontology/person/dmrdak" showAs="Dragan Mrdak" />
+                <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljke Lješnjak" />
+                <TLCPerson eId="bd" href="/ontology/person/bd" showAs="B.D." />
+                <TLCPerson eId="kkljajevic" href="/ontology/person/kkljajevic" showAs="Kljajević Katarine" />
+                <TLCPerson eId="bs" href="/ontology/person/bs" showAs="B.S." />
+                <TLCPerson eId="pm" href="/ontology/person/pm" showAs="P.M." />
+                <TLCPerson eId="fn" href="/ontology/person/fn" showAs="F.N." />
+                <TLCPerson eId="jv" href="/ontology/person/jv" showAs="J.V." />
+                <TLCPerson eId="kg" href="/ontology/person/kg" showAs="K.G." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+				<TLCRole eId="abuser" href="/ontology/role/abuser" showAs="Abuser" />
+                <TLCPlace eId="bijelo-polje" href="/ontology/place/bijelo-polje" showAs="Bijelo Polje" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" showAs="Podgorica" />
+
+            </references>
             
-            
+          
         </meta>
     </judgement>
-    
-    
+
+
 
 
 </akomaNtoso>
