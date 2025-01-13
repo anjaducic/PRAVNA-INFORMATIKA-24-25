@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2010-12-06"> 
+                        2010-12-06
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 408/2010
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    <!--PROVJERITI isti inicijali-->
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="dmrdak" href="/ontology/person/dmrdak" showAs="Dragan Mrdak" />
+                <TLCPerson eId="smarkovic" href="/ontology/person/smarkovic" showAs="Sonje Marković" />
+                <TLCPerson eId="rn" href="/ontology/person/rn" showAs="R.N." />
+                <TLCPerson eId="rd" href="/ontology/person/rd" showAs="R.D." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p>
+                    U IME NARODA
+                </p>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </organization>
+                    , kao prvostepeni krivični sud, sudija pojedinac
+                    <party id="dmrdak" refersTo="#dmrdak" as="#judge">
+                        Dragan Mrdak
+                    </party>
+                    , uz učešće namještenika suda - zapisničara
+                    <party id="smarkovic" refersTo="#smarkovic" as="#clerk">
+                        Sonje Marković
+                    </party>
+                    , u krivičnom predmetu protiv okrivljenog
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.
+                    </party>
+                    iz Bijelog Polja, zbog krivičnog djela nasilje u porodici ili u porodičnij zajednici iz
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    , odlučujući po optužnom predlogu
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u B. Polju
+                    </organization>
+                    , 
+                    <ref href="dodati presudu"> 
+                        KT. br. 288/10 od 21.06.2010. godine
+                    </ref> 
+                    , nakon održanog usmenog glavnog i javnog pretresa u prisustvu okrivljenog
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.
+                    </party>
+                    i oštećene
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.
+                    </party>
+                    , a u odsustvu uredno obaviještenog
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a iz B. Polja
+                    </organization>
+                    , dana 06.12.2010. godine, donio je i javno objavio:
+                </p>
+            </introduction>
+            <background>
+                <p>
+                    P R E S U D U
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.A
+                    </party>
+                    , od oca M., majke D., rodjene F., rodjen .... godine u Bijelom Polju, sa prebivalištem u mjestu R., opština Bijelo Polje, državljanin Crne Gore, po zanimanju radnik, oženjen, otac petoro djece, pismen,završio osnovnu školu, lošeg imovnog stanja, osudjivan presudom
+                    <organization id="os" refersTo="#os">
+                        osnovnog suda u bijelom Polju
+                    </organization>
+                    <ref href="dodati presudu">
+                        K. br. 131/06 od 30.08.2007. godine
+                    </ref>
+                    , zbog krivičnog djela iz
+                    <ref href="dodati zakon">
+                        čl. 399 st. 2 KZ CG
+                    </ref>
+                    , na kaznu zatvora od trideset dana (kaznu izdržao).
+                </p>
+            </background>
+            <decision>
+                <p>
+                    K r i v j e
+                </p>
+                <p>
+                    Što je:
+                </p>
+                <p>
+                    -dana 21.04.2010. godine oko 16,30 časova u mjestu R., opština Bijelo Polje, u porodičnoj kući, primjenom nasilja ugrozio tjelesni i duševni integritet člana svoje porodice - supruge, opštećene
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.
+                    </party>
+                    , na način što je istoj prijetio da će je ubiti i zaklati, a zatim je nogom udario u predjelu sjedala,
+                </p>
+                <p>
+                    -ćime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    ,
+                </p>
+                <p>
+                    -pa ga sud primjenom navedenog zakonskog propisa i
+                     <ref href="dodati zakon">
+                        čl. 2,
+                    </ref>
+                    <ref href="dodati zakon">
+                        4,
+                    </ref>
+                    <ref href="dodati zakon">
+                        5,
+                    </ref>
+                    <ref href="dodati zakon">
+                        13,
+                    </ref>
+                    <ref href="dodati zakon">
+                        15,
+                    </ref>
+                    <ref href="dodati zakon">
+                        32,
+                    </ref>
+                    <ref href="dodati zakon">
+                        36,
+                    </ref>
+                    <ref href="dodati zakon">
+                        42 Krivičnog zakonika
+                    </ref>
+                    i
+                    <ref href="dodati zakon">
+                        čl. 199,
+                    </ref>
+                    <ref href="dodati zakon">
+                        202
+                    </ref>
+                    i
+                    <ref href="dodati zakon">
+                        364 Zakonika o krivičnom postupku
+                    </ref>
+                </p>
+                <p>
+                    O S U D J U J E
+                </p>
+                <p>
+                    Na kaznu zatvora od 30 ( trideset ) dana.
+                </p>
+                <p>
+                    Okrivljeni se obavezuje da plati ovom sudu na ime paušala iznos od 40,00 €, koji iznos će uplatiti na žiroračun 832-151-35 depozita novčanih kazni, troškova postupka i paušala u roku od 15 dana, po pravnosnažnosti presude, pod prijetnjom prinudnog izvršenja, s tim što će dokaz o izvršenoj uplati dostaviti krivičnoj pisarnici ovog suda.
+                </p>
+                <p>
+                    Imovinsko – pravnog zahtjeva i drugih troškova postupka nije bilo.
+                </p>
+            </decision>
+            <arguments>
+                <p>
+                    O b r a z l o ž e nj e
+                </p>
+                <p>
+                    Optužnim predlogom
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u B. Polju
+                    </organization>
+                    ,
+                    <ref href="dodati presudu">
+                        KT. br. 288/10 od 21.06.2010. godine
+                    </ref>
+                    , optužen je
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    iz B. Polja, da je izvršio krivično nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    .
+                </p>
+                <p>
+                    Glavni pretres je održan i zaključen dana 06.12.2010. godine u prisustvu okrivljenog
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.
+                    </party>
+                    i oštećene
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.
+                    </party>
+                    , a u odsustvu uredno obaviještenog
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a iz B. Polja
+                    </organization>
+                    shodno 
+                    <ref href="dodati zakon">
+                        čl. 453 Zakonika o krivičnom postupku
+                    </ref>
+                    .
+                </p>
+                <p>
+                    U završnoj riječi oštećena
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.
+                    </party>
+                    je izjavila da se ne pridružuje krivičnom gonjenju protiv okrivljenog, i da prema istom nema imovinsko pravni zahtjev, a ona i suprug su se u medjuvremenu izmirili i normalizovali odnose i dalje žive u bračnoj zajednici.
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.
+                    </party>
+                    je u svojoj odbrani istakao da je dana 21.04.2010. godine negdje oko 16,30 časova u svojoj porodičnoj kući u mjestu R., opština bijelo Polje, nakon svadje sa svojom suprugom
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.om
+                    </party>
+                    istu jedan put udario nogom, na kojoj nije imao nikakvu obuću, osim čarape u predjelu sjedalnog dijela tijela. Ne sjeća se koje je prijetnje tom prilikom uputio
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.
+                    </party>
+                    , a moguće je da je u ljutnji rekao da će je ubiti i zaklati. Sa
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.
+                    </party>
+                    živi ubraku dvadeset godina i imaju petoro djece. Njihova svadja izazvana je teškom materijalnom situacijom ukojoj se porodica nalazi. Istakao je da
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.a
+                    </party>
+                    kritičnom prilikom nije zadobila nikakve povrede, a prijavila ga je na insistiranje njene majke. Napomenuo je da su se on i
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.a
+                    </party>
+                    pomirili i da žive u skladnom braku. Dodao je da nikada ranije nad suprugom
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.
+                    </party>
+                    nije primjenjivao nasilje i ugrožavao joj tjelesni i duševni integritet, i da je ovo bilo prvi put da udari
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.u
+                    </party>
+                    za vrijeme njihovog braka, a da je na to bio izazvan predhodnom svadjom sa
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.
+                    </party>
+                    . Pojasnio je da se ne sjeća sadržine riječi koje mu je pri svadji uputila supruga, a ona nije pokušavala fizički da nasrne na njega.
+                </p>
+                <p>
+                    U završnoj riječi okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    je izjavio da je tačno da se prema supruzi ponašao na način kako je to naveou svojoj odbrani, medjutim besparica kao u većini porodica je prouzrokovala to njegovo ponašanje prema supruzi. Da mu je žao i da se kaje, tražio je od suda da prilikom odlučivanja o kazni cijeni sve olakšavajuće okolnosti na njegovoj strani i da ga što blaže kazni.
+                </p>
+                <p>
+                    Radi utvrdjivanja odlučnih činjenica i donošenja pravilne i zakonite odluke, sud je u dokaznom postupkuizvršio uvid u izvod iz kaznene evidencije na ime okrivljenog, s tim što je oštećena
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.a
+                    </party>
+                    iskoristila svojezakonsko pravo i nije svjedočila. Drugih predloga za dopunu dokaznog postupka nije bilo.
+                </p>
+                <p>
+                    Odbranom okrivljenog koju je sud cijenio kao jasno, potpuno i neprotivrječno priznanje izvršenja krivičnog djela u potpunosti su potvrdjeni navodi iz dispozitiva optužnog predloga u pogledu radnji koje je kritičnog dogadjaja okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    preduzeo prema oštećenoj
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        R.D.i
+                    </party>
+                    .
+                </p>
+                <p>
+                    Krivično djelo nasilje u porodici ili u porodičnoj zajednici sastoji se u drskom i bezobzirnom ponašanju, te primjeni nasilja prema članu porodice ili porodične zajednice. Kako se u konkretnom slučaju radi o članu porodice supruzi
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.
+                    </party>
+                    koja je sa okrivljenim
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.om
+                    </party>
+                    živjela u zajedničkom domaćinstvu, a kako je tokom postupka sud utvrdio da je okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    ugrozio tjelesni i duševni integritet člana svoje porodice oštećene supruge
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.e
+                    </party>
+                    na način što je istoj prijetio da će je ubiti i zaklati, a zatim je nogom udario u predjelu sjedala, pri čemu je okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    bilo svjesan da nasilje vrši prema članu svoje porodice, to je okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    ovakvim svojim ponašanjem ostvario obilježja krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1Krivičnog zakonika
+                    </ref>
+                    , pri čemu je okrivljeni
+                    <party id="rn" refersTo="#rn" as="#defendant">   
+                        R.N.a
+                    </party>
+                    bio svjesan da nasilje vrši prema članu svoje porodice supruzi
+                    <party id="rd" refersTo="#rd" as="#victim">   
+                        D.
+                    </party>
+                    , to je krivično djelo izvršio sa umišljajem i za isto je kriv i odgovoran.
+                </p>
+                <p>
+                    Odlučujući u pogledu vrste i visine krivične sankcije, a cijeneći sve okolnosti iz
+                    <ref href="dodati zakon">
+                        čl. 42 Krivičnog zakonika
+                    </ref>
+                    , sud je kod okrivljenog kao olakšavajuće okolnosti našao da se radi porodičnom čovjeku, ocu petoro djece, lošeg imovnog stanja, koji se u toku pretresa korektno držao, pokazujući po ocjeni suda iskreno žaljenje, kome seoštećena nije pridružila krivičnom gonjenju iz razloga što su oni u medjuvremenu normalizovali odnose i žive dalje u braku, a od otežavajućih okolnosti sud je cijenio njegovu raniju osudjivanost, pa cijeneći sve olakšavajuće i otežavajuće okolnosti sud istog osudio na kaznu zatvora u trajanju od trideset dana, smatrajući da će se istom ostvariti svrha izricanja krivičnih sankcija iz
+                    <ref href="dodati zakon">
+                        čl. 32 Krivičnog zakonika
+                    </ref>
+                    i dovoljno uticati na okrivljenog da ne vrši ova i slična krivična djela.
+                </p>
+                <p>
+                    U smislu 
+                    <ref href="dodati zakon">
+                        čl. 199 st. 2 Zakonika o krivičnom postupku
+                    </ref>
+                    , odlučeno je u pogledu paušala u iznosu od 40,00 €, pri čemu je sud cijenio složenost i trajanje krivičnog postupka, kao i imovinske prilike okrivljenog.
+                </p>
+                <p>
+                    Drugih troškova krivičnog postupka nije bilo.
+                </p>
+                <p>
+                    Imovinsko pravnog zahtjeva nije bilo.
+                </p>
+                <p>
+                    Sa iznijetih razloga shodno čl. 364 Zakoniak o krivičnom postupku, odlučeno je kao u izreci presude.
+                </p>
+            </arguments>
+        </judgmentBody>
+         <conclusions>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLJU
+            </organization>
+            <p>
+                Dana, 06.12.2010. godine
+            </p>
+            <p>
+                ZAPISNIČAR S U D I J A
+            </p>
+            <p>
+                <party id="smarkovic" refersTo="#smarkovic" as="#clerk">
+                   Sonja Marković
+                </party>
+                ,s.r.
+                <party id="dmrdak" refersTo="#dmrdak" as="#judge">
+                    Dragan Mrdak
+                </party>
+                ,s.r.
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso>
