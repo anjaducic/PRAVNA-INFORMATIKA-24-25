@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2013-10-10"> 
+                        2013-10-10
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 200/2013
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                   
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="iadamovic" href="/ontology/person/iadamovic" showAs="Ivan Adamović" />
+                <TLCPerson eId="dboskovic" href="/ontology/person/dboskovic" showAs="Draginje Bošković" />
+                <TLCPerson eId="gf" href="/ontology/person/gf" showAs="G.F." />
+                <TLCPerson eId="gm" href="/ontology/person/gm" showAs="G.M." />
+                <TLCPerson eId="dm" href="/ontology/person/dm" showAs="D.M." />
+                <TLCPerson eId="gk" href="/ontology/person/gk" showAs="G.K." />
+                <TLCPerson eId="sd" href="/ontology/person/sd" showAs="Š.D." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p>
+                    U IME CRNE GORE
+                </p>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </organization>
+                    , sudija pojedinac
+                    <party id="iadamovic" refersTo="#iadamovic" as="#judge">
+                        Ivan Adamović
+                    </party>
+                    , uz učešće zapisničara
+                    <party id="dboskovic" refersTo="#dboskovic" as="#clerk">
+                        Draginje Bošković
+                    </party>
+                    , u krivičnom predmetu okrivljenog
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G.F.a
+                    </party>
+                    , iz Bijelog Polja, zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="dodati zakon"> 
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref> 
+                    , po optužnom predlogu
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u Bijelom Polju
+                    </organization>
+                    , 
+                    <ref href="dodati presudu"> 
+                        Kt. br. 247/13 od 09. 08. 2013 godine
+                    </ref>
+                    , nakon održanog usmenog, glavnog i javnog pretresa, u prisustvu, savjetnika u
+                    <organization id="odt" refersTo="#odt">
+                        ODT-u u Bijelom Polju
+                    </organization>
+                    <party id="sd" refersTo="#sd" as="#advisor">   
+                       Š.D.e
+                    </party>
+                    i okrivljenog
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G.F.a
+                    </party>
+                    , 10. 10. 2013. godine, donio je i objavio,
+                </p>
+            </introduction>
+            <background>
+                <p>
+                    P R E S U D U
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G.F.
+                    </party>
+                    , JMBG ..., od oca H. majke V., rođene K., rođen 09. 05. 1992 godine u Bijelom Polju, sa 
+                    prebivalištem u Bijelom Polju, Loznice bb, drž. CG, završio SSS, oženjen, otac jednog djeteta, lošeg imovnog 
+                    stanja, neosuđivan,
+                </p>
+            </background>
+            <decision>
+                <p>
+                    K R I V J E
+                </p>
+                <p>
+                    -Zato što je:
+                </p>
+                <p>
+                    Dana 23. 07. 2013 godine, oko 22:30h, u mjestu Loznice opština Bijelo Polje, u porodičnoj kući, vlasništvo G.
+                    H.e, primjenom grubog nasilja narušio tjelesni i duševni integritet, članu svoje porodice, supruzi oštećenoj
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.i
+                    </party>
+                    , na način što je pesnicama izudarao u predjelu glave, da bi je kada je oštećena pokušala da pobjegne,
+                    sustigao na stepenicama i izudarao nogama u predjelu tijela-nogu, kojom prilikom joj je nanio lake tjelesne
+                    povrede, u vidu, nagnječno razderne rane u obliku slova »Y« dimenzija 1,5*1,5 cm, u predjelu čela, više
+                    oteklina na poglavini i dva crvenila sa otocima dimenzija 10*10cm, na spoljnim stranama obije butine,
+                </p>
+                <p>
+                    -čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    , 
+                </p>
+                <p>
+                    -pa mu sud, primjenom citiranih zakonskih propisa, te
+                     <ref href="dodati zakon">
+                        čl. 2,
+                    </ref>
+                    <ref href="dodati zakon">
+                        4,
+                    </ref>
+                    <ref href="dodati zakon">
+                        5,
+                    </ref>
+                    <ref href="dodati zakon">
+                        13,
+                    </ref>
+                    <ref href="dodati zakon">
+                        15,
+                    </ref>
+                    <ref href="dodati zakon">
+                        32,
+                    </ref>
+                    <ref href="dodati zakon">
+                        36,
+                    </ref>
+                    <ref href="dodati zakon">
+                        52,
+                    </ref>
+                    <ref href="dodati zakon">
+                        53,
+                    </ref>
+                    <ref href="dodati zakon">
+                        54 Krivičnog zakonika (Kz-a),
+                    </ref>
+                    i
+                    <ref href="dodati zakon">
+                        čl. 226,
+                    </ref>
+                    <ref href="dodati zakon">
+                        229,
+                    </ref><ref href="dodati zakon">
+                        374 Zakonika o krivičnom postupku, (Zkp-a),
+                    </ref>
+                    i z r i č e,
+                </p>
+                <p>
+                    USLOVNU OSUDU
+                </p>
+                <p>
+                    Kojom mu utvrđuje kaznu zatvora od 60 (šezdeset) dana, i istovremeno određuje da se ista neće izvršiti ako
+                    okrivljeni u roku od 1 (jedne) godine ne učini novo krivično djelo.
+                </p>
+                <p>
+                    Okrivljeni se obavezuje da sudu plati na ime paušala iznos od 30,00 €, kao i na ime ostalih troškova krivičnog
+                    postupka iznos od 110,00€, koje iznose će uplatiti na račun Budžeta Crne Gore br: 832-151-35, u roku od 15
+                    dana, po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, s tim što je dokaz o uplati isih dužan
+                    dostaviti krivičnoj pisarnici ovog suda.
+                </p>
+                <p>
+                    Imovinsko-pravnog zahtjeva nije bilo.
+                </p>
+            </decision>
+            <arguments>
+                <p>
+                    O b r a z l o ž e nj e
+                </p>
+                <p>
+                    Optužnim predlogom
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u Bijelom Polju
+                    </organization>
+                    , 
+                    <ref href="dodati presudu">
+                        Kt. br. 247/13 od 09. 08. 2013 godine
+                    </ref>
+                    , okrivljenom
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G.F.u
+                    </party>
+                    iz Bijelog Polja, stavljeno je na teret izvršenje krivičnog djela nasilje u porodici ili u
+                    porodičnoj zajednici iz
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    .
+                </p>
+                <p>
+                    Glavni pretres je održan i zaključen u prisustvu savjetnika u
+                    <organization id="odt" refersTo="#odt">
+                        ODT-u u Bijelom Polju
+                    </organization>
+                    <party id="sd" refersTo="#sd" as="#advisor">   
+                       D.e Š.
+                    </party>
+                    i okrivljenog 
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G. F.a
+                    </party>
+                    .
+                </p>
+                <p>
+                    U završnoj riječi savjetnik u
+                     <organization id="odt" refersTo="#odt">
+                        ODT-u u Bijelom Polju
+                    </organization>
+                    je izjavila da ostaje pri optužnom predlogu i predložila je
+                    sudu da okrivljenog oglasi krivim i osudi na kaznu po zakonu.
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G. F.
+                    </party>
+                    u svojoj odbrani tokom istražnog postupka u bitnom je naveo da je kritičnog dana sjedio kod
+                    druga u njegovoj firmi, kada je u njegovom telefonu otvorio poruke i vidio da mu je njegova - okrivljenog
+                    supruga slala poruke. Nakon ovoga, kako je naveo, izrevoltiran otišao je kući i pitao suprugu zbog čega je
+                    slala poruke, na šta mu je ona odgovorila da je pijan i da nije dobro vidio. Tada je on udario pesnicom u
+                    predjelu glave zbog čega je ona pala a zatim otvorenom šakom više puta je udario u predjelu lica, usled čega
+                    je počela da krvari.
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G.
+                    </party>
+                    u svojoj odbrani na glavnom pretresu, izjasnio se da je izvršio sam krivično djelo koje mi je
+                    stavljeno na teret i da se osjeća krivim.
+                </p>
+                <p>
+                    Kazao je da je tačno da je, dana 23. 07. 2013. godine, izudarao svoju suprugu
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.u
+                    </party>
+                    rukama i nogama i zna
+                    da joj je nanio povrede. Kazao je i da je svjestan da je svojim radnjama narušio njen i duševni i tjelesni
+                    integritet jer je
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        M.a
+                    </party>
+                    imala tjelesne povrede a nakon ovog događaja je bila smještena u "Sigurnoj ženskoj kući"
+                    vjerovatno zbog toga što se uplašila. Naveo je još da su se nakon kritičnog događaja on i
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        M.a
+                    </party>
+                    pomirili i da žive
+                    zajedno u Budvi. Izrazio je i kazajanje zbog učinjenog djela.
+                </p>
+                <p>
+                    U završnoj riječi okrivljeni je izjavio da priznaje izvršenje krivičnog djela koje mu je stavljeno na teret, izrazio
+                    je kajanje zbog učinjenog, i molio je sud da ga što blaže kazni.
+                </p>
+                <p>
+                    Radi utvrđivanja odlučnih činjenica i krivice na strani okrivljenog, sud je na glavnom pretresu izveo dokaze:
+                    pročitao medicinsku dokumentaciju na ima oštećene
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.e
+                    </party>
+                    , pročitao nalaz i mišljenje vještaka med. struke dr
+                    <party id="dm" refersTo="#dm" as="#expertMedical">
+                        D.a M.a
+                    </party>
+                    i dr.
+                    <party id="gk" refersTo="#gk" as="#expertMedical">
+                        G.e K.
+                    </party>
+                    i izvršio uvid u izvod iz KE na ime okrivljenog.
+                </p>
+                <p>
+                    Cijeneći izvedene dokaze međusobno i ponaosob, te dovodeći ih u vezu jedne sa drugim, shodno
+                    <ref href="dodati zakon">
+                        čl. 370 ZKP-a
+                    </ref>
+                    , sud je utvrdio činjenično stanje i po osnovu istog zaključio da je okrivljeni izvršio krivično djelo stavljeno
+                    mu na teret za koje je kriv.
+                </p>
+                <p>
+                    Analizirajući priznanje okrivljenog sud isto cijeni kao potpuno i jasno priznanje izvršenja krivičnog djela
+                    stavljenog mu na teret.
+                </p>
+                <p>
+                    Naime, okrivljeni je priznao da je kritičnog dana i vremena izudarao svoju suprugu i rukama i nogama, da je
+                    svjestan da joj je nanio tjelesne povrede, kao i da joj je narušio duševni integritet.
+                </p>
+                <p>
+                    Priznanje okrivljenog potvrđeno je i izvedenim dokazima. Tako, iz medicinske dokumentacije na ime
+                    oštećene, te nalaza i mišljenja vještaka medicinske struke dr
+                    <party id="dm" refersTo="#dm" as="#expertMedical">
+                        D.a M.a
+                    </party>
+                    , utvrđeno je da su kod oštećene
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.e
+                    </party>
+                    , kliničkim pregledom, ustanovljene povrede i to nagnječno-razderna rana u obliku slova "Y" dužine 1,5 x 1,5
+                    cm, u predjelu čela, više oteklina na poglavini i na spoljašnjim stranama obje butine crvenila sa otokom
+                    veličine 10 x 10 cm, koje povrede, prema mišljenju vještaka
+                    <party id="dm" refersTo="#dm" as="#expertMedical">
+                        M.a
+                    </party>
+                    , spadaju u lake tjelesne povrede.
+                </p>
+                <p>
+                    Sud je cijenio nalaz i mišljenje vještaka psihijatra dr
+                    <party id="gk" refersTo="#gk" as="#expertMedical">
+                        G.e K.
+                    </party>
+                    koja u svom nalazu navodi da je na osnovu
+                    medicinske dokumentacije ustanovila da je
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.a
+                    </party>
+                    , dana 23. 07. 2013. godine, napadnuta i povrijeđena u kući
+                    u kojoj živi sa suprugom. Obzirom na nesrazmjeru u fizičkoj snazi, bespomoćnost koja se pri tom javlja u
+                    okruženju koje bi trebalo da bude, siguran prostor i obzirom na način povređivanja, kod
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.e
+                    </party>
+                    upredmetnom događaju došlo je do teškog narušavanja psihičke ravnoteže i njenog duševnog integriteta,
+                    zbog čega je smještena u "Sigurnu žensku kuću". Vještak zaključuje da je oštećena imala strah od povratka u
+                    dom u kome je živjela, što ukazuje da je njena psihička ravnoteža, bila narušena u srednje teškom stepenu.
+                    Kazal je i da je mišljenja da je u kritičnom događaju došlo do teškog narušavanja duševnog integriteta
+                    oštećene
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.e
+                    </party>
+                    . Nalaze i mišljenja vještaka dr
+                    <party id="dm" refersTo="#dm" as="#expertMedical">
+                        M.a
+                    </party>
+                    i dr
+                    <party id="gk" refersTo="#gk" as="#expertMedical">
+                        K.
+                    </party>
+                    sud je prihvatio kao objektivne.
+                </p>
+                <p>
+                    Iz izvoda iz KE na ime okrivljenog utvrđeno je da isti do sada nije osuđivan.
+                </p>
+                <p>
+                    Okrivljeni u svojoj odbrani, datoj na glavnom pretresu, u potpunosti priznaje izvršenje krivičnog djela
+                    stavljenog mu na teret i navodi da se zbog istog osjeća krivim. Priznanje okrivljenog potvrđeno je i izvedenim
+                    dokazima. Tako, iz priznanja okrivljenog i dokaza izvedenih tokom postupka, sud je nedvosmisleno utvrdio
+                    da je okrivljeni
+                    <party id="gf" refersTo="#gf" as="#defendant">   
+                        G.F.
+                    </party>
+                    , kritičnog dana i vremena, u mjestu Loznice opština Bijelo Polje, u porodičnoj kući,
+                    vlasništvo G.H.e, primjenom grubog nasilja narušio tjelesni i duševni integritet, članu svoje porodice, supruzi
+                    oštećenoj
+                    <party id="gm" refersTo="#gm" as="#victim">   
+                        G.M.i
+                    </party>
+                    , na način što je pesnicama izudarao u predjelu glave, da bi je kada je oštećena pokušala da
+                    pobjegne, sustigao na stepenicama i izudarao nogama u predjelutijela-nogu, kojom prilikom joj je nanio lake
+                    tjelesne povrede, u vidu, nagnječno razderne rane u obliku slova »y« dimenzija 1,5*1,5 cm, u predjelu čela,
+                    više oteklina na poglavini i dva crvenila sa otocima dimenzija 10*10cm, na spoljnim stranama obije butine,
+                    pa su se po ocjeni suda, u ovim radnjama okrivljenog stekla sva bitna obilježja bića krivičnog djela nasilje u
+                    porodici ili u porodičnoj zajednici, iz
+                    <ref href="dodati zakon">
+                        čl. 220 st.1 Krivičnog zakonika
+                    </ref>
+                    . Krivično djelo okrivljeni je izvršio s
+                    direktnim umišljajem, jer je djelo htio i svjesno nanio povrede oštećenoj, koja mu je supruga.
+                </p>
+                <p>
+                    Odlučujući u pogledu vrste i visine krivične sankcije, sud je cijenio sve okolnosti iz
+                    <ref href="dodati zakon">
+                        čl. 42 Krivičnog zakonika
+                    </ref>
+                    , pa je na strani okrivljenog od olakšavajućih okolnosti našao: da se radi o porodičnoj osobi ocu jednog
+                    djeteta, licu koje do sada nije osuđavano, što ukazuje da nije sklon vršenju krivičnih djela, te da je okrivljeni
+                    priznao izvršenje krivičnog djela stavljenog mu na teret i da je izrazio kajanje zbog učinjenog, koje je po
+                    ocjeni ovog suda iskreno, pa je okrivljenom utvrdio kaznu zatvora od 60 (šezdeset) dana, pri tom cijeneći da
+                    bi pristupanje izvršenju kazne suviše represivno djelovalo na okrivljenog, nego da će i samo upozorenje, uz
+                    prijetnju kaznom, dovoljno uticati na istog da u buduće ne vrši ova i slična krivična djela i na taj način se
+                    ostvariti svrha uslovne osude predviđena u
+                    <ref href="dodati zakon">
+                        čl. 52
+                    </ref>
+                    u vezi
+                    <ref href="dodati zakon">
+                        čl. 4 st. 2 Krivičnog zakonika
+                    </ref>
+                    , i time ostvariti svrha
+                    generalne i specijalne prevencije.
+                </p>
+                <p>
+                    Shodno 
+                    <ref href="dodati zakon">
+                        čl. 226
+                    </ref>
+                    i 
+                    <ref href="dodati zakon">
+                        229 ZKP-a
+                    </ref>
+                    , okrivljeni je obavezan na plaćanje troškova paušala u iznosu od 30,00 eura, pri
+                    čemu je sud imao u vidu složenost i trajanje krivičnog postupka te imovinske prilike okrivljenog, kao i da plati
+                    ostale troškove krivičnog postupka, koji se tiču vještačenja po vještacima medicinske struke dr
+                    <party id="dm" refersTo="#dm" as="#expertMedical">
+                        M.
+                    </party>
+                    i dr
+                    <party id="gk" refersTo="#gk" as="#expertMedical">
+                        K.
+                    </party>
+                    , u ukupnom iznosu od 110,00 eura, a koji su vještacima isplaćeni iz budžetskih sredstava na ime davanja nalaza
+                    i mišljenja u istražnom postupku.
+                </p>
+                <p>
+                    Imovinsko-pravnog zahtjeva nije bilo.
+                </p>
+                <p>
+                    Iz iznijetog, shodno
+                     <ref href="dodati zakon">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    , odlučeno kao u izreci presude.
+                </p>
+            </arguments>
+        </judgmentBody>
+        <conclusions>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLJU
+            </organization>
+            <p>
+                dana 10. 10. 2013 godine,
+            </p>
+            <p>
+                ZAPISNIČAR, S U D I J A,
+            </p>
+            <p>
+                <party id="dboskovic" refersTo="#dboskovic" as="#clerk">
+                   Draginja Bošković
+                </party>
+                s.r.
+                <party id="iadamovic" refersTo="#iadamovic" as="#judge">
+                    Ivan Adamović
+                </party>
+                s.r.
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso>
+
+
+
+    
+
+    
