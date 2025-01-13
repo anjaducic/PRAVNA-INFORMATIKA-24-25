@@ -91,7 +91,9 @@
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.A
                     </party>
-                    , od oca M., majke D., rodjene F., rodjen .... godine u Bijelom Polju, sa prebivalištem u mjestu R., opština Bijelo Polje, državljanin Crne Gore, po zanimanju radnik, oženjen, otac petoro djece, pismen,završio osnovnu školu, lošeg imovnog stanja, osudjivan presudom
+                    , od oca M., majke D., rodjene F., rodjen .... godine u Bijelom Polju, sa prebivalištem u mjestu 
+                    R., opština Bijelo Polje, državljanin Crne Gore, po zanimanju radnik, oženjen, otac petoro djece, pismen, 
+                    završio osnovnu školu, lošeg imovnog stanja, osudjivan presudom
                     <organization id="os" refersTo="#os">
                         osnovnog suda u bijelom Polju
                     </organization>
@@ -113,11 +115,13 @@
                     Što je:
                 </p>
                 <p>
-                    -dana 21.04.2010. godine oko 16,30 časova u mjestu R., opština Bijelo Polje, u porodičnoj kući, primjenom nasilja ugrozio tjelesni i duševni integritet člana svoje porodice - supruge, opštećene
+                    -dana 21.04.2010. godine oko 16,30 časova u mjestu R., opština Bijelo Polje, u porodičnoj kući, primjenom 
+                    nasilja ugrozio tjelesni i duševni integritet člana svoje porodice - supruge, opštećene
                     <party id="rd" refersTo="#rd" as="#victim">   
                         R.D.
                     </party>
-                    , na način što je istoj prijetio da će je ubiti i zaklati, a zatim je nogom udario u predjelu sjedala,
+                    , na način što je istoj 
+                    prijetio da će je ubiti i zaklati, a zatim je nogom udario u predjelu sjedala,
                 </p>
                 <p>
                     -ćime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz
@@ -171,7 +175,10 @@
                     Na kaznu zatvora od 30 ( trideset ) dana.
                 </p>
                 <p>
-                    Okrivljeni se obavezuje da plati ovom sudu na ime paušala iznos od 40,00 €, koji iznos će uplatiti na žiroračun 832-151-35 depozita novčanih kazni, troškova postupka i paušala u roku od 15 dana, po pravnosnažnosti presude, pod prijetnjom prinudnog izvršenja, s tim što će dokaz o izvršenoj uplati dostaviti krivičnoj pisarnici ovog suda.
+                    Okrivljeni se obavezuje da plati ovom sudu na ime paušala iznos od 40,00 €, koji iznos će uplatiti na žiro
+                    račun 832-151-35 depozita novčanih kazni, troškova postupka i paušala u roku od 15 dana, po 
+                    pravnosnažnosti presude, pod prijetnjom prinudnog izvršenja, s tim što će dokaz o izvršenoj uplati dostaviti 
+                    krivičnoj pisarnici ovog suda.
                 </p>
                 <p>
                     Imovinsko – pravnog zahtjeva i drugih troškova postupka nije bilo.
@@ -224,18 +231,22 @@
                     <party id="rd" refersTo="#rd" as="#victim">   
                         R.D.
                     </party>
-                    je izjavila da se ne pridružuje krivičnom gonjenju protiv okrivljenog, i da prema istom nema imovinsko pravni zahtjev, a ona i suprug su se u medjuvremenu izmirili i normalizovali odnose i dalje žive u bračnoj zajednici.
+                    je izjavila da se ne pridružuje krivičnom gonjenju protiv okrivljenog, i da 
+                    prema istom nema imovinsko pravni zahtjev, a ona i suprug su se u medjuvremenu izmirili i normalizovali 
+                    odnose i dalje žive u bračnoj zajednici.
                 </p>
                 <p>
                     Okrivljeni
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.
                     </party>
-                    je u svojoj odbrani istakao da je dana 21.04.2010. godine negdje oko 16,30 časova u svojoj porodičnoj kući u mjestu R., opština bijelo Polje, nakon svadje sa svojom suprugom
+                    je u svojoj odbrani istakao da je dana 21.04.2010. godine negdje oko 16,30 časova u svojoj 
+                    porodičnoj kući u mjestu R., opština bijelo Polje, nakon svadje sa svojom suprugom
                     <party id="rd" refersTo="#rd" as="#victim">   
                         R.D.om
                     </party>
-                    istu jedan put udario nogom, na kojoj nije imao nikakvu obuću, osim čarape u predjelu sjedalnog dijela tijela. Ne sjeća se koje je prijetnje tom prilikom uputio
+                    istu jedan put udario nogom, na kojoj nije imao nikakvu obuću, osim čarape u predjelu sjedalnog dijela tijela. Ne sjeća se 
+                    koje je prijetnje tom prilikom uputio
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.
                     </party>
@@ -243,15 +254,18 @@
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.
                     </party>
-                    živi ubraku dvadeset godina i imaju petoro djece. Njihova svadja izazvana je teškom materijalnom situacijom ukojoj se porodica nalazi. Istakao je da
+                    živi ubraku dvadeset godina i imaju petoro djece. Njihova svadja izazvana je teškom materijalnom situacijom u
+                    kojoj se porodica nalazi. Istakao je da
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.a
                     </party>
-                    kritičnom prilikom nije zadobila nikakve povrede, a prijavila ga je na insistiranje njene majke. Napomenuo je da su se on i
+                    kritičnom prilikom nije zadobila nikakve povrede, a prijavila ga je 
+                    na insistiranje njene majke. Napomenuo je da su se on i
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.a
                     </party>
-                    pomirili i da žive u skladnom braku. Dodao je da nikada ranije nad suprugom
+                    pomirili i da žive u skladnom braku. Dodao je da 
+                    nikada ranije nad suprugom
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.
                     </party>
@@ -263,24 +277,31 @@
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.
                     </party>
-                    . Pojasnio je da se ne sjeća sadržine riječi koje mu je pri svadji uputila supruga, a ona nije pokušavala fizički da nasrne na njega.
+                    . Pojasnio je da se ne sjeća sadržine riječi koje mu je pri svadji uputila supruga, a ona nije pokušavala fizički da 
+                    nasrne na njega.
                 </p>
                 <p>
                     U završnoj riječi okrivljeni
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.a
                     </party>
-                    je izjavio da je tačno da se prema supruzi ponašao na način kako je to naveou svojoj odbrani, medjutim besparica kao u većini porodica je prouzrokovala to njegovo ponašanje prema supruzi. Da mu je žao i da se kaje, tražio je od suda da prilikom odlučivanja o kazni cijeni sve olakšavajuće okolnosti na njegovoj strani i da ga što blaže kazni.
+                    je izjavio da je tačno da se prema supruzi ponašao na način kako je to naveo
+                    u svojoj odbrani, medjutim besparica kao u većini porodica je prouzrokovala to njegovo ponašanje prema 
+                    supruzi. Da mu je žao i da se kaje, tražio je od suda da prilikom odlučivanja o kazni cijeni sve olakšavajuće 
+                    okolnosti na njegovoj strani i da ga što blaže kazni.
                 </p>
                 <p>
-                    Radi utvrdjivanja odlučnih činjenica i donošenja pravilne i zakonite odluke, sud je u dokaznom postupkuizvršio uvid u izvod iz kaznene evidencije na ime okrivljenog, s tim što je oštećena
+                    Radi utvrdjivanja odlučnih činjenica i donošenja pravilne i zakonite odluke, sud je u dokaznom postupku
+                    izvršio uvid u izvod iz kaznene evidencije na ime okrivljenog, s tim što je oštećena
                     <party id="rd" refersTo="#rd" as="#victim">   
                         R.D.a
                     </party>
-                    iskoristila svojezakonsko pravo i nije svjedočila. Drugih predloga za dopunu dokaznog postupka nije bilo.
+                    iskoristila svoje zakonsko pravo i nije svjedočila. Drugih predloga za dopunu dokaznog postupka nije bilo.
                 </p>
                 <p>
-                    Odbranom okrivljenog koju je sud cijenio kao jasno, potpuno i neprotivrječno priznanje izvršenja krivičnog djela u potpunosti su potvrdjeni navodi iz dispozitiva optužnog predloga u pogledu radnji koje je kritičnog dogadjaja okrivljeni
+                    Odbranom okrivljenog koju je sud cijenio kao jasno, potpuno i neprotivrječno priznanje izvršenja krivičnog 
+                    djela u potpunosti su potvrdjeni navodi iz dispozitiva optužnog predloga u pogledu radnji koje je kritičnog 
+                    dogadjaja okrivljeni
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.a
                     </party>
@@ -291,7 +312,9 @@
                     .
                 </p>
                 <p>
-                    Krivično djelo nasilje u porodici ili u porodičnoj zajednici sastoji se u drskom i bezobzirnom ponašanju, te primjeni nasilja prema članu porodice ili porodične zajednice. Kako se u konkretnom slučaju radi o članu porodice supruzi
+                    Krivično djelo nasilje u porodici ili u porodičnoj zajednici sastoji se u drskom i bezobzirnom ponašanju, te 
+                    primjeni nasilja prema članu porodice ili porodične zajednice. Kako se u konkretnom slučaju radi o članu 
+                    porodice supruzi
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.
                     </party>
@@ -299,7 +322,8 @@
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.om
                     </party>
-                    živjela u zajedničkom domaćinstvu, a kako je tokom postupka sud utvrdio da je okrivljeni
+                    živjela u zajedničkom domaćinstvu, a kako je tokom 
+                    postupka sud utvrdio da je okrivljeni
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.a
                     </party>
@@ -307,7 +331,8 @@
                     <party id="rd" refersTo="#rd" as="#victim">   
                         D.e
                     </party>
-                    na način što je istoj prijetio da će je ubiti i zaklati, a zatim je nogom udario u predjelu sjedala, pri čemu je okrivljeni
+                    na način što je istoj prijetio da će je ubiti i zaklati, a zatim je nogom udario u predjelu sjedala, pri 
+                    čemu je okrivljeni
                     <party id="rn" refersTo="#rn" as="#defendant">   
                         R.N.a
                     </party>
@@ -334,7 +359,12 @@
                     <ref href="dodati zakon">
                         čl. 42 Krivičnog zakonika
                     </ref>
-                    , sud je kod okrivljenog kao olakšavajuće okolnosti našao da se radi porodičnom čovjeku, ocu petoro djece, lošeg imovnog stanja, koji se u toku pretresa korektno držao, pokazujući po ocjeni suda iskreno žaljenje, kome seoštećena nije pridružila krivičnom gonjenju iz razloga što su oni u medjuvremenu normalizovali odnose i žive dalje u braku, a od otežavajućih okolnosti sud je cijenio njegovu raniju osudjivanost, pa cijeneći sve olakšavajuće i otežavajuće okolnosti sud istog osudio na kaznu zatvora u trajanju od trideset dana, smatrajući da će se istom ostvariti svrha izricanja krivičnih sankcija iz
+                    , sud je kod okrivljenog kao olakšavajuće okolnosti našao da se radi porodičnom čovjeku, ocu petoro djece, lošeg 
+                    imovnog stanja, koji se u toku pretresa korektno držao, pokazujući po ocjeni suda iskreno žaljenje, kome se
+                    oštećena nije pridružila krivičnom gonjenju iz razloga što su oni u medjuvremenu normalizovali odnose i žive 
+                    dalje u braku, a od otežavajućih okolnosti sud je cijenio njegovu raniju osudjivanost, pa cijeneći sve 
+                    olakšavajuće i otežavajuće okolnosti sud istog osudio na kaznu zatvora u trajanju od trideset dana, 
+                    smatrajući da će se istom ostvariti svrha izricanja krivičnih sankcija iz
                     <ref href="dodati zakon">
                         čl. 32 Krivičnog zakonika
                     </ref>
@@ -345,7 +375,8 @@
                     <ref href="dodati zakon">
                         čl. 199 st. 2 Zakonika o krivičnom postupku
                     </ref>
-                    , odlučeno je u pogledu paušala u iznosu od 40,00 €, pri čemu je sud cijenio složenost i trajanje krivičnog postupka, kao i imovinske prilike okrivljenog.
+                    , odlučeno je u pogledu paušala u iznosu od 40,00 €, pri 
+                    čemu je sud cijenio složenost i trajanje krivičnog postupka, kao i imovinske prilike okrivljenog.
                 </p>
                 <p>
                     Drugih troškova krivičnog postupka nije bilo.
