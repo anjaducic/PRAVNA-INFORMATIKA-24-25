@@ -37,7 +37,1089 @@
 			<heading>
 				Krivični zakonik Crne Gore
 			</heading>
+<!--1. GLAVA-->
+			<chapter eId="chp_1">
+				<num>
+					GLAVA PRVA
+				</num>
+				<heading>
+					OSNOVNE ODREDBE
+				</heading>
+				<section eId="chp_1_sec_1">
+					<article eId="art_1">
+						<heading>
+							Osnov i granice krivičnopravne prinude
+						</heading>
+						<num>
+							Član 1
+						</num>
+						<paragraph eId="art_1_para_1">
+							<content eId="art_1_para_1_content">
+								<p>
+									Zaštita čovjeka i drugih osnovnih društvenih vrijednosti predstavlja osnov i granice za 
+									određivanje krivičnih djela, propisivanje krivičnih sankcija i njihovu primjenu, u mjeri u 
+									kojoj je to nužno za suzbijanje tih djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_2">
+						<heading>
+							Zakonitost u određivanju krivičnih djela i propisivanju krivičnih sankcija
+						</heading>
+						<num>
+							Član 2
+						</num>
+						<paragraph eId="art_2_para_1">
+							<content eId="art_2_para_1_content">
+								<p>
+									Kazna ili druga krivična sankcija može se izreći samo za djelo koje je, prije nego što je 
+									učinjeno, bilo zakonom određeno kao krivično djelo i za koje je bila zakonom propisana 
+									kazna.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_3">
+						<heading>
+							Nema kazne bez krivice
+						</heading>
+						<num>
+							Član 3
+						</num>
+						<paragraph eId="art_3_para_1">
+							<content eId="art_3_para_1_content">
+								<p>
+									Kazna i mjere upozorenja mogu se izreći samo učiniocu koji je kriv za učinjeno krivično 
+									djelo.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_4">
+						<heading>
+							Krivične sankcije i njihova opšta svrha
+						</heading>
+						<num>
+							Član 4
+						</num>
+						<paragraph eId="art_4_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_4_para_1_content">
+								<p>
+									Krivične sankcije su: kazne, mjere upozorenja, mjere bezbjednosti i vaspitne mjere.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_4_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_4_para_2_content">
+								<p>
+									Opšta svrha propisivanja i izricanja krivičnih sankcija je suzbijanje djela kojima se 
+									povređuju ili ugrožavaju vrijednosti zaštićene krivičnim zakonodavstvom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
 
+<!--2. GLAVA-->
+			<chapter eId="chp_2">
+				<num>
+					GLAVA DRUGA
+				</num>
+				<heading>
+					KRIVIČNO DJELO
+				</heading>
+				<section eId="chp_2_sec_1">
+					<num>
+						1.
+					</num>
+					<heading>
+						Opšte odredbe o krivičnom djelu
+					</heading>
+					<article eId="art_5">
+						<heading>
+							Krivično djelo
+						</heading>
+						<num>
+							Član 5
+						</num>
+						<paragraph eId="art_5_para_1">
+							<content eId="art_5_para_1_content">
+								<p>
+									Krivično djelo je djelo koje je zakonom određeno kao krivično djelo, koje je protivpravno 
+									i koje je skrivljeno.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_6">
+						<heading>
+							Način izvršenja krivičnog djela
+						</heading>
+						<num>
+							Član 6
+						</num>
+						<paragraph eId="art_6_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_6_para_1_content">
+								<p>
+									Krivično djelo može se učiniti činjenjem ili nečinjenjem.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_6_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_6_para_2_content">
+								<p>
+									Krivično djelo je učinjeno nečinjenjem kad je učinilac propustio činjenje koje je bio 
+									dužan da izvrši.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_6_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_6_para_3_content">
+								<p>
+									Nečinjenjem može biti učinjeno i krivično djelo koje zakonom nije određeno kao 
+									nečinjenje, ako je učinilac propuštanjem dužnog činjenja ostvario obilježja krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_7">
+						<heading>
+							Vrijeme izvršenja krivičnog djela
+						</heading>
+						<num>
+							Član 7
+						</num>
+						<paragraph eId="art_7_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_7_para_1_content">
+								<p>
+									Krivično djelo je učinjeno u vrijeme kad je izvršilac radio ili bio dužan da radi, bez 
+									obzira kad je posljedica djela nastupila.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_7_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_7_para_2_content">
+								<p>
+									Za saučesnika se smatra da je krivično djelo učinio u vrijeme kad je radio ili bio 
+									dužan da radi.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_8">
+						<heading>
+							Mjesto izvršenja krivičnog djela
+						</heading>
+						<num>
+							Član 8
+						</num>
+						<paragraph eId="art_8_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_8_para_1_content">
+								<p>
+									Krivično djelo je učinjeno u mjestu gdje je izvršilac radio i bio dužan da radi ili gdje 
+									je u cjelini ili djelimično nastupila posljedica djela, a u slučaju pokušaja i tamo gdje je 
+									posljedica pokušanog djela po njegovom umišljaju trebalo ili mogla da nastupi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_8_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_8_para_2_content">
+								<p>
+									Za saučesnika se smatra da je djelo učinio i u mjestu u kojem je preduzeo radnju 
+									saučesništva.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_10">
+						<heading>
+							Nužna odbrana
+						</heading>
+						<num>
+							Član 10
+						</num>
+						<paragraph eId="art_10_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_10_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u nužnoj odbrani.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_10_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_10_para_2_content">
+								<p>
+									Nužna je ona odbrana koja je neophodno potrebna da učinilac od svog dobra ili 
+									dobra drugoga odbije istovremen ili neposredno predstojeći protivpravan napad.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_10_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_10_para_3_content">
+								<p>
+									Učinilac koji je prekoračio granice nužne odbrane može se blaže kazniti, a ako je 
+									prekoračenje učinio usljed jake razdraženosti ili prepasti izazvane napadom, može se i 
+									osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_11">
+						<heading>
+							Krajnja nužda
+						</heading>
+						<num>
+							Član 11
+						</num>
+						<paragraph eId="art_11_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_11_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u krajnjoj nuždi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_11_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_11_para_2_content">
+								<p>
+									Krajnja nužda postoji kad je djelo učinjeno radi toga da učinilac otkloni od svog 
+									dobra ili dobra drugoga istovremenu ili neposredno predstojeću neskrivljenu opasnost koja 
+									se na drugi način nije mogla otkloniti, a pri tom učinjeno zlo nije veće od zla koje je 
+									prijetilo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_11_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_11_para_3_content">
+								<p>
+									Učinilac koji je sam izazvao opasnost, ali iz nehata ili je prekoračio granice krajnje 
+									nužde, može se blaže kazniti, a ako je prekoračenje učinjeno pod naročito olakšavajućim 
+									okolnostima, može se i osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_11_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_11_para_4_content">
+								<p>
+									Nema krajnje nužde ako je učinilac bio dužan da se izlaže opasnosti koja je prijetila.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_12">
+						<heading>
+							Sila i prijetnja
+						</heading>
+						<num>
+							Član 12
+						</num>
+						<paragraph eId="art_12_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_12_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno pod dejstvom apsolutne sile.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_12_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_12_para_2_content">
+								<p>
+									Ako je djelo učinjeno da bi učinilac od svog dobra ili dobra drugoga otklonio opasnost 
+									koja je nastala usljed sile koja nije apsolutna ili prijetnje, na učinioca će se primijeniti 
+									odredbe 
+									<ref href="/krivicni#art_11">
+										člana 11 
+									</ref>
+									ovog zakonika, uzimajući silu ili prijetnju kao neskrivljenu opasnost.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_12_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_12_para_3_content">
+								<p>
+									Ako je krivično djelo učinjeno pod dejstvom sile ili prijetnje, a nijesu ispunjeni uslovi 
+									iz 
+									<ref href="/krivicni#art_12_para_1">
+										st. 1 
+									</ref>
+									ili 
+									<ref href="/krivicni#art_12_para_2">
+										2 ovog člana
+									</ref>, 
+									učinilac se može blaže kazniti, a ako je djelo učinjeno pod naročito 
+									olakšavajućim okolnostima, može se i osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_12_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_12_para_4_content">
+								<p>
+									U slučajevima iz 
+									<ref href="/krivicni#art_12_para_1">
+										st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_12_para_2">
+										2 ovog člana
+									</ref>
+									, ako se lice prema kojem je primijenjena sila ili 
+									prijetnja ne smatra izvršiocem krivičnog djela, kao izvršilac krivičnog djela smatraće se lice 
+									koje je primijenilo silu ili prijetnju.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_13">
+						<heading>
+							Krivica
+						</heading>
+						<num>
+							Član 13
+						</num>
+						<paragraph eId="art_13_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_13_para_1_content">
+								<p>
+									Kriv je za krivično djelo učinilac koji je uračunljiv i koji je postupao sa umišljajem, a 
+									bio je svjestan ili je bio dužan i mogao biti svjestan da je njegovo djelo zabranjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_13_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_13_para_2_content">
+								<p>
+									Za krivično djelo učinjeno iz nehata učinilac može biti kriv samo kad to zakon 
+									određuje.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_14">
+						<heading>
+							Uračunljivost
+						</heading>
+						<num>
+							Član 14
+						</num>
+						<paragraph eId="art_14_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_14_para_1_content">
+								<p>
+									Nije uračunljiv učinilac koji u vrijeme izvršenja protivpravnog djela određenog u 
+									zakonu kao krivično djelo nije mogao da shvati značaj svog djela ili nije mogao da upravlja 
+									svojim postupcima usljed duševne bolesti, privremene duševne poremećenosti, zaostalog 
+									duševnog razvoja ili druge teže duševne poremećenosti (neuračunljivost).
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_14_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_14_para_2_content">
+								<p>
+									Učinilac krivičnog djela čija je sposobnost da shvati značaj svog djela ili sposobnost 
+									da upravlja svojim postupcima bila bitno smanjena usljed nekog stanja iz 
+									<ref href="/krivicni#art_14_para_1">
+										stava 1 ovog člana 
+									</ref>
+									(bitno smanjena uračunljivost) može se blaže kazniti.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_14_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_14_para_3_content">
+								<p>
+									Krivica učinioca krivičnog djela koji se upotrebom alkohola, droga ili na drugi način 
+									doveo u stanje u kojem nije mogao da shvati značaj svog djela ili da upravlja svojim 
+									postupcima utvrđuje se prema vremenu neposredno prije dovođenja u takvo stanje.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_14_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_14_para_4_content">
+								<p>
+									Učiniocu koji je pod okolnostima iz 
+									<ref href="/krivicni#art_14_para_3">
+										stava 3 ovog člana 
+									</ref>
+									učinio krivično djelo u stanju bitno smanjene uračunljivosti ne može se ublažiti kazna.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_15">
+						<heading>
+							Umišljaj
+						</heading>
+						<num>
+							Član 15
+						</num>
+						<paragraph eId="art_15_para_1">
+							<content eId="art_15_para_1_content">
+								<p>
+									Krivično djelo je učinjeno sa umišljajem kad je učinilac bio svjestan svog djela i htio 
+									njegovo izvršenje ili kad je učinilac bio svjestan da može učiniti djelo pa je na to pristao.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_16">
+						<heading>
+							Nehat
+						</heading>
+						<num>
+							Član 16
+						</num>
+						<paragraph eId="art_16_para_1">
+							<content eId="art_16_para_1_content">
+								<p>
+									Krivično djelo je učinjeno iz nehata kad je učinilac bio svjestan da svojom radnjom može 
+									učiniti djelo, ali je olako držao da do toga neće doći ili da će to moći spriječiti ili kad nije 
+									bio svjestan da svojom radnjom može učiniti djelo iako je prema okolnostima pod kojima 
+									je ono učinjeno i prema svojim ličnim svojstvima bio dužan i mogao biti svjestan te 
+									mogućnosti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_17">
+						<heading>
+							Odgovornost za težu posljedicu
+						</heading>
+						<num>
+							Član 17
+						</num>
+						<paragraph eId="art_17_para_1">
+							<content eId="art_17_para_1_content">
+								<p>
+									Kad je iz krivičnog djela proizašla teža posljedica zbog koje zakon za to djelo propisuje 
+									težu kaznu, ta se kazna može izreći ako je učinilac u odnosu na tu posljedicu postupao iz 
+									nehata, a i sa umišljajem ako time ne ostvaruje obilježja nekog drugog krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_18">
+						<heading>
+							Stvarna zabluda
+						</heading>
+						<num>
+							Član 18
+						</num>
+						<paragraph eId="art_18_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_18_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u neotklonjivoj stvarnoj zabludi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_18_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_18_para_2_content">
+								<p>
+									Neotklonjiva stvarna zabluda postoji ako učinilac nije bio dužan i nije mogao da 
+									izbjegne zabludu u pogledu neke stvarne okolnosti koja predstavlja obilježje krivičnog djela 
+									ili u pogledu neke stvarne okolnosti koja bi, da je zaista postojala, činila djelo dozvoljenim.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_18_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_18_para_3_content">
+								<p>
+									Ako je učinilac bio u stvarnoj zabludi usljed nehata, postojaće krivično djelo učinjeno 
+									iz nehata kad je to propisano zakonom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_19">
+						<heading>
+							Pravna zabluda
+						</heading>
+						<num>
+							Član 19
+						</num>
+						<paragraph eId="art_19_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_19_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u neotklonjivoj pravnoj zabludi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_19_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_19_para_2_content">
+								<p>
+									Neotklonjiva pravna zabluda postoji ako učinilac nije bio dužan i nije mogao da zna 
+									da je djelo koje je učinio zabranjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_19_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_19_para_3_content">
+								<p>
+									Učiniocu koji nije znao da je djelo zabranjeno, ali je to bio dužan i mogao da zna, 
+									kazna se može ublažiti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_2">
+					<num>
+						2.
+					</num>
+					<heading>
+						Pokušaj krivičnog djela i dobrovoljni odustanak
+					</heading>
+					<article eId="art_20">
+						<heading>
+							Pokušaj
+						</heading>
+						<num>
+							Član 20
+						</num>
+						<paragraph eId="art_20_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_20_para_1_content">
+								<p>
+									Ko sa umišljajem započne izvršenje krivičnog djela, ali ga ne dovrši, kazniće se za 
+									pokušaj krivičnog djela za koje se po zakonu može izreći kazna zatvora od pet godina ili 
+									teža kazna, a za pokušaj drugog krivičnog djela samo kad zakon izričito propisuje 
+									kažnjavanje i za pokušaj.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_20_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_20_para_2_content">
+								<p>
+									Kao započinjanje izvršenja krivičnog djela smatra se i upotreba određenog sredstva 
+									ili primjena određenog načina izvršenja, ako su oni zakonom određeni kao obilježja 
+									krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_20_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_20_para_3_content">
+								<p>
+									Učinilac će se za pokušaj kazniti kaznom propisanom za krivično djelo, a može se i 
+									blaže kazniti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_21">
+						<heading>
+							Nepodoban pokušaj
+						</heading>
+						<num>
+							Član 21
+						</num>
+						<paragraph eId="art_21_para_1">
+							<content eId="art_21_para_1_content">
+								<p>
+									Učinilac koji pokuša da izvrši krivično djelo nepodobnim sredstvom ili prema 
+									nepodobnom predmetu može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_22">
+						<heading>
+							Dobrovoljni odustanak
+						</heading>
+						<num>
+							Član 22
+						</num>
+						<paragraph eId="art_22_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_22_para_1_content">
+								<p>
+									Učinilac koji je pokušao izvršenje krivičnog djela, ali je dobrovoljno odustao od 
+									njegovog izvršenja, može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_22_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_22_para_2_content">
+								<p>
+									U slučaju dobrovoljnog odustanka, učinilac će se kazniti za one radnje koje čine neko 
+									drugo samostalno krivično djelo, koje nije obuhvaćeno krivičnim djelom od čijeg izvršenja 
+									je učinilac odustao.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_3">
+					<num>
+						3.
+					</num>
+					<heading>
+						Saučesništvo u krivičnom djelu
+					</heading>
+					<article eId="art_23">
+						<heading>
+							Izvršilaštvo i saizvršilaštvo
+						</heading>
+						<num>
+							Član 23
+						</num>
+						<paragraph eId="art_23_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_23_para_1_content">
+								<p>
+									Izvršilac krivičnog djela je lice koje preduzima radnju izvršenja krivičnog djela ili koje 
+									posredstvom drugog lica izvrši krivično djelo, ukoliko se to drugo lice ne može smatrati 
+									izvršiocem krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_23_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_23_para_2_content">
+								<p>
+									Ako više lica, učestvovanjem u radnji izvršenja sa umišljajem ili iz nehata, zajednički 
+									izvrše krivično djelo, ili ostvarujući zajedničku odluku drugom radnjom sa umišljajem bitno 
+									doprinesu izvršenju krivičnog djela, svako od njih kazniće se kaznom propisanom za to 
+									djelo.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_24">
+						<heading>
+							Podstrekavanje
+						</heading>
+						<num>
+							Član 24
+						</num>
+						<paragraph eId="art_24_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_24_para_1_content">
+								<p>
+									Ko drugog sa umišljajem podstrekne da učini krivično djelo, kazniće se kao da ga je 
+									sam izvršio.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_24_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_24_para_2_content">
+								<p>
+									Ko drugog sa umišljajem podstrekava na izvršenje krivičnog djela za koje se po 
+									zakonu može izreći kazna zatvora od pet godina ili teža kazna, a djelo ne bude ni pokušano, 
+									kazniće se kao za pokušaj krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_25">
+						<heading>
+							Pomaganje
+						</heading>
+						<num>
+							Član 25
+						</num>
+						<paragraph eId="art_25_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_25_para_1_content">
+								<p>
+									Ko drugom sa umišljajem pomogne u izvršenju krivičnog djela, kazniće se kao da ga 
+									je sam izvršio, a može se i blaže kazniti.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_25_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_25_para_2_content">
+								<p>
+									Kao pomaganje u izvršenju krivičnog djela smatra se naročito: davanje savjeta ili 
+									uputstava kako da se izvrši krivično djelo, stavljanje učiniocu na raspolaganje sredstava 
+									za izvršenje krivičnog djela, stvaranje uslova ili otklanjanje prepreka za izvršenje krivičnog 
+									djela, kao i unaprijed obećano prikrivanje krivičnog djela, učinioca, sredstava kojima je 
+									krivično djelo izvršeno, tragova krivičnog djela ili predmeta pribavljenih krivičnim djelom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_26">
+						<heading>
+							Granice odgovornosti i kažnjivosti saučesnika
+						</heading>
+						<num>
+							Član 26
+						</num>
+						<paragraph eId="art_26_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_26_para_1_content">
+								<p>
+									Saizvršilac je odgovoran u granicama svog umišljaja ili nehata, a podstrekač i 
+									pomagač u granicama svog umišljaja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_26_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_26_para_2_content">
+								<p>
+									Saizvršilac, podstrekač ili pomagač koji je dobrovoljno spriječio izvršenje krivičnog 
+									djela može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_26_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_26_para_3_content">
+								<p>
+									Lični odnosi, svojstva i okolnosti usljed kojih zakon isključuje krivicu ili dozvoljava 
+									oslobođenje od kazne, od kojih zavisi postojanje lakšeg ili težeg oblika djela ili koje utiču 
+									na odmjeravanje kazne, mogu se uzeti u obzir samo onom izvršiocu, saizvršiocu, 
+									podstrekaču ili pomagaču kod kojeg takvi odnosi, svojstva i okolnosti postoje.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_27">
+						<heading>
+							Kažnjavanje podstrekača i pomagača za pokušaj i lakše krivično djelo
+						</heading>
+						<num>
+							Član 27
+						</num>
+						<paragraph eId="art_27_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_27_para_1_content">
+								<p>
+									Ako je krivično djelo ostalo u pokušaju podstrekač i pomagač će se kazniti za 
+									pokušaj.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_27_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_27_para_2_content">
+								<p>
+									Ako je izvršilac izvršio lakše krivično djelo od onog na koje se podstrekavanje ili 
+									pomaganje odnosi, a koje bi bilo njime obuhvaćeno, podstrekač i pomagač će se kazniti 
+									za krivično djelo koje je učinjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_27_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_27_para_3_content">
+								<p>
+									Odredba 
+									<ref href="/krivicni#art_27_para_2"> 
+										stava 2 ovog člana 
+									</ref>
+									neće se primijeniti ako bi se podstrekač strože kaznio primjenom 
+									<ref href="/krivicni#art_24_para_2"> 
+										člana 24 stav 2 
+									</ref>
+									ovog zakonika.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_4">
+					<num>
+						4.
+					</num>
+					<heading>
+						Posebne odredbe o odgovornosti za krivična djela učinjena putem medija
+					</heading>
+					<article eId="art_28">
+						<heading>
+							Odgovornost urednika
+						</heading>
+						<num>
+							Član 28
+						</num>
+						<paragraph eId="art_28_para_1">
+							<num>
+								(1)
+							</num>
+							<intro eId="art_28_para_1_intro">
+								<p>
+									Za krivična djela učinjena putem medija odgovoran je urednik, odnosno lice koje ga 
+									je zamjenjivalo u vrijeme objavljivanja informacije, ako:
+								</p>
+							</intro>
+							<point eId="art_28_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										je do završetka glavnog pretresa pred prvostepenim sudom autor ostao nepoznat;
+									</p>
+								</content>
+							</point>
+							<point eId="art_28_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										je informacija objavljena bez saglasnosti autora.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_28_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_28_para_2_content">
+								<p>
+									Nije odgovoran urednik, odnosno lice koje ga zamjenjuje ako iz opravdanih razloga 
+									nije znao za neku od okolnosti navedenih u
+									<ref href="/krivicni#art_28_para_1_point_1"> 
+										stavu 1 tač. 1
+									</ref>
+									i
+									<ref href="/krivicni#art_28_para_1_point_2"> 
+										2 ovog člana.
+									</ref>
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_29">
+						<heading>
+							Odgovornost izdavača, štampara i proizvođača
+						</heading>
+						<num>
+							Član 29
+						</num>
+						<paragraph eId="art_29_para_1">
+							<num>
+								(1)
+							</num>
+							<intro eId="art_29_para_1_intro">
+								<p>
+									Kad postoje uslovi iz 
+									<ref href="/krivicni#art_28"> 
+										člana 28 
+									</ref>
+									ovog zakonika odgovorni su:
+								</p>
+							</intro>
+							<point eId="art_29_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										izdavač - za krivično djelo učinjeno putem nepovremene štampane publikacije, a ako 
+										nema izdavača ili postoje stvarne ili pravne smetnje za njegovo gonjenje - štampar koji je 
+										za to znao;
+									</p>
+								</content>
+							</point>
+							<point eId="art_29_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										proizvođač - za krivično djelo učinjeno putem kompakt diska, gramofonske ploče, 
+										magnetofonske trake i drugih auditivnih sredstava, filma za javno i privatno prikazivanje, 
+										dijapozitiva, videosredstava ili sličnih sredstava namijenjenih širem krugu lica.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_29_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_29_para_2_content">
+								<p>
+									Ako je izdavač, štampar ili proizvođač pravno lice ili državni organ, odgovorno je lice 
+									koje odgovara za izdavanje, štampanje ili proizvodnju.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_30">
+						<heading>
+							Primjenjivanje odredaba iz 
+							<ref href="/krivicni#art_28"> 	
+								čl. 28 
+							</ref>	
+							i 
+							<ref href="/krivicni#art_29"> 
+								29
+							</ref>
+						</heading>
+						<num>
+							Član 30
+						</num>
+						<paragraph eId="art_30_para_1">
+							<content eId="art_30_para_1_content">
+								<p>
+									Odredbe o odgovornosti lica iz 
+									<ref href="/krivicni#art_28"> 	
+										čl. 28 
+									</ref>
+									i 
+									<ref href="/krivicni#art_29"> 	
+										29 
+									</ref>
+									ovog zakonika primjenjuju se samo, ako se ta 
+									lica po opštim odredbama ovog zakonika ne mogu smatrati učiniocem krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_5">
+					<num>
+						5.
+					</num>
+					<heading>
+						Odgovornost pravnih lica za krivično djelo
+					</heading>
+					<article eId="art_31">
+						<num>
+							Član 31
+						</num>
+						<paragraph eId="art_31_para_1">
+							<content eId="art_31_para_1_content">
+								<p>
+									Odgovornost pravnih lica za krivična djela, kao i sankcije za njih biće zakonom 
+									predviđene.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+<!--19. GLAVA-->
 			<chapter eId="chp_19">
 				<num>
 					GLAVA DEVETNAESTA
@@ -54,150 +1136,147 @@
 							Član 220
 						</num>
 						<paragraph eId="art_220_para_1">
-							<point eId="art_220_para_1_point_1">
-								<num>
-									(1)
-								</num>
-								<content>
-									<p>
-										Ko lako tjelesno povrijedi člana porodice ili porodične zajednice ili mu ugrozi 
-										sigurnost prijetnjom da će napasti na život ili tijelo tog ili njemu bliskog lica,
-										kazniće se zatvorom od šest mjeseci do pet godina.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_2">
-								<num>
-									(2)
-								</num>
-								<content>
-									<p>
-										Kaznom iz 
-										<ref href="/krivicni#art_220_para_1_point_1"> 
-											stava 1 ovog člana 
-										</ref>	
-										kazniće se i lice koje zlostavlja člana svoje porodice ili 
-										porodične zajednice ili prema njemu postupa na način koji vrijeđa ljudsko dostojanstvo.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_3">
-								<num>
-									(3)
-								</num>
-								<content>
-									<p>
-										Kaznom iz 
-										<ref href="/krivicni#art_220_para_1_point_1"> 
-											stava 1 ovog člana 
-										</ref>	
-										kazniće se i lice koje na drugi način više puta primijeni 
-										nasilje, uputi prijetnju ili drskim ili bezobzirnim ponašanjem ugrozi ili naruši tjelesni ili 
-										duševni integritet člana svoje porodice ili porodične zajednice.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_4">
-								<num>
-									(4)
-								</num>
-								<content>
-									<p>
-										Ako je pri izvršenju djela iz
-										<ref href="/krivicni#art_220_para_1_point_1"> 
-											st. 1
-										</ref>
-										,
-										<ref href="/krivicni#art_220_para_1_point_2"> 
-											2 
-										</ref>
-										i
-										<ref href="/krivicni#art_220_para_1_point_3"> 
-											3 ovog člana
-										</ref>
-										korišćeno oružje, opasno oruđe ili 
-										drugo sredstvo podobno da tijelo teško povrijedi ili zdravlje teško naruši ili je djelo učinjeno 
-										u prisustvu djeteta,
-										učinilac će se kazniti zatvorom od jedne do pet godina.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_5">
-								<num>
-									(5)
-								</num>
-								<content>
-									<p>
-										Ako je usljed djela iz
-										<ref href="/krivicni#art_220_para_1_point_1"> 
-											st. 1
-										</ref>
-										do
-										<ref href="/krivicni#art_220_para_1_point_4"> 
-											4 ovog člana
-										</ref>
-										nastupila teška tjelesna povreda ili teško 
-										narušavanje zdravlja ili je djelo učinjeno prema djetetu,
-										učinilac će se kazniti zatvorom od jedne do osam godina.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_6">
-								<num>
-									(6)
-								</num>
-								<content>
-									<p>
-										Ako je usljed djela iz
-										<ref href="/krivicni#art_220_para_1_point_1"> 
-											st. 1
-										</ref>
-										do
-										<ref href="/krivicni#art_220_para_1_point_5"> 
-											5 ovog člana
-										</ref>
-										nastupila smrt člana porodice ili porodične 
-										zajednice,
-										učinilac će se kazniti zatvorom od pet do petnaest godina.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_7">
-								<num>
-									(7)
-								</num>
-								<content>
-									<p>
-										Ko prekrši mjere zaštite od nasilja u porodici koje mu je sud ili drugi državni organ 
-										odredio na osnovu zakona,
-										kazniće se novčanom kaznom ili zatvorom do jedne godine.
-									</p>
-								</content>
-							</point>
-							<point eId="art_220_para_1_point_8">
-								<num>
-									(8)
-								</num>
-								<content>
-									<p>
-										Članovima porodice ili porodične zajednice, u smislu ovog člana, smatraju se bračni 
-										ili vanbračni supružnik, njihova zajednička djeca i djeca svakog od njih, partner u zajednici 
-										života lica istog pola i djeca svakog od partnera, krvni srodnik i srodnik iz usvojenja u 
-										pravoj liniji bez ograničenja, a u pobočnoj liniji zaključno sa četvrtim stepenom, tazbinski 
-										srodnici zaključno sa drugim stepenom, partner u intimnoj vezi, lica koja žive u istom 
-										porodičnom domaćinstvu i lica koja imaju zajedničko dijete ili je dijete na putu da bude 
-										rođeno iako nikad nijesu živjela u istom porodičnom domaćinstvu. Članovima porodice ili 
-										porodične zajednice smatraju se i bivši bračni ili vanbračni supružnik, bivši partner u 
-										zajednici života lica istog pola, bivši tazbinski srodnici zaključno sa drugim stepenom i bivši 
-										partner u intimnoj vezi.
-									</p>
-								</content>
-							</point>
+							<num>
+								(1)
+							</num>
+							<content eId="art_220_para_1_content">
+								<p>
+									Ko lako tjelesno povrijedi člana porodice ili porodične zajednice ili mu ugrozi 
+									sigurnost prijetnjom da će napasti na život ili tijelo tog ili njemu bliskog lica,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_2">
+							<num>
+								(2)
+							</num>
+							<content>
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_220_para_1"> 
+										stava 1 ovog člana 
+									</ref>	
+									kazniće se i lice koje zlostavlja člana svoje porodice ili 
+									porodične zajednice ili prema njemu postupa na način koji vrijeđa ljudsko dostojanstvo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_3">
+							<num>
+								(3)
+							</num>
+							<content>
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_220_para_1"> 
+										stava 1 ovog člana 
+									</ref>	
+									kazniće se i lice koje na drugi način više puta primijeni 
+									nasilje, uputi prijetnju ili drskim ili bezobzirnim ponašanjem ugrozi ili naruši tjelesni ili 
+									duševni integritet člana svoje porodice ili porodične zajednice.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_4">
+							<num>
+								(4)
+							</num>
+							<content>
+								<p>
+									Ako je pri izvršenju djela iz
+									<ref href="/krivicni#art_220_para_1"> 
+										st. 1
+									</ref>
+									,
+									<ref href="/krivicni#art_220_para_2"> 
+										2 
+									</ref>
+									i
+									<ref href="/krivicni#art_220_para_3"> 
+										3 ovog člana
+									</ref>
+									korišćeno oružje, opasno oruđe ili 
+									drugo sredstvo podobno da tijelo teško povrijedi ili zdravlje teško naruši ili je djelo učinjeno 
+									u prisustvu djeteta,
+									učinilac će se kazniti zatvorom od jedne do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_5">
+							<num>
+								(5)
+							</num>
+							<content>
+								<p>
+									Ako je usljed djela iz
+									<ref href="/krivicni#art_220_para_1"> 
+										st. 1
+									</ref>
+									do
+									<ref href="/krivicni#art_220_para_4"> 
+										4 ovog člana
+									</ref>
+									nastupila teška tjelesna povreda ili teško 
+									narušavanje zdravlja ili je djelo učinjeno prema djetetu,
+									učinilac će se kazniti zatvorom od jedne do osam godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_6">							
+							<num>
+								(6)
+							</num>
+							<content>
+								<p>
+									Ako je usljed djela iz
+									<ref href="/krivicni#art_220_para_1"> 
+										st. 1
+									</ref>
+									do
+									<ref href="/krivicni#art_220_para_5"> 
+										5 ovog člana
+									</ref>
+									nastupila smrt člana porodice ili porodične 
+									zajednice,
+									učinilac će se kazniti zatvorom od pet do petnaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_7">							
+							<num>
+								(7)
+							</num>
+							<content>
+								<p>
+									Ko prekrši mjere zaštite od nasilja u porodici koje mu je sud ili drugi državni organ 
+									odredio na osnovu zakona,
+									kazniće se novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_8">
+							<num>
+								(8)
+							</num>
+							<content>
+								<p>
+									Članovima porodice ili porodične zajednice, u smislu ovog člana, smatraju se bračni 
+									ili vanbračni supružnik, njihova zajednička djeca i djeca svakog od njih, partner u zajednici 
+									života lica istog pola i djeca svakog od partnera, krvni srodnik i srodnik iz usvojenja u 
+									pravoj liniji bez ograničenja, a u pobočnoj liniji zaključno sa četvrtim stepenom, tazbinski 
+									srodnici zaključno sa drugim stepenom, partner u intimnoj vezi, lica koja žive u istom 
+									porodičnom domaćinstvu i lica koja imaju zajedničko dijete ili je dijete na putu da bude 
+									rođeno iako nikad nijesu živjela u istom porodičnom domaćinstvu. Članovima porodice ili 
+									porodične zajednice smatraju se i bivši bračni ili vanbračni supružnik, bivši partner u 
+									zajednici života lica istog pola, bivši tazbinski srodnici zaključno sa drugim stepenom i bivši 
+									partner u intimnoj vezi.
+								</p>
+							</content>
 						</paragraph>
 					</article>
 				</section>
 			</chapter>
-        </body>
-    </act>
+		</body>
+	</act>
 </akomaNtoso>
-    
