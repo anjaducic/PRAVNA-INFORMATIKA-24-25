@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd">
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
 	<act id="krivicni" name="Krivicni zakonik Crne Gore">
 		<meta>
 			<identification source="#dunje">
@@ -33,7 +33,170 @@
 				<TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg" showAs="Službeni list Crne Gore" />
 			</references>
 		</meta>
-		<body>
+		<body> 
+			<heading>
+				Krivični zakonik Crne Gore
+			</heading>
+
+			<chapter eId="chp_19">
+				<num>
+					GLAVA DEVETNAESTA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV BRAKA I PORODICE
+				</heading>	
+				<section eId="chp_19_sec_1">
+					<article eId="art_220">
+						<heading>
+							Nasilje u porodici ili u porodičnoj zajednici
+						</heading>
+						<num>
+							Član 220
+						</num>
+						<paragraph eId="art_220_para_1">
+							<point eId="art_220_para_1_point_1">
+								<num>
+									(1)
+								</num>
+								<content>
+									<p>
+										Ko lako tjelesno povrijedi člana porodice ili porodične zajednice ili mu ugrozi 
+										sigurnost prijetnjom da će napasti na život ili tijelo tog ili njemu bliskog lica,
+										kazniće se zatvorom od šest mjeseci do pet godina.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_2">
+								<num>
+									(2)
+								</num>
+								<content>
+									<p>
+										Kaznom iz 
+										<ref href="/krivicni#art_220_para_1_point_1"> 
+											stava 1 ovog člana 
+										</ref>	
+										kazniće se i lice koje zlostavlja člana svoje porodice ili 
+										porodične zajednice ili prema njemu postupa na način koji vrijeđa ljudsko dostojanstvo.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_3">
+								<num>
+									(3)
+								</num>
+								<content>
+									<p>
+										Kaznom iz 
+										<ref href="/krivicni#art_220_para_1_point_1"> 
+											stava 1 ovog člana 
+										</ref>	
+										kazniće se i lice koje na drugi način više puta primijeni 
+										nasilje, uputi prijetnju ili drskim ili bezobzirnim ponašanjem ugrozi ili naruši tjelesni ili 
+										duševni integritet člana svoje porodice ili porodične zajednice.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_4">
+								<num>
+									(4)
+								</num>
+								<content>
+									<p>
+										Ako je pri izvršenju djela iz
+										<ref href="/krivicni#art_220_para_1_point_1"> 
+											st. 1
+										</ref>
+										,
+										<ref href="/krivicni#art_220_para_1_point_2"> 
+											2 
+										</ref>
+										i
+										<ref href="/krivicni#art_220_para_1_point_3"> 
+											3 ovog člana
+										</ref>
+										korišćeno oružje, opasno oruđe ili 
+										drugo sredstvo podobno da tijelo teško povrijedi ili zdravlje teško naruši ili je djelo učinjeno 
+										u prisustvu djeteta,
+										učinilac će se kazniti zatvorom od jedne do pet godina.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_5">
+								<num>
+									(5)
+								</num>
+								<content>
+									<p>
+										Ako je usljed djela iz
+										<ref href="/krivicni#art_220_para_1_point_1"> 
+											st. 1
+										</ref>
+										do
+										<ref href="/krivicni#art_220_para_1_point_4"> 
+											4 ovog člana
+										</ref>
+										nastupila teška tjelesna povreda ili teško 
+										narušavanje zdravlja ili je djelo učinjeno prema djetetu,
+										učinilac će se kazniti zatvorom od jedne do osam godina.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_6">
+								<num>
+									(6)
+								</num>
+								<content>
+									<p>
+										Ako je usljed djela iz
+										<ref href="/krivicni#art_220_para_1_point_1"> 
+											st. 1
+										</ref>
+										do
+										<ref href="/krivicni#art_220_para_1_point_5"> 
+											5 ovog člana
+										</ref>
+										nastupila smrt člana porodice ili porodične 
+										zajednice,
+										učinilac će se kazniti zatvorom od pet do petnaest godina.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_7">
+								<num>
+									(7)
+								</num>
+								<content>
+									<p>
+										Ko prekrši mjere zaštite od nasilja u porodici koje mu je sud ili drugi državni organ 
+										odredio na osnovu zakona,
+										kazniće se novčanom kaznom ili zatvorom do jedne godine.
+									</p>
+								</content>
+							</point>
+							<point eId="art_220_para_1_point_8">
+								<num>
+									(8)
+								</num>
+								<content>
+									<p>
+										Članovima porodice ili porodične zajednice, u smislu ovog člana, smatraju se bračni 
+										ili vanbračni supružnik, njihova zajednička djeca i djeca svakog od njih, partner u zajednici 
+										života lica istog pola i djeca svakog od partnera, krvni srodnik i srodnik iz usvojenja u 
+										pravoj liniji bez ograničenja, a u pobočnoj liniji zaključno sa četvrtim stepenom, tazbinski 
+										srodnici zaključno sa drugim stepenom, partner u intimnoj vezi, lica koja žive u istom 
+										porodičnom domaćinstvu i lica koja imaju zajedničko dijete ili je dijete na putu da bude 
+										rođeno iako nikad nijesu živjela u istom porodičnom domaćinstvu. Članovima porodice ili 
+										porodične zajednice smatraju se i bivši bračni ili vanbračni supružnik, bivši partner u 
+										zajednici života lica istog pola, bivši tazbinski srodnici zaključno sa drugim stepenom i bivši 
+										partner u intimnoj vezi.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
         </body>
     </act>
 </akomaNtoso>
