@@ -1797,6 +1797,608 @@
 				</section>
 			</chapter>
 
+<!--13. GLAVA-->
+			<chapter eId="chp_13">
+				<num>
+					GLAVA TRINAESTA
+				</num>
+				<heading>
+					ZNAČENjE IZRAZA
+				</heading>
+				<section eId="chp_13_sec_1">
+					<article eId="art_142">
+						<heading>
+							Značenje izraza u ovom zakoniku
+						</heading>
+						<num>
+							Član 142
+						</num>
+						<paragraph eId="art_142_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_142_para_1_content">
+								<p>
+									Pod teritorijom Crne Gore podrazumijevaju se suvozemna teritorija, obalno more i 
+									vodene površine unutar njenih granica, kao i vazdušni prostor nad njima.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_142_para_2_content">
+								<p>
+									Pod krivičnim zakonodavstvom Crne Gore podrazumijevaju se ovaj zakonik kao i sve 
+									krivičnopravne odredbe sadržane u drugim zakonima Crne Gore.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_3">
+							<num>
+								(3)
+							</num>
+							<intro eId="art_142_para_3_intro">
+								<p>
+									Službenim licem smatra se:
+								</p>
+							</intro>
+							<point eId="art_142_para_3_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										lice koje u državnom organu vrši službene dužnosti;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										izabrano, imenovano ili postavljeno lice u državnom organu, organu lokalne 
+										samouprave ili lice koje stalno ili povremeno vrši službene dužnosti ili službene funkcije u 
+										tim organima;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										lice u ustanovi, privrednom društvu ili drugom subjektu, kojem je povjereno vršenje 
+										javnih ovlašćenja, koje odlučuje o pravima, obavezama ili interesima fizičkih ili pravnih lica 
+										ili o javnom interesu;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_4">
+								<num>4)</num>
+								<content>
+									<p>
+										i drugo lice koje obavlja službene dužnosti na osnovu zakona, propisa donijetih na 
+										osnovu zakona, ugovora ili arbitražnog sporazuma, kao i lice kojem je faktički povjereno 
+										vršenje pojedinih službenih dužnosti ili poslova;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_5">
+								<num>5)</num>
+								<content>
+									<p>
+										vojno lice izuzev kad su u pitanju odredbe 
+										<ref href="/krivicni#chp_36">
+											Glave trideset šeste 
+										</ref>	
+										ovog zakonika.
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_5a">
+								<num>5a)</num>
+								<content>
+									<p>
+										lice koje u stranoj državi obavlja zakonodavnu, izvršnu, sudsku ili drugu javnu 
+										funkciju za stranu državu, lice koje u stranoj državi obavlja službene dužnosti na osnovu 
+										zakona, propisa donijetih na osnovu zakona, ugovora ili arbitražnog sporazuma, lice koje 
+										obavlja službenu dužnost u međunarodnoj javnoj organizaciji i lice koje obavlja sudsku, 
+										tužilačku ili neku drugu funkciju u međunarodnom sudu.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_142_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_142_para_4_content">
+								<p>
+									Odgovornim licem smatra se vlasnik privrednog društva ili drugog subjekta ili lice u 
+									privrednom društvu, ustanovi ili drugom subjektu kojem je, s obzirom na njegovu funkciju, 
+									uložena sredstva ili na osnovu ovlašćenja, povjeren određeni krug poslova u upravljanju 
+									imovinom, proizvodnji ili drugoj djelatnosti ili u vršenju nadzora nad njima ili mu je faktički 
+									povjereno obavljanje pojedinih poslova. Odgovornim licem smatra se i službeno lice kad 
+									su u pitanju krivična djela kod kojih je kao izvršilac označeno odgovorno lice, a u ovom 
+									zakoniku nijesu predviđena u glavi o krivičnim djelima protiv službene dužnosti, odnosno 
+									kao krivična djela službenog lica.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_142_para_5_content">
+								<p>
+									Vojnim licem smatra se: profesionalno vojno lice (vojnik po ugovoru, podoficir, 
+									podoficir po ugovoru, oficir i oficir po ugovoru), lice u rezervnom sastavu (rezervni vojnik, 
+									rezervni podoficir i rezervni oficir), civilno lice koje vrši određenu vojnu dužnost i lice koje 
+									za vrijeme ratnog ili vanrednog stanja podliježe vojnoj obavezi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_6">
+							<num>
+								(6)
+							</num>
+							<content eId="art_142_para_6_content">
+								<p>
+									Kad je kao izvršilac određenih krivičnih djela označeno službeno lice, odgovorno lice 
+									ili vojno lice, lica navedena u 
+									<ref href="/krivicni#art_142_para_3">
+										st. 3
+									</ref>	
+									,
+									<ref href="/krivicni#art_142_para_4">
+										4 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_142_para_5">
+										5 
+									</ref>	
+									ovog člana mogu biti izvršioci tih djela, ako iz 
+									obilježja pojedinog djela ili iz pojedinog propisa ne proizilazi da izvršilac može biti samo 
+									neko od tih lica.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_7">
+							<num>
+								(7)
+							</num>
+							<content eId="art_142_para_7_content">
+								<p>
+									Djetetom se smatra lice koje nije navršilo osamnaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_8">
+							<num>
+								(8)
+							</num>
+							<content eId="art_142_para_8_content">
+								<p>
+									Maloljetnikom se smatra lice koje je navršilo četrnaest godina, a nije navršilo 
+									osamnaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_10">
+							<num>
+								(10)
+							</num>
+							<content eId="art_142_para_10_content">
+								<p>
+									Učiniocem se smatraju izvršilac, saizvršilac, podstrekač i pomagač.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_11">
+							<num>
+								(11)
+							</num>
+							<content eId="art_142_para_11_content">
+								<p>
+									Žrtva je lice kome je protivpravnim djelom koje je u zakonu propisano kao krivično 
+									djelo prouzrokovan fizički ili duševni bol ili patnja, imovinska šteta ili povreda ljudskih prava 
+									i sloboda.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_12">
+							<num>
+								(12)
+							</num>
+							<content eId="art_142_para_12_content">
+								<p>
+									Imovinskom korišću pribavljenom krivičnim djelom smatra se imovinska korist 
+									pribavljena krivičnim djelom, neposredno ili posredno, koja se sastoji od svakog uvećanja 
+									ili sprječavanja umanjenja imovine, do kojeg je došlo izvršenjem krivičnog djela, imovina 
+									za koju je zamijenjena ili sa kojom je sjedinjena ili u koju je pretvorena imovinska korist 
+									pribavljena krivičnim djelom, kao i svaka druga korist koja je dobijena od imovinske koristi 
+									pribavljene krivičnim djelom ili imovine za koju je zamijenjena ili u koju je pretvorena 
+									imovinska korist pribavljena krivičnim djelom, bez obzira da li se nalazi na teritoriji Crne 
+									Gore ili van nje, kao i sve isprave kojima se dokazuje neko imovinsko pravo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_13">
+							<num>
+								(13)
+							</num>
+							<content eId="art_142_para_13_content">
+								<p>
+									Mito, u smislu ovog zakonika, je poklon ili druga protivpravna imovinska ili 
+									neimovinska korist, bez obzira na vrijednost.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_14">
+							<num>
+								(14)
+							</num>
+							<content eId="art_142_para_14_content">
+								<p>
+									Silom se smatra i primjena hipnoze ili omamljujućih sredstava, s ciljem da se neko 
+									protiv svoje volje dovede u nesvjesno stanje ili onesposobi za otpor.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_15">
+							<num>
+								(15)
+							</num>
+							<content eId="art_142_para_15_content">
+								<p>
+									Izborima se smatraju izbori za Skupštinu Crne Gore, Predsjednika Crne Gore, 
+									organe lokalne samouprave i drugi izbori koji se raspisuju i vrše na osnovu Ustava i zakona.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_15a">
+							<num>
+								(15a)
+							</num>
+							<content eId="art_142_para_15a_content">
+								<p>
+									Političkim subjektima, smatraju se subjekti u skladu sa propisom kojim se uređuje 
+									finansiranje političkih subjekata i izbornih kampanja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_15b">
+							<num>
+								(15b)
+							</num>
+							<content eId="art_142_para_15b_content">
+								<p>
+									Izbornom kampanjom, smatra se kampanja u skladu sa propisom kojim se 
+									uređuje finansiranje političkih subjekata i izbornih kampanja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_16">
+							<num>
+								(16)
+							</num>
+							<content eId="art_142_para_16_content">
+								<p>
+									Referendumom se smatra izjašnjavanje građana na kojem se odlučuje o pitanjima 
+									za koja je to utvrđeno Ustavom ili zakonom.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_17">
+							<num>
+								(17)
+							</num>
+							<content eId="art_142_para_17_content">
+								<p>
+									Opojnim drogama smatraju se supstance i preparati koji su propisima zasnovanim 
+									na zakonu proglašeni za opojne droge.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_18">
+							<num>
+								(18)
+							</num>
+							<content eId="art_142_para_18_content">
+								<p>
+									Pokretnom stvari se smatra i svaka proizvedena ili sakupljena energija za davanje 
+									svjetlosti, toplote ili kretanja, telefonski impuls, kao i računarski podatak i računarski 
+									program.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_19">
+							<num>
+								(19)
+							</num>
+							<content eId="art_142_para_19_content">
+								<p>
+									Računarskim sistemom smatra se svaki uređaj ili grupa međusobno povezanih ili 
+									uslovljenih uređaja, od kojih jedan ili više njih, u zavisnosti od programa, vrši automatsku 
+									obradu podataka.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_20">
+							<num>
+								(20)
+							</num>
+							<content eId="art_142_para_20_content">
+								<p>
+									Računarskim podatkom smatra se svako izlaganje činjenica, podataka ili koncepata 
+									u obliku koji je pogodan za obradu u računarskom sistemu, uključujući tu i programe 
+									pomoću kojih računarski sistem vrši svoje funkcije.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_21">
+							<num>
+								(21)
+							</num>
+							<content eId="art_142_para_21_content">
+								<p>
+									Računarskim programom smatra se skup uređenih računarskih podataka na osnovu 
+									kojih računarski sistem vrši svoje funkcije.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_22">
+							<num>
+								(22)
+							</num>
+							<content eId="art_142_para_22_content">
+								<p>
+									Zlonamjerni računarski program je program koji je napravljen da nanese štetu 
+									računaru, računarskoj mreži ili računarskim podacima, koji se bez saglasnosti korisnika 
+									ubacuje u računar sa namjerom ugrožavanja povjerljivosti, cjelovitosti ili dostupnosti 
+									računarskih podataka, aplikacija ili operativnih sistema ili na neki drugi način ometa rad 
+									računara ili računarske mreže.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_23">
+							<num>
+								(23)
+							</num>
+							<content eId="art_142_para_23_content">
+								<p>
+									Podacima o računarskom saobraćaju smatraju se svi računarski podaci koje 
+									generišu računarski sistemi, koji čine lanac komunikacije između dva računarska sistema 
+									koji komuniciraju uključujući i njih same.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_24">
+							<num>
+								(24)
+							</num>
+							<content eId="art_142_para_24_content">
+								<p>
+									Zaštićenim prirodnim dobrom smatra se i dobro koje po propisima o zaštiti prirodnih 
+									dobara uživa prethodnu zaštitu.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_25">
+							<num>
+								(25)
+							</num>
+							<content eId="art_142_para_25_content">
+								<p>
+									Kulturnim dobrom smatra se i dobro koje po propisima o zaštiti kulturnog dobra 
+									uživa prethodnu zaštitu, dio kulturnog dobra i zaštićena okolina nepokretnog kulturnog 
+									dobra.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_26">
+							<num>
+								(26)
+							</num>
+							<content eId="art_142_para_26_content">
+								<p>
+									Novac je metalni i papirni novac ili novac izrađen od nekog drugog materijala koji 
+									je na osnovu zakona u opticaju u Crnoj Gori ili u stranoj državi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_27">
+							<num>
+								(27)
+							</num>
+							<content eId="art_142_para_27_content">
+								<p>
+									Znacima za vrijednost smatraju se i strani znaci za vrijednost.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_28">
+							<num>
+								(28)
+							</num>
+							<content eId="art_142_para_28_content">
+								<p>
+									Motornim vozilom smatra se svako saobraćajno sredstvo na motorni pogon u 
+									suvozemnom, vodenom i vazdušnom saobraćaju.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_29">
+							<num>
+								(29)
+							</num>
+							<content eId="art_142_para_29_content">
+								<p>
+									Ispravom se smatra svaki predmet koji je podoban ili određen da služi kao dokaz 
+									kakve činjenice koja ima značaj za pravne odnose, kao i računarski podatak.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_30">
+							<num>
+								(30)
+							</num>
+							<content eId="art_142_para_30_content">
+								<p>
+									Spis, pismo, pošiljka i dokument mogu biti i u elektronskom obliku.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_31">
+							<num>
+								(31)
+							</num>
+							<content eId="art_142_para_31_content">
+								<p>
+									Članovima porodice ili porodične zajednice smatraju se i bivši bračni supružnici, 
+									krvni srodnici i srodnici iz potpunog usvojenja u pravoj liniji bez ograničenja, a u pobočnoj 
+									liniji zaključno sa četvrtim stepenom, srodnici iz nepotpunog usvojenja, tazbinski srodnici 
+									zaključno sa drugim stepenom, lica koja žive u istom porodičnom domaćinstvu i lica koja 
+									imaju zajedničko dijete ili je dijete na putu da bude rođeno iako nikad nisu živjela u istom 
+									porodičnom domaćinstvu, ako ovim zakonikom nije drukčije određeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_32">
+							<num>
+								(32)
+							</num>
+							<content eId="art_142_para_32_content">
+								<p>
+									Poslom od javnog značaja smatra se obavljanje profesije ili dužnosti koje je 
+									povezano sa povećanim rizikom za bezbjednost lica koje ga obavlja u oblasti javnog 
+									informisanja, zdravstvene zaštite i pravne pomoći pred sudskim i drugim državnim 
+									organima.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_32a">
+							<num>
+								(32a)
+							</num>
+							<content eId="art_142_para_32a_content">
+								<p>
+									Javnim uređajem, u smislu ovog zakonika, smatraju se uređaji za komunalnu, 
+									saobraćajnu, energetsku i elektronsko-komunikacionu infrastrukturu i drugi uređaji u 
+									skladu sa propisima kojima se uređuju komunalne djelatnosti, saobraćaj, energetika, 
+									elektronske komunikacije i druge djelatnosti od javnog interesa.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_32b">
+							<num>
+								(32b)
+							</num>
+							<content eId="art_142_para_32b_content">
+								<p>
+									Digitalna imovina je digitalni prikaz vrijednosti kojom se može digitalno trgovati ili 
+									prenositi i koja se može koristiti kao sredstva razmjene ili u svrhe investiranja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_33">
+							<num>
+								(33)
+							</num>
+							<content eId="art_142_para_33_content">
+								<p>
+									Izraz "neće se kazniti" znači da u tom slučaju nema krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_34">
+							<num>
+								(34)
+							</num>
+							<content eId="art_142_para_34_content">
+								<p>
+									Kad je radnja krivičnog djela određena trajnim glagolom smatra se da je djelo 
+									učinjeno, ako je radnja izvršena jednom ili više puta.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+
+<!--14. GLAVA-->
+			<chapter eId="chp_14">
+				<num>
+					GLAVA ČETRNAESTA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV ŽIVOTA I TIJELA
+				</heading>	
+				<section eId="chp_14_sec_1">
+					<article eId="art_152">
+						<heading>
+							Laka tjelesna povreda
+						</heading>
+						<num>
+							Član 152
+						</num>
+						<paragraph eId="art_152_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_152_para_1_content">
+								<p>
+									Ko drugog lako tjelesno povrijedi ili mu zdravlje lako naruši,
+									kazniće se novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_152_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_152_para_2_content">
+								<p>
+									Ako je takva povreda nanesena oružjem, opasnim oruđem ili drugim sredstvom 
+									podobnim da tijelo teško povrijedi ili zdravlje teško naruši,
+									učinilac će se kazniti zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_152_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_152_para_3_content">
+								<p>
+									Sud može učiniocu djela iz 
+									<ref href="/krivicni#art_152_para_2">
+										stava 2 
+									</ref>	
+									ovog člana izreći sudsku opomenu, ako je učinilac 
+									bio izazvan nepristojnim ili grubim ponašanjem oštećenog.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_152_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_152_para_4_content">
+								<p>
+									Gonjenje za djelo iz 
+									<ref href="/krivicni#art_152_para_1">
+										stava 1 
+									</ref>	
+									ovog člana preduzima se po privatnoj tužbi.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
 
 <!--19. GLAVA-->
 			<chapter eId="chp_19">
@@ -2986,6 +3588,18 @@
 							</content>
 						</paragraph>
 					</article>
+				</section>
+			</chapter>
+
+<!--36. GLAVA-->
+			<chapter eId="chp_36">
+				<num>
+					GLAVA TRIDESET ŠESTA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV VOJSKE CRNE GORE
+				</heading>	
+				<section eId="chp_36_sec_1">
 				</section>
 			</chapter>
 		</body>
