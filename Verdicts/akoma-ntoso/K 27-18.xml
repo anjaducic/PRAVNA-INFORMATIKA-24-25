@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2018-03-20"> 
+                        2018-03-20
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 27/2018
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                   
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="dmrdak" href="/ontology/person/dmrdak" showAs="Dragan Mrdak" />
+                <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljka Lješnjak" />
+                <TLCPerson eId="ssmolovic" href="/ontology/person/ssmolovic" showAs="Smolović Slavenka" />
+                <TLCPerson eId="bs" href="/ontology/person/bs" showAs="B.S." />
+                <TLCPerson eId="aor" href="/ontology/person/aor" showAs="A.O.R." />
+                <TLCPerson eId="bsVictim" href="/ontology/person/bsVictim" showAs="B.Š." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </organization>
+                    , predsjednik vanraspravnog vijeća
+                    <party id="dmrdak" refersTo="#dmrdak" as="#judge">
+                        Dragan Mrdak
+                    </party>
+                    , uz učešće samostalnog referenta zapisničara
+                    <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                        Koviljke Lješnjak
+                    </party>
+                    , u krivičnom predmetu protiv okrivljenog
+                    <party id="bs" refersTo="#bs" as="#defendant">   
+                        B.S.a
+                    </party>
+                    iz B.F., zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="dodati zakon">
+                        člana 220 .stav 1. Krivičnog zakonika CG
+                    </ref>
+                    , odlučujući o sporazumu o priznanju krivice zaključenom dana 21. 02. 2018. godine, između državnog tužioca
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a u Bijelom Polju
+                    </organization>
+                    , 
+                    <party id="ssmolovic" refersTo="#ssmolovic" as="#plaintiff">
+                        Smolović Slavenka
+                    </party>
+                     i okrivljenog
+                    <party id="bs" refersTo="#bs" as="#defendant">
+                        B.S.a
+                    </party>
+                    , donio je dana 20.03.2018 godine,
+                </p>
+            </introduction>
+                <background>
+                    <p> 
+                        P R E S U D U 
+                    </p>
+                    <p>
+                        Okrivljeni
+                        <party id="bs" refersTo="#bs" as="#defendant">
+                            B.S.
+                        </party>
+                        , JMB ..., od oca F.i majke F., rođene R.rođen .... godine u B. p.sa prebivalištem u mjestu Z.L., 
+                        opština B. P., državljanin CG, sa završenom srednjom školom, nezaposlen, razveden otac dvoje djece, lošeg 
+                        imovnog stanja, 
+                    </p>
+                </background>  
+                <decision>
+                    <p>
+                        K r i v j e
+                    </p>
+                    <p>
+                        -Zato što je:
+                    </p>
+                    <p>
+                        Dana 12. 02. 2018 godine, oko 13,30 h, u mjestu Z.L., opština B. P., primjenom grubog nasilja narušio duševni
+                        integritet članu svoje porodice, bivšoj supruzi – oštećenoj
+                        <party id="bsVictim" refersTo="#bsVictim" as="#victim">
+                        B.Š.
+                        </party>
+                        , na način što joj je dok je prilazila kući, sa
+                        terase porodične kuće uputio riječi prijetnje ''zaklaću te, samo dok te uhvatim, dosta je bilo svega,
+                        zapamtićeš ti mene'', da bi dana 15. 02. 2018 godine, oko 21,00 h, do je u svojoj porodičnoj kući razgovarao sa
+                        sinom B.A., uputio oštećenoj riječi prijetnje govoreći ''ubićuje, zaklaću je, samo dok je uhvatim, pokazaću ja
+                        njoj'', koje riječi je čula i ošatećena, pri čemu je bio svjestan svog djela, njegove zabranjenosti i htio njegovo
+                        izvršenje,
+                    </p>
+                    <p>
+                        -čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz
+                         <ref href="dodati zakon">
+                            člana 220. stav 1. Krivičnog zakonika CG
+                        </ref>
+                    </p>
+                    <p>
+                        -za koje mu sud primjenom citiranih zakonskih propisa, i
+                        <ref href="dodati zakon">
+                            čl: 2,
+                        </ref>
+                        <ref href="dodati zakon">
+                            4,
+                        </ref>
+                        <ref href="dodati zakon">
+                            5,
+                        </ref>
+                        <ref href="dodati zakon">
+                            13,
+                        </ref>
+                        <ref href="dodati zakon">
+                            15,
+                        </ref>
+                        <ref href="dodati zakon">
+                            32,
+                        </ref>
+                        <ref href="dodati zakon">
+                            36,
+                        </ref>
+                        <ref href="dodati zakon">
+                            42,
+                        </ref>
+                        <ref href="dodati zakon">
+                            52,
+                        </ref>
+                        <ref href="dodati zakon">
+                            53
+                        </ref>
+                        i
+                        <ref href="dodati zakon">
+                            54, Krivičnog zakonika, 
+                        </ref>
+                        i
+                        <ref href="dodati zakon">
+                            čl: 226,
+                        </ref>
+                        <ref href="dodati zakon">
+                            229
+                        </ref>
+                        i
+                        <ref href="dodati zakon">
+                            374 Zakonika o Krivičnom postupku,
+                        </ref>
+                    </p>
+                    <p>
+                        i z r i č e
+                    </p>
+                    <p>
+                        USLOVNU OSUDU
+                    </p>
+                    <p>
+                        Kojom mu utvrdjuje kaznu zatvora od 6 (šest) mjeseci i istovremeno određuje da se ista neće izvršiti ukoliko
+                        okrivljeni u roku od 2 (dvije) godine ne izvrši novo krivično djelo. U slučaju opoziva uslovne osude
+                        okrivljenom će se u izrečenu kaznu zatvora, kao izdržano uračunati vrijeme provedeno na zadržavanju od
+                        19.02.2018 godine do 22.02.2018 godine.
+                    </p>
+                    <p>
+                        Okrivljeni se obavezuje da ovom sudu na ime paušala plati iznos od 30,00 €, a na ime ostalih troškova
+                        krivičnog postupka iznos od 420,60 €, koje iznose će uplatiti u korist žiro računa broj 832 - 151 - 35 Depozita
+                        novčanih kazni, troškova postupka i paušala u roku od 15 dana od dana pravosnažnosti presude pod
+                        prijetnjom prinudnog izvršenja, s tim što će dokaz o izvršenoj uplati dostaviti krivičnoj pisarnici ovog suda.
+                    </p>
+                </decision>
+                <arguments>
+                    <p>
+                        O b r a z l o ž e nj e
+                    </p>
+                    <p>
+                        <organization id="odt" refersTo="#odt">
+                            Osnovno državno tužilaštvo u Bijelom Polju
+                        </organization>
+                        , podnijelo je ovom sudu dana 22. 02. 2018. godine, sporazum o
+                        priznanju krivice, zaključen dana 21. 02. 2018 godine, između Državnog tužioca 
+                        <organization id="odt" refersTo="#odt">
+                            ODT-a u Bijelom Polju
+                        </organization>
+                        <party id="ssmolovic" refersTo="#ssmolovic" as="#plaintiff">
+                            Smolović Slavenka 
+                        </party>
+                        i okrivljenog
+                        <party id="bs" refersTo="#bs" as="#defendant">   
+                            B.S.a
+                        </party>
+                    </p>
+                    <p>
+                        Na ročištu održanom dana 20. 03. 2018 godine, Predsjednik vanraspranog vijeća je usvojio sporazum o
+                        priznanju krivice zaključen dana 21. 02. 2018 godine, između Državnog tužioca 
+                        <organization id="odt" refersTo="#odt">
+                            ODT-a u Bijelom Polju
+                        </organization>
+                        <party id="ssmolovic" refersTo="#ssmolovic" as="#plaintiff">
+                            Smolović Slavenka 
+                        </party>
+                        i okrivljenog 
+                        <party id="bs" refersTo="#bs" as="#defendant">   
+                            B.S.a
+                        </party>
+                        , te rješenje uručio strankama, dana 20.03.2018 godine, na koje rješenje
+                        su se okrivljeni i državni tužilac 
+                        <organization id="odt" refersTo="#odt">
+                            ODT-a
+                        </organization>
+                        , po prijemu, odrekli prava na žalbu, pa je isto postalo pravosnažno
+                        danom donošenja.
+                    </p>
+                    <p>
+                        Iz dokaza prikupljenih u fazi izviđaja, zapisnika o pregovaranju između stranaka, zapisnika o saslušanju
+                        okrivljenog i sporazuma o priznanju krivice, proizilazi da je okrivljeni
+                        <party id="bs" refersTo="#bs" as="#defendant">   
+                            B.S.
+                        </party>
+                        u vrijeme i na način opisan u izreci
+                        ove presude izvršio krivično djelo koje mu je stavljeno na teret, za koje ga i ovaj sud oglašava krivim.
+                        Ispitujući postignuti sporazum u pogledu odluke o krivičnoj sankciji ovaj sud nalazi da je predlog stranaka
+                        prihvatljiv obzirom da je okrivljeni neosuđivan, lošeg imovnog stanja, razveden, pa u nedostatku otežavajućih
+                        okolnosti sud je mišljenja da će se i uslovnom osudom kojom je okrivljenom utvrdio kaznu zatvora od 6 (šest)
+                        mjeseci sa odgovarajućim rokom provjeravanja od 2 (dvije) godine, prema njemu postići svrha izricanja
+                        uslovne osude iz
+                        <ref href="dodati zakon">
+                            čl. 52. st.2. KZ.
+                        </ref>
+                    </p>
+                    <p>
+                        Odluka o troškovima postupka donijeta je na osnovu odredbe 
+                        <ref href="dodati zakon">
+                            čl. 226 i 229 Zakonika o krivičnom postupku Crne Gore
+                        </ref>
+                        , s tim što je sud prilikom odmjeravanja paušalnog iznosa od 30,00 €, imao u vidu imovno stanje
+                        okrivljenog i dužinu trajanja postupka, dok se troškovi u iznosu od od 420,60 €, odnose na troškove branioca
+                        okrivljenog po službenoj dužnosti 
+                        <party id="aor" refersTo="#aor" as="#lawyer">
+                            A.O.R.
+                        </party>
+                        , u ukupnom iznosu od 354,60 €, od čega na ime pristupa
+                        preuzimanja rješenja o zadržavanju 50,00 €, razmatranje i razgledanje spisa 50,00 €, pisanja žalbe na rješenje
+                        o zadržavanju 100,00 €, prisustva saslušanja okrivljenog i zaključenja sporazuma o priznanju krivice 100,00 €,
+                        na ime fotokopiranja spisa 4,60 € i 50,00 € na ime pristupa ročištu za ispitivanje sporazuma, te troškove
+                        vještačenja po vještaku psihijatru 
+                        <party id="kg" refersTo="#kg" as="#expertMedical">
+                            K.G.u
+                        </party>
+                        iznosu od 66,00 €
+                    </p>
+                    <p>
+                        Imovinsko pravnog zahtjeva nije bilo.
+                    </p>
+                    <p>
+                        Sa iznijetog je odlučeno kao u izreci presude, a shodno 
+                        <ref href="dodati zakon">
+                            čl. 303 Zkp-a CG.
+                        </ref>
+                    </p>
+                </arguments>
+        </judgmentBody> 
+        <conclusions>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLJU
+            </organization>
+            <p>
+                Dana, 20.03.2018 godine
+            </p>
+            <p>
+                ZAPISNIČAR, S U D I J A,
+            </p>
+            <p>
+                <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                    Koviljka Lješnjak
+                </party>
+                <party id="dmrdak" refersTo="#dmrdak" as="#judge">
+                    Dragan Mrdak
+                </party>
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso> 

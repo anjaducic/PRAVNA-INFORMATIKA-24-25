@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+           <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2022-04-19"> 
+                        2022-04-19
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 113/2021
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.BijeloPolje" showAs="Viši sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="bradovic" href="/ontology/person/bradovic" showAs=" Bojana Radović" />
+                <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljka Lješnjak" />
+                <TLCPerson eId="dm" href="/ontology/person/dm" showAs="D.M." />
+                <TLCPerson eId="vz" href="/ontology/person/vz" showAs="V.Z." />
+                <TLCPerson eId="jb" href="/ontology/person/jb" showAs="J.B." />
+                <TLCPerson eId="ff" href="/ontology/person/ff" showAs="F.F." />
+                <TLCPerson eId="mv" href="/ontology/person/mv" showAs="M.V." />
+                <TLCPerson eId="nr" href="/ontology/person/nr" showAs="N.R." />
+                <TLCPerson eId="ah" href="/ontology/person/ah" showAs="A.H." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+            </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p>
+                    U IME CRNE GORE
+                </p>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U B.P.
+                    </organization>
+                    , sudija 
+                    <party id="bradovic" refersTo="#bradovic" as="#judge">
+                        Bojana Radović
+                    </party>
+                    , uz učešće samostalnog referenta-zapisničara 
+                    <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                        Koviljke Lješnjak
+                    </party>
+                    ,
+                    u krivičnom predmetu protiv okrivljenog 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    iz B.P., postupajući po optužnom predlogu 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u B.P. 
+                    </organization>
+                    <ref href="dodati presudu">
+                        KT.br.204/21 
+                    </ref>
+                    od 06.08.2021. godine, kojim je okrivljeni optužen za krivično djelo nasilje u
+                    porodici ili u porodičnoj zajednici iz 
+                    <ref href="dodati zakon">
+                        čl.220 st. 1 Krivičnog zakonika C.G.
+                    </ref>
+                    , nakon održanog glavnog i javnog
+                    pretresa u prisustvu savjetnika u Osnovnom državnom tužilaštvu A. H., okrivljenog 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    i branioca okrivljenog, advokata 
+                    <party id="jb" refersTo="#jb" as="#lawyer">   
+                        J.B. 
+                    </party>
+                    , dana 19.04.2022. godine, donio je i javno objavio
+                </p>
+            </introduction>
+            <background>
+                <p> 
+                    P R E S U D U 
+                </p>
+                <p>
+                    Okrivljeni 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    , JMBG ........., od oca M. i majke M., rođene F., rođen .......... godine u B.P., sa prebivalištem u
+                    naselju P., o.B. P., državljanin C.G., oženjen, otac troje djece, pismen, sa završenih četiri razreda osnovne
+                    škole, nezaposlen, lošeg imovnog stanja, osuđivan
+                </p>
+            </background>
+            <decision>
+                <p>
+                    K r i v j e
+                </p>
+                <p>
+                    Zato što je:
+                </p>
+                <p>
+                    Dana 23.06.2021. godine, u porodičnoj kući u naselju P., o. B.P., sposoban da shvati značaj svog djela i da
+                    upravlja svojim postupcima i svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno,
+                    primjenom grubog nasilja narušio tjelesni i duševni integritet člana svoje porodice, vanbračne supruge
+                    oštećene 
+                    <party id="vz" refersTo="#vz" as="#victim">
+                        V.Z. 
+                    </party>
+                    , na način što je oborio na krevet, počupao za kosu i otvorenim šakama izudarao u predjelu
+                    glave i tijela, kojom prilikom joj je nanio lake tjelesne povrede u vidu otoka u kosmatom dijelu glave, otoka 
+                    kapaka oba oka, otoka u lijevom jagodičnom predjelu i više krvnih podliva u predjelu zadnje strane obje
+                    butine i nagnječenje vrata i grudnog koša,
+                </p>
+                <p>
+                    -čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="dodati zakon">
+                        čl. 220 st.1 Krivičnog zakonika C.G.
+                    </ref>
+                    ,
+                </p>
+                <p>
+                    -pa ga sud, primjenom citiranog zakonskog propisa, te
+                    <ref href="dodati zakon">
+                        čl: 2,
+                    </ref>
+                    <ref href="dodati zakon">
+                        4,
+                    </ref>
+                    <ref href="dodati zakon">
+                        5,
+                    </ref>
+                    <ref href="dodati zakon">
+                        13,
+                    </ref>
+                    <ref href="dodati zakon">
+                        15,
+                    </ref>
+                    <ref href="dodati zakon">
+                        32,
+                    </ref>
+                    <ref href="dodati zakon">
+                        36,
+                    </ref>
+                    <ref href="dodati zakon">
+                        42,
+                    </ref>
+                    <ref href="dodati zakon">
+                        43,
+                    </ref>
+                    <ref href="dodati zakon">
+                        51,
+                    </ref>
+                    i
+                    <ref href="dodati zakon">
+                        54, Krivičnog Zakonika, 
+                    </ref>
+                    i
+                    <ref href="dodati zakon">
+                        čl: 226,
+                    </ref>
+                    <ref href="dodati zakon">
+                        229
+                    </ref>
+                    i
+                    <ref href="dodati zakon">
+                        374 Zakonika o krivičnom postupku C.G.,
+                    </ref>
+                </p>
+                <p>
+                    O S U Đ U J E
+                </p>
+                <p>
+                    Na kaznu zatvora u trajanju od deset mjeseci, u koju kaznu mu se kao izdržano uračunava vrijeme provedeno
+                    u pritvoru počev od od 06.08.2021. godine do 03.09.2021. godine.
+                </p>
+                <p>
+                    Okrivljeni se obavezuje da ovom sudu plati na ime paušala iznos od 30,00 eura, kao i da plati iznos od 187,00
+                    € na ime ostalih troškova postupka, koje iznose će uplatiti na žiro račun Budžeta CG br. 832 - 151 - 35, u roku
+                    od 15 dana, od dana pravnosnažnosti presude, pod prijetnjom prinudnog izvršenja, s tim što je dokaz o
+                    izvršenoj uplati dužan dostaviti krivičnoj pisarnici ovog suda.
+                </p>
+                <p>
+                    Okrivljeni se obavezuje i da plati troškove krivičnog postupka nastale angažovanjem branioca po službenoj
+                    dužnosti, o čijoj visini će biti odlučeno posebnim rješenjem.
+                </p>
+            </decision>
+            <arguments>
+                <p>
+                    O b r a z l o ž e nj e
+                </p>
+                <p>
+                    Optužnim predlogom 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u B.P. 
+                    </organization>
+                    <ref href="dodati presudu">
+                        KT.br. 204/21 
+                    </ref>
+                    od 06.08.2021. godine, optužen je 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika C.G.
+                    </ref>
+                    , na način opisan u izreci presude.
+                </p>
+                <p>
+                    Glavni pretres je održan i zaključen dana 19.04.2022. godine u prisustvu savjetnika u 
+                    Osnovnom državnom tužilaštvu 
+                    <party id="ah" refersTo="#ah" as="#adviser">   
+                        A.H.
+                    </party>
+                    , okrivljenog 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    i branioca okrivljenog, advokata 
+                    <party id="jb" refersTo="#jb" as="#lawyer">   
+                        J. B. 
+                    </party>
+                    , po zamjeničkom punomoćju advokata
+                    <party id="ff" refersTo="#ff" as="#lawyer">   
+                        F. F.
+                    </party>
+                    .
+                </p>
+                <p>
+                    U završnoj riječi savjetnik u 
+                    <organization id="odt" refersTo="#odt">
+                        ODT
+                    </organization>
+                    <party id="ah" refersTo="#ah" as="#adviser">   
+                        A.H.
+                    </party>
+                    ostao je u svemu pri optužnom predlogu protiv okrivljenog, s obzirom
+                    da iz odbrane okrivljenog koja je data na glavnom pretresu održanom dana 01.09.2021. godine, te
+                    medicinske dokumentacije, kao i nalaza i mišljenja vještaka sudske medicine proizilazi da je okrivljeni izvršio
+                    krivično djelo na način kako mu je preciziranim optužnim predlogom stavljeno na teret, pa je predložio da
+                    sud okrivljenog oglasi krivim i da ga osudi na kaznu zatvora u trajanju od šest mjeseci.
+                </p>
+                <p>
+                    Okrivljeni 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    je tokom istražnog postupka je odbio da iznese svoju odbranu.
+                </p>
+                <p>
+                    Na glavnom pretresu je okrivljeni je istakao da u potpunosti priznaje izvršenje krivičnog djela koje mu je
+                    stavljeno na teret. Naveo je da su tog dana i on i supruga bili nervozni i došlo je do konflikta. Posvađali su se i
+                    ona je pokušala da se otruje, uzela je neke tablete, a on je pokušao da ih uzme i možda je, u stvari sigurno da
+                    je bio grub, otimao joj je tablete i obalio je na krevet. Moguće je da je i udarao šakom i počupao za kosu. Ne
+                    sjeća se kako je i gdje tačno udarao, ali zna sigurno da je nije udarao nikakvim predmetom. Sve to se
+                    dešavalo u njihovoj porodičnoj kući i tom prilikom nije više niko bio prisutan. Izrazio je duboko kajanje i
+                    izvinjenje oštećenoj i čitavoj porodici, uz žaljenje što oštećena više nije u njihovoj porodičnoj kući, želi da sve
+                    izglade i da ponovo vodi računa i brigu o porodici, kao i do sada. Obećao je da se više nikada ovo neće
+                    dogoditi i da će je ubuduće poštovati.
+                </p>
+                <p>
+                    Branilac okrivljenog, advokat 
+                    <party id="jb" refersTo="#jb" as="#lawyer">   
+                        J. B. 
+                    </party>
+                    je u završnoj riječi predložio sudu da prilikom odlučivanja ima u vidu da je
+                    okrivljeni priznao izvršenje krivičnog djela, da je u međuvremenu došlo do izmirenja okrivljenog i njegove
+                    supruge – oštećene 
+                    <party id="vz" refersTo="#vz" as="#victim">
+                        V.Z. 
+                    </party>
+                    , da se iskreno kaje i da isto djelo neće ponoviti. Molio je sud da mu izrekne što blažu kaznu.
+                </p>
+                <p>
+                    U završnoj riječi okrivljeni 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    izjavio je da u cjelosti prihvata završnu riječ svoga branioca, posebno
+                    naglašavajući da se nakon kritičnog događaja izmirio sa suprugom, žive zajedno i nakon događaja daje novac
+                    i izdržava porodicu. Istakao je da se isto više nikada neće desiti, jer je oštećena osoba koju najviše voli na
+                    svijetu i ubuduće od njega samo može imati poštovanje i pažnju, jer da mu nije stalo do nje ne bi je ni
+                    sprečavao da popije tablete. Nakon kritičnog događaja liječio se bolnički, jer je i sam pokušao da se otruje
+                    tabletama, a brat ga je pronašao u nesvjesnom stanju , pa ga je Hitna pomoć odvela u bolnicu.
+                </p>
+                <p>
+                    Radi utvrdjivanja odlučnih činjenica i donošenja pravilne i zakonite odluke, sud je na glavnom pretresu
+                    saslušao svjedoka-oštećenu 
+                    <party id="vz" refersTo="#vz" as="#victim">
+                        V.Z. 
+                    </party>
+                    , svjedoke I. P. i . P., izvršio uvid u medicinsku dokumentaciju na ime
+                    oštećene 
+                    <party id="vz" refersTo="#vz" as="#victim">
+                        Z.V
+                    </party>
+                    , pročitao nalaz i mišljenje vještaka psihijatra
+                    <party id="mv" refersTo="#mv" as="#expertMedical">
+                        dr M.V 
+                    </party>
+                    od 19.04.2022. godine i nalaz i mišljenje
+                    vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        N. R.
+                    </party>
+                    od 06. 07. 2021. Godine izvršio uvid u Uvjerenje Ministarstva pravde, ljudskih i manjinskih prava,
+                    broj 05/2-041-12271/21 od 23.09.2021. godine na ime okrivljenog 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    .
+                </p>
+                <p>
+                    Oštećena 
+                    <party id="vz" refersTo="#vz" as="#victim">
+                        V.Z. 
+                    </party>
+                    , kao i svjedoci I. P. i M.P. nijesu svjedočili na glavnom pretresu, jer su iskoristili zakonsko pravo iz 
+                    <ref href="dodati zakon">
+                        čl. 109 Zakonika o krivičnom postupku 
+                    </ref>
+                    da ne svjedoče, s obzirom na srodstvo sa okrivljenim. Iskazi koje su
+                    svjedoci Z.V. i I.P. dali pred tužiocem nisu se mogli koristiti kao dokaz, pa je donijeto rješenje o izdvajanju
+                    zapisnika 
+                    <ref href="dodati presudu">
+                        K.br. 113/21 
+                    </ref>
+                    od 01. 09. 2021. godine, koji su sadržali te iskaze, a razlozi o tome dati su detaljno u
+                    pomenutom rješenju.
+                </p>
+                <p>
+                    Nakon ocjene izvedenih dokaza, kako pojedinačno tako i u međusobnoj povezanosti, a shodno 
+                    <ref href="dodati zakon">
+                        čl.370 Zakonika o krivičnom postupku
+                    </ref>
+                    , sud je zaključio da je okrivljeni izvršio krivično djelo nasilje u porodici ili u
+                    porodičnoj zajednici iz 
+                    <ref href="dodati zakon">
+                        čl. 220 st. 1 Krivičnog zakonika C.G.
+                    </ref>
+                    , te da je za isto kriv.
+                </p>
+                <p>
+                    Imajući u vidu navode iz odbrane okrivljenog, uz ocjenu nalaza i mišljenja 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N. R. 
+                    </party>
+                    , sud je utvrdio da je okrivljeni preduzeo radnje, koje su mu optužbom stavljene na teret. Naime, okrivljeni je priznao da je bio
+                    grub, da je oborio oštećenu na krevet, te da je moguće da je i udarao šakom i počupao za kosu.
+                </p>
+                <p>
+                    Na osnovu nalaza i mišljenja vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    sud je utvrdio da je oštećena zadobila lake tjelesne povrede u
+                    vidu otoka u kosmatom dijelu glave, otoka kapaka oba oka, otoka u lijevom jagodičnom predjelu i više krvnih
+                    podliva u predjelu zadnje strane obje butine i nagnječenje vrata i grudnog koša.Dalje se iz istog nalaza i
+                    mišljenja utvrđuje da su povrede mogle nastati na način kako je okrivljenom stavljeno na teret.
+                </p>
+                <p>
+                    Nalaz vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    je sud prihvatio u potpunosti, cijeneći da je isti dat objektivno, nije bilo okolnosti koje
+                    ga dovode u sumnju, a za dato mišljenje vještak je iznio detaljna i dovoljna objašnjenja.
+                </p>
+                <p>
+                    Na isti način je ocijenjen i nalaz i mišljenje vještaka 
+                    <party id="mv" refersTo="#mv" as="#expertMedical">
+                        dr M.V.
+                    </party>
+                    , koja je angažovana radi provjere uračunljivosti okrivljenog. Iz ovog nalaza i mišljenja je sud utvrdio da kod okrivljenog 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    nijesu zapaženi znaci akutnog,
+                    niti hroničnog duševnog oboljenja, kao ni znaci zaostalog duševnog razvoja. Kod njega je evidentiran
+                    poremećaj ličnosti, specifičan način funkcionisanja ličnosti koji se odlikuje sklonošću ka zloupotrebi alkohola
+                    i agresivnom ponašanju u frustrirajućim situacijama. Ne zapažaju se simptomi psihotičnog procesa, niti
+                    postoje pokazatelji da je ranije imao jasne psihotične produkcije, te je test realnosti kod 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party> 
+                    i aktuelno očuvan. U kritično vrijeme, ponašanje 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    nije bilo pod uticajem alkohola, psihotičnih produkcija, njegova
+                    inteligencija je očuvan, niti su lijekovi koje je pio mogli da utiču na njegovo ponašanje, pa je isti bio sposoban
+                    da shvati značaj svog djela i da predvidi posljedice svog postupanja, ali nije mario za njih. Njegova
+                    sposobnost upravljanja sopstvenim postupcima, u smislu kontrole sopstvenog ponašanja, s obzirom na
+                    dijagnostifikovan poremećaj ličnosti, mogla je biti smanjena ali ne u bitnom stepenu.
+                </p>
+                <p>
+                    Dakle, na osnovu odbrane okrivljenog, kao i nalaza vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    i 
+                    <party id="mv" refersTo="#mv" as="#expertMedical">
+                        dr M.V.
+                    </party>
+                    , sud je utvrdio da je okrivljeni
+                    dana 23.06.2021. godine, u porodičnoj kući u naselju P., o. B.P., sposoban da shvati značaj svog djela i da
+                    upravlja svojim postupcima i svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno,
+                    primjenom grubog nasilja narušio tjelesni i duševni integritet člana svoje porodice, vanbračne supruge
+                    oštećene 
+                    <party id="vz" refersTo="#vz" as="#victim">
+                        V.Z. 
+                    </party>
+                    , na način što je oborio na krevet, počupao za kosu i otvorenim šakama izudarao u predjelu
+                    glave i tijela, kojom prilikom joj je nanio lake tjelesne povrede u vidu otoka u kosmatom dijelu glave, otoka
+                    kapaka oba oka, otoka u lijevom jagodičnom predjelu i više krvnih podliva u predjelu zadnje strane obje
+                    butine i nagnječenje vrata i grudnog koša.
+                </p>
+                <p>
+                    Na ovaj način, radnjama okrivljenog su ostvareni svi elementi krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="dodati zakon">
+                        člana 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    .
+                </p>
+                <p>
+                    Inače, krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="dodati zakon">
+                        čl.220 st.1 Krivičnog zakonika
+                    </ref>
+                    , postoji u slučajevima narušavanja tjelesnog ili duševnog integriteta kao posljedice nečijeg grubog nasilja u porodici ili
+                    u porodičnoj zajednici i za ovo djelo je propisana novčana kazna ili kazna zatvora do dvije godine.
+                </p>
+                <p>
+                    Krivično djelo nasilje u porodici ili u porodičnoj zajednici sastoji se u drskom i bezobzirnom ponašanju, te
+                    primjeni nasilja prema članu porodice ili porodične zajednice. Kako je u konkretnom slučaju okrivljeni bio
+                    svjestan da vrši grubo nasilje prema svojoj vanbračnoj supruzi, odnosno članu svoje porodice i da će
+                    preduzetim radnjama, narušiti njen tjelesni i duševni integritet, krivično djelo je izvršio sa direktnim
+                    umišljajem i za isto je kriv.
+                </p>
+                <p>
+                    Sud nije prihvatio navode iz odbrane okrivljenog da je on, preduzimajući radnje koje su mu stavljene na teret,
+                    pokušavao da spriječi oštećenu da se otruje, jer je takvo kazivanje očigledno usmjereno na olakšanje
+                    sopstvenog položaja u postupku, obzirom da se nikako ne može logički opravdati npr . čupanje za kosu u cilju
+                    sprečavanja nekog lica da popije ljekove radi trovanja. Posebno u konkretnim okolnostima, odnosno da su u
+                    pitanju supružnici i da je oštećena, kao ženska osoba, sasvim sigurno fizički slabija. Pri tom, okrivljeni nije
+                    dao objašnjenje zašto bi to eventualno morao da radi u cilju sprečavanja trovanja. Okrivljeni nije dao nikakvo
+                    objašnjenje, niti naveo o kakvoj se svađi radilo, jer bi očigledno morao da postoji neki veoma važan razlog za
+                    oštećenu pri toj svađi da bi se odlučila da pokuša trovanje ljekovima. Dakle, takvog objašnjenja nema, a
+                    okrivljeni, kao suprug oštećene bi sasvim vjerovatno morao znati za postojanje takvih razloga, odnosno
+                    razloga koji motivišu njegovu suprugu na samoubistvo. S druge strane, postupanje okrivljenog prema
+                    oštećenoj na način kako je optužen, dakle takva primjena sile, može biti razlog žrtvi, odnosno oštećenoj da
+                    pokuša samoubistvo. Uz ovo, imajući u vidu mišljenje vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    , (obzirom da je oštećena dovedena u
+                    Hitnu pomoć u besvjesnom stanju) da je vjerovatnije da se oštećena nalazila u besvjesnom stanju zbog
+                    trovanja ljekovima, nego zbog zadobijenih povreda, sud zaključuje da se događaj odvijao upravo onako kako
+                    je stavljeno na teret okrivljenom, a da je to za posledicu imalo fizičko povređivanje oštećene, kao i povredu
+                    njenog duševnog integriteta, a što je na kraju dovelo do odluke oštećene da pokuša trovanje ljekovima
+                </p>
+                <p>
+                    Iz uvjerenja izdatog od strane Ministarstva pravde, ljudskih i manjinskih prava C.G., broj 05/2-041-12271/21 od
+                    23.09.2021. godine, na ime okrivljenog, utvrđeno je da je okrivljeni 
+                    <party id="dm" refersTo="#dm" as="#defendant">   
+                        D.M. 
+                    </party>
+                    osuđivan i to presudom 
+                    <organization id="vs" refersTo="#vs">
+                        Višeg suda u B.P. 
+                    </organization>
+                    <ref href="dodati presudu">
+                        K.br. 63/03 
+                    </ref>
+                    od 26.02.2004. godine, zbog krivičnog djela iz 
+                    <ref href="dodati zakon">
+                        čl. 245 st. 3 Krivičnog zakonika
+                    </ref>
+                    , za koje je osuđen na kaznu zatvora u trajanju od 6 mjeseci, presudom 
+                    <organization id="os" refersTo="#os">
+                        Osnovnog suda u B.P. 
+                    </organization>
+                    <ref href="dodati presudu">
+                        K.br. 473/04 
+                    </ref>
+                    od 16.09.2005. godine, zbog krivičnog djela iz 
+                    <ref href="dodati zakon">
+                        čl. 152 st. 1 Krivičnog zakonika
+                    </ref>
+                    , za koje je osuđen na kaznu zatvora u trajanju od 2 mjeseca i presudom Osnovnog suda u B.P. 
+                    <ref href="dodati presudu">
+                        K.br. 135/08 
+                    </ref>
+                    od 25.11.2008. godine, zbog krivičnog djela iz 
+                    <ref href="dodati zakon">
+                        čl. 376 st. 3 Krivičnog zakonika
+                    </ref>
+                    , za koje je osuđen na kaznu zatvora u trajanju od 4 mjeseca.
+                </p>
+                <p>
+                    Prilikom odlučivanja o vrsti i visini krivične sankcije, sud je imao u vidu okolnosti predviđene 
+                    <ref href="dodati zakon">
+                        čl. 42 st. 1 
+                    </ref>
+                    i 
+                    <ref href="dodati zakon">
+                        3 Krivičnog zakonika
+                    </ref> 
+                    , pa je od olakšavajućih okolnosti cijenio da se radi o porodičnom čovjeku, ocu troje djece,
+                    od kopjih jedno maloljetno, te da je nakon kritičnog događaja došlo do izmirenja okrivljenog sa oštećenom,
+                    kao i to što je priznao izvršenje radnji koje su mu stavljene na teret, a za koje ne bi bilo dokaza u potpunosti. S
+                    druge strane, od otežavajućih okolnosti sud je cijenio raniju višestruku osuđivanost okrivljenog, koja ukazuje
+                    da se radi o osobi sklonoj vršenju krivičnih djela, a posebno je cijenjana težina povrede zaštićenog dobra,
+                    odnosno posledica koja je nastupila izvršenjem krivičnog djela, a koja se ne ogleda samo u pričinjavanju
+                    lakih tjelesnih povreda i to brojnih, već i u teškom povređivanju duševnog integriteta oštećene, koje se
+                    očigledno manifestovalo i pokušajem trovanja ljekovima. Za postojanje ovog djela ne bi nužno ni bilo
+                    postojanje povreda, pa je mjera preko potrebne za postojanje djela, cijenjena kao otežavajuća okolnost.
+                    Način na koji je ovo djelo izvršeno, a koji se ogleda i u grubom i u ponižavajućem postupanju prema
+                    oštećenoj, koja je kao žena i fizički slabija i koja, po pravilu, primjenu nasilja teže doživljava, je okolnost koja
+                    je takođe posebno cijenjena kao otežavajuća.
+                </p>
+                <p>
+                    Imajući u vidu sve pomenute okolnosti, sud je okrivljenog osudio na kaznu zatvora u trajanju od deset
+                    mjeseci, smatrajući da će se tom kaznom postići svrha kažnjavanja predviđena 
+                    <ref href="dodati zakon">
+                        čl. 32 Krivičnog zakonika
+                    </ref>  
+                    , odnosno da će se istom uticati na okrivljjenog i na druge da ne čine krivična djela, a ova kazna je adekvatan
+                    izraz društvene osude za krivično djelo i obaveze poštovanja zakona.
+                </p>
+                <p>
+                    U smislu 
+                    <ref href="dodati zakon">
+                        čl. 51 Krivičnog zakonika
+                    </ref>
+                    , okrivljenom je u izrečenu kaznu zatvora, uračunato vrijeme provedeno u
+                    pritvoru počev od 06.08.2021. godine do 03.09.2021. godine.
+                </p>
+                <p>
+                    Okrivljeni je, u skladu sa 
+                    <ref href="dodati zakon">
+                        čl. 226 
+                    </ref>
+                    i 
+                    <ref href="dodati zakon">
+                        229 Zakonika o krivičnom postupku
+                    </ref>
+                    , obavezan da plati ovom sudu na ime
+                    paušala iznos od 30,00 €, pri kojem određivanju troškova je sud imao u vidu složenost i trajanje krivičnog
+                    postupka, te imovinske prilike okrivljenog. Okrivljeni je obavezan i da plati ostale troškove krivičnog
+                    postupka u visini od 187,00 €, koji se odnose na troškove vještačenja od strane vještaka medicinske struke 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    u iznosu od 60,50€ i troškove vještačenja od strane vještaka 
+                    <party id="mv" refersTo="#mv" as="#expertMedical">
+                        dr M.V. 
+                    </party> 
+                    u iznosu od 126,50€.
+                </p>
+                <p>
+                    O troškovima nastalim angažovanjem branioca po službenoj dužnosti, sud će odlučiti posebnim rješenjem.
+                </p>
+                <p>
+                    Imovinsko-pravnog zahtjeva nije bilo.
+                </p>
+                <p>
+                    Sa iznijetih razloga, shodno 
+                    <ref href="dodati zakon">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    , odlučeno je kao u izreci presude.
+                </p>
+            </arguments>
+        </judgmentBody>
+         <conclusions>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U B.P.
+            </organization>
+            <p>
+                Dana, 19.04.2022. godine
+            </p>
+            <p>
+                Zapisničar, S U D I J A,
+            </p>
+            <p>
+                <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                    Koviljke Lješnjak
+                </party>
+                <party id="bradovic" refersTo="#bradovic" as="#judge">
+                    Bojana Radović
+                </party>
+            </p>
+        </conclusions>
+    </judgment>
+<akomaNtoso>
