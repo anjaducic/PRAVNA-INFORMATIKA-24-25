@@ -3310,9 +3310,63 @@
 							</content>
 						</paragraph>
 					</article>
+					<article eId="art_245">
+						<heading>
+							Neosnovano dobijanje i korišćenje kredita i druge pogodnosti
+						</heading>
+						<num>
+							Član 245
+						</num>
+						<paragraph eId="art_245_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_245_para_1_content">
+								<p>
+									Ko lažnim prikazivanjem činjenica ili njihovim prikrivanjem dobije za sebe ili drugog
+									kredit, subvenciju ili drugu pogodnost iako za to ne ispunjava propisane uslove,
+									kazniće se novčanom kaznom ili zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_245_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_245_para_2_content">
+								<p>
+									Ko dobijeni kredit, subvenciju ili drugu pogodnost iskoristi za drugu namjenu od one
+									za koju mu je kredit, subvencija ili druga pogodnost odobrena,
+									kazniće se novčanom kaznom ili zatvorom do dvije godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_245_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_245_para_3_content">
+								<p>
+									Za djelo iz st. 1 i 2 ovog člana, kazniće se propisanom kaznom i odgovorno lice u
+									privrednom društvu ili drugom subjektu privrednog poslovanja ako su kredit, subvencija ili
+									druga pogodnost pribavljeni za privredno društvo ili drugi subjekt privrednog poslovanja
+									ili ako su nenamjenski korišćeni od strane tih subjekata.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_245_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_245_para_4_content">
+								<p>
+									Ako je djelo iz stava 1 ovog člana učinjeno na štetu finansijskih interesa Evropske
+									unije, učinilac će se kazniti kaznom propisanom za to djelo.
+								</p>
+							</content>
+						</paragraph>
 				</section>
 			</chapter>
-
 
 <!--27. GLAVA-->
 			<chapter eId="chp_27">
@@ -3767,6 +3821,95 @@
 					KRIVIČNA DJELA PROTIV DRŽAVNIH ORGANA
 				</heading>	
 				<section eId="chp_30_sec_1">
+					<article eId="art_376">
+						<heading>
+							Napad na službeno lice u vršenju službene dužnosti
+						</heading>
+						<num>
+							Član 376
+						</num>
+						<paragraph eId="art_376_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_376_para_1_content">
+								<p>
+									Ko napadne ili prijeti da će napasti službeno lice u vršenju službene dužnosti,
+									kazniće se zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_376_para_2_content">
+								<p>
+									Ako je pri izvršenju djela iz 
+									<ref href="/krivicni#art_376_para_1">
+										stava 1 
+									</ref>
+									ovog člana službenom licu nanesena laka tjelesna
+									povreda ili je prijećeno upotrebom oružja,
+									učinilac će se kazniti zatvorom od tri mjeseca do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_376_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_376_para_1">
+										st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_376_para_2">
+										2 
+									</ref>
+									ovog člana učinjeno prema sudiji ili državnom tužiocu u vezi
+									sa vršenjem njihove sudijske, odnosno tužilačke dužnosti ili službenom licu u vezi sa
+									vršenjem poslova javne ili nacionalne bezbjednosti,
+									učinilac će se kazniti zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_376_para_4_content">
+								<p>
+									Za pokušaj djela iz 
+									<ref href="/krivicni#art_376_para_1">
+										stava 1 
+									</ref>
+									ovog člana kazniće se.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_376_para_5_content">
+								<p>
+									Učinilac djela iz 
+									<ref href="/krivicni#art_376_para_1">
+										st. 1 
+									</ref>
+									do 
+									<ref href="/krivicni#art_376_para_3">
+										3 
+									</ref>
+									ovog člana koji je bio izazvan nezakonitim ili grubim
+									postupanjem službenog lica može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
 					<article eId="art_381">
 						<heading>
 							Skidanje i povreda službenog pečata i znaka
