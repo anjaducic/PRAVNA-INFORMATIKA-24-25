@@ -43,7 +43,7 @@
         </meta>
         <judgmentBody>
             <introduction>
-                <p>
+                <p class="subtitle">
                     U IME CRNE GORE
                 </p>
                 <p>
@@ -88,7 +88,7 @@
                 </p>
             </introduction>
             <background>
-                <p> 
+                <p class="subtitle"> 
                     P R E S U D U 
                 </p>
                 <p>
@@ -102,7 +102,7 @@
                 </p>
             </background>
             <decision>
-                <p>
+                <p class="subtitle">
                     K r i v j e
                 </p>
                 <p>
@@ -176,7 +176,7 @@
                         374 Zakonika o krivičnom postupku C.G.,
                     </ref>
                 </p>
-                <p>
+                <p class="subtitle">
                     O S U Đ U J E
                 </p>
                 <p>
@@ -195,7 +195,7 @@
                 </p>
             </decision>
             <arguments>
-                <p>
+                <p class="subtitle">
                     O b r a z l o ž e nj e
                 </p>
                 <p>
@@ -584,10 +584,10 @@
             </arguments>
         </judgmentBody>
          <conclusions>
-            <organization id="os" refersTo="#os">
+            <organization class="subtitle" id="os" refersTo="#os">
                 OSNOVNI SUD U B.P.
             </organization>
-            <p>
+            <p class="subtitle">
                 Dana, 19.04.2022. godine
             </p>
             <p>
@@ -603,4 +603,4 @@
             </p>
         </conclusions>
     </judgment>
-<akomaNtoso>
+</akomaNtoso>

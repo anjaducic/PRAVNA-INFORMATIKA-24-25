@@ -41,7 +41,7 @@
         </meta>
         <judgmentBody>
             <introduction>
-                <p>
+                <p class="subtitle">
                     U IME CRNE GORE
                 </p>
                 <p>
@@ -91,7 +91,7 @@
                 </p>
             </introduction>
             <background>
-                <p> 
+                <p class="subtitle"> 
                     P R E S U D U 
                 </p>
                 <p>
@@ -106,7 +106,7 @@
                 </p>
             </background>
             <decision>
-                <p>
+                <p class="subtitle">
                     K r i v j e
                 </p>
                 <p>
@@ -194,7 +194,7 @@
                 <p>
                     i z r i č e
                 </p>
-                <p>
+                <p class="subtitle">
                     USLOVNU OSUDU
                 </p>
                 <p>
@@ -215,7 +215,7 @@
                 </p>
             </decision>
             <arguments>
-                <p>
+                <p class="subtitle">
                     O b r a z l o ž e nj e
                 </p>
                 <p>
@@ -655,10 +655,10 @@
             </arguments>
         </judgmentBody>
         <conclusions>
-            <organization id="os" refersTo="#os">
+            <organization class="subtitle" id="os" refersTo="#os">
                 OSNOVNI SUD U BIJELOM POLJU
             </organization>
-            <p>
+            <p class="subtitle">
                 Dana, 05. 07. 2016 godine
             </p>
             <p>

@@ -40,7 +40,7 @@
         </meta>
         <judgmentBody>
             <introduction>
-                <p>
+                <p id="subtitle">
                     U IME CRNE GORE
                 </p>
                 <p>
@@ -86,7 +86,7 @@
                 </p>
             </introduction>
             <background>
-                <p>
+                <p id="subtitle">
                     P R E S U D U
                 </p>
                 <p>
@@ -100,7 +100,7 @@
                 </p>
             </background>
             <decision>
-                <p>
+                <p id="subtitle">
                     K R I V J E
                 </p>
                 <p>
@@ -167,7 +167,7 @@
                     </ref>
                     i z r i č e,
                 </p>
-                <p>
+                <p id="subtitle">
                     USLOVNU OSUDU
                 </p>
                 <p>
@@ -185,7 +185,7 @@
                 </p>
             </decision>
             <arguments>
-                <p>
+                <p id="subtitle">
                     O b r a z l o ž e nj e
                 </p>
                 <p>
@@ -443,10 +443,10 @@
             </arguments>
         </judgmentBody>
         <conclusions>
-            <organization id="os" refersTo="#os">
+            <organization class="subtitle" id="os" refersTo="#os">
                 OSNOVNI SUD U BIJELOM POLJU
             </organization>
-            <p>
+            <p id="subtitle">
                 dana 10. 10. 2013 godine,
             </p>
             <p>

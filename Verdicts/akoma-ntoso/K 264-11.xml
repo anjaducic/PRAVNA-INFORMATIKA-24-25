@@ -37,7 +37,7 @@
         </meta>
         <judgmentBody>
             <introduction>
-                <p>
+                <p class="subtitle">
                     U IME NARODA
                 </p>
                 <p>
@@ -86,7 +86,7 @@
                 </p>
             </introduction>
             <background>
-                <p> 
+                <p class="subtitle"> 
                     P R E S U D U 
                 </p>
                 <p>
@@ -100,7 +100,7 @@
                 </p>
             </background>
             <decision>
-                <p>
+                <p class="subtitle">
                     K r i v j e
                 </p>
                 <p>
@@ -162,7 +162,7 @@
                     </ref>
                     ,
                 </p>
-                <p>
+                <p class="subtitle">
                     O S U DJ U J E
                 </p>
                 <p>
@@ -182,7 +182,7 @@
                 </p>
             </decision>
             <arguments>
-                <p>
+                <p class="subtitle">
                     O b r a z l o ž e nj e
                 </p>
                 <p>
@@ -432,16 +432,16 @@
                         Sa izloženog a u smislu odredbi 
                     <ref href="dodati zakon">
                         čl.364. ZKP-a
-                    <ref>
+                    </ref>
                     , odlučeno je kao u izreci presude.
                 </p>
-            </argument>
+            </arguments>
         </judgmentBody>
          <conclusions>
-            <organization id="os" refersTo="#os">
+            <organization class="subtitle" id="os" refersTo="#os">
                 OSNOVNI SUD U BIJELOM POLJU
             </organization>
-            <p>
+            <p class="subtitle">
                 Dana, 29.06.2011. godine
             </p>
             <p>
