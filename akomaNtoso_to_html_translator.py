@@ -287,7 +287,7 @@ def law_xml_act_to_html(xml_file, output_html):
 
 
 
-
+#kod za prevodjenje presuda u html
 """
 input_folder = "Verdicts/akoma-ntoso"
 output_folder = "Verdicts/html"
@@ -307,7 +307,8 @@ for filename in os.listdir(input_folder):
             print(f"Greska pri obradi fajla {filename}: {e}")
 """
 
-
+#kod za prevodjenje krivicnog zakona u html
+"""
 input_folder = "Laws/akoma-ntoso"
 output_folder = "Laws/html"
 
@@ -324,4 +325,4 @@ for filename in os.listdir(input_folder):
             print(f"Generisan HTML: {output_path}")
         except Exception as e:
             print(f"Greska pri obradi fajla {filename}: {e}")
-            
+"""
