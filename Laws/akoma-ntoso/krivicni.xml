@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
-	<act id="krivicni" name="Krivicni zakonik Crne Gore">
+	<act id="krivicni" name="Krivični zakonik Crne Gore">
 		<meta>
 			<identification source="#dunje">
 				<FRBRWork>
@@ -3365,6 +3365,7 @@
 								</p>
 							</content>
 						</paragraph>
+					</article>
 				</section>
 			</chapter>
 
