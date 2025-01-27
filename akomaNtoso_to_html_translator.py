@@ -99,7 +99,7 @@ def verdict_xml_to_html(xml_file, output_html):
                 link_text = escape(child.text.strip()) if child.text else ""
                 if href.startswith("/krivicni#"):
                     section_id = href.split("#")[-1]
-                    html_content += f' <a href="krivicni.html#{section_id}" target="_blank">{link_text}</a> '
+                    html_content += f' <a href="../../Laws/html/krivicni.html#{section_id}" target="_blank">{link_text}</a> '
                 else:
                     html_content += f' <a href="{escape(href)}" target="_blank">{link_text}</a> '
             else:
@@ -288,7 +288,7 @@ def law_xml_act_to_html(xml_file, output_html):
 
 
 #kod za prevodjenje presuda u html
-"""
+
 input_folder = "Verdicts/akoma-ntoso"
 output_folder = "Verdicts/html"
 
@@ -305,7 +305,7 @@ for filename in os.listdir(input_folder):
             print(f"Generisan HTML: {output_path}")
         except Exception as e:
             print(f"Greska pri obradi fajla {filename}: {e}")
-"""
+
 
 #kod za prevodjenje krivicnog zakona u html
 """
