@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni Sud u Bijelom Polju</FRBRauthor>
+          <FRBRdate date="2019-06-28">2019-06-28</FRBRdate>
+          <FRBRtitle>K 113/2019</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+        <TLCPerson eId="dmrdak" href="/ontology/person/dmrdak" showAs="Dragan Mrdak" />
+        <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljka Lješnjak" />
+        <TLCPerson eId="mi" href="/ontology/person/mi" showAs="M.I." />
+        <TLCPerson eId="nisavic" href="/ontology/person/nisavic" showAs="Nišavić Tanje" />
+        <TLCPerson eId="md" href="/ontology/person/md" showAs="adv. M. D." />
+        <TLCPerson eId="miz" href="/ontology/person/miz" showAs="Mi. Z." />
+        <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+        <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          <organization id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac 
+          <party id="dmrdak" refersTo="#dmrdak" as="#judge">Dragan Mrdak</party>, uz učešće samostalnog referenta zapisničara 
+          <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">Koviljka Lješnjak</party>, rješavajući po optužnom predlogu 
+          <organization id="odt" refersTo="#odt">Osnovno državno tužilaštvo u Bijelom Polju</organization>, 
+          Kt. br. 162/19 od 20.06.2019. godine, podnijetom protiv okrivljenog 
+          <party id="mi" refersTo="#mi" as="#defendant">M.I.</party> iz M., zbog krivičnog djela nasilje u porodici ili porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_1">čl. 220 st.1 Krivičnog zakonika Crne Gore</ref>, nakon održanog glavnog i javnog pretresa, u prisustvu državne tužiteljke u ODT-u u Bijelom Polju 
+          <party id="nisavic" refersTo="#nisavic" as="#plaintiff">Nišavić Tanje</party>, okrivljenog 
+          <party id="mi" refersTo="#mi" as="#defendant">M.I.</party>, njegovog branioca po službenoj dužnosti 
+          <party id="md" refersTo="#md" as="#lawyer">adv. M. D.</party> i oštećene 
+          <party id="miz" refersTo="#miz" as="#victim">Mi. Z.</party>, dana 28.06.2019. godine, donio je i objavio
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">P R E S U D U</p>
+        <p>
+          Okrivljeni 
+          <party id="mi" refersTo="#mi" as="#defendant">M.I.</party>, JMBG …, od oca D. i majke Lj., rođen u V., rođen …... godine u B.P., sa prebivališem u M., državljanin Crne Gore, pismen, govori crnogorski jezik, sa završenom srednjom školom, nezaposlen, oženjen, otac sedmoro maloljetne djece, srednjeg imovnog stanja, osuđivan presudom 
+          <organization id="os" refersTo="#os">Osnovnog suda u Bijelom Polju</organization> 
+          K. br. 217/16 od 06.05.2017. godine, zbog krivičnog djela iz 
+          <ref href="/krivicni#art_152_para_2">čl. 152 st.2 u vezi st.1 KZ CG</ref>, na kaznu zatvora od 3 (tri) mjeseca, uslovno na jednu godinu.
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">K r i v j e</p>
+        <p>
+          "Dana 16.06.2019. godine, oko 17,00 časova, u mjestu M – S., opština M., u kolibi (vlasništvo V. M.), svjestan svoga djela čije je izvršenje htio iako je znao da je djelo zabranjeno, u alkoholisanom stanju, primjenom grubog nasilja narušio tjelesni i duševni integritet člana svoje porodice – supruge oštećene 
+          <party id="miz" refersTo="#miz" as="#victim">M. Z.</party>, na način što je odgurnuo sto na kome se nalazilo posuđe, koje se tom prilikom polomilo, a kada je oštećena skupila polomljeno posuđe, počupao je rukama za kosu i pesnicama je izudarao u predjelu glave, da bi je zatim istjerao iz kolibe, a kada se oštećena na njegov poziv vratila, još jednom je udario pesnicom u glavu, kojom prilikom joj je nanio lake tjelesne povrede u vidu potkožnog krvnog podliva u potiljačnom predjelu i krvnog podliva u predjelu desne polovine donje usne."
+        </p>
+        <p>
+          – čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_1">čl. 220 st.1</ref> Krivičnog zakonika Crne Gore,
+        </p>
+        <p>
+          – za koje ga sud primjenom citiranog zakonskog propisa te čl. 2, 4, 5, 13, 15, 32, 36, 42, i čl. 51 Krivičnog zakonika te čl. 226, 229, i 374 Zakonika o krivičnom postupku,
+        </p>
+        <p class="subtitle">O S U Đ U J E</p>
+        <p>
+          Na kaznu zatvora od 30 (trideset) dana, u koju kaznu mu se kao izdržano uračunava vrijeme provedeno u pritvoru od 16.06.2019. do 28.06.2019. godine.
+        </p>
+        <p>
+          Okrivljeni se obavezuje da u roku od 15 dana od dana pravosnažnosti presude na ime paušala plati iznos od 30,00 €, kao i da plati iznos od 104,50 € na ime troškova vještačenja, kao i troškove za branioca po službenoj dužnosti, o kojima će sud odlučiti posebnim rješenjem, a koje će biti uplaćene na žiro račun br. 832-151-35 Depozita novčanih kazni, troškova postupka i paušala ovog suda, uz obavezu dostavljanja dokaza o uplati.
+        </p>
+        <p>
+          Imovinsko pravnog zahtjeva nije bilo.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">O b r a z l o ž e nj e</p>
+        <p>
+          Optužnim predlogom 
+          <organization id="odt" refersTo="#odt">Osnovno državno tužilaštvo u Bijelom Polju</organization>, Kt. br. 162/19 od 20.06.2019. godine, optužen je 
+          <party id="mi" refersTo="#mi" as="#defendant">M.I.</party> iz M., da je izvršio krivično djelo nasilje u porodici ili porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_1">čl. 220 st.1 Krivičnog zakonika Crne Gore</ref>.
+        </p>
+        <p>
+          Glavni pretres je održan i zaključen u prisustvu državne tužiteljke u ODT-u u Bijelom Polju 
+          <party id="nisavic" refersTo="#nisavic" as="#plaintiff">Nišavić Tanje</party>, okrivljenog 
+          <party id="mi" refersTo="#mi" as="#defendant">M.I.</party>, njegovog branioca po službenoj dužnosti 
+          <party id="md" refersTo="#md" as="#lawyer">adv. M. D.</party> i oštećene 
+          <party id="miz" refersTo="#miz" as="#victim">Mi. Z.</party>.
+        </p>
+        <p>
+          Državna tužiteljka u završnoj riječi ostala je pri podnijetom optužnom predlogu, dok je okrivljeni u bitnom priznao izvršenje djela, čime su svi izvedeni dokazi nesporno utvrdili da je izvršio predmetno krivično djelo.
+        </p>
+        <p>
+          U odbrani je okrivljeni istakao da je sa suprugom, u braku od 2000. godine, imao porodične nesuglasice vezane za novčane obaveze, te da je do konflikta došlo nakon verbalne rasprave. Branilac je naglasio kako je okrivljenik pokazao iskreno kajanje, a oštećena je, prema medicinskoj dokumentaciji i vještačenjima, zadobila lake tjelesne povrede uz povremeno narušavanje duševnog integriteta.
+        </p>
+        <p>
+          Sud, cijeneći odbranu okrivljenog i sve prikupljene dokaze, utvrdio je činjenično stanje i zaključio da je okrivljeni, djelujući s umišljajem i u alkoholisanom stanju, izvršio krivično djelo nasilje u porodici ili porodičnoj zajednici, te je stoga kriv.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>
+      <p class="subtitle">Dana, 28.06.2019. godine</p>
+      <p>ZAPISNIČAR, S U D I J A,</p>
+      <p>
+        <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">Koviljka Lješnjak</party>
+        <party id="dmrdak" refersTo="#dmrdak" as="#judge">Dragan Mrdak</party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
