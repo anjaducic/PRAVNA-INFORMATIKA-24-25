@@ -1,7 +1,6 @@
 package com.example.pravnaInformatika.backend.Verdict.Controller;
 
-import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
-import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
+import com.example.pravnaInformatika.backend.Verdict.Service.LawService;
 import com.example.pravnaInformatika.backend.Verdict.Service.VerdictService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,18 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.util.List;
-
 @RestController
-@RequestMapping("/api/verdict")
-public class VerdictController {
+@RequestMapping("/api/law")
+public class LawController {
 
     @Autowired
-    private VerdictService verdictService;
+    private LawService lawService;
 
-    @GetMapping("/all")
-    public ResponseEntity<List<Verdict>> getAllVerdicts(){
-        List<Verdict> verdicts = verdictService.getAll();
-        return ResponseEntity.ok(verdicts);
+    @GetMapping()
+    public ResponseEntity<String> getLaw() throws IOException {
+        String law = lawService.getLaw();
+        return ResponseEntity.ok(law);
     }
 }
