@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>OSNOVNI SUD U BIJELOM POLJU</FRBRauthor>
+          <FRBRdate date="2016-03-15">2016-03-15</FRBRdate>
+          <FRBRtitle>K 29/2016</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju"/>
+        <TLCPerson eId="ivan_adamovic" href="/ontology/person/ivan_adamovic" showAs="Ivan Adamović"/>
+        <TLCPerson eId="draginja_boskovic" href="/ontology/person/draginja_boskovic" showAs="Draginja Bošković"/>
+        <TLCPerson eId="rov" href="/ontology/person/rov" showAs="R.O V."/>
+        <TLCPerson eId="knezevic" href="/ontology/person/knezevic" showAs="Banka Kneževića"/>
+        <TLCPerson eId="vj" href="/ontology/person/vj" showAs="V.J."/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          <organization id="os" refersTo="#os">
+            OSNOVNI SUD U BIJELOM POLJU
+          </organization>,
+          sudija pojedinac 
+          <party id="ivan_adamovic" refersTo="#ivan_adamovic" as="#judge">
+            Ivan Adamović
+          </party>,
+          uz učešće samostalnog referenta zapisničara 
+          <party id="draginja_boskovic" refersTo="#draginja_boskovic" as="#clerk">
+            Draginja Bošković
+          </party>,
+          u krivičnom predmetu protiv okrivljenog 
+          <party id="rov" refersTo="#rov" as="#defendant">
+            R.O V.
+          </party>
+          iz Bijelog Polja, zbog krivičnog djela nasilje u porodici ili porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_2">čl. 220 st. 2 u vezi st. 1 Krivičnog zakonika CG</ref>,
+          po optužnom predlogu 
+          <organization id="odt" refersTo="#odt">
+            Osnovno državno tužilaštvo u Bijelom Polju
+          </organization>
+          , Kt. br. 34/16 od 16.02.2016. godine, nakon održanog usmenog, glavnog i javnog pretresa, u prisustvu
+          <party id="knezevic" refersTo="#knezevic" as="#plaintiff">
+            Banka Kneževića
+          </party>,
+          okrivljenog 
+          <party id="rov" refersTo="#rov" as="#defendant">
+            R.O V.
+          </party>
+          i oštećene 
+          <party id="vj" refersTo="#vj" as="#victim">
+            V.J.
+          </party>,
+          dana 15.03.2016. godine, donio je i objavio
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">
+          P R E S U D U
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="rov" refersTo="#rov" as="#defendant">
+            R.O V.
+          </party>
+          , -JMBG- …, od oca R., majke D., rođene V., rođen … godine u Bijelom Polju, sa prebivalištem u mjestu B.S., opština Bijelo Polje, državljanin Crne Gore, nezaposlen, otac troje maloljetne djece, završio OŠ, lošeg imovnog stanja, osuđivan presudom 
+          <organization id="os" refersTo="#os">
+            Osnovnog suda u Bijelom Polju
+          </organization>
+          K. br. 616/10 od 22.12.2010. godine, zbog krivičnog djela iz 
+          <ref href="/krivicni#art_239_para_1">čl. 239 st. 1 KZ CG</ref>
+          i osuđen na kaznu zatvora od 30 dana uslovno na jednu godinu.
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">
+          K R I V J E
+        </p>
+        <p>
+          -Zato što je:
+        </p>
+        <p>
+          Dana 01.02.2016. godine, oko 19:30h, u mjestu B.S., opština Bijelo Polje, u porodičnoj kući, primjenom grubog nasilja, ugrozio je tjelesni i duševni integritet člana svoje porodice – vanbračne supruge – oštećene 
+          <party id="vj" refersTo="#vj" as="#victim">
+            V.J.
+          </party>
+          , na način što joj je uputio riječi: "Kurvo", nakon čega je metalnim mašicama, sredstvom podobnim da tijelo teško povrijedi i zdravlje teško naruši, izudarao po rukama i nogama, kojom prilikom je oštećena zadobila laku tjelesnu povredu u vidu: krvnog podliva u predjelu desne podlaktice (prečnika oko 1cm), krvnog podliva u predjelu desnog lakta pravougaonog oblika dimenzija 7x1cm i krvnog podliva u predjelu lijevog koljena (prečnika oko 1,5cm), pri čemu je bio svjestan svog djela, njegove zabranjenosti i htio njegovo izvršenje.
+        </p>
+        <p>
+          -čime je izvršio krivično djelo nasilje u porodici ili porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_2">čl. 220 st. 2 u vezi st. 1 Krivičnog zakonika CG</ref>,
+        </p>
+        <p>
+          -pa ga sud, primjenom citiranih zakonskih propisa, te 
+          <ref href="/krivicni#art_2">čl. 2,</ref>
+          <ref href="/krivicni#art_4">4,</ref>
+          <ref href="/krivicni#art_5">5,</ref>
+          <ref href="/krivicni#art_13">13,</ref>
+          <ref href="/krivicni#art_15">15,</ref>
+          <ref href="/krivicni#art_32">32,</ref>
+          <ref href="/krivicni#art_41">41 Krivičnog zakonika CG</ref>
+          i 
+          <ref href="/zkp#art_226">čl. 226,</ref>
+          <ref href="/zkp#art_229">229</ref>
+          i 
+          <ref href="/zkp#art_374">374 Zakonika o krivičnom postupku CG</ref>.
+        </p>
+        <p class="subtitle">
+          O S U Đ U J E
+        </p>
+        <p>
+          Na kaznu rad u javnom interesu u trajanju od 70 (sedamdeset) časova, koji rad će se obaviti u vremenskom periodu od 2 (dva) mjeseca, po pravosnažnosti presude, s tim što rad ne može biti duži od 60 (šezdeset) časova u toku jednog mjeseca.
+        </p>
+        <p>
+          Ukoliko okrivljeni ne bude vršio rad u javnom interesu, kazna će se zamijeniti kaznom zatvora, tako što će se svakih započetih 60 (šezdeset) časova rada u javnom interesu zamijeniti kaznom zatvora od 1 (jednog) mjeseca.
+        </p>
+        <p>
+          Okrivljeni se obavezuje da na ime paušala plati ovom sudu iznos od 30,00€, kao i na ime ostalih troškova krivičnog postupka iznos od 55,00€,
+          koje će uplatiti na račun Budžeta CG broj: 832-151-35, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, uz dostavu dokaza o uplati.
+        </p>
+        <p>
+          Imovinsko-pravnog zahtjeva nije bilo.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">
+          O b r a z l o ž e nj e
+        </p>
+        <p>
+          Optužnim predlogom 
+          <organization id="odt" refersTo="#odt">
+            Osnovno državno tužilaštvo u Bijelom Polju
+          </organization>
+          , Kt. br. 34/16 od 16.02.2016. godine, okrivljenom 
+          <party id="rov" refersTo="#rov" as="#defendant">
+            R.O V.
+          </party>
+          iz Bijelog Polja, stavljeno je na teret izvršenje krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_2">čl. 220 st. 2 u vezi st. 1 Krivičnog zakonika CG</ref>.
+        </p>
+        <p>
+          Glavni pretres je održan i zaključen u prisustvu savjetnika u ODT-u u Bijelom Polju 
+          <party id="knezevic" refersTo="#knezevic" as="#plaintiff">
+            Banka Kneževića
+          </party>,
+          okrivljenog 
+          <party id="rov" refersTo="#rov" as="#defendant">
+            R.O V.
+          </party>
+          i oštećene 
+          <party id="vj" refersTo="#vj" as="#victim">
+            V.J.
+          </party>.
+        </p>
+        <p>
+          Savjetnik u ODT-u je u završnoj riječi izjavio da ostaje pri podnijetom optužnom predlogu, predlažući sudu da okrivljenog oglasi krivim i osudi na kaznu po zakonu.
+        </p>
+        <p>
+          Oštećena V.J. u završnoj riječi je izjavila da se ne pridružuje krivičnom gonjenju protiv okrivljenog i da ne postavlja imovinsko-pravni zahtjev.
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="rov" refersTo="#rov" as="#defendant">
+            R.O V.
+          </party>
+          u svojoj odbrani, tokom istražnog postupka, naveo je da živi u vanbračnoj zajednici sa 
+          <party id="vj" refersTo="#vj" as="#victim">
+            V.J.
+          </party>
+          u zadnjih 9 godina, te da imaju troje djece. Dana 01.02.2016. godine, zajedno sa rođakom V.A. popili su po dva piva. Nakon toga je rekao supruzi da pospremi kuću i opere sudove, na šta je ona odgovorila: "Ako ti se pere, operi sam". Zatim, oko 19:30h, oštećena V.J. počela je da galami na njega, navodeći da ima drugu ženu i da planira da je otjera, a drugu ženu dovede kući. On je, uprkos tome, odgovorio da to nije istina. Ipak, oštećena je nastavila sa istim tvrdnjama, što ga je razljutilo, te je ustao, otišao do šporeta, uzeo mašice i udario oštećenu 2–3 puta po nogama.
+        </p>
+        <p>
+          Na glavnom pretresu, okrivljeni je priznao izvršenje krivičnog djela, navodeći da je kritičnog dana izudarao svoju suprugu mašicama, zbog čega je ona zadobila povrede, te je izjavio da se iskreno kaje zbog izvršenog djela, da se kasnije izmirio sa oštećenom i da sada žive zajedno.
+        </p>
+        <p>
+          U završnoj riječi, okrivljeni je ponovio da priznaje izvršenje krivičnog djela, te je saglasan da mu sud izrekne kaznu rad u javnom interesu.
+        </p>
+        <p>
+          Radi utvrđivanja odlučnih činjenica i krivice, sud je na glavnom pretresu izveo dokaze: saslušao je u svojstvu svjedoka oštećenu V.J.; pročitao medicinsku dokumentaciju na njeno ime; zapisnik o kontroli prisustva alkohola u organizmu okrivljenog; pročitao nalaz i mišljenje vještaka medicinske struke dr M.a S.a; te izvršio uvid u uvjerenje o kažnjavanju na ime okrivljenog.
+        </p>
+        <p>
+          Okrivljeni je, u fazi istražnog postupka, priznao izvršenje krivičnog djela navodeći da je oštećenu izudarao mašicama jer ga je naljutila zbog tvrdnji da ima drugu ženu koju želi da dovede kući. Na glavnom pretresu je potvrdio da je izudarao svoju nevjenčanu suprugu V.J. mašicama.
+        </p>
+        <p>
+          Na osnovu priznanja okrivljenog, kao i svih izvedenih dokaza, sud je utvrdio da je, kritičnog dana, u porodičnoj kući, primjenom grubog nasilja, ugrozio tjelesni i duševni integritet svoje vanbračne supruge V.J. izgovorivši riječ "Kurvo" i zatim je izudarao metalnim mašicama, čime je oštećena zadobila laku tjelesnu povredu kako je opisano.
+        </p>
+        <p>
+          Odlučujući u pogledu vrste i visine krivične sankcije, sud je cijenio sve okolnosti iz čl. 42 Krivičnog zakonika, utvrdivši da su olakšavajuće okolnosti činjenica da je okrivljeni porodična osoba, otac troje maloljetne djece, i da se oštećena nije pridružila krivičnom gonjenju, dok su otežavajuće okolnosti njegova ranija osuđivanost. Stoga je sud okrivljenog osudio na kaznu rad u javnom interesu u trajanju od 70 (sedamdeset) časova, koji će se obaviti u periodu od 2 (dva) mjeseca, uz ograničenje da rad ne može trajati duže od 60 (šezdeset) časova u toku jednog mjeseca.
+        </p>
+        <p>
+          Okrivljeni je, shodno čl. 226 i 229 ZKP-a CG, obavezan da na ime paušala plati iznos od 30,00€, kao i da plati troškove krivičnog postupka u iznosu od 55,00€ za troškove vještačenja.
+        </p>
+        <p>
+          Imovinsko-pravnog zahtjeva nije bilo.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">
+        OSNOVNI SUD U BIJELOM POLJU
+      </organization>
+      <p class="subtitle">
+        Dana, 15.03.2016. godine
+      </p>
+      <p>
+        ZAPISNIČAR, S U D I J A,
+      </p>
+      <p>
+        <party id="draginja_boskovic" refersTo="#draginja_boskovic" as="#clerk">
+          Draginja Bošković
+        </party>
+        <party id="ivan_adamovic" refersTo="#ivan_adamovic" as="#judge">
+          Ivan Adamović
+        </party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
