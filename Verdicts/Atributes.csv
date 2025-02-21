@@ -1,4 +1,7 @@
 Presuda,Metadata,Priznao,Osudjivan,Materijalno_stanje,Izdrzavanje,Kajanje,Prethodni_porodicni_problemi,Tip_povrede,Korektno_drzanje,Osteceni_goni_krivicno,Imovinsko_pravni_zahtjev,Uracunljivost,Sa_umisljajem
-K 56-21,,True,False,Lose,True,True,False,Lake,True,False,False,Uracunljiv,True
-K 85-18,,True,True,Lose,False,True,True,Teske,True,False,False,Uracunljiv,True
-K 91-22,,False,True,Srednje,True,False,True,Nema,True,False,False,Uracunljiv,False
+K 56-21,,TRUE,FALSE,Lose,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 85-18,,TRUE,TRUE,Lose,FALSE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 91-22,,FALSE,TRUE,Srednje,TRUE,FALSE,TRUE,Nema,TRUE,FALSE,FALSE,Uracunljiv,FALSE
+K 104-16,,TRUE,FALSE,Lose,FALSE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 106-19,,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Smanjena uracunljivost,TRUE
+K 113-19,,TRUE,TRUE,Srednje,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
