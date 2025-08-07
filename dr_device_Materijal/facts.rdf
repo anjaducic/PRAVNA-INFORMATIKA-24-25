@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:lc="http://ftn.uns.ac.rs/legal-case">
+   
+    <!-- Single case entity with all properties -->
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case_k430_2013">
+        <!-- Direct properties that match XSLT expectations -->
+        <lc:fails_to_provide_support>true</lc:fails_to_provide_support>
+        <lc:support_duty_legally_established>true</lc:support_duty_legally_established>
+        <lc:severe_consequences_occurred>true</lc:severe_consequences_occurred>
+        
+        <!-- Entities -->
+        <lc:defendant>defendant_NM</lc:defendant>
+        <lc:dependent>dependent_MN</lc:dependent>
+        <lc:courtdecision>decision_P1030_07</lc:courtdecision>
+        
+        <!-- Additional context -->
+        <lc:months_unpaid rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</lc:months_unpaid>
+        <lc:total_amount_owed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">850.00</lc:total_amount_owed>
+        <lc:repeat_offender>yes</lc:repeat_offender>
+        <lc:previous_convictions rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</lc:previous_convictions>
+        <lc:financial_hardship_claimed>yes</lc:financial_hardship_claimed>
+    </lc:case>
+</rdf:RDF>
