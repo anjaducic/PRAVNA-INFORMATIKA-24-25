@@ -1,0 +1,22 @@
+.fixed-button {
+  position: fixed;
+  bottom: 60px; 
+  right: 30px;  
+  background: linear-gradient(145deg, #1abc9c, #16a085);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3), 0 0 15px rgba(26, 188, 156, 0.5);
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.fixed-button:hover {
+  background: linear-gradient(145deg, #16a085, #1abc9c);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35), 0 0 25px rgba(26, 188, 156, 0.7);
+}

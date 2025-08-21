@@ -1,0 +1,8 @@
+<nav class="menu">
+  <button
+    *ngFor="let option of menuOptions"
+    (click)="setActive(option)"
+    [class.active]="option === activeOption">
+    {{ option }}
+  </button>
+</nav>
