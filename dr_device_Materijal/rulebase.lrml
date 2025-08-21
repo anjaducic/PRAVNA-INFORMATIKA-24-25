@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd"
-    xmlns:ruleml="http://ruleml.org/spec"
-    xmlns:lc="http://ftn.uns.ac.rs/legal-case">
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" 
+    xmlns:ruleml="http://ruleml.org/spec">
 
     <lrml:Statements>
         
-        <!-- Paragraph 1: Basic failure to provide support -->
+        <!-- Rule 1: Basic failure to provide support -->
         <lrml:PrescriptiveStatement key="ps1">
             <ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
                 <ruleml:if>
@@ -16,12 +15,12 @@
                         <ruleml:Atom>
                             <ruleml:Rel iri="lc:fails_to_provide_support"/>
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Var type="lc:supported_person">Dependent</ruleml:Var>
+                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
                         <ruleml:Atom>
                             <ruleml:Rel iri="lc:support_duty_legally_established"/>
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Var type="lc:decision">CourtDecision</ruleml:Var>
+                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
                     </ruleml:And>
                 </ruleml:if>
@@ -34,18 +33,25 @@
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
 
-        <!-- Paragraph 3: Aggravated form - severe consequences -->
+        <!-- Rule 2: Aggravated form - with severe consequences -->
         <lrml:PrescriptiveStatement key="ps2">
             <ruleml:Rule key=":rule2" closure="universal" strength="defeasible">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Atom>
-                            <ruleml:Rel>failure_to_provide_support_basic</ruleml:Rel>
-                            <ruleml:Var type=":defendant">Defendant</ruleml:Var>
+                            <ruleml:Rel iri="lc:fails_to_provide_support"/>
+                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel iri="lc:support_duty_legally_established"/>
+                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
                         <ruleml:Atom>
                             <ruleml:Rel iri="lc:severe_consequences_occurred"/>
-                            <ruleml:Var type="lc:dependent">Dependent</ruleml:Var>
+                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
                     </ruleml:And>
                 </ruleml:if>
@@ -58,9 +64,7 @@
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
 
-        <!-- Penalty Statements - Only numerical penalties -->
-        
-        <!-- Para 1: Up to 2 years -->
+        <!-- Penalty Statements -->
         <lrml:PenaltyStatement key="pen1">
             <lrml:SuborderList>
                 <lrml:Obligation>
@@ -73,7 +77,6 @@
             </lrml:SuborderList>
         </lrml:PenaltyStatement>
 
-        <!-- Para 3: 6 months to 5 years -->
         <lrml:PenaltyStatement key="pen2">
             <lrml:SuborderList>
                 <lrml:Obligation>
@@ -120,7 +123,7 @@
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
-        <!-- Override Statements -->
+        <!-- Only ONE override needed! -->
         <lrml:OverrideStatement>
             <lrml:Override under="#ps2" over="#ps1"/>
         </lrml:OverrideStatement>

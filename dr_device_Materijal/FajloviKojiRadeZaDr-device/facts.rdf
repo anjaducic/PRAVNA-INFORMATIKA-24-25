@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
+    
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case_k430_2013">
+        <lc:name>case_k430_2013</lc:name>
+        <lc:defendant>NM</lc:defendant>
+        <lc:dependent>MN</lc:dependent>
+        
+        <!-- Ovde smo naveli za svaki clan po jedan prekrsaj, kako bismo testirali rulebase kako radi -->
+        
+        <!-- ARTICLE 221: Failure to Provide Support (AGGRAVATED) -->
+        <lc:fails_to_provide_support>yes</lc:fails_to_provide_support>
+        <lc:support_duty_legally_established>yes</lc:support_duty_legally_established>
+        <lc:severe_consequences_occurred>yes</lc:severe_consequences_occurred>
+        
+        <!-- ARTICLE 222: Family Obligation Violations (DEATH) -->
+        <lc:violates_family_obligations>yes</lc:violates_family_obligations>
+        <lc:family_member_left_in_hardship>yes</lc:family_member_left_in_hardship>
+        <lc:family_member_died>yes</lc:family_member_died>
+        
+        <!-- ARTICLE 216: Extramarital Union with Minor (AGGRAVATED) -->
+        <lc:is_parent_or_guardian>yes</lc:is_parent_or_guardian>
+        <lc:enables_minor_extramarital_union>yes</lc:enables_minor_extramarital_union>
+        <lc:used_force_threat_or_greed>yes</lc:used_force_threat_or_greed>
+        
+        <!-- ARTICLE 217: Child Abduction (AGGRAVATED) -->
+        <lc:unlawfully_handles_child_custody>yes</lc:unlawfully_handles_child_custody>
+        <lc:endangered_child_wellbeing>yes</lc:endangered_child_wellbeing>
+        
+        <!-- ARTICLE 220: Domestic Violence (DEATH) -->
+        <lc:commits_domestic_violence>yes</lc:commits_domestic_violence>
+        <lc:used_weapon_or_child_present>yes</lc:used_weapon_or_child_present>
+        <lc:caused_severe_injury_or_against_child>yes</lc:caused_severe_injury_or_against_child>
+        
+        <!-- Original case context -->
+        <lc:months_unpaid rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</lc:months_unpaid>
+        <lc:total_amount_owed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">850.00</lc:total_amount_owed>
+        <lc:repeat_offender>yes</lc:repeat_offender>
+        <lc:previous_convictions rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</lc:previous_convictions>
+        <lc:financial_hardship_claimed>yes</lc:financial_hardship_claimed>
+    </lc:case>
+</rdf:RDF>

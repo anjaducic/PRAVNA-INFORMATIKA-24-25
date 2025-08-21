@@ -1,0 +1,16 @@
+xsl fajl za transformaciju samo promenimo liniju 20.
+
+u rulebase, koristiti string umesto Boolean. 
+
+Facts cini mi se da je ok i da radi iako sadrzi mozda nebitne info. 
+
+Moj export ima dodatan info u odnosu na export za speeding (to je original export kada raspakujem dr-device).
+
+Facts.rdf je input od korisnika vezan za detalje presude. Kako bismo testirali da li rulebase radi, mozemo da napravimo jedan facts gde 
+ce korisnik uneti sve prekrsene clanove koje smo stavili u rulebase basu. Ovakav slucaj je realno nemoguc, ali koristan za testiranje dr-device.
+
+
+u xsl fajlu za transformisanje, navodimo sve klase iz rulebase fajla. Kako bi on znao sta sve moze da ocekuje. Znaci ne iz facts rdf vec sve iz fajla. 
+
+Izgleda sam uspeo da proradi za vise pravila i prekrsenih artikala u facts.
+
