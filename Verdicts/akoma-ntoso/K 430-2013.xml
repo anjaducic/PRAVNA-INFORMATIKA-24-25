@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>OSNOVNI SUD U KOTORU</FRBRauthor>
+          <FRBRdate date="2014-03-20">2014-03-20</FRBRdate>
+          <FRBRtitle>K 430/2013</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru"/>
+        <TLCPerson eId="momirka_marovic" href="/ontology/person/momirka_marovic" showAs="Momirka Marović"/>
+        <TLCPerson eId="ana_marija_petkovic" href="/ontology/person/ana_marija_petkovic" showAs="Ana Marija Petković"/>
+        <TLCPerson eId="nm" href="/ontology/person/nm" showAs="N.M."/>
+        <TLCPerson eId="rm" href="/ontology/person/rm" showAs="R.M."/>
+        <TLCPerson eId="danka_zivkovic" href="/ontology/person/danka_zivkovic" showAs="Danka Živković"/>
+        <TLCPerson eId="mn_child" href="/ontology/person/mn_child" showAs="M.N."/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+        <TLCRole eId="legal_guardian" href="/ontology/role/legal_guardian" showAs="Legal Guardian"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          <organization id="os" refersTo="#os">
+            Osnovni sud u Kotoru
+          </organization>,
+          kao nadležni prvostepeni krivični sud, po sudiji 
+          <party id="momirka_marovic" refersTo="#momirka_marovic" as="#judge">
+            Momirki Marović
+          </party>,
+          uz učešće zapisničar 
+          <party id="ana_marija_petkovic" refersTo="#ana_marija_petkovic" as="#clerk">
+            Ana Marije Petković
+          </party>,
+          u krivičnom postupku protiv okrivljenog 
+          <party id="nm" refersTo="#nm" as="#defendant">
+            N. M.
+          </party>
+          zbog krivičnog djela nedavanje izdržavanja iz 
+          <ref href="/krivicni#art_221_para_1">čl. 221. st. 1. Krivičnog zakonika CG</ref>,
+          koji se vodi po optužnom predlogu 
+          <organization id="odt" refersTo="#odt">
+            ODT Kotor
+          </organization>
+          Kt.br. 587/13 od 24.12.2013 godine, nakon održanog glavnog i javnog pretresa dana 20.3.2014 godine u prisustvu zamjenika ODT Kotor 
+          <party id="danka_zivkovic" refersTo="#danka_zivkovic" as="#prosecutor">
+            Danke Živković
+          </party>,
+          zakonskog zastupnika mal. oštećenog 
+          <party id="mn_child" refersTo="#mn_child" as="#victim">
+            N. M.
+          </party>
+          njegove majke 
+          <party id="rm" refersTo="#rm" as="#legal_guardian">
+            R. M.
+          </party>,
+          a u odsustvu uredno pozvanog okrivljenog koji je prethodno ispitan, shodno članu 457 ZKP, donio je i istog dana objavio sledeću
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">
+          P R E S U D U
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="nm" refersTo="#nm" as="#defendant">
+            N. M.
+          </party>
+          JMBG ... od oca M. i majke D. rođene T., rođenog ... godine u M., stalno nastanjenog u M., P. bb, državljanin Crne Gore, privatnika, u vanbračnoj zajednici, otac dvoje djece, sa završenm SSS / III stepen/, lošeg imovnog stanja, osuđivanog Presudom Osnovnog suda u Kotoru K.br. 311/09/09 od 15.6.2009 godine, K. 266/12/11 od 30.11.2012 godine i K. broj 464/12/12 od 27.5.2013 godine, sve zbog krivičnog djela nedavanja izdržavanja iz 
+          <ref href="/krivicni#art_221_para_1">čl. 221.st. 1. Krivičnog zakonika</ref>,
+          protiv kojeg se ne vodi postupak za drugo krivično djelo
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">
+          K r i v j e
+        </p>
+        <p>
+          Što je u periodu od 14.3.2013 godine do 24.12.2013 godine u T., ne daje izdržavanje za lice koje je po zakonu dužan da izdržava svog mal sina 
+          <party id="mn_child" refersTo="#mn_child" as="#victim">
+            M. N.
+          </party>,
+          a ta dužnost je utvrđena pravosnažnom sudskom presudom Osnovnog suda u Kotoru P. br. 1030/07 od 29.12. 2008 godine kojom se isti obavezuje da svakomjesečno doprinosi izdržavanju maloljetnog djeteta uplatom od 100,00 eura, do svakog petog u mjesecu majci mal. 
+          <party id="mn_child" refersTo="#mn_child" as="#victim">
+            N. M.
+          </party>,
+          <party id="rm" refersTo="#rm" as="#legal_guardian">
+            R. M.
+          </party>,
+          pri čemu je bio uračunjiv i svjestan svog djela i njegove zabranjenosti, a čije je izvršenje htio.
+        </p>
+        <p>
+          - čime je izvršio krivično djelo nedavanja izdržavanja iz 
+          <ref href="/krivicni#art_221_para_1">čl. 221.st. 1 Krivičnog zakonika CG</ref>.
+        </p>
+        <p>
+          pa ga sud na osnovu naprijed navedene krivičnopravne odredbe, te odredbi 
+          <ref href="/krivicni#art_3">čl. 3,</ref>
+          <ref href="/krivicni#art_5">5,</ref>
+          <ref href="/krivicni#art_8">8,</ref>
+          <ref href="/krivicni#art_13">13,</ref>
+          <ref href="/krivicni#art_15">15,</ref>
+          <ref href="/krivicni#art_32">32,</ref>
+          <ref href="/krivicni#art_33">33,</ref>
+          <ref href="/krivicni#art_36">36,</ref>
+          <ref href="/krivicni#art_42">42 KZ CG</ref>,
+          te 
+          <ref href="/zkp#art_368">čl. 368.</ref>
+          i 
+          <ref href="/zkp#art_374">374. ZKP-a</ref>
+        </p>
+        <p class="subtitle">
+          OSUĐUJE
+        </p>
+        <p>
+          Na kaznu zatvora u trajanju od 60 dana koju će okrivljeni izdržati nakon pravosnažnosti presude.
+        </p>
+        <p>
+          Dužan je okrivljeni na ime imovinsko pravnog zahtjeva isplatiti zakonskoj zastupnici mal. oštećenog 
+          <party id="rm" refersTo="#rm" as="#legal_guardian">
+            R. M.
+          </party>
+          iznos od 850 eura, u roku od 3 mjeseca od dana pravosnažnosti presude, a pod prijetnjom prinudnog izvršenja.
+        </p>
+        <p>
+          Okrivljeni je dužan da na ime sudskog paušala uplati iznos od 55, 00 eura, u roku od 15 dana od dana pravosnažnosti presude na žiro račun broj 832-16-52 u korist budžeta Crne Gore i da dokaz o uplati dostavi sudu s pozivom na posl. br. K. 430/13/13.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">
+          O b r a z l o ž e n j e
+        </p>
+        <p>
+          ODT Kotor aktom Kt.br. 587/13 od 24.12.2013 godine optužilo je 
+          <party id="nm" refersTo="#nm" as="#defendant">
+            N. M.
+          </party>
+          zbog krivičnog djela nedavanja izdržavanja iz 
+          <ref href="/krivicni#art_221_para_1">čl. 221.st. 1 Krivičnog zakonika CG</ref>.
+        </p>
+        <p>
+          Sud je održao glavni pretres u odusustvu uredno pozvanog okrivljenog 
+          <party id="nm" refersTo="#nm" as="#defendant">
+            N. M.
+          </party>
+          shodno članu 457 Zkp-a, obzirom da je isti ranije saslušan, a svoj izstanak nije opravdao, a njegovo prisustvo na glavnom pretresu po mišljenju suda nije bilo nužno.
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="nm" refersTo="#nm" as="#defendant">
+            N. M.
+          </party>
+          je u svojoj odbrani naveo da prije svega želi da istakne da nedavanje izdržavanja za njegovog sina M. nije rezultat njegove odluke, već prosto objektivne nemogućnosti zbog finanasijske krize u koju je zapao, kao i da je tačno je da je protiv njega već tri puta vođen postupak za isto djelo i da je tri puta osuđivan, ali da je to je rezultat činjenice da sud nije htio da uvaži njegove razloge i dokaze koji su potvrđivali loše finansijsko stanje i njegovu nemogućnost doprinošenja u izdržavanju sina kako je to utvrđeno Presudom P. 1030/07.
+        </p>
+        <p>
+          U dokaznom postupku koji je proveden u cilju utvrđivanja činjeničnog stanja i krivice okrivljenog, sud je proveo sledeće dokaze: saslušao zakonskog zastupnika mal. oštećenog 
+          <party id="rm" refersTo="#rm" as="#legal_guardian">
+            R. M.
+          </party>,
+          izvršio uvid u pravosnažne presude ovog suda P. br. 1030/07 od 29.12.2008. godine, presudu ovog suda K. br. 266/12/11 od 30.11.2012. godine, i u spise predmeta ovog suda K. br. 311/09/09 i K. 464/12/12 i u izvod iz kaznene evidencije za 
+          <party id="nm" refersTo="#nm" as="#defendant">
+            N. M.
+          </party>
+          UP OB Mojkovac od 18.12.2013. godine.
+        </p>
+        <p>
+          Zakonski zastupnik mal.oštećenog 
+          <party id="rm" refersTo="#rm" as="#legal_guardian">
+            R. M.
+          </party>
+          je navela da se sa okrivljenim razvela i presuda povodom toga je donjeta od strane Osnovnog suda u Kotoru P. 1030/07 od 07.02.2007 godine, kojom je utvrđena njegova obaveza da doprinosi u izdržavanju njihovog zajedničkog djeteta, sina 
+          <party id="mn_child" refersTo="#mn_child" as="#victim">
+            N. M.
+          </party>,
+          u iznosu od 100 Eura, najkasnije do 5-og u mjesecu i to njoj kao zakonskoj zastupnici mal. 
+          <party id="mn_child" refersTo="#mn_child" as="#victim">
+            N. M.
+          </party>.
+          Od trenutka kada je razveden brak do danas okrivljeni ne uplaćuje navedeni iznos po osnovu izdržavanja i svega je jedan ili dva puta i to negdje odmah nakon razvoda platio Presudom utvrđenu obavezu.
+        </p>
+        <p>
+          Cijeneći sve provedene dokaze pojedinačno i u uzajamnoj povezanosti, a u odnosu na odbranu okrivljenoga, sud je utvrdio činjenično stanje navedeno u izreci presude. Sud je utvrdio da je okrivljeni u periodu od 14.3.2013 godine do 24.12.2013 godine ne dao izdržavanje za svoje maloljetno dijete 
+          <party id="mn_child" refersTo="#mn_child" as="#victim">
+            M. N.
+          </party>,
+          iako je bio obavezan pravosnažnom sudskom presudom.
+        </p>
+        <p>
+          Prilikom odlučivanja koju krivičnu sankciju okrivljenom treba izreći, sud je pošao od toga da je za predmetno krivično djelo propisana novčana kazna ili kazna zatvora do jedne godine. U smislu člana 42. Krivičnog zakonika sud je na strani okrivljenog nije našao olakšavajuće okolnosti, dok je kao otežavajuću okolnost cijenio to što je okrivljeni tri puta osuđivan za istovrsno krivično djelo, dakle sud je mišljenja da je isti pokazao izuzetnu upornost u izvršenju ovog krivičnog djela.
+        </p>
+        <p>
+          Sud je obavezao okrivljenog da na ime imovinsko pravnog zahtjeva isplati zakonskoj zastupnici mal. oštećenog 
+          <party id="rm" refersTo="#rm" as="#legal_guardian">
+            R. M.
+          </party>
+          iznos od 850 eura, u roku od 3 mjeseca od dana pravosnažnosti presude, a pod prijetnjom prinudnog izvršenja.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">
+        OSNOVNI SUD U KOTORU
+      </organization>
+      <p class="subtitle">
+        Dana 20.03.2014. godine
+      </p>
+      <p>
+        Zapisničar, Sudija,
+      </p>
+      <p>
+        <party id="ana_marija_petkovic" refersTo="#ana_marija_petkovic" as="#clerk">
+          Ana Marija Petković
+        </party>
+        <party id="momirka_marovic" refersTo="#momirka_marovic" as="#judge">
+          MoM. Marović
+        </party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

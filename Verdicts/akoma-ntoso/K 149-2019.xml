@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2019-10-14"> 
+                        2019-10-14
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 149/2019
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                   
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCOrganization eId="csr" href="/ontology/organization/CentarZaSocijalniRad.BijeloPolje" showAs="Centar za socijalni rad u Bijelom Polju" />
+                <TLCPerson eId="iadamovic" href="/ontology/person/iadamovic" showAs="Ivan Adamović" />
+                <TLCPerson eId="dboskovic" href="/ontology/person/dboskovic" showAs="Draginja Bošković" />
+                <TLCPerson eId="lcakovic" href="/ontology/person/lcakovic" showAs="Ljubica Caković" />
+                <TLCPerson eId="bp" href="/ontology/person/bp" showAs="B. P." />
+                <TLCPerson eId="jc" href="/ontology/person/jc" showAs="J. C." />
+                <TLCPerson eId="mp" href="/ontology/person/mp" showAs="M. P." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="parent" href="/ontology/role/parent" showAs="Parent" />
+                </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </organization>
+                    , sudija
+                    <party id="iadamovic" refersTo="#iadamovic" as="#judge">
+                        Ivan Adamović
+                    </party>
+                    , uz učešće samostalnog referenta zapisničara
+                    <party id="dboskovic" refersTo="#dboskovic" as="#clerk">
+                        Draginje Bošković
+                    </party>
+                    , u krivičnom predmetu protiv okrivljenog
+                    <party id="bp" refersTo="#bp" as="#defendant">   
+                        B. P.
+                    </party>
+                    , iz Nj., opština B. P., zbog krivičnog djela oduzimanje maloljetnog lica iz
+                    <ref href="/krivicni#art_217_para_1">
+                        čl. 217 st. 1 Krivičnog zakonika Crne Gore, (KZ CG)
+                    </ref>
+                    , na javnom glavnom pretresu u prisustvu državne tužiteljke
+                    <party id="lcakovic" refersTo="#lcakovic" as="#prosecutor">
+                        Ljubice Caković
+                    </party>
+                    , okrivljenog
+                    <party id="bp" refersTo="#bp" as="#defendant">
+                        B. P.
+                    </party>
+                     i oštećene
+                    <party id="jc" refersTo="#jc" as="#victim">
+                        J. C.
+                    </party>
+                    , dana 14. oktobra 2019. godine, donio je i objavio,
+                </p>
+            </introduction>
+                <background>
+                    <p class="subtitle"> 
+                        P R E S U D U 
+                    </p>
+                    <p>
+                        Okrivljeni
+                        <party id="bp" refersTo="#bp" as="#defendant">
+                            B. P.
+                        </party>
+                        , JMBG-...................., od oca I. i majke D., r. V., rođen ................. godine u B. P., sa prebivalištem 
+                        u mjestu Nj., opština B. P., državljanin Crne Gore, neoženjen, otac jednog djeteta, završio SSS, srednjeg 
+                        imovnog stanja, neosuđivan,
+                    </p>
+                </background>  
+                <decision>
+                    <p class="subtitle">
+                        K R I V J E
+                    </p>
+                    <p>
+                        -Zato što je:
+                    </p>
+                    <p>
+                        -Od dana 18. 08. 2019. godine, do dana 06. 09. 2019. godine, u Bijelom Polju, sposoban da shvati značaj svog 
+                        djela i upravlja svojim postupcima i svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, 
+                        onemogućio izvršenje pravosnažne presude Osnovnog suda u Bijelom Polju, P. br. 831/14 od 20. 03. 2015. 
+                        godine, kojom je maloljetno lice 
+                        <party id="mp" refersTo="#mp" as="#victim">M. P.</party>, 
+                        radi vršenja roditeljskog prava povjeren oštećenoj majci 
+                        <party id="jc" refersTo="#jc" as="#parent">J. C.</party>, 
+                        na način što nije vratio maloljetnog 
+                        <party id="mp" refersTo="#mp" as="#victim">M. P.</party>, 
+                        kojeg je po istoj presudi bio dužan da vrati 18. 08. 2019. godine do 14:00 časova,
+                    </p>
+                    <p>
+                        -čime je izvršio krivično djelo oduzimanje maloljetnog lica iz 
+                         <ref href="/krivicni#art_217_para_1">
+                            čl. 217 st. 1 Krivičnog zakonika Crne Gore.
+                        </ref>
+                    </p>
+                    <p>
+                        -pa mu sud, primjenom citiranih zakonskih propisa, te 
+                        <ref href="/krivicni#art_2">čl. 2,</ref> 
+                        <ref href="/krivicni#art_4">4,</ref> 
+                        <ref href="/krivicni#art_5">5,</ref> 
+                        <ref href="/krivicni#art_13">13,</ref> 
+                        <ref href="/krivicni#art_16">16,</ref> 
+                        <ref href="/krivicni#art_32">32,</ref> 
+                        <ref href="/krivicni#art_42">42,</ref> 
+                        <ref href="/krivicni#art_52">52,</ref> 
+                        <ref href="/krivicni#art_53">53</ref> i 
+                        <ref href="/krivicni#art_54">54 Krivičnog zakonika Crne Gore (KZ CG)</ref> i 
+                        <ref href="/zkp#art_226">čl. 226,</ref> 
+                        <ref href="/zkp#art_229">229,</ref> 
+                        <ref href="/zkp#art_239">239</ref> i 
+                        <ref href="/zkp#art_374">374 Zakonika o krivičnom postupku Crne Gore (ZKP CG),</ref> 
+                        izriče,
+                    </p>
+                    <p class="subtitle">
+                        USLOVNU OSUDU
+                    </p>
+                    <p>
+                        Kojom mu utvrđuje kaznu zatvora od 30 (trideset) dana i istovremeno određuje da se ista neće izvršiti, 
+                        ukoliko okrivljeni u roku od 1 (jedne) godine ne izvrši novo krivično djelo.
+                    </p>
+                    <p>
+                        Okrivljeni se obavezuje da ovom sudu plati na ime paušala iznos od 35,00 €, koji iznos će uplatiti na račun 
+                        Budžeta Crne Gore broj: 832-151-35, u roku od 15 dana, po pravosnažnosti presude, pod prijetnjom 
+                        prinudnog izvršenja, s tim što je dokaz o uplati, dužan dostaviti krivičnoj pisarnici ovog suda.
+                    </p>
+                    <p>
+                        Imovinsko pravnog zahtjeva nije bilo.
+                    </p>
+                </decision>
+                <arguments>
+                    <p class="subtitle"> 
+                        O b r a z l o ž e n j e
+                    </p>
+                    <p>
+                        Optužnim predlogom 
+                        <organization id="odt" refersTo="#odt">
+                            Osnovnog državnog tužilaštva u Bijelom Polju
+                        </organization>
+                        , Kt. br. 221/19 od 06. septembra 2019. godine, okrivljeni 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party>, 
+                        iz B. P., optužen je da je izvršio krivično djelo oduzimanje maloljetnog lica iz 
+                        <ref href="/krivicni#art_217_para_1">čl. 217 st. 1 Krivičnog zakonika Crne Gore</ref>, 
+                        s tim što je zastupnik optužbe, prije davanja završne riječi, izmijenila činjenični opis, na način sadržan u izreci presude.
+                    </p>
+                    <p>
+                        Glavni pretres je održan i zaključen u prisustvu državne tužiteljke 
+                        <party id="lcakovic" refersTo="#lcakovic" as="#prosecutor">Ljubice Caković</party>, 
+                        okrivljenog 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party> 
+                        i oštećene 
+                        <party id="jc" refersTo="#jc" as="#victim">J. C.</party>.
+                    </p>
+                    <p>
+                        Državna tužiteljka 
+                        <party id="lcakovic" refersTo="#lcakovic" as="#prosecutor">Ljubica Caković</party> 
+                        u završnoj riječi je izjavila, da ostaje pri izmijenjenom optužnom predlogu sa razloga što je u toku postupka 
+                        nesporno utvrđeno da je okrivljeni izvršio krivično djelo koje mu je stavljeno na teret, a imajući u vidu odredbe 
+                        <ref href="/krivicni#art_42">čl. 42 Krivičnog zakonika Crne Gore</ref>, 
+                        predložila je sudu da okrivljenom izrekne uslovnu osudu.
+                    </p>
+                    <p>
+                        Oštećena 
+                        <party id="jc" refersTo="#jc" as="#victim">J. C.</party> 
+                        u završnoj riječi je izjavila da se pridružuje krivičnom gonjenju protiv okrivljenog, a da ne postavlja 
+                        imovinsko-pravni zahtjev.
+                    </p>
+                    <p>
+                        Okrivljeni 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party> 
+                        u svojoj odbrani u istražnom postupku u bitnom je naveo, da je bio u vanbračnoj zajednici sa 
+                        <party id="jc" refersTo="#jc" as="#parent">J. C.</party> 
+                        i da su dobili sina 
+                        <party id="mp" refersTo="#mp" as="#victim">M.</party>, 
+                        koji je rođen .......... godine. U junu 2016. godine, prekinuli su vanbračnu zajednicu a presudom Osnovnog suda 
+                        u Bijelom Polju, koja je donijeta krajem februara 2015. godine, njihov sin 
+                        <party id="mp" refersTo="#mp" as="#victim">Mi.</party> 
+                        povjeren je na čuvanje majci 
+                        <party id="jc" refersTo="#jc" as="#parent">J. C.</party>, 
+                        s tim da on sa njim može održavati kontakte dva puta mjesečno, prvi i treći vikend u mjesecu.
+                    </p>
+                    <p>
+                        Dalje je naveo, da unazad pet godina pokušava da svoje dijete zaštiti od fizičkog i psihičkog nasilja koje 
+                        ono doživljava od strane majke 
+                        <party id="jc" refersTo="#jc" as="#parent">J.</party> 
+                        i njene porodice. Tim povodom obraćao se svim nadležnim institucijama i to: policiji, tužilaštvu, Centru za socijalni rad, 
+                        sudu kada je prije dvije godine tražio izmjenu presude o povjeravanju njihovog sina, međutim, sud kao i ostali organi 
+                        kojima se obraćao nijesu uvažili njegove zahtjeve.
+                    </p>
+                    <p>
+                        Istakao je da je drugog vikenda u avgustu mjesecu, 2019. godine, maloljetnog 
+                        <party id="mp" refersTo="#mp" as="#victim">M.</party> 
+                        doveo kod sebe kući u Nj. i nije ga vratio kako je to dogovoreno, po presudi u nedjelju u 14:00 h. Sina nije vratio majci 
+                        <party id="jc" refersTo="#jc" as="#parent">J.C.</party> 
+                        sa razloga što je 07. jula 2019. godine, podnio zahtjev 
+                        <organization id="csr" refersTo="#csr">Centru za socijalni rad</organization> 
+                        i policiji zbog nasilja koje njegovo dijete trpi u porodici C., te zato što njihov sin nije želio da se vrati kod majke, 
+                        pa je čekao da odluče o njegovom zahtjevu.
+                    </p>
+                    <p>
+                        Na glavnom pretresu negirao je izvršenje krivičnog djela i krivicu za isto ponovivši odbranu datu u istražnom postupku, 
+                        dodajući da dijete nije vidio od kada je vraćeno majci 
+                        <party id="jc" refersTo="#jc" as="#parent">J.C</party>.
+                    </p>
+                    <p>
+                        U završnoj riječi je izjavio, da smatra da nije izvršio krivično djelo za koje je optužen, jer njegovo dijete nije 
+                        htjelo da se vrati kod majke, pretpostavlja sa razloga što je u kući njegove bivše vanbračne supruge maltretiran 
+                        i zlostavljan, te da će da pokrene postupak za izmjenu odluke kojom će tražiti da se dijete dodijeli njemu na staranje.
+                    </p>
+                    <p>
+                        Radi utvrđivanja odlučnih činjenica i donošenja pravilne i zakonite odluke, sud je na glavnom pretresu izveo dokaze: 
+                        saslušao u svojstvu svjedoka oštećenu 
+                        <party id="jc" refersTo="#jc" as="#victim">J.C.</party>; 
+                        pročitao presudu Osnovnog suda u Bijelom Polju, P. br. 831/14 od 20. 03. 2015. godine i izvršio uvid u izvod iz 
+                        registra kaznenih evidencija na ime okrivljenog.
+                    </p>
+                    <p>
+                        Sud je cijenio iskaz svjedokinje 
+                        <party id="jc" refersTo="#jc" as="#victim">J. C.</party>, 
+                        koja je u svom iskazu u istražnom postupku u bitnom navela, da je sa 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party> 
+                        živjela u vanbračnoj zajednici, od avgusta 2013. godine, do kraja juna 2014. godine, u kojoj zajednici su dobili sina 
+                        <party id="mp" refersTo="#mp" as="#victim">M.P.</party>, 
+                        koji je rođen 31. 01. 2014. godine. Zbog poremećenih odnosa vanbračnu zajednicu su prekinuli, a po njenoj tužbi 
+                        Osnovni sud u Bijelom Polju, dana 20. 03. 2015. godine, donio je presudu kojom je njihov sin 
+                        <party id="mp" refersTo="#mp" as="#victim">M.</party> 
+                        povjeren njoj radi vršenja roditeljskog prava, dok je 
+                        <party id="bp" refersTo="#bp" as="#defendant">B.P.</party> 
+                        obavezan da na ime doprinosa za izdržavanje plaća iznos od 63,73 €.
+                    </p>
+                    <p>
+                        Dana 16. 08. 2019. godine u 14:00 h, a shodno presudi Osnovnog suda u B. P. 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party> 
+                        je uzeo njihovog maloljetnog sina 
+                        <party id="mp" refersTo="#mp" as="#victim">M.</party>. 
+                        Na osnovu iste presude bio je dužan da vrati dijete 18. 08. 2019. godine u 14:00 h. Međutim, kako ga 
+                        <party id="bp" refersTo="#bp" as="#defendant">B.</party> 
+                        nije vratio, pozvala ga je telefonom, a on joj je saopštio da se ona tog jutra čula sa sinom i da se dogovorila 
+                        da ostane još malo kod oca, što uopšte nije tačno. Obzirom na to da 
+                        <party id="bp" refersTo="#bp" as="#defendant">B.</party> 
+                        tog dana nije vratio dijete, kako je bio dužan, ona je događaj prijavila policiji.
+                    </p>
+                    <p>
+                        Sud je iskaz ove svjedokinje u cjelosti prihvatio, cijeneći ga kao jasan, logičan i uvjerljiv, nesračunat na 
+                        otežavanje ili pak olakšavanje krivično-pravnog položaja maloljetnog, u bitnom potvrđen navodima odbrane 
+                        okrivljenog, te sadržinom pisanog dokaza.
+                    </p>
+                    <p>
+                        Iz presude Osnovnog suda u Bijelom Polju, P. br. 831/14 od 20. 03. 2015. godine, utvrđeno je da je maloljetno 
+                        dijete 
+                        <party id="mp" refersTo="#mp" as="#victim">M. P.</party> 
+                        povjeren majci-
+                        <party id="jc" refersTo="#jc" as="#parent">J. C.</party>, 
+                        radi vršenja roditeljskog prava, uz obavezu tuženog 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party> 
+                        da na ime svog doprinosa za izdržavanje mldb. sina plaća svakomjesečno iznos od 63,73 €.
+                    </p>
+                    <p>
+                        Istom presudom uređen je način održavanja ličnih odnosa 
+                        <party id="bp" refersTo="#bp" as="#defendant">B. P.</party>, 
+                        kao roditelja koji ne vrši roditeljsko pravo sa malodobnim djetetom, na način što će isti ostvarivati kontakt sa 
+                        djetetom dva puta u mjesecu, prvog i trećeg vikenda u mjesecu, od petka od 14:00 h, pa do nedelje do 14:00 h. 
+                        Malodobnog sina će preuzimati u neposrednoj blizini kuće gdje 
+                        <party id="jc" refersTo="#jc" as="#parent">J. C.</party> 
+                        živi, kod škole u Sutivanu i dijete vraćati na isto mjesto u nedelju u 14:00 h.
+                    </p>
+                    <p>
+                        Uvidom u izvod iz registra kaznenih evidencija na ime okrivljenog, sud je utvrdio da isti ranije nije osuđivan.
+                    </p>
+                    <p>
+                        Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi, a shodno 
+                        <ref href="/zkp#art_370">čl. 370 Zakonika o krivičnom postupku Crne Gore</ref>, 
+                        sud je utvrdio činjenično stanje i na osnovu tako utvrđenog činjeničnog stanja zaključio da je okrivljeni 
+                        izvršio krivično djelo stavljeno mu na teret i da je za isto kriv.
+                    </p>
+                    <p>
+                        Okrivljeni nije sporio da je maloljetnog sina zadržao kod sebe, nakon što ga je shodno pravosnažnoj sudskoj 
+                        odluci, dana 16. 08. 2019. godine u 14:00 h uzeo i doveo svojoj kući u Nj., odnosno da istog nije vratio u 
+                        nedelju 18. 08. 2019. godine, koje vrijeme je predviđeno sudskom odlukom, braneći se da dijete nije željelo 
+                        da se vrati kod majke.
+                    </p>
+                    <p>
+                        Postupajući na opisani način okrivljeni je onemogućio izvršenje sudske odluke kojom je maloljetno dijete 
+                        radi vršenja roditeljskog prava povjereno majci 
+                        <party id="jc" refersTo="#jc" as="#parent">J. C.</party>, 
+                        te je istu spriječio u vršenju roditeljskog prava, pa je na taj način ostvario sva bitna obilježja krivičnog djela 
+                        oduzimanje maloljetnog lica iz 
+                        <ref href="/krivicni#art_217_para_1">čl. 217 st. 1 Krivičnog zakonika CG.</ref>
+                    </p>
+                    <p>
+                        Okrivljeni je bio svjestan da protivpravnim zadržavanjem maloljetnog lica povjerenog majci radi vršenja 
+                        roditeljskog prava onemogućava izvršenje pravosnažne sudske odluke, pa je krivično djelo izvršio s umišljajem 
+                        i za isto je kriv.
+                    </p>
+                    <p>
+                        Odlučujući u pogledu vrste i visine krivične sankcije, sud je cijenio sve okolnosti iz 
+                        <ref href="/krivicni#art_42">čl. 42 Krivičnog zakonika Crne Gore</ref>, 
+                        pa je na strani okrivljenog od olakšavajućih okolnosti našao da se radi o ocu jednog djeteta, u obavezi izdržavanja 
+                        istog, te da se radi o licu koje do sada nije osuđivano, što ukazuje da nije sklon vršenju krivičnih djela, dok 
+                        otežavajućih okolnosti na strani okrivljenog sud nije našao.
+                    </p>
+                    <p>
+                        Usled nedostatka otežavajućih okolnosti sud je mišljenja da su ispunjeni uslovi za izricanje uslovne osude, 
+                        pa je okrivljenom utvrdio kaznu zatvora od 30 (trideset) dana, sa rokom provjeravanja od jedne godine, 
+                        smatrajući da će se istom dovoljno uticati na okrivljenog da ubuduće ne vrši ova ili slična krivična djela 
+                        i da će se istom postići svrha izricanja uslovne osude iz 
+                        <ref href="/krivicni#art_52_para_2">čl. 52 st. 2 KZ CG.</ref>
+                    </p>
+                    <p>
+                        Okrivljeni je, shodno 
+                        <ref href="/zkp#art_226">čl. 226</ref> i 
+                        <ref href="/zkp#art_229">229 ZKP CG</ref>, 
+                        obavezan da ovom sudu plati na ime paušala iznos od 35,00 €, pri čemu je sud imao u vidu složenost i 
+                        trajanje krivičnog postupka, te imovinske prilike okrivljenog.
+                    </p>
+                    <p>
+                        Imovinsko-pravnog zahtjeva nije bilo.
+                    </p>
+                    <p>
+                        Sa iznijetih razloga, shodno 
+                        <ref href="/zkp#art_374">čl. 374 Zakonika o krivičnom postupku Crne Gore</ref>, 
+                        odlučeno je kao u izreci presude.
+                    </p>
+                </arguments>
+        </judgmentBody> 
+        <conclusions>
+            <organization class="subtitle" id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLJU
+            </organization>
+            <p class="subtitle">
+                Dana 14. oktobra 2019. godine,
+            </p>
+            <p>
+                ZAPISNIČAR, S U D I J A,
+            </p>
+            <p>
+                <party id="dboskovic" refersTo="#dboskovic" as="#clerk">
+                    Draginja Bošković, s.r.
+                </party>
+                <party id="iadamovic" refersTo="#iadamovic" as="#judge">
+                    Ivan Adamović, s.r.
+                </party>
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso>
