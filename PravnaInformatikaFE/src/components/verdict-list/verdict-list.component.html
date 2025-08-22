@@ -1,0 +1,12 @@
+<div class="verdict-container">
+  <h2 class="verdict-title">Pregled presuda - KRIVIČNA DJELA PROTIV BRAKA I PORODICE</h2>
+  <ul class="verdict-list">
+    <li *ngFor="let file of verdicts" class="verdict-item">
+      <a (click)="openVerdict(file)" href="#" class="verdict-link">
+        <span class="verdict-icon">📄</span>  
+        {{ file }}
+        <span class="open-icon">🔗</span>   
+      </a>
+    </li>
+  </ul>
+</div>
