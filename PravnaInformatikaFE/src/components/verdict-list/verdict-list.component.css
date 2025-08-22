@@ -16,6 +16,64 @@
   font-weight: 600;
 }
 
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-bottom: 20px;
+  gap: 10px;
+  font-size: 0.95rem;
+  position: relative;
+  align-items: center;
+}
+
+
+.filter-container select {
+  padding: 8px 36px 8px 14px; 
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  color: #2c3e50;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 180px;
+  position: relative;
+}
+
+.filter-container select:hover {
+  border-color: #1a73e8;
+  box-shadow: 0 6px 18px rgba(26,115,232,0.25);
+  transform: translateY(-1px);
+}
+
+
+.filter-container select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 6px 18px rgba(26,115,232,0.35);
+  transform: translateY(-2px);
+}
+
+
+
+.filter-container select option {
+  padding: 10px;
+  background: linear-gradient(120deg, #f9f9ff, #dfeaff);
+  color: #2c3e50;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.filter-container select option:hover {
+  background: linear-gradient(120deg, #d0e4ff, #a8cfff);
+  color: #0b4fbd;
+}
+
+
+
+
 .verdict-list {
   list-style: none;
   padding: 0;
@@ -24,8 +82,6 @@
   flex-direction: column;
   gap: 12px;
 }
-
-
 
 .verdict-link {
   display: flex;

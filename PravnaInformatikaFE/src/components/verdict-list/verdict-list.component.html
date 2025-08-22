@@ -1,11 +1,24 @@
 <div class="verdict-container">
-  <h2 class="verdict-title">Pregled presuda - KRIVIČNA DJELA PROTIV BRAKA I PORODICE</h2>
+  <h2 class="verdict-title">
+    Pregled presuda - KRIVIČNA DJELA PROTIV BRAKA I PORODICE
+  </h2>
+
+
+  <div class="filter-container">
+    <label for="verdictFilter">Filtriranje presuda:</label>
+    <select id="verdictFilter" [(ngModel)]="selectedFilter" (change)="applyFilter()">
+      <option value="all">Sve</option>
+      <option value="existing">Postojeće</option>
+      <option value="generated">Generisane</option>
+    </select>
+  </div>
+
   <ul class="verdict-list">
-    <li *ngFor="let file of verdicts" class="verdict-item">
+    <li *ngFor="let file of filteredVerdicts" class="verdict-item">
       <a (click)="openVerdict(file)" href="#" class="verdict-link">
-        <span class="verdict-icon">📄</span>  
+        <span class="verdict-icon">📄</span>
         {{ file }}
-        <span class="open-icon">🔗</span>   
+        <span class="open-icon">🔗</span>
       </a>
     </li>
   </ul>
