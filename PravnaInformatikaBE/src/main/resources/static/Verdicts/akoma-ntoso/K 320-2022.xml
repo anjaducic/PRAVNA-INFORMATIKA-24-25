@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>OSNOVNI SUD U KOTORU</FRBRauthor>
+          <FRBRdate date="2023-03-31">2023-03-31</FRBRdate>
+          <FRBRtitle>K 320/2022</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru"/>
+        <TLCPerson eId="kp" href="/ontology/person/kp" showAs="K.P."/>
+        <TLCPerson eId="tp" href="/ontology/person/tp" showAs="T.P."/>
+        <TLCPerson eId="mt" href="/ontology/person/mt" showAs="M.T."/>
+        <TLCPerson eId="kt" href="/ontology/person/kt" showAs="K.T."/>
+        <TLCPerson eId="jc" href="/ontology/person/jc" showAs="J.Č."/>
+        <TLCPerson eId="ib" href="/ontology/person/ib" showAs="I.B."/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+        <TLCRole eId="defense_counsel" href="/ontology/role/defense_counsel" showAs="Defense Counsel"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          <organization id="os" refersTo="#os">
+            OSNOVNI SUD U KOTORU
+          </organization>,
+          prvostepeni, krivični, sudija 
+          <party id="kp" refersTo="#kp" as="#judge">
+            K.P.
+          </party>,
+          uz učešće samostalne referentkinje – zapisničarke 
+          <party id="tp" refersTo="#tp" as="#clerk">
+            T.P.
+          </party>,
+          u krivičnom postupku protiv okrivljenog 
+          <party id="mt" refersTo="#mt" as="#defendant">
+            M.T.
+          </party>
+          iz B., zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_5">člana 220, stav 5 KZ CG</ref>,
+          odlučujući o Optužnom predlogu 
+          <organization id="odt" refersTo="#odt">
+            ODT u K.
+          </organization>
+          , KT. 494/21 od 4. oktobra 2022. G., nakon glavnog i javnog pretresa održanog 31. marta 2023.G., u prisustvu zastupnice optužbe – državne tužiteljke u ODT K. 
+          <party id="jc" refersTo="#jc" as="#prosecutor">
+            J.Č.
+          </party>
+          i branioca okrivljenog po službenoj dužnosti 
+          <party id="ib" refersTo="#ib" as="#defense_counsel">
+            I.B.
+          </party>,
+          advokata iz T., donio je i istog dana javno objavio
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">
+          P R E S U D U
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="mt" refersTo="#mt" as="#defendant">
+            M. T.
+          </party>
+          , JMB 1......, od oca B. i majke S., rođene P., rođen 13. februara 1990. G. u B., stalno nastanjen u B.M.b. b., državljanin CG., zaposlen, oženjen, otac jednog maloljetnog djeteta, sa završenom srednjom školom, srednjeg imovnog stanja, osuđivan Presudom O. suda u K., K. 351/12, koja je postala pravosnažna 19. novembra 2012. G., zbog krivičnog djela iz 
+          <ref href="/krivicni#art_399">člana 399 KZCG</ref>,
+          na kaznu zatvora u trajanju od trideset dana; Presudom O.suda u K.,K. 82/20/20, koja je postala pravosnažna 3. juna 2020.G., zbog krivičnog djela nepostupanje po zdravstvenim propisima za suzbijanje opasne zarazne bolesti iz 
+          <ref href="/krivicni#art_287">člana 287 KZCG</ref>,
+          na novčanu kaznu u iznosu od 500 eura, koja je zamijenjena kaznom zatvora u trajanju od dvadeset dana; Presudom O. suda u K., K. 46/17/17, koja je postala pravosnažna 12. septembra 2017. G, zbog krivičnog djela laka tjelesna povreda iz 
+          <ref href="/krivicni#art_152_para_2">člana 152, stav 2, u vezi stava 1</ref>,
+          na kaznu zatvora u trajanju od tri mjeseca koju je bio dužan da izvršava u prostorijama za stanovanje, a koja kazna je zamijenjena kaznom zatvora u trajanju od dva mjeseca i 23 dana; Presudom O. suda u K.,K.189/12, koja je postala pravosnažna 25. februara 2012. G., zbog krivičnog djela iz 
+          <ref href="/krivicni#art_246_para_1">člana 246, stav 1, u vezi člana 49 KZ</ref>,
+          na kaznu zatvora u trajanju od četiri mjeseca, uslovno na jednu godinu i šest mjeseci; Presudom O. suda u K.,K.122/09, koja je postala pravosnažna 17. juna 2009. G., zbog krivičnog djela iz 
+          <ref href="/krivicni#art_240_para_1">člana 240, stav 1, tačka 1, u vezi člana 49 KZ</ref>,
+          na kaznu zatvora u trajanju od jedne godine i sedam mjeseci i Rješenjem O. suda u K.,Km.17/05, koje je postalo pravosnažno 25. januara 2006.G., zbog krivičnog djela iz 
+          <ref href="/krivicni#art_248_para_1">člana 248, stav 1 KZ</ref>
+          i kome je izrečena mjera – pojačani nadzor od strane roditelja;
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">
+          K R I V J E
+        </p>
+        <p>
+          -Zato što je:
+        </p>
+        <p>
+          Petnaestog jula 2021. G., oko 4.00 časa, u ulici J. put, O.B., na "E." pumpi, na kojoj je bila zaposlena njegova supruga – oštećena 
+          <party id="kt" refersTo="#kt" as="#victim">
+            K.T.
+          </party>
+          , prekršio mjeru zaštite od nasilja u porodici i to mjeru zabrane približavanja oštećenoj na razdaljini ne manjoj od 50 metara na teritoriji CG, u trajanju od šest mjeseci. Navedena mjera mu je izrečena Rješenjem Suda za prekršaje u B., PP. 569/21 od 3. jula 2021. G.. To je uradio na način što je u jednom trenutku prišao oštećenoj, koja se tada nalazila ispred prodajnog objekta pumpe, uhvatio je za zglob lijeve ruke i obratio joj se riječima: "Šta ti radiš do ovo doba, zašto nisi kući, ti si radila do 1.00 sat?!". Nakon toga ju je odvukao od prodajnog objekta pumpe sa namjerom da popričaju, pa kada oštećena to odbija i oslobodi se njegovog stiska, isti je prati i zajedno sa njom ulazi u prodajni objekat pumpe. Pri tome, okrivljeni je bio uračunljiv, svjestan svog djela i njegove zabranjenosti, čije izvršenje je htio;
+        </p>
+        <p>
+          -čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_5">člana 220, stav 5 KZCG</ref>,
+        </p>
+        <p>
+          -pa ga Sud, primjenom citiranih zakonskih odredaba, te 
+          <ref href="/krivicni#art_3">čl. 3,</ref>
+          <ref href="/krivicni#art_4">4,</ref>
+          <ref href="/krivicni#art_5">5,</ref>
+          <ref href="/krivicni#art_13">13,</ref>
+          <ref href="/krivicni#art_15">15,</ref>
+          <ref href="/krivicni#art_32">32,</ref>
+          <ref href="/krivicni#art_36">36</ref>
+          i 
+          <ref href="/krivicni#art_42">42 KZCG</ref>,
+          te 
+          <ref href="/zkp#art_226">čl. 226,</ref>
+          <ref href="/zkp#art_229">229</ref>
+          i 
+          <ref href="/zkp#art_374">374 Zakonika o krivičnom postupku</ref>.
+        </p>
+        <p class="subtitle">
+          O S U Đ U J E
+        </p>
+        <p>
+          Na kaznu zatvora u trajanju od 4 (četiri) mjeseca, koju će okrivljeni izdržati po pravosnažnosti ove presude.
+        </p>
+        <p>
+          Shodno odredbi 
+          <ref href="/krivicni#art_77a">člana 77a KZCG</ref>,
+          prema okrivljenom se, i z r i č e
+        </p>
+        <p class="subtitle">
+          MJERA BEZBJEDNOSTI
+        </p>
+        <p>
+          Zabrana približavanja oštećenoj 
+          <party id="kt" refersTo="#kt" as="#victim">
+            K.T.
+          </party>
+          na udaljenosti ne manjoj od 50 metara, u trajanju od godinu dana po pravosnažnosti ove presude, s tim što se vrijeme provedeno u zatvoru neće uračunati u vrijeme trajanja ove mjere.
+        </p>
+        <p>
+          Dužan je Okrivljeni da na ime troškova krivičnog postupka uplati u korist Budžeta CG, iznos od 30 eura na žiro-računu br. 832-16-52, u roku od 30 dana od dana pravosnažnosti presude, dok će o troškovima koje je okrivljeni dužan da plati na ime postavljenja branioca po službenoj dužnosti Sud odlučiti posebnim rješenjem.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">
+          O b r a z l o ž e n j e
+        </p>
+        <p class="subtitle">
+          A. NAVODI STRANAKA
+        </p>
+        <p>
+          1. Optužnim predlogom ODT K., KT. 494/21 od 4. oktobra 2022. G., okrivljenom je stavljeno na teret da je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+          <ref href="/krivicni#art_220_para_1">člana 220, stav 1 KZCG</ref>.
+          Ostajući u cjelosti pri podnijetom optužnom aktu, zastupnik optužbe je predložio da Sud okrivljenog oglasi krivom i osudi po zakonu.
+        </p>
+        <p>
+          2. Rješenjem vanraspravnog vijeća ovog suda, Kv. 316/22 od 14. novembra 2022. godine, određeno je da se okrivljenom sudi u odsustvu. Imenovanom je Rješenjem v. d. predsjednice ovog suda, I-11-Su. 129/2022 od 16. novembra 2022. G., postavljen branilac po službenoj dužnosti u liku advokata 
+          <party id="ib" refersTo="#ib" as="#defense_counsel">
+            I. B.
+          </party>
+        </p>
+        <p>
+          3. Branilac okrivljenog nije imao prigovora na izvedene dokaze. U završnoj riječi je predložio da Sud okrivljenog uslovno kazni.
+        </p>
+        <p class="subtitle">
+          B. DOKAZNI POSTUPAK
+        </p>
+        <p>
+          3. Radi pravilnog i potpunog utvrđenja činjeničnog stanja u ovoj krivičnopravnoj stvari, Sud je u dokaznom postupku, na saglasan predlog stranaka pročitao iskaz oštećene dat pred ODT K., Kt. 494/21 od 28. marta 2022; te Rješenje Suda za prekršaje u B., PP. 569/21 od 31. jula 2021; Dopis Uprave policije – Centra bezbjednosti B., 17/3-1 broj: 02-215/22-1280 od 28. februara 2022. G. i Izvod iz KE na ime okrivljenog, te je izvršio uvid u video nadzor na CD-u.
+        </p>
+        <p>
+          3.1. Oštećena 
+          <party id="kt" refersTo="#kt" as="#victim">
+            K. T.
+          </party>
+          je u svom iskazu u bitnom navela: da je u vrijeme kada se desio predmetni događaj bila zaposlena na maloj E. pumpi u B.kao kasirka. U braku je sa okrivljenim pet godina i u tom braku imaju jedno dijete starosti pet godina, s tim što nekih godinu i po dana ne žive zajedno, iako se još uvijek sudski nisu razveli. U tom periodu je sa M. često imala problema i svakodnevno ga je prijavljivala policiji. M. je od strane Suda za prekršaje u B. 3. jula 2021. G., izrečena mjera zabrane prilaska od 50 metara, u trajanju od šest mjeseci. Dana 14/15. jula 2021. G. radila je u smjeni do 1.00 sat. Nakon završetka posla pošla je kući i negdje oko 1.30 časova se vratila kako bi pomogla D., ženi koja čisti na pumpi. Na pumpi se zadržala negdje do 4.00 sata, kada je sjela sa strane pumpe, u blizini magacina, kako bi ispalila cigaretu sa kolegom N., koji je radio u noćnoj smjeni. Sa njima, u društvu, je bio još jedan kolega, takođe sa imenom N.. Dok su tako sjedjeli, u jednom momentu na pumpu je došao M. sa nekim drugom kog ne poznaje. Nakon što je izašao iz vozila, M.joj je prišao i obratio joj se riječima: "Šta ti radiš u ovo doba, zašto nisi kući, ti si radila do 1.00 sat?!". Tada se ustala i rekla mu je: "To nije tvoja stvar do kada ja ostajem i gdje!", nakon čega je uzela mobilni telefon kako bi pozvala policiju, u kom momentu joj okrivljeni prilazi, hvata je za zglob lijeve ruke, nakon čega ga ona odgurava od sebe i prolazi iza pumpe kako bi se udaljila od njega i pozvala policiju. Tada je čula kako Marinko viče ispred pumpe i kako udara njenog kolegu N. u predjelu stomaka i obraća mu se riječima: "Šta ti radiš sa njom, ona je moja žena?!". Nakon toga, M.joj ponovo prilazi, ponovo je hvata za ruku i odvlači je od pumpe kako bi razgovarali, kada je uspjela da se otrgne i kaže mu da je ne stiska i da je ne vuče, da ne želi da razgovara sa njim, a zatim je ušla unutar pumpe, da bi M.ušao sa njom, sve vrijeme vičući na nju. U jednom momentu ju je dotakao po glavi-tjemenu. Ubrzo nakon toga je došla policija. U ovom događaju nije zadobila tjelesne povrede. Nije se pridružila krivičnom gonjenju, niti je postavila imovinskopravni zahtjev.
+        </p>
+        <p>
+          Sud je na osnovu svih izvedenih dokaza, uključujući iskaz oštećene, video nadzor, i prekršajno rješenje, utvrdio da je okrivljeni prekršio mjeru zaštite od nasilja u porodici aproximacijom oštećenoj na zabranjenoj udaljenosti i fizičkim kontaktom sa njom.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">
+        OSNOVNI SUD U KOTORU
+      </organization>
+      <p class="subtitle">
+        Dana, 31. marta 2023. godine
+      </p>
+      <p>
+        ZAPISNIČARKA, S U D I J A,
+      </p>
+      <p>
+        <party id="tp" refersTo="#tp" as="#clerk">
+          T.P.
+        </party>
+        <party id="kp" refersTo="#kp" as="#judge">
+          K. P.
+        </party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

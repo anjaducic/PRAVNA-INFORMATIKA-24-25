@@ -1,0 +1,3992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+	<act id="krivicni" name="Krivični zakonik Crne Gore">
+		<meta>
+			<identification source="#dunje">
+				<FRBRWork>
+					<FRBRthis value="/akn/krivicni/!main" />
+					<FRBRuri value="/krivicni" />
+					<FRBRdate date="2023-12-19" name="Generation" />
+					<FRBRauthor href="#congress" as="#author" />
+					<FRBRcountry value="cg" />
+					<FRBRnumber value="110/2023" />
+					<FRBRname value="Krivični zakonik Crne Gore" />
+					<FRBRprescriptive value="true" />
+					<FRBRauthoritative value="true" />
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRdate date="2023-12-19" name="Generation" />
+					<FRBRauthor href="#dunje" as="#editor" />
+					<FRBRlanguage language="cg" />
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRdate date="2023-12-19" name="Generation" />
+					<FRBRauthor href="#dunje" as="#generator" />
+					<FRBRformat value="xml" />
+				</FRBRManifestation>
+			</identification>
+			<publication name="sl" date="2008-08-11" showAs="Službeni list Crne Gore" number="76/2008" />
+			<classification source="#dunje">
+				<keyword value="krivicni" showAs="krivicni" dictionary="CG" />
+			</classification>
+			<references>
+				<TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg" showAs="Službeni list Crne Gore" />
+			</references>
+		</meta>
+		<body> 
+			<heading>
+				Krivični zakonik Crne Gore
+			</heading>
+<!--1. GLAVA-->
+			<chapter eId="chp_1">
+				<num>
+					GLAVA PRVA
+				</num>
+				<heading>
+					OSNOVNE ODREDBE
+				</heading>
+				<section eId="chp_1_sec_1">
+					<article eId="art_1">
+						<heading>
+							Osnov i granice krivičnopravne prinude
+						</heading>
+						<num>
+							Član 1
+						</num>
+						<paragraph eId="art_1_para_1">
+							<content eId="art_1_para_1_content">
+								<p>
+									Zaštita čovjeka i drugih osnovnih društvenih vrijednosti predstavlja osnov i granice za 
+									određivanje krivičnih djela, propisivanje krivičnih sankcija i njihovu primjenu, u mjeri u 
+									kojoj je to nužno za suzbijanje tih djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_2">
+						<heading>
+							Zakonitost u određivanju krivičnih djela i propisivanju krivičnih sankcija
+						</heading>
+						<num>
+							Član 2
+						</num>
+						<paragraph eId="art_2_para_1">
+							<content eId="art_2_para_1_content">
+								<p>
+									Kazna ili druga krivična sankcija može se izreći samo za djelo koje je, prije nego što je 
+									učinjeno, bilo zakonom određeno kao krivično djelo i za koje je bila zakonom propisana 
+									kazna.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_3">
+						<heading>
+							Nema kazne bez krivice
+						</heading>
+						<num>
+							Član 3
+						</num>
+						<paragraph eId="art_3_para_1">
+							<content eId="art_3_para_1_content">
+								<p>
+									Kazna i mjere upozorenja mogu se izreći samo učiniocu koji je kriv za učinjeno krivično 
+									djelo.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_4">
+						<heading>
+							Krivične sankcije i njihova opšta svrha
+						</heading>
+						<num>
+							Član 4
+						</num>
+						<paragraph eId="art_4_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_4_para_1_content">
+								<p>
+									Krivične sankcije su: kazne, mjere upozorenja, mjere bezbjednosti i vaspitne mjere.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_4_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_4_para_2_content">
+								<p>
+									Opšta svrha propisivanja i izricanja krivičnih sankcija je suzbijanje djela kojima se 
+									povređuju ili ugrožavaju vrijednosti zaštićene krivičnim zakonodavstvom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+<!--2. GLAVA-->
+			<chapter eId="chp_2">
+				<num>
+					GLAVA DRUGA
+				</num>
+				<heading>
+					KRIVIČNO DJELO
+				</heading>
+				<section eId="chp_2_sec_1">
+					<num>
+						1.
+					</num>
+					<heading>
+						Opšte odredbe o krivičnom djelu
+					</heading>
+					<article eId="art_5">
+						<heading>
+							Krivično djelo
+						</heading>
+						<num>
+							Član 5
+						</num>
+						<paragraph eId="art_5_para_1">
+							<content eId="art_5_para_1_content">
+								<p>
+									Krivično djelo je djelo koje je zakonom određeno kao krivično djelo, koje je protivpravno 
+									i koje je skrivljeno.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_6">
+						<heading>
+							Način izvršenja krivičnog djela
+						</heading>
+						<num>
+							Član 6
+						</num>
+						<paragraph eId="art_6_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_6_para_1_content">
+								<p>
+									Krivično djelo može se učiniti činjenjem ili nečinjenjem.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_6_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_6_para_2_content">
+								<p>
+									Krivično djelo je učinjeno nečinjenjem kad je učinilac propustio činjenje koje je bio 
+									dužan da izvrši.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_6_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_6_para_3_content">
+								<p>
+									Nečinjenjem može biti učinjeno i krivično djelo koje zakonom nije određeno kao 
+									nečinjenje, ako je učinilac propuštanjem dužnog činjenja ostvario obilježja krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_7">
+						<heading>
+							Vrijeme izvršenja krivičnog djela
+						</heading>
+						<num>
+							Član 7
+						</num>
+						<paragraph eId="art_7_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_7_para_1_content">
+								<p>
+									Krivično djelo je učinjeno u vrijeme kad je izvršilac radio ili bio dužan da radi, bez 
+									obzira kad je posljedica djela nastupila.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_7_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_7_para_2_content">
+								<p>
+									Za saučesnika se smatra da je krivično djelo učinio u vrijeme kad je radio ili bio 
+									dužan da radi.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_8">
+						<heading>
+							Mjesto izvršenja krivičnog djela
+						</heading>
+						<num>
+							Član 8
+						</num>
+						<paragraph eId="art_8_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_8_para_1_content">
+								<p>
+									Krivično djelo je učinjeno u mjestu gdje je izvršilac radio i bio dužan da radi ili gdje 
+									je u cjelini ili djelimično nastupila posljedica djela, a u slučaju pokušaja i tamo gdje je 
+									posljedica pokušanog djela po njegovom umišljaju trebalo ili mogla da nastupi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_8_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_8_para_2_content">
+								<p>
+									Za saučesnika se smatra da je djelo učinio i u mjestu u kojem je preduzeo radnju 
+									saučesništva.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_10">
+						<heading>
+							Nužna odbrana
+						</heading>
+						<num>
+							Član 10
+						</num>
+						<paragraph eId="art_10_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_10_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u nužnoj odbrani.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_10_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_10_para_2_content">
+								<p>
+									Nužna je ona odbrana koja je neophodno potrebna da učinilac od svog dobra ili 
+									dobra drugoga odbije istovremen ili neposredno predstojeći protivpravan napad.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_10_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_10_para_3_content">
+								<p>
+									Učinilac koji je prekoračio granice nužne odbrane može se blaže kazniti, a ako je 
+									prekoračenje učinio usljed jake razdraženosti ili prepasti izazvane napadom, može se i 
+									osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_11">
+						<heading>
+							Krajnja nužda
+						</heading>
+						<num>
+							Član 11
+						</num>
+						<paragraph eId="art_11_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_11_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u krajnjoj nuždi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_11_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_11_para_2_content">
+								<p>
+									Krajnja nužda postoji kad je djelo učinjeno radi toga da učinilac otkloni od svog 
+									dobra ili dobra drugoga istovremenu ili neposredno predstojeću neskrivljenu opasnost koja 
+									se na drugi način nije mogla otkloniti, a pri tom učinjeno zlo nije veće od zla koje je 
+									prijetilo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_11_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_11_para_3_content">
+								<p>
+									Učinilac koji je sam izazvao opasnost, ali iz nehata ili je prekoračio granice krajnje 
+									nužde, može se blaže kazniti, a ako je prekoračenje učinjeno pod naročito olakšavajućim 
+									okolnostima, može se i osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_11_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_11_para_4_content">
+								<p>
+									Nema krajnje nužde ako je učinilac bio dužan da se izlaže opasnosti koja je prijetila.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_12">
+						<heading>
+							Sila i prijetnja
+						</heading>
+						<num>
+							Član 12
+						</num>
+						<paragraph eId="art_12_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_12_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno pod dejstvom apsolutne sile.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_12_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_12_para_2_content">
+								<p>
+									Ako je djelo učinjeno da bi učinilac od svog dobra ili dobra drugoga otklonio opasnost 
+									koja je nastala usljed sile koja nije apsolutna ili prijetnje, na učinioca će se primijeniti 
+									odredbe 
+									<ref href="/krivicni#art_11">
+										člana 11 
+									</ref>
+									ovog zakonika, uzimajući silu ili prijetnju kao neskrivljenu opasnost.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_12_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_12_para_3_content">
+								<p>
+									Ako je krivično djelo učinjeno pod dejstvom sile ili prijetnje, a nijesu ispunjeni uslovi 
+									iz 
+									<ref href="/krivicni#art_12_para_1">
+										st. 1 
+									</ref>
+									ili 
+									<ref href="/krivicni#art_12_para_2">
+										2 ovog člana
+									</ref>, 
+									učinilac se može blaže kazniti, a ako je djelo učinjeno pod naročito 
+									olakšavajućim okolnostima, može se i osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_12_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_12_para_4_content">
+								<p>
+									U slučajevima iz 
+									<ref href="/krivicni#art_12_para_1">
+										st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_12_para_2">
+										2 ovog člana
+									</ref>
+									, ako se lice prema kojem je primijenjena sila ili 
+									prijetnja ne smatra izvršiocem krivičnog djela, kao izvršilac krivičnog djela smatraće se lice 
+									koje je primijenilo silu ili prijetnju.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_13">
+						<heading>
+							Krivica
+						</heading>
+						<num>
+							Član 13
+						</num>
+						<paragraph eId="art_13_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_13_para_1_content">
+								<p>
+									Kriv je za krivično djelo učinilac koji je uračunljiv i koji je postupao sa umišljajem, a 
+									bio je svjestan ili je bio dužan i mogao biti svjestan da je njegovo djelo zabranjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_13_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_13_para_2_content">
+								<p>
+									Za krivično djelo učinjeno iz nehata učinilac može biti kriv samo kad to zakon 
+									određuje.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_14">
+						<heading>
+							Uračunljivost
+						</heading>
+						<num>
+							Član 14
+						</num>
+						<paragraph eId="art_14_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_14_para_1_content">
+								<p>
+									Nije uračunljiv učinilac koji u vrijeme izvršenja protivpravnog djela određenog u 
+									zakonu kao krivično djelo nije mogao da shvati značaj svog djela ili nije mogao da upravlja 
+									svojim postupcima usljed duševne bolesti, privremene duševne poremećenosti, zaostalog 
+									duševnog razvoja ili druge teže duševne poremećenosti (neuračunljivost).
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_14_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_14_para_2_content">
+								<p>
+									Učinilac krivičnog djela čija je sposobnost da shvati značaj svog djela ili sposobnost 
+									da upravlja svojim postupcima bila bitno smanjena usljed nekog stanja iz 
+									<ref href="/krivicni#art_14_para_1">
+										stava 1 ovog člana 
+									</ref>
+									(bitno smanjena uračunljivost) može se blaže kazniti.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_14_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_14_para_3_content">
+								<p>
+									Krivica učinioca krivičnog djela koji se upotrebom alkohola, droga ili na drugi način 
+									doveo u stanje u kojem nije mogao da shvati značaj svog djela ili da upravlja svojim 
+									postupcima utvrđuje se prema vremenu neposredno prije dovođenja u takvo stanje.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_14_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_14_para_4_content">
+								<p>
+									Učiniocu koji je pod okolnostima iz 
+									<ref href="/krivicni#art_14_para_3">
+										stava 3 ovog člana 
+									</ref>
+									učinio krivično djelo u stanju bitno smanjene uračunljivosti ne može se ublažiti kazna.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_15">
+						<heading>
+							Umišljaj
+						</heading>
+						<num>
+							Član 15
+						</num>
+						<paragraph eId="art_15_para_1">
+							<content eId="art_15_para_1_content">
+								<p>
+									Krivično djelo je učinjeno sa umišljajem kad je učinilac bio svjestan svog djela i htio 
+									njegovo izvršenje ili kad je učinilac bio svjestan da može učiniti djelo pa je na to pristao.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_16">
+						<heading>
+							Nehat
+						</heading>
+						<num>
+							Član 16
+						</num>
+						<paragraph eId="art_16_para_1">
+							<content eId="art_16_para_1_content">
+								<p>
+									Krivično djelo je učinjeno iz nehata kad je učinilac bio svjestan da svojom radnjom može 
+									učiniti djelo, ali je olako držao da do toga neće doći ili da će to moći spriječiti ili kad nije 
+									bio svjestan da svojom radnjom može učiniti djelo iako je prema okolnostima pod kojima 
+									je ono učinjeno i prema svojim ličnim svojstvima bio dužan i mogao biti svjestan te 
+									mogućnosti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_17">
+						<heading>
+							Odgovornost za težu posljedicu
+						</heading>
+						<num>
+							Član 17
+						</num>
+						<paragraph eId="art_17_para_1">
+							<content eId="art_17_para_1_content">
+								<p>
+									Kad je iz krivičnog djela proizašla teža posljedica zbog koje zakon za to djelo propisuje 
+									težu kaznu, ta se kazna može izreći ako je učinilac u odnosu na tu posljedicu postupao iz 
+									nehata, a i sa umišljajem ako time ne ostvaruje obilježja nekog drugog krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_18">
+						<heading>
+							Stvarna zabluda
+						</heading>
+						<num>
+							Član 18
+						</num>
+						<paragraph eId="art_18_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_18_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u neotklonjivoj stvarnoj zabludi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_18_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_18_para_2_content">
+								<p>
+									Neotklonjiva stvarna zabluda postoji ako učinilac nije bio dužan i nije mogao da 
+									izbjegne zabludu u pogledu neke stvarne okolnosti koja predstavlja obilježje krivičnog djela 
+									ili u pogledu neke stvarne okolnosti koja bi, da je zaista postojala, činila djelo dozvoljenim.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_18_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_18_para_3_content">
+								<p>
+									Ako je učinilac bio u stvarnoj zabludi usljed nehata, postojaće krivično djelo učinjeno 
+									iz nehata kad je to propisano zakonom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_19">
+						<heading>
+							Pravna zabluda
+						</heading>
+						<num>
+							Član 19
+						</num>
+						<paragraph eId="art_19_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_19_para_1_content">
+								<p>
+									Nije krivično djelo ono djelo koje je učinjeno u neotklonjivoj pravnoj zabludi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_19_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_19_para_2_content">
+								<p>
+									Neotklonjiva pravna zabluda postoji ako učinilac nije bio dužan i nije mogao da zna 
+									da je djelo koje je učinio zabranjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_19_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_19_para_3_content">
+								<p>
+									Učiniocu koji nije znao da je djelo zabranjeno, ali je to bio dužan i mogao da zna, 
+									kazna se može ublažiti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_2">
+					<num>
+						2.
+					</num>
+					<heading>
+						Pokušaj krivičnog djela i dobrovoljni odustanak
+					</heading>
+					<article eId="art_20">
+						<heading>
+							Pokušaj
+						</heading>
+						<num>
+							Član 20
+						</num>
+						<paragraph eId="art_20_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_20_para_1_content">
+								<p>
+									Ko sa umišljajem započne izvršenje krivičnog djela, ali ga ne dovrši, kazniće se za 
+									pokušaj krivičnog djela za koje se po zakonu može izreći kazna zatvora od pet godina ili 
+									teža kazna, a za pokušaj drugog krivičnog djela samo kad zakon izričito propisuje 
+									kažnjavanje i za pokušaj.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_20_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_20_para_2_content">
+								<p>
+									Kao započinjanje izvršenja krivičnog djela smatra se i upotreba određenog sredstva 
+									ili primjena određenog načina izvršenja, ako su oni zakonom određeni kao obilježja 
+									krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_20_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_20_para_3_content">
+								<p>
+									Učinilac će se za pokušaj kazniti kaznom propisanom za krivično djelo, a može se i 
+									blaže kazniti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_21">
+						<heading>
+							Nepodoban pokušaj
+						</heading>
+						<num>
+							Član 21
+						</num>
+						<paragraph eId="art_21_para_1">
+							<content eId="art_21_para_1_content">
+								<p>
+									Učinilac koji pokuša da izvrši krivično djelo nepodobnim sredstvom ili prema 
+									nepodobnom predmetu može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_22">
+						<heading>
+							Dobrovoljni odustanak
+						</heading>
+						<num>
+							Član 22
+						</num>
+						<paragraph eId="art_22_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_22_para_1_content">
+								<p>
+									Učinilac koji je pokušao izvršenje krivičnog djela, ali je dobrovoljno odustao od 
+									njegovog izvršenja, može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_22_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_22_para_2_content">
+								<p>
+									U slučaju dobrovoljnog odustanka, učinilac će se kazniti za one radnje koje čine neko 
+									drugo samostalno krivično djelo, koje nije obuhvaćeno krivičnim djelom od čijeg izvršenja 
+									je učinilac odustao.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_3">
+					<num>
+						3.
+					</num>
+					<heading>
+						Saučesništvo u krivičnom djelu
+					</heading>
+					<article eId="art_23">
+						<heading>
+							Izvršilaštvo i saizvršilaštvo
+						</heading>
+						<num>
+							Član 23
+						</num>
+						<paragraph eId="art_23_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_23_para_1_content">
+								<p>
+									Izvršilac krivičnog djela je lice koje preduzima radnju izvršenja krivičnog djela ili koje 
+									posredstvom drugog lica izvrši krivično djelo, ukoliko se to drugo lice ne može smatrati 
+									izvršiocem krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_23_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_23_para_2_content">
+								<p>
+									Ako više lica, učestvovanjem u radnji izvršenja sa umišljajem ili iz nehata, zajednički 
+									izvrše krivično djelo, ili ostvarujući zajedničku odluku drugom radnjom sa umišljajem bitno 
+									doprinesu izvršenju krivičnog djela, svako od njih kazniće se kaznom propisanom za to 
+									djelo.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_24">
+						<heading>
+							Podstrekavanje
+						</heading>
+						<num>
+							Član 24
+						</num>
+						<paragraph eId="art_24_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_24_para_1_content">
+								<p>
+									Ko drugog sa umišljajem podstrekne da učini krivično djelo, kazniće se kao da ga je 
+									sam izvršio.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_24_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_24_para_2_content">
+								<p>
+									Ko drugog sa umišljajem podstrekava na izvršenje krivičnog djela za koje se po 
+									zakonu može izreći kazna zatvora od pet godina ili teža kazna, a djelo ne bude ni pokušano, 
+									kazniće se kao za pokušaj krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_25">
+						<heading>
+							Pomaganje
+						</heading>
+						<num>
+							Član 25
+						</num>
+						<paragraph eId="art_25_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_25_para_1_content">
+								<p>
+									Ko drugom sa umišljajem pomogne u izvršenju krivičnog djela, kazniće se kao da ga 
+									je sam izvršio, a može se i blaže kazniti.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_25_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_25_para_2_content">
+								<p>
+									Kao pomaganje u izvršenju krivičnog djela smatra se naročito: davanje savjeta ili 
+									uputstava kako da se izvrši krivično djelo, stavljanje učiniocu na raspolaganje sredstava 
+									za izvršenje krivičnog djela, stvaranje uslova ili otklanjanje prepreka za izvršenje krivičnog 
+									djela, kao i unaprijed obećano prikrivanje krivičnog djela, učinioca, sredstava kojima je 
+									krivično djelo izvršeno, tragova krivičnog djela ili predmeta pribavljenih krivičnim djelom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_26">
+						<heading>
+							Granice odgovornosti i kažnjivosti saučesnika
+						</heading>
+						<num>
+							Član 26
+						</num>
+						<paragraph eId="art_26_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_26_para_1_content">
+								<p>
+									Saizvršilac je odgovoran u granicama svog umišljaja ili nehata, a podstrekač i 
+									pomagač u granicama svog umišljaja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_26_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_26_para_2_content">
+								<p>
+									Saizvršilac, podstrekač ili pomagač koji je dobrovoljno spriječio izvršenje krivičnog 
+									djela može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_26_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_26_para_3_content">
+								<p>
+									Lični odnosi, svojstva i okolnosti usljed kojih zakon isključuje krivicu ili dozvoljava 
+									oslobođenje od kazne, od kojih zavisi postojanje lakšeg ili težeg oblika djela ili koje utiču 
+									na odmjeravanje kazne, mogu se uzeti u obzir samo onom izvršiocu, saizvršiocu, 
+									podstrekaču ili pomagaču kod kojeg takvi odnosi, svojstva i okolnosti postoje.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_27">
+						<heading>
+							Kažnjavanje podstrekača i pomagača za pokušaj i lakše krivično djelo
+						</heading>
+						<num>
+							Član 27
+						</num>
+						<paragraph eId="art_27_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_27_para_1_content">
+								<p>
+									Ako je krivično djelo ostalo u pokušaju podstrekač i pomagač će se kazniti za 
+									pokušaj.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_27_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_27_para_2_content">
+								<p>
+									Ako je izvršilac izvršio lakše krivično djelo od onog na koje se podstrekavanje ili 
+									pomaganje odnosi, a koje bi bilo njime obuhvaćeno, podstrekač i pomagač će se kazniti 
+									za krivično djelo koje je učinjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_27_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_27_para_3_content">
+								<p>
+									Odredba 
+									<ref href="/krivicni#art_27_para_2"> 
+										stava 2 ovog člana 
+									</ref>
+									neće se primijeniti ako bi se podstrekač strože kaznio primjenom 
+									<ref href="/krivicni#art_24_para_2"> 
+										člana 24 stav 2 
+									</ref>
+									ovog zakonika.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_4">
+					<num>
+						4.
+					</num>
+					<heading>
+						Posebne odredbe o odgovornosti za krivična djela učinjena putem medija
+					</heading>
+					<article eId="art_28">
+						<heading>
+							Odgovornost urednika
+						</heading>
+						<num>
+							Član 28
+						</num>
+						<paragraph eId="art_28_para_1">
+							<num>
+								(1)
+							</num>
+							<intro eId="art_28_para_1_intro">
+								<p>
+									Za krivična djela učinjena putem medija odgovoran je urednik, odnosno lice koje ga 
+									je zamjenjivalo u vrijeme objavljivanja informacije, ako:
+								</p>
+							</intro>
+							<point eId="art_28_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										je do završetka glavnog pretresa pred prvostepenim sudom autor ostao nepoznat;
+									</p>
+								</content>
+							</point>
+							<point eId="art_28_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										je informacija objavljena bez saglasnosti autora.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_28_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_28_para_2_content">
+								<p>
+									Nije odgovoran urednik, odnosno lice koje ga zamjenjuje ako iz opravdanih razloga 
+									nije znao za neku od okolnosti navedenih u
+									<ref href="/krivicni#art_28_para_1_point_1"> 
+										stavu 1 tač. 1
+									</ref>
+									i
+									<ref href="/krivicni#art_28_para_1_point_2"> 
+										2 ovog člana.
+									</ref>
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_29">
+						<heading>
+							Odgovornost izdavača, štampara i proizvođača
+						</heading>
+						<num>
+							Član 29
+						</num>
+						<paragraph eId="art_29_para_1">
+							<num>
+								(1)
+							</num>
+							<intro eId="art_29_para_1_intro">
+								<p>
+									Kad postoje uslovi iz 
+									<ref href="/krivicni#art_28"> 
+										člana 28 
+									</ref>
+									ovog zakonika odgovorni su:
+								</p>
+							</intro>
+							<point eId="art_29_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										izdavač - za krivično djelo učinjeno putem nepovremene štampane publikacije, a ako 
+										nema izdavača ili postoje stvarne ili pravne smetnje za njegovo gonjenje - štampar koji je 
+										za to znao;
+									</p>
+								</content>
+							</point>
+							<point eId="art_29_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										proizvođač - za krivično djelo učinjeno putem kompakt diska, gramofonske ploče, 
+										magnetofonske trake i drugih auditivnih sredstava, filma za javno i privatno prikazivanje, 
+										dijapozitiva, videosredstava ili sličnih sredstava namijenjenih širem krugu lica.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_29_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_29_para_2_content">
+								<p>
+									Ako je izdavač, štampar ili proizvođač pravno lice ili državni organ, odgovorno je lice 
+									koje odgovara za izdavanje, štampanje ili proizvodnju.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_30">
+						<heading>
+							Primjenjivanje odredaba iz 
+							<ref href="/krivicni#art_28"> 	
+								čl. 28 
+							</ref>	
+							i 
+							<ref href="/krivicni#art_29"> 
+								29
+							</ref>
+						</heading>
+						<num>
+							Član 30
+						</num>
+						<paragraph eId="art_30_para_1">
+							<content eId="art_30_para_1_content">
+								<p>
+									Odredbe o odgovornosti lica iz 
+									<ref href="/krivicni#art_28"> 	
+										čl. 28 
+									</ref>
+									i 
+									<ref href="/krivicni#art_29"> 	
+										29 
+									</ref>
+									ovog zakonika primjenjuju se samo, ako se ta 
+									lica po opštim odredbama ovog zakonika ne mogu smatrati učiniocem krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_2_sec_5">
+					<num>
+						5.
+					</num>
+					<heading>
+						Odgovornost pravnih lica za krivično djelo
+					</heading>
+					<article eId="art_31">
+						<num>
+							Član 31
+						</num>
+						<paragraph eId="art_31_para_1">
+							<content eId="art_31_para_1_content">
+								<p>
+									Odgovornost pravnih lica za krivična djela, kao i sankcije za njih biće zakonom 
+									predviđene.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+<!--3. GLAVA-->
+			<chapter eId="chp_3">
+				<num>
+					GLAVA TREĆA
+				</num>
+				<heading>
+					KAZNE
+				</heading>
+				<section eId="chp_3_sec_1">
+					<num>
+						1.
+					</num>
+					<heading>
+						Svrha kažnjavanja, vrste kazni i uslovi za njihovo izricanje
+					</heading>
+					<article eId="art_32">
+						<heading>
+							Svrha kažnjavanja
+						</heading>
+						<num>
+							Član 32
+						</num>
+						<paragraph eId="art_32_para_1">
+							<intro eId="art_32_para_1_intro">
+								<p>
+									U okviru opšte svrhe krivičnih sankcija (
+									<ref href="/krivicni#art_4_para_2"> 
+										član 4 stav 2
+									</ref>	
+									), svrha kažnjavanja je:
+								</p>
+							</intro>
+							<point eId="art_32_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										sprječavanje učinioca da čini krivična djela i uticanje na njega da ubuduće ne čini krivična djela;
+									</p>
+								</content>
+							</point>
+							<point eId="art_32_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										uticanje na druge da ne čine krivična djela;
+									</p>
+								</content>
+							</point><point eId="art_32_para_1_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										izražavanje društvene osude za krivično djelo i obaveze poštovanja zakona;
+									</p>
+								</content>
+							</point><point eId="art_32_para_1_point_4">
+								<num>4)</num>
+								<content>
+									<p>
+										jačanje morala i uticaj na razvijanje društvene odgovornosti.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+					</article>
+					<article eId="art_36">
+						<heading>
+							Kazna zatvora
+						</heading>
+						<num>
+							Član 36
+						</num>
+						<paragraph eId="art_36_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_36_para_1_content">
+								<p>
+									Kazna zatvora ne može biti kraća od trideset dana niti duža od dvadeset godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_36_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_36_para_2_content">
+								<p>
+									Kazna zatvora iz 
+									<ref href="/krivicni#art_36_para_1">
+										stava 1 ovog člana 
+									</ref>	
+									izriče se na pune godine i mjesece, a do šest mjeseci i na dane.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_39">
+						<heading>
+							Novčana kazna
+						</heading>
+						<num>
+							Član 39
+						</num>
+						<paragraph eId="art_39_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_39_para_1_content">
+								<p>
+									Novčana kazna ne može biti manja od dvije stotine eura. Novčana kazna ne može 
+									biti veća od dvadeset hiljada eura, a za krivična djela učinjena iz koristoljublja veća od sto 
+									hiljada eura.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_2">
+							<num>
+								(2)
+							</num>
+							<intro eId="art_39_para_2_intro">
+								<p>
+									Novčana kazna kao glavna kazna izriče se u sljedećim iznosima:
+								</p>
+							</intro>
+							<point eId="art_39_para_2_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										do dvije hiljade eura za krivična djela za koja je propisana kazna zatvora do tri 
+										mjeseca;
+									</p>
+								</content>
+							</point>
+							<point eId="art_39_para_2_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										od četiri stotine do četiri hiljade eura za krivična djela za koja je propisana kazna 
+										zatvora do šest mjeseci;
+									</p>
+								</content>
+							</point>
+							<point eId="art_39_para_2_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										od šest stotina do osam hiljada eura za krivična djela za koja je propisana kazna 
+										zatvora do jedne godine;
+									</p>
+								</content>
+							</point>
+							<point eId="art_39_para_2_point_4">
+								<num>4)</num>
+								<content>
+									<p>
+										od osam stotina do šesnaest hiljada eura za krivična djela za koja je propisana kazna 
+										zatvora do dvije godine;
+									</p>
+								</content>
+							</point>
+							<point eId="art_39_para_2_point_5">
+								<num>5)</num>
+								<content>
+									<p>
+										najmanje hiljadu i dvije stotine eura za krivična djela za koja je propisana kazna 
+										zatvora do četiri godine;
+									</p>
+								</content>
+							</point>
+							<point eId="art_39_para_2_point_6">
+								<num>6)</num>
+								<content>
+									<p>
+										najmanje hiljadu i dvije stotine eura za krivična djela za koja je kao jedina kazna 
+										propisana novčana kazna.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_39_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_39_para_3_content">
+								<p>
+									Za krivična djela učinjena iz koristoljublja novčana kazna kao sporedna kazna može 
+									se izreći i kad nije propisana zakonom ili kad je zakonom propisano da će se učinilac kazniti 
+									kaznom zatvora ili novčanom kaznom, a sud kao glavnu kaznu izrekne kaznu zatvora.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_39_para_4_content">
+								<p>
+									Ako sud utvrdi novčanu kaznu kao glavnu kaznu, a utvrdi i novčanu kaznu kao 
+									sporednu kaznu, izreći će jednu novčanu kaznu po pravilima iz 
+									<ref href="/krivicni#art_48">	
+										člana 48 
+									</ref>	
+									ovog zakonika.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_39_para_5_content">
+								<p>
+									U presudi se određuje rok plaćanja novčane kazne koji ne može biti kraći od petnaest 
+									dana niti duži od tri mjeseca. U opravdanim slučajevima sud može dozvoliti da osuđeni 
+									plati novčanu kaznu u ratama, s tim da rok isplate ne može biti duži od jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_6">
+							<num>
+								(6)
+							</num>
+							<content eId="art_39_para_6_content">
+								<p>
+									Ako osuđeni ne plati novčanu kaznu u određenom roku, sud će novčanu kaznu 
+									zamijeniti kaznom zatvora, tako što će za svakih započetih dvadeset pet eura novčane 
+									kazne odrediti jedan dan kazne zatvora, s tim da kazna zatvora ne može biti duža od šest 
+									mjeseci, a ako je izrečena novčana kazna u iznosu većem od devet hiljada, kazna zatvora 
+									ne može biti duža od jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_7">
+							<num>
+								(7)
+							</num>
+							<content eId="art_39_para_7_content">
+								<p>
+									Neplaćena novčana kazna koja ne prelazi iznos od dvije hiljade eura, može se, 
+									umjesto kaznom zatvora, zamijeniti kaznom rada u javnom interesu uz saglasnost 
+									osuđenog lica, tako što će se za svakih započetih dvadeset pet eura novčane kazne odrediti 
+									osam časova rada u javnom interesu, s tim da rad u javnom interesu ne može biti duži od 
+									tristašezdeset časova.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_8">
+							<num>
+								(8)
+							</num>
+							<content eId="art_39_para_8_content">
+								<p>
+									Ako osuđeni plati samo dio novčane kazne, sud će ostatak kazne srazmjerno 
+									zamijeniti kaznom zatvora, a ako osuđeni isplati ostatak novčane kazne, izvršenje kazne 
+									zatvora će obustaviti.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_39_para_9">
+							<num>
+								(9)
+							</num>
+							<content eId="art_39_para_9_content">
+								<p>
+									Poslije smrti osuđenog novčana kazna neće se izvršiti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+				<section eId="chp_3_sec_2">
+					<num>
+						2.
+					</num>
+					<heading>
+						Odmjeravanje kazne
+					</heading>
+					<article eId="art_42">
+						<heading>
+							Opšta pravila o odmjeravanju kazne
+						</heading>
+						<num>
+							Član 42
+						</num>
+						<paragraph eId="art_42_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_42_para_1_content">
+								<p>
+									Sud će učiniocu krivičnog djela odmjeriti kaznu u granicama koje su zakonom 
+									propisane za to djelo, imajući u vidu svrhu kažnjavanja i uzimajući u obzir sve okolnosti 
+									koje utiču da kazna bude manja ili veća (olakšavajuće i otežavajuće okolnosti), a naročito: 
+									stepen krivice, pobude iz kojih je djelo učinjeno, jačinu ugrožavanja ili povrede zaštićenog 
+									dobra, okolnosti pod kojima je djelo učinjeno, raniji život učinioca, njegove lične prilike, 
+									njegovo držanje poslije učinjenog krivičnog djela, a naročito njegov odnos prema žrtvi 
+									krivičnog djela kao i druge okolnosti koje se odnose na ličnost učinioca.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_42_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_42_para_2_content">
+								<p>
+									Pri odmjeravanju novčane kazne sud će posebno uzeti u obzir i imovno stanje 
+									učinioca.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_42_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_42_para_3_content">
+								<p>
+									Okolnost koja je obilježje krivičnog djela ne može se uzeti u obzir i kao otežavajuća, 
+									odnosno olakšavajuća okolnost, izuzev ako prelazi mjeru koja je potrebna za postojanje 
+									krivičnog djela ili određenog oblika krivičnog djela ili ako postoje dvije ili više ovakvih 
+									okolnosti, pa je samo jedna dovoljna za postojanje težeg, odnosno lakšeg oblika krivičnog 
+									djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_43">
+						<heading>
+							Povrat
+						</heading>
+						<num>
+							Član 43
+						</num>
+						<paragraph eId="art_43_para_1">
+							<content eId="art_43_para_1_content">
+								<p>
+									Ako je učinilac krivičnog djela učinjenog sa umišljajem ranije osuđen za umišljajno 
+									krivično djelo, sud će tu okolnost uzeti kao otežavajuću, ako od ranije osude ili izdržane 
+									kazne nije proteklo pet godina.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_45">
+						<heading>
+							Ublažavanje kazne
+						</heading>
+						<num>
+							Član 45
+						</num>
+						<paragraph eId="art_45_para_1">
+							<intro eId="art_45_para_1_intro">
+								<p>
+									Sud može učiniocu krivičnog djela izreći kaznu ispod granice propisane zakonom ili blažu 
+									vrstu kazne, kad:
+								</p>
+							</intro>
+							<point eId="art_45_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										zakon predviđa da se učinilac može blaže kazniti;
+									</p>
+								</content>
+							</point>
+							<point eId="art_45_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										zakon predviđa da se učinilac može osloboditi od kazne, a sud ga ne oslobodi od 
+										kazne;
+									</p>
+								</content>
+							</point>
+							<point eId="art_45_para_1_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										utvrdi da postoje naročito olakšavajuće okolnosti koje ukazuju na to da se ublaženom 
+										kaznom može postići svrha kažnjavanja.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_45_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_45_para_2_content">
+								<p>
+									Izuzetno od 
+									<ref href="/krivicni#art_45_para_1">
+										stava 1 
+									</ref>	
+									ovog člana, u slučaju iz 
+									<ref href="/krivicni#art_43">
+										člana 43 
+									</ref>	
+									ovog zakonika sud može učiniocu krivičnog djela izreći kaznu ispod granice propisane zakonom ili blažu vrstu kazne 
+									samo ako su ispunjeni uslovi iz 
+									<ref href="/krivicni#art_45_para_1_point_1">
+										stava 1 tač. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_45_para_1_point_2">
+										2 
+									</ref>	
+									ovog člana.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_46">
+						<heading>
+							Granice ublažavanja kazne
+						</heading>
+						<num>
+							Član 46
+						</num>
+						<paragraph eId="art_46_para_1">
+							<intro eId="art_46_para_1_intro">
+								<p>
+									Kad postoje uslovi za ublažavanje kazne iz 
+									<ref href="/krivicni#art_45">
+										člana 45 
+									</ref>	
+									ovog zakonika, sud će ublažiti kaznu u ovim granicama:
+								</p>
+							</intro>
+							<point eId="art_46_para_1_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										ako je za krivično djelo kao najmanja mjera kazne propisan zatvor u trajanju od deset 
+										ili više godina, kazna se može ublažiti do pet godina zatvora, a ako zakon predviđa da se 
+										kazna može ublažiti (
+										<ref href="/krivicni#art_45_para_1_point_1">	
+											član 45 stav 1 tačka 1
+										</ref>		
+										), kazna se može ublažiti do dvije godine zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										ako je za krivično djelo kao najmanja mjera kazne propisan zatvor u trajanju od pet 
+										ili više godina, kazna se može ublažiti do dvije godine zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										ako je za krivično djelo kao najmanja mjera kazne propisan zatvor u trajanju od tri 
+										ili više godina, kazna se može ublažiti do jedne godine zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_4">
+								<num>4)</num>
+								<content>
+									<p>
+										ako je za krivično djelo kao najmanja mjera kazne propisan zatvor od dvije godine, 
+										kazna se može ublažiti do šest mjeseci zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_5">
+								<num>5)</num>
+								<content>
+									<p>
+										ako je za krivično djelo kao najmanja mjera kazne propisan zatvor od jedne godine, 
+										kazna se može ublažiti do tri mjeseca zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_6">
+								<num>6)</num>
+								<content>
+									<p>
+										ako je za krivično djelo kao najmanja kazna propisan zatvor ispod jedne godine, 
+										kazna se može ublažiti do trideset dana zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_7">
+								<num>7)</num>
+								<content>
+									<p>
+										ako je za krivično djelo propisana kazna zatvora bez naznačenja najmanje mjere, 
+										umjesto zatvora može se izreći novčana kazna;
+									</p>
+								</content>
+							</point>
+							<point eId="art_46_para_1_point_8">
+								<num>8)</num>
+								<content>
+									<p>
+										ako je za krivično djelo propisana novčana kazna sa naznačenjem najmanje mjere, 
+										kazna se može ublažiti do šest stotina eura.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_46_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_46_para_2_content">
+								<p>
+									Kad je sud ovlašćen da učinioca krivičnog djela oslobodi od kazne može mu kaznu 
+									ublažiti, bez ograničenja propisanih za ublažavanje kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_48">
+						<heading>
+							Sticaj krivičnih djela
+						</heading>
+						<num>
+							Član 48
+						</num>
+						<paragraph eId="art_48_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_48_para_1_content">
+								<p>
+									Ako je učinilac jednom radnjom ili sa više radnji učinio više krivičnih djela za koja 
+									mu se istovremeno sudi, sud će prethodno utvrditi kazne za svako od tih djela, pa će za 
+									sva ta djela izreći jedinstvenu kaznu.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_48_para_2">
+							<num>
+								(2)
+							</num>
+							<intro eId="art_48_para_2_intro">
+								<p>
+									Jedinstvenu kaznu sud će izreći po sljedećim pravilima:
+								</p>
+							</intro>
+							<point eId="art_48_para_2_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										ako je za neko od krivičnih djela u sticaju utvrdio kaznu dugotrajnog zatvora izreći će 
+										samo tu kaznu;
+									</p>
+								</content>
+							</point>
+							<point eId="art_48_para_2_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										ako je za krivična djela u sticaju utvrdio kazne zatvora, povisiće najtežu utvrđenu 
+										kaznu, s tim da jedinstvena kazna ne smije dostići zbir utvrđenih kazni, niti preći dvadeset 
+										godina zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_48_para_2_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										ako su za sva krivična djela u sticaju propisane kazne zatvora do tri godine, 
+										jedinstvena kazna ne može biti veća od deset godina zatvora;
+									</p>
+								</content>
+							</point>
+							<point eId="art_48_para_2_point_4">
+								<num>4)</num>
+								<content>
+									<p>
+										ako je za krivično djelo u sticaju utvrdio samo novčane kazne, izreći će jednu novčanu 
+										kaznu u visini zbira utvrđenih kazni, s tim da ona ne smije preći dvadeset hiljada eura, 
+										odnosno sto hiljada eura kada su jedno ili više krivičnih djela izvršeni iz koristoljublja, a 
+										ako je utvrdio samo novčane kazne u dnevnim iznosima ona ne smije preći iznos od tri 
+										stotine šezdeset hiljada eura;
+									</p>
+								</content>
+							</point>
+							<point eId="art_48_para_2_point_5">
+								<num>5)</num>
+								<content>
+									<p>
+										ako je za krivična djela u sticaju utvrdio samo kazne rada u javnom interesu, izreći 
+										će jednu kaznu rada u javnom interesu u visini zbira utvrđenih časova rada, s tim da ona 
+										ne smije preći tri stotine šezdeset časova, a vrijeme u kojem se rad mora obaviti ne smije 
+										biti duže od šest mjeseci
+									</p>
+								</content>
+							</point>
+							<point eId="art_48_para_2_point_6">
+								<num>6)</num>
+								<content>
+									<p>
+										ako je za neka krivična djela u sticaju utvrdio kazne zatvora, a za druga djela novčane 
+										kazne, izreći će jednu kaznu zatvora i jednu novčanu kaznu po odredbama 
+										<ref href="/krivicni#art_48_para_2_point_2">
+											tač. 2 
+										</ref>
+										do 
+										<ref href="/krivicni#art_48_para_2_point_4">	
+											4 ovog stava
+										</ref>	
+										.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_48_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_48_para_3_content">
+								<p>
+									Novčanu kaznu kao sporednu kaznu sud će izreći ako je utvrđena makar i za jedno 
+									krivično djelo u sticaju, a ako je utvrdio više novčanih kazni, izreći će jednu novčanu kaznu 
+									po odredbi 
+									<ref href="/krivicni#art_48_para_2_point_4">
+										stava 2 tačka 4 
+									</ref>	
+									ovog člana.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_48_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_48_para_4_content">
+								<p>
+									Ako je sud za krivična djela u sticaju utvrdio kazne zatvora i maloljetničkog zatvora, 
+									izreći će kaznu zatvora kao jedinstvenu kaznu primjenom pravila predviđenih u 
+									<ref href="/krivicni#art_48_para_2_point_2">
+										stavu 2 tačka 2 
+									</ref>	
+									ovog člana.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_51">
+						<heading>
+							Uračunavanje pritvora i ranije kazne
+						</heading>
+						<num>
+							Član 51
+						</num>
+						<paragraph eId="art_51_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_51_para_1_content">
+								<p>
+									Vrijeme provedeno u pritvoru, na izdržavanju mjere nadzora zabrane napuštanja 
+									stana, kao i svako drugo lišenje slobode u vezi sa krivičnim djelom uračunavaju se u 
+									izrečenu kaznu zatvora, maloljetničkog zatvora, kaznu rada u javnom interesu i novčanu 
+									kaznu.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_51_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_51_para_2_content">
+								<p>
+									Ako je krivični postupak vođen za više krivičnih djela u sticaju, a pritvor nije određen 
+									za svako od njih, vrijeme provedeno u pritvoru uračunava se u izrečenu kaznu zatvora, 
+									maloljetničkog zatvora, kaznu rada u javnom interesu i novčanu kaznu za krivično djelo za 
+									koje je okrivljeni osuđen.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_51_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_51_para_3_content">
+								<p>
+									Zatvor ili novčana kazna koju je osuđeni izdržao, odnosno platio za prekršaj ili 
+									privredni prestup, kao i kazna ili disciplinska mjera lišenja slobode koju je izdržao zbog 
+									povrede vojne discipline uračunava se u kaznu izrečenu za krivično djelo čija obilježja 
+									obuhvataju i obilježja prekršaja, privrednog prestupa, odnosno povrede vojne discipline.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_51_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_51_para_4_content">
+								<p>
+									Pri svakom uračunavanju izjednačava se dan pritvora, dan lišenja slobode, dan 
+									maloljetničkog zatvora, dan zatvora, dan izdržavanja mjere nadzora zabrane napuštanja 
+									stana, osam časova rada u javnom interesu i dvadeset pet eura novčane kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+<!--4. GLAVA-->
+			<chapter eId="chp_4">
+				<num>
+					GLAVA ČETVRTA
+				</num>
+				<heading>
+					MJERE UPOZORENjA
+				</heading>
+				<section eId="chp_4_sec_1">
+					<num>
+						1.
+					</num>
+					<heading>
+						Uslovna osuda i sudska opomena
+					</heading>
+					<article eId="art_52">
+						<heading>
+							Svrha uslovne osude i sudske opomene
+						</heading>
+						<num>
+							Član 52
+						</num>
+						<paragraph eId="art_52_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_52_para_1_content">
+								<p>
+									Mjere upozorenja su: uslovna osuda i sudska opomena.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_52_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_52_para_2_content">
+								<p>
+									U okviru opšte svrhe krivičnih sankcija (
+									<ref href="/krivicni#art_4_para_2">	
+										član 4 stav 2
+									</ref>	
+									), svrha uslovne osude i sudske opomene je da se prema učiniocu krivičnog djela ne primijeni kazna za lakša krivična djela, 
+									kad to nije nužno radi krivičnopravne zaštite i kad se može očekivati da će upozorenje uz prijetnju kazne (uslovna osuda) ili samo upozorenje (sudska opomena) dovoljno uticati na učinioca da više ne vrši krivična djela.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_53">
+						<heading>
+							Uslovna osuda
+						</heading>
+						<num>
+							Član 53
+						</num>
+						<paragraph eId="art_53_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_53_para_1_content">
+								<p>
+									Uslovnom osudom sud učiniocu krivičnog djela utvrđuje kaznu i istovremeno 
+									određuje da se ona neće izvršiti, ako osuđeni za vrijeme koje odredi sud, a koje ne može 
+									biti kraće od jedne niti duže od pet godina (vrijeme provjeravanja) ne učini novo krivično djelo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_53_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_53_para_2_content">
+								<p>
+									Sud može u uslovnoj osudi odrediti da će se kazna izvršiti i ako osuđeni u određenom 
+									roku ne vrati imovinsku korist pribavljenu izvršenjem krivičnog djela, ne naknadi štetu koju 
+									je prouzrokovao krivičnim djelom ili ne ispuni druge obaveze predviđene u krivičnopravnim 
+									odredbama. Rok za ispunjenje tih obaveza utvrđuje sud u okviru određenog vremena 
+									provjeravanja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_53_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_53_para_3_content">
+								<p>
+									Mjere bezbjednosti, izrečene uz uslovnu osudu, izvršavaju se.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_54">
+						<heading>
+							Uslovi za izricanje uslovne osude
+						</heading>
+						<num>
+							Član 54
+						</num>
+						<paragraph eId="art_54_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_54_para_1_content">
+								<p>
+									Uslovna osuda se može izreći kad je učiniocu utvrđena kazna zatvora u trajanju do 
+									dvije godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_54_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_54_para_2_content">
+								<p>
+									Za krivična djela za koja se može izreći kazna zatvora u trajanju od deset godina ili 
+									teža kazna ne može se izreći uslovna osuda.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_54_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_54_para_3_content">
+								<p>
+									Uslovna osuda se ne može izreći ako nije proteklo više od pet godina od 
+									pravosnažnosti osude kojom je učiniocu izrečena kazna za umišljajno krivično djelo. 
+									Uslovna osuda se ne može izreći učiniocu kome su već izrečene dvije uslovne osude.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_54_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_54_para_4_content">
+								<p>
+									Pri odlučivanju da li će izreći uslovnu osudu sud će, vodeći računa o svrsi uslovne 
+									osude, posebno uzeti u obzir ličnost učinioca, njegov raniji život, njegovo ponašanje poslije 
+									izvršenog krivičnog djela, stepen krivice i druge okolnosti pod kojima je djelo učinjeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_54_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_54_para_5_content">
+								<p>
+									Ako je učiniocu utvrđena i kazna zatvora i novčana kazna, uslovna osuda može se 
+									izreći samo za kaznu zatvora.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+<!--13. GLAVA-->
+			<chapter eId="chp_13">
+				<num>
+					GLAVA TRINAESTA
+				</num>
+				<heading>
+					ZNAČENjE IZRAZA
+				</heading>
+				<section eId="chp_13_sec_1">
+					<article eId="art_142">
+						<heading>
+							Značenje izraza u ovom zakoniku
+						</heading>
+						<num>
+							Član 142
+						</num>
+						<paragraph eId="art_142_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_142_para_1_content">
+								<p>
+									Pod teritorijom Crne Gore podrazumijevaju se suvozemna teritorija, obalno more i 
+									vodene površine unutar njenih granica, kao i vazdušni prostor nad njima.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_142_para_2_content">
+								<p>
+									Pod krivičnim zakonodavstvom Crne Gore podrazumijevaju se ovaj zakonik kao i sve 
+									krivičnopravne odredbe sadržane u drugim zakonima Crne Gore.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_3">
+							<num>
+								(3)
+							</num>
+							<intro eId="art_142_para_3_intro">
+								<p>
+									Službenim licem smatra se:
+								</p>
+							</intro>
+							<point eId="art_142_para_3_point_1">
+								<num>1)</num>
+								<content>
+									<p>
+										lice koje u državnom organu vrši službene dužnosti;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_2">
+								<num>2)</num>
+								<content>
+									<p>
+										izabrano, imenovano ili postavljeno lice u državnom organu, organu lokalne 
+										samouprave ili lice koje stalno ili povremeno vrši službene dužnosti ili službene funkcije u 
+										tim organima;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_3">
+								<num>3)</num>
+								<content>
+									<p>
+										lice u ustanovi, privrednom društvu ili drugom subjektu, kojem je povjereno vršenje 
+										javnih ovlašćenja, koje odlučuje o pravima, obavezama ili interesima fizičkih ili pravnih lica 
+										ili o javnom interesu;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_4">
+								<num>4)</num>
+								<content>
+									<p>
+										i drugo lice koje obavlja službene dužnosti na osnovu zakona, propisa donijetih na 
+										osnovu zakona, ugovora ili arbitražnog sporazuma, kao i lice kojem je faktički povjereno 
+										vršenje pojedinih službenih dužnosti ili poslova;
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_5">
+								<num>5)</num>
+								<content>
+									<p>
+										vojno lice izuzev kad su u pitanju odredbe 
+										<ref href="/krivicni#chp_36">
+											Glave trideset šeste 
+										</ref>	
+										ovog zakonika.
+									</p>
+								</content>
+							</point>
+							<point eId="art_142_para_3_point_5a">
+								<num>5a)</num>
+								<content>
+									<p>
+										lice koje u stranoj državi obavlja zakonodavnu, izvršnu, sudsku ili drugu javnu 
+										funkciju za stranu državu, lice koje u stranoj državi obavlja službene dužnosti na osnovu 
+										zakona, propisa donijetih na osnovu zakona, ugovora ili arbitražnog sporazuma, lice koje 
+										obavlja službenu dužnost u međunarodnoj javnoj organizaciji i lice koje obavlja sudsku, 
+										tužilačku ili neku drugu funkciju u međunarodnom sudu.
+									</p>
+								</content>
+							</point>
+						</paragraph>
+						<paragraph eId="art_142_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_142_para_4_content">
+								<p>
+									Odgovornim licem smatra se vlasnik privrednog društva ili drugog subjekta ili lice u 
+									privrednom društvu, ustanovi ili drugom subjektu kojem je, s obzirom na njegovu funkciju, 
+									uložena sredstva ili na osnovu ovlašćenja, povjeren određeni krug poslova u upravljanju 
+									imovinom, proizvodnji ili drugoj djelatnosti ili u vršenju nadzora nad njima ili mu je faktički 
+									povjereno obavljanje pojedinih poslova. Odgovornim licem smatra se i službeno lice kad 
+									su u pitanju krivična djela kod kojih je kao izvršilac označeno odgovorno lice, a u ovom 
+									zakoniku nijesu predviđena u glavi o krivičnim djelima protiv službene dužnosti, odnosno 
+									kao krivična djela službenog lica.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_142_para_5_content">
+								<p>
+									Vojnim licem smatra se: profesionalno vojno lice (vojnik po ugovoru, podoficir, 
+									podoficir po ugovoru, oficir i oficir po ugovoru), lice u rezervnom sastavu (rezervni vojnik, 
+									rezervni podoficir i rezervni oficir), civilno lice koje vrši određenu vojnu dužnost i lice koje 
+									za vrijeme ratnog ili vanrednog stanja podliježe vojnoj obavezi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_6">
+							<num>
+								(6)
+							</num>
+							<content eId="art_142_para_6_content">
+								<p>
+									Kad je kao izvršilac određenih krivičnih djela označeno službeno lice, odgovorno lice 
+									ili vojno lice, lica navedena u 
+									<ref href="/krivicni#art_142_para_3">
+										st. 3
+									</ref>	
+									,
+									<ref href="/krivicni#art_142_para_4">
+										4 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_142_para_5">
+										5 
+									</ref>	
+									ovog člana mogu biti izvršioci tih djela, ako iz 
+									obilježja pojedinog djela ili iz pojedinog propisa ne proizilazi da izvršilac može biti samo 
+									neko od tih lica.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_7">
+							<num>
+								(7)
+							</num>
+							<content eId="art_142_para_7_content">
+								<p>
+									Djetetom se smatra lice koje nije navršilo osamnaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_8">
+							<num>
+								(8)
+							</num>
+							<content eId="art_142_para_8_content">
+								<p>
+									Maloljetnikom se smatra lice koje je navršilo četrnaest godina, a nije navršilo 
+									osamnaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_10">
+							<num>
+								(10)
+							</num>
+							<content eId="art_142_para_10_content">
+								<p>
+									Učiniocem se smatraju izvršilac, saizvršilac, podstrekač i pomagač.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_11">
+							<num>
+								(11)
+							</num>
+							<content eId="art_142_para_11_content">
+								<p>
+									Žrtva je lice kome je protivpravnim djelom koje je u zakonu propisano kao krivično 
+									djelo prouzrokovan fizički ili duševni bol ili patnja, imovinska šteta ili povreda ljudskih prava 
+									i sloboda.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_12">
+							<num>
+								(12)
+							</num>
+							<content eId="art_142_para_12_content">
+								<p>
+									Imovinskom korišću pribavljenom krivičnim djelom smatra se imovinska korist 
+									pribavljena krivičnim djelom, neposredno ili posredno, koja se sastoji od svakog uvećanja 
+									ili sprječavanja umanjenja imovine, do kojeg je došlo izvršenjem krivičnog djela, imovina 
+									za koju je zamijenjena ili sa kojom je sjedinjena ili u koju je pretvorena imovinska korist 
+									pribavljena krivičnim djelom, kao i svaka druga korist koja je dobijena od imovinske koristi 
+									pribavljene krivičnim djelom ili imovine za koju je zamijenjena ili u koju je pretvorena 
+									imovinska korist pribavljena krivičnim djelom, bez obzira da li se nalazi na teritoriji Crne 
+									Gore ili van nje, kao i sve isprave kojima se dokazuje neko imovinsko pravo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_13">
+							<num>
+								(13)
+							</num>
+							<content eId="art_142_para_13_content">
+								<p>
+									Mito, u smislu ovog zakonika, je poklon ili druga protivpravna imovinska ili 
+									neimovinska korist, bez obzira na vrijednost.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_14">
+							<num>
+								(14)
+							</num>
+							<content eId="art_142_para_14_content">
+								<p>
+									Silom se smatra i primjena hipnoze ili omamljujućih sredstava, s ciljem da se neko 
+									protiv svoje volje dovede u nesvjesno stanje ili onesposobi za otpor.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_15">
+							<num>
+								(15)
+							</num>
+							<content eId="art_142_para_15_content">
+								<p>
+									Izborima se smatraju izbori za Skupštinu Crne Gore, Predsjednika Crne Gore, 
+									organe lokalne samouprave i drugi izbori koji se raspisuju i vrše na osnovu Ustava i zakona.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_15a">
+							<num>
+								(15a)
+							</num>
+							<content eId="art_142_para_15a_content">
+								<p>
+									Političkim subjektima, smatraju se subjekti u skladu sa propisom kojim se uređuje 
+									finansiranje političkih subjekata i izbornih kampanja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_15b">
+							<num>
+								(15b)
+							</num>
+							<content eId="art_142_para_15b_content">
+								<p>
+									Izbornom kampanjom, smatra se kampanja u skladu sa propisom kojim se 
+									uređuje finansiranje političkih subjekata i izbornih kampanja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_16">
+							<num>
+								(16)
+							</num>
+							<content eId="art_142_para_16_content">
+								<p>
+									Referendumom se smatra izjašnjavanje građana na kojem se odlučuje o pitanjima 
+									za koja je to utvrđeno Ustavom ili zakonom.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_17">
+							<num>
+								(17)
+							</num>
+							<content eId="art_142_para_17_content">
+								<p>
+									Opojnim drogama smatraju se supstance i preparati koji su propisima zasnovanim 
+									na zakonu proglašeni za opojne droge.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_18">
+							<num>
+								(18)
+							</num>
+							<content eId="art_142_para_18_content">
+								<p>
+									Pokretnom stvari se smatra i svaka proizvedena ili sakupljena energija za davanje 
+									svjetlosti, toplote ili kretanja, telefonski impuls, kao i računarski podatak i računarski 
+									program.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_19">
+							<num>
+								(19)
+							</num>
+							<content eId="art_142_para_19_content">
+								<p>
+									Računarskim sistemom smatra se svaki uređaj ili grupa međusobno povezanih ili 
+									uslovljenih uređaja, od kojih jedan ili više njih, u zavisnosti od programa, vrši automatsku 
+									obradu podataka.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_20">
+							<num>
+								(20)
+							</num>
+							<content eId="art_142_para_20_content">
+								<p>
+									Računarskim podatkom smatra se svako izlaganje činjenica, podataka ili koncepata 
+									u obliku koji je pogodan za obradu u računarskom sistemu, uključujući tu i programe 
+									pomoću kojih računarski sistem vrši svoje funkcije.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_21">
+							<num>
+								(21)
+							</num>
+							<content eId="art_142_para_21_content">
+								<p>
+									Računarskim programom smatra se skup uređenih računarskih podataka na osnovu 
+									kojih računarski sistem vrši svoje funkcije.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_22">
+							<num>
+								(22)
+							</num>
+							<content eId="art_142_para_22_content">
+								<p>
+									Zlonamjerni računarski program je program koji je napravljen da nanese štetu 
+									računaru, računarskoj mreži ili računarskim podacima, koji se bez saglasnosti korisnika 
+									ubacuje u računar sa namjerom ugrožavanja povjerljivosti, cjelovitosti ili dostupnosti 
+									računarskih podataka, aplikacija ili operativnih sistema ili na neki drugi način ometa rad 
+									računara ili računarske mreže.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_23">
+							<num>
+								(23)
+							</num>
+							<content eId="art_142_para_23_content">
+								<p>
+									Podacima o računarskom saobraćaju smatraju se svi računarski podaci koje 
+									generišu računarski sistemi, koji čine lanac komunikacije između dva računarska sistema 
+									koji komuniciraju uključujući i njih same.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_24">
+							<num>
+								(24)
+							</num>
+							<content eId="art_142_para_24_content">
+								<p>
+									Zaštićenim prirodnim dobrom smatra se i dobro koje po propisima o zaštiti prirodnih 
+									dobara uživa prethodnu zaštitu.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_25">
+							<num>
+								(25)
+							</num>
+							<content eId="art_142_para_25_content">
+								<p>
+									Kulturnim dobrom smatra se i dobro koje po propisima o zaštiti kulturnog dobra 
+									uživa prethodnu zaštitu, dio kulturnog dobra i zaštićena okolina nepokretnog kulturnog 
+									dobra.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_26">
+							<num>
+								(26)
+							</num>
+							<content eId="art_142_para_26_content">
+								<p>
+									Novac je metalni i papirni novac ili novac izrađen od nekog drugog materijala koji 
+									je na osnovu zakona u opticaju u Crnoj Gori ili u stranoj državi.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_27">
+							<num>
+								(27)
+							</num>
+							<content eId="art_142_para_27_content">
+								<p>
+									Znacima za vrijednost smatraju se i strani znaci za vrijednost.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_28">
+							<num>
+								(28)
+							</num>
+							<content eId="art_142_para_28_content">
+								<p>
+									Motornim vozilom smatra se svako saobraćajno sredstvo na motorni pogon u 
+									suvozemnom, vodenom i vazdušnom saobraćaju.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_29">
+							<num>
+								(29)
+							</num>
+							<content eId="art_142_para_29_content">
+								<p>
+									Ispravom se smatra svaki predmet koji je podoban ili određen da služi kao dokaz 
+									kakve činjenice koja ima značaj za pravne odnose, kao i računarski podatak.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_30">
+							<num>
+								(30)
+							</num>
+							<content eId="art_142_para_30_content">
+								<p>
+									Spis, pismo, pošiljka i dokument mogu biti i u elektronskom obliku.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_31">
+							<num>
+								(31)
+							</num>
+							<content eId="art_142_para_31_content">
+								<p>
+									Članovima porodice ili porodične zajednice smatraju se i bivši bračni supružnici, 
+									krvni srodnici i srodnici iz potpunog usvojenja u pravoj liniji bez ograničenja, a u pobočnoj 
+									liniji zaključno sa četvrtim stepenom, srodnici iz nepotpunog usvojenja, tazbinski srodnici 
+									zaključno sa drugim stepenom, lica koja žive u istom porodičnom domaćinstvu i lica koja 
+									imaju zajedničko dijete ili je dijete na putu da bude rođeno iako nikad nisu živjela u istom 
+									porodičnom domaćinstvu, ako ovim zakonikom nije drukčije određeno.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_32">
+							<num>
+								(32)
+							</num>
+							<content eId="art_142_para_32_content">
+								<p>
+									Poslom od javnog značaja smatra se obavljanje profesije ili dužnosti koje je 
+									povezano sa povećanim rizikom za bezbjednost lica koje ga obavlja u oblasti javnog 
+									informisanja, zdravstvene zaštite i pravne pomoći pred sudskim i drugim državnim 
+									organima.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_32a">
+							<num>
+								(32a)
+							</num>
+							<content eId="art_142_para_32a_content">
+								<p>
+									Javnim uređajem, u smislu ovog zakonika, smatraju se uređaji za komunalnu, 
+									saobraćajnu, energetsku i elektronsko-komunikacionu infrastrukturu i drugi uređaji u 
+									skladu sa propisima kojima se uređuju komunalne djelatnosti, saobraćaj, energetika, 
+									elektronske komunikacije i druge djelatnosti od javnog interesa.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_32b">
+							<num>
+								(32b)
+							</num>
+							<content eId="art_142_para_32b_content">
+								<p>
+									Digitalna imovina je digitalni prikaz vrijednosti kojom se može digitalno trgovati ili 
+									prenositi i koja se može koristiti kao sredstva razmjene ili u svrhe investiranja.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_33">
+							<num>
+								(33)
+							</num>
+							<content eId="art_142_para_33_content">
+								<p>
+									Izraz "neće se kazniti" znači da u tom slučaju nema krivičnog djela.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_142_para_34">
+							<num>
+								(34)
+							</num>
+							<content eId="art_142_para_34_content">
+								<p>
+									Kad je radnja krivičnog djela određena trajnim glagolom smatra se da je djelo 
+									učinjeno, ako je radnja izvršena jednom ili više puta.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+
+<!--14. GLAVA-->
+			<chapter eId="chp_14">
+				<num>
+					GLAVA ČETRNAESTA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV ŽIVOTA I TIJELA
+				</heading>	
+				<section eId="chp_14_sec_1">
+					<article eId="art_152">
+						<heading>
+							Laka tjelesna povreda
+						</heading>
+						<num>
+							Član 152
+						</num>
+						<paragraph eId="art_152_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_152_para_1_content">
+								<p>
+									Ko drugog lako tjelesno povrijedi ili mu zdravlje lako naruši,
+									kazniće se novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_152_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_152_para_2_content">
+								<p>
+									Ako je takva povreda nanesena oružjem, opasnim oruđem ili drugim sredstvom 
+									podobnim da tijelo teško povrijedi ili zdravlje teško naruši,
+									učinilac će se kazniti zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_152_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_152_para_3_content">
+								<p>
+									Sud može učiniocu djela iz 
+									<ref href="/krivicni#art_152_para_2">
+										stava 2 
+									</ref>	
+									ovog člana izreći sudsku opomenu, ako je učinilac 
+									bio izazvan nepristojnim ili grubim ponašanjem oštećenog.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_152_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_152_para_4_content">
+								<p>
+									Gonjenje za djelo iz 
+									<ref href="/krivicni#art_152_para_1">
+										stava 1 
+									</ref>	
+									ovog člana preduzima se po privatnoj tužbi.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+<!--19. GLAVA-->
+			<chapter eId="chp_19">
+				<num>
+					GLAVA DEVETNAESTA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV BRAKA I PORODICE
+				</heading>	
+				<section eId="chp_19_sec_1">
+					<article eId="art_213">
+						<heading>
+							Zaključivanje više brakova ili životnih partnerstava lica istog pola
+						</heading>
+						<num>
+							Član 213
+						</num>
+						<paragraph eId="art_213_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_213_para_1_content">
+								<p>
+									Ko zaključi novi brak ili životno partnerstvo lica istog pola iako se već nalazi u braku 
+									ili životnom partnerstvu lica istog pola,
+									kazniće se novčanom kaznom ili zatvorom do dvije godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_213_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_213_para_2_content">
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_213_para_1">
+										stava 1 
+									</ref>	
+									ovog člana kazniće se i ko zaključi brak ili životno partnerstvo lica 
+									istog pola sa licem za koje zna da se nalazi u braku ili životnom partnerstvu lica istog pola.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_214">
+						<heading>
+							Zaključenje ništavog braka ili životnog partnerstva lica istog pola
+						</heading>
+						<num>
+							Član 214
+						</num>
+						<paragraph eId="art_214_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_214_para_1_content">
+								<p>
+									Ko prilikom zaključenja braka ili životnog partnerstva lica istog pola prikrije od druge 
+									strane neku činjenicu zbog koje je brak ili životno partnerstvo lica istog pola ništavo ili 
+									drugu stranu dovede u zabludu ili održava u zabludi o toj činjenici,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_214a">
+						<heading>
+							Prinudno zaključenje braka, vanbračne zajednice ili životnog partnerstva lica istog pola
+						</heading>
+						<num>
+							Član 214a
+						</num>
+						<paragraph eId="art_214a_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_214a_para_1_content">
+								<p>
+									Ko silom ili prijetnjom prinudi drugo lice na zaključenje braka, stupanje u vanbračnu 
+									zajednicu ili zaključenje životnog partnerstva lica istog pola,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_214a_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_214a_para_2_content">
+								<p>
+									Ko silom ili prijetnjom prinudi ili navede dijete da zaključi brak, stupi u vanbračnu 
+									zajednicu ili zaključi životno partnerstvo lica istog pola ili mu ugovori brak ili vanbračnu 
+									zajednicu ili životno partnerstvo lica istog pola,
+									kazniće se zatvorom od jedne do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_214a_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_214a_para_3_content">
+								<p>
+									Ko drugo lice navede na odlazak ili odvede u inostranstvo u namjeri izvršenja djela iz 
+									<ref href="/krivicni#art_214a_para_1">
+										st. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_214a_para_2">
+										2 
+									</ref>
+									ovog člana,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_215">
+						<heading>
+							Omogućavanje zaključenja nedozvoljenog braka ili životnog partnerstva lica istog pola
+						</heading>
+						<num>
+							Član 215
+						</num>
+						<paragraph eId="art_215_para_1">
+							<content eId="art_215_para_1_content">
+								<p>
+									Službeno lice ovlašćeno za zaključenje braka ili životnog partnerstva lica istog pola koje 
+									u vršenju svoje službene dužnosti svjesno dozvoli da se zaključi brak ili životno partnerstvo 
+									lica istog pola koji je po zakonu zabranjen ili ništav,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_216">
+						<heading>
+							Vanbračna zajednica sa maloljetnikom
+						</heading>
+						<num>
+							Član 216
+						</num>
+						<paragraph eId="art_216_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_216_para_1_content">
+								<p>
+									Punoljetno lice koje živi u vanbračnoj zajednici sa maloljetnikom,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_216_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_216_para_2_content">
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_216_para_1">
+										stava 1 
+									</ref>	
+									ovog člana kazniće se i roditelj, usvojilac ili staralac koji 
+									maloljetniku omogući da živi u vanbračnoj zajednici sa drugim licem.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_216_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_216_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_216_para_2">
+										stava 2 
+									</ref>
+									ovog člana učinjeno silom, prijetnjom ili iz koristoljublja,
+									učinilac će se kazniti zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_216_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_216_para_4_content">
+								<p>
+									Ako se brak zaključi, gonjenje se neće preduzeti, a ako je preduzeto, obustaviće se.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_217">
+						<heading>
+							Oduzimanje djeteta
+						</heading>
+						<num>
+							Član 217
+						</num>
+						<paragraph eId="art_217_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_217_para_1_content">
+								<p>
+									Ko dijete protivpravno zadrži ili oduzme od roditelja, usvojioca, staraoca ili drugog 
+									lica, odnosno ustanove, kojima je ono povjereno ili onemogućava izvršenje odluke kojom 
+									je dijete povjereno određenom licu,
+									kazniće se novčanom kaznom ili zatvorom do dvije godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_217_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_217_para_2_content">
+								<p>
+									Ko onemogućava izvršenje odluke nadležnog organa kojom je određen način 
+									održavanja ličnih odnosa djeteta sa roditeljem ili drugim srodnikom,
+									kazniće se novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_217_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_217_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_217_para_1">
+										stava 1 
+									</ref>	
+									ovog člana učinjeno iz koristoljublja ili drugih niskih pobuda 
+									ili je usljed djela teže ugroženo zdravlje, vaspitanje ili školovanja djeteta,
+									učinilac će se kazniti zatvorom od tri mjeseca do pet godina.								
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_217_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_217_para_4_content">
+								<p>
+									Učinioca djela iz 
+									<ref href="/krivicni#art_217_para_1">
+										st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_217_para_3">
+										3 
+									</ref>	
+									ovog člana koji dobrovoljno preda dijete licu ili ustanovi 
+									kojoj je ono povjereno ili omogući izvršenje odluke o povjeravanju djeteta, sud može 
+									osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_217_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_217_para_5_content">
+								<p>
+									Ako izrekne uslovnu osudu za djelo iz 
+									<ref href="/krivicni#art_217_para_1">
+										st. 1 
+									</ref>	
+									do 
+									<ref href="/krivicni#art_217_para_3">
+										3 
+									</ref>	
+									ovog člana, sud može odrediti obavezu učiniocu da u određenom roku preda dijete licu ili ustanovi kojoj je dijete 
+									povjereno ili omogući izvršenje odluke kojom je dijete povjereno određenom licu ili 
+									ustanovi, odnosno odluke kojom je određen način održavanja ličnih odnosa djeteta sa 
+									roditeljem ili drugim srodnikom.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_218">
+						<heading>
+							Promjena porodičnog stanja
+						</heading>
+						<num>
+							Član 218
+						</num>
+						<paragraph eId="art_218_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_218_para_1_content">
+								<p>
+									Ko podmetanjem, zamjenom ili na drugi način promijeni porodično stanje djeteta,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_218_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_218_para_2_content">
+								<p>
+									Ko zamjenom ili na drugi način iz nehata promijeni porodično stanje djeteta,
+									kazniće se zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_218_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_218_para_3_content">
+								<p>
+									Za pokušaj djela iz 
+									<ref href="/krivicni#art_218_para_1">
+										stava 1 
+									</ref>	
+									ovog člana kazniće se.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_219">
+						<heading>
+							Zapuštanje i zlostavljanje djeteta
+						</heading>
+						<num>
+							Član 219
+						</num>
+						<paragraph eId="art_219_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_219_para_1_content">
+								<p>
+									Roditelj, usvojilac, staralac ili drugo lice koje grubim zanemarivanjem svoje dužnosti 
+									zbrinjavanja i vaspitavanja zapusti dijete o kojem je dužno da se stara,
+									kazniće se zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_219_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_219_para_2_content">
+								<p>
+									Roditelj, usvojilac, staralac ili drugo lice koje zlostavlja dijete ili ga prinuđava na 
+									pretjeran rad ili rad koji ne odgovara uzrastu djeteta ili na prosjačenje ili ga iz koristoljublja 
+									navodi na vršenje drugih radnji koje su štetne za njegov razvoj,
+									kazniće se zatvorom od tri mjeseca do pet godina.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_220">
+						<heading>
+							Nasilje u porodici ili u porodičnoj zajednici
+						</heading>
+						<num>
+							Član 220
+						</num>
+						<paragraph eId="art_220_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_220_para_1_content">
+								<p>
+									Ko lako tjelesno povrijedi člana porodice ili porodične zajednice ili mu ugrozi 
+									sigurnost prijetnjom da će napasti na život ili tijelo tog ili njemu bliskog lica,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_220_para_2_content">
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_220_para_1"> 
+										stava 1 ovog člana 
+									</ref>	
+									kazniće se i lice koje zlostavlja člana svoje porodice ili 
+									porodične zajednice ili prema njemu postupa na način koji vrijeđa ljudsko dostojanstvo.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_220_para_3_content">
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_220_para_1"> 
+										stava 1 ovog člana 
+									</ref>	
+									kazniće se i lice koje na drugi način više puta primijeni 
+									nasilje, uputi prijetnju ili drskim ili bezobzirnim ponašanjem ugrozi ili naruši tjelesni ili 
+									duševni integritet člana svoje porodice ili porodične zajednice.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_220_para_4_content">
+								<p>
+									Ako je pri izvršenju djela iz
+									<ref href="/krivicni#art_220_para_1"> 
+										st. 1
+									</ref>
+									,
+									<ref href="/krivicni#art_220_para_2"> 
+										2 
+									</ref>
+									i
+									<ref href="/krivicni#art_220_para_3"> 
+										3 ovog člana
+									</ref>
+									korišćeno oružje, opasno oruđe ili 
+									drugo sredstvo podobno da tijelo teško povrijedi ili zdravlje teško naruši ili je djelo učinjeno 
+									u prisustvu djeteta,
+									učinilac će se kazniti zatvorom od jedne do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_220_para_5_content">
+								<p>
+									Ako je usljed djela iz
+									<ref href="/krivicni#art_220_para_1"> 
+										st. 1
+									</ref>
+									do
+									<ref href="/krivicni#art_220_para_4"> 
+										4 ovog člana
+									</ref>
+									nastupila teška tjelesna povreda ili teško 
+									narušavanje zdravlja ili je djelo učinjeno prema djetetu,
+									učinilac će se kazniti zatvorom od jedne do osam godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_6">							
+							<num>
+								(6)
+							</num>
+							<content eId="art_220_para_6_content">
+								<p>
+									Ako je usljed djela iz
+									<ref href="/krivicni#art_220_para_1"> 
+										st. 1
+									</ref>
+									do
+									<ref href="/krivicni#art_220_para_5"> 
+										5 ovog člana
+									</ref>
+									nastupila smrt člana porodice ili porodične 
+									zajednice,
+									učinilac će se kazniti zatvorom od pet do petnaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_7">							
+							<num>
+								(7)
+							</num>
+							<content eId="art_220_para_7_content">
+								<p>
+									Ko prekrši mjere zaštite od nasilja u porodici koje mu je sud ili drugi državni organ 
+									odredio na osnovu zakona,
+									kazniće se novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_220_para_8">
+							<num>
+								(8)
+							</num>
+							<content eId="art_220_para_8_content">
+								<p>
+									Članovima porodice ili porodične zajednice, u smislu ovog člana, smatraju se bračni 
+									ili vanbračni supružnik, njihova zajednička djeca i djeca svakog od njih, partner u zajednici 
+									života lica istog pola i djeca svakog od partnera, krvni srodnik i srodnik iz usvojenja u 
+									pravoj liniji bez ograničenja, a u pobočnoj liniji zaključno sa četvrtim stepenom, tazbinski 
+									srodnici zaključno sa drugim stepenom, partner u intimnoj vezi, lica koja žive u istom 
+									porodičnom domaćinstvu i lica koja imaju zajedničko dijete ili je dijete na putu da bude 
+									rođeno iako nikad nijesu živjela u istom porodičnom domaćinstvu. Članovima porodice ili 
+									porodične zajednice smatraju se i bivši bračni ili vanbračni supružnik, bivši partner u 
+									zajednici života lica istog pola, bivši tazbinski srodnici zaključno sa drugim stepenom i bivši 
+									partner u intimnoj vezi.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_221">
+						<heading>
+							Nedavanje izdržavanja
+						</heading>
+						<num>
+							Član 221
+						</num>
+						<paragraph eId="art_221_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_221_para_1_content">
+								<p>
+									Ko ne daje izdržavanje za lice koje je po zakonu dužan da izdržava, a ta dužnost je 
+									utvrđena izvršnom sudskom odlukom ili izvršnim poravnanjem pred sudom ili drugim 
+									nadležnim organom, u iznosu i na način kako je to odlukom odnosno poravnanjem 
+									utvrđeno kazniće se novčanom kaznom ili zatvorom do dvije godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_221_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_221_para_2_content">
+								<p>
+									Neće se kazniti učinilac djela iz 
+									<ref href="/krivicni#art_221_para_1"> 
+										stava 1 
+									</ref>	
+									ovog člana, ako iz opravdanih razloga nije 
+									davao izdržavanje.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_221_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_221_para_3_content">
+								<p>
+									Ako su usled djela iz 
+									<ref href="/krivicni#art_221_para_1"> 	
+										stava 1 
+									</ref>	
+									ovog člana nastupile teške posljedice za izdržavano 
+									lice, učinilac će se kazniti zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_221_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_221_para_4_content">
+								<p>
+									U sudskoj odluci sud određuje obavezu učiniocu da izmiri dospjele obaveze i da 
+									uredno daje izdržavanje.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_222">
+						<heading>
+							Kršenje porodičnih obaveza
+						</heading>
+						<num>
+							Član 222
+						</num>
+						<paragraph eId="art_222_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_222_para_1_content">
+								<p>
+									Ko kršenjem zakonom utvrđenih porodičnih obaveza ostavi u teškom položaju člana 
+									porodice koji nije u stanju da se sam o sebi stara,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_222_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_222_para_2_content">
+								<p>
+									Ako je usljed djela iz 
+									<ref href="/krivicni#art_222_para_1">
+										stava 1 
+									</ref>	
+									ovog člana nastupilo teško narušavanje zdravlja člana 
+									porodice,
+									učinilac će se kazniti zatvorom od jedne do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_222_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_222_para_3_content">
+								<p>
+									Ako je usljed djela iz 
+									<ref href="/krivicni#art_222_para_1">
+										stava 1 
+									</ref>	
+									ovog člana nastupila smrt člana porodice,
+									sučinilac će se kazniti zatvorom od jedne do osam godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_222_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_222_para_4_content">
+								<p>
+									Ako izrekne uslovnu osudu za djelo iz 
+									<ref href="/krivicni#art_222_para_1">
+										st. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_222_para_2">
+										2 
+									</ref>	
+									ovog člana, sud može odrediti obavezu 
+									učiniocu da izvršava svoje zakonom utvrđene porodične obaveze.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_223">
+						<heading>
+							Rodoskrvnjenje
+						</heading>
+						<num>
+							Član 223
+						</num>
+						<paragraph eId="art_223_para_1">
+							<content eId="art_223_para_1_content">
+								<p>
+									Punoljetno lice koje izvrši obljubu ili sa njom izjednačen polni čin sa maloljetnim 
+									srodnikom po krvi u pravoj liniji ili sa maloljetnim bratom, odnosno sestrom,
+									kazniće se zatvorom najmanje pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_223_para_2">
+							<content eId="art_223_para_2_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_223_para_1">
+										stava 1 
+									</ref>	
+									ovog člana učinjeno prema djetetu mlađem od četrnaest godina,
+									učinilac će se kazniti zatvorom najmanje deset godina.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+
+<!--22. GLAVA-->
+			<chapter eId="chp_22">
+				<num>
+					GLAVA DVADESET DRUGA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV IMOVINE
+				</heading>	
+				<section eId="chp_22_sec_1">
+					<article eId="art_239">
+						<heading>
+							Krađa
+						</heading>
+						<num>
+							Član 239
+						</num>
+						<paragraph eId="art_239_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_239_para_1_content">
+								<p>
+									Ko tuđu pokretnu stvar oduzme drugom u namjeri da njenim prisvajanjem sebi ili 
+									drugom pribavi protivpravnu imovinsku korist,
+									kazniće se novčanom kaznom ili zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_239_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_239_para_2_content">
+								<p>
+									Za pokušaj djela iz 
+									<ref href="/krivicni#art_239_para_1">
+										stava 1 
+									</ref>	
+									ovog člana kazniće se.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_245">
+						<heading>
+							Neosnovano dobijanje i korišćenje kredita i druge pogodnosti
+						</heading>
+						<num>
+							Član 245
+						</num>
+						<paragraph eId="art_245_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_245_para_1_content">
+								<p>
+									Ko lažnim prikazivanjem činjenica ili njihovim prikrivanjem dobije za sebe ili drugog
+									kredit, subvenciju ili drugu pogodnost iako za to ne ispunjava propisane uslove,
+									kazniće se novčanom kaznom ili zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_245_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_245_para_2_content">
+								<p>
+									Ko dobijeni kredit, subvenciju ili drugu pogodnost iskoristi za drugu namjenu od one
+									za koju mu je kredit, subvencija ili druga pogodnost odobrena,
+									kazniće se novčanom kaznom ili zatvorom do dvije godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_245_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_245_para_3_content">
+								<p>
+									Za djelo iz st. 1 i 2 ovog člana, kazniće se propisanom kaznom i odgovorno lice u
+									privrednom društvu ili drugom subjektu privrednog poslovanja ako su kredit, subvencija ili
+									druga pogodnost pribavljeni za privredno društvo ili drugi subjekt privrednog poslovanja
+									ili ako su nenamjenski korišćeni od strane tih subjekata.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_245_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_245_para_4_content">
+								<p>
+									Ako je djelo iz stava 1 ovog člana učinjeno na štetu finansijskih interesa Evropske
+									unije, učinilac će se kazniti kaznom propisanom za to djelo.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+<!--27. GLAVA-->
+			<chapter eId="chp_27">
+				<num>
+					GLAVA DVADESET SEDMA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV BEZBJEDNOSTI JAVNOG SAOBRAĆAJA
+				</heading>	
+				<section eId="chp_27_sec_1">
+					<article eId="art_339">
+						<heading>
+							Ugrožavanje javnog saobraćaja
+						</heading>
+						<num>
+							Član 339
+						</num>
+						<paragraph eId="art_339_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_339_para_1_content">
+								<p>
+									Učesnik u saobraćaju na putevima koji se ne pridržava saobraćajnih propisa i time 
+									tako ugrozi saobraćaj da dovede u opasnost život ili tijelo ljudi ili imovinu čija vrijednost 
+									prelazi iznos od dvadeset hiljada eura, pa usljed toga kod drugog nastupi laka tjelesna 
+									povreda ili drugom prouzrokuje imovinsku štetu koja prelazi iznos od tri hiljade eura,
+									kazniće se zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_339_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_339_para_2_content">
+								<p>
+									Ko se ne pridržava saobraćajnih propisa i time ugrozi željeznički, brodski, autobuski 
+									saobraćaj ili saobraćaj žičarom tako da dovede u opasnost život ili tijelo ljudi ili imovinu 
+									čija vrijednost prelazi iznos od dvadeset hiljada eura,
+									kazniće se zatvorom od šest mjeseci do šest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_339_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_339_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_339_para_1">
+										st. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_339_para_2">
+										2 ovog člana 
+									</ref>	
+									učinjeno iz nehata,
+									učinilac će se kazniti novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_340">
+						<heading>
+							Ugrožavanje saobraćaja opasnom radnjom i opasnim sredstvom
+						</heading>
+						<num>
+							Član 340
+						</num>
+						<paragraph eId="art_340_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_340_para_1_content">
+								<p>
+									Ko uništenjem, uklanjanjem ili težim oštećenjem saobraćajnih uređaja, sredstava, 
+									znakova ili uređaja za signalizaciju ili zaštitnih i odbojnih ograda koji služe bezbjednosti 
+									javnog saobraćaja na putevima, davanjem pogrešnih znakova ili signala, postavljanjem 
+									prepreka na saobraćajnicama ili drugi sličan način tako ugrozi javni saobraćaj da time 
+									dovede u opasnost život ili tijelo ljudi ili imovinu čija vrijednost prelazi iznos od dvadeset 
+									hiljada eura,
+									kazniće se zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_340_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_340_para_2_content">
+								<p>
+									Ko na način iz 
+									<ref href="/krivicni#art_340_para_1">
+										stava 1 ovog člana 
+									</ref>	
+									ugrozi željeznički, brodski, autobuski ili saobraćaj 
+									žičarom i time izazove opasnost za život ili tijelo ljudi ili imovinu čija vrijednost prelazi iznos 
+									od dvadeset hiljada eura,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_340_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_340_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_340_para_1">
+										st. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_340_para_2">
+										2 ovog člana 
+									</ref>	
+									učinjeno iz nehata,
+									učinilac će se kazniti novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+
+					<article eId="art_341">
+						<heading>
+							Ugrožavanje bezbjednosti vazdušnog saobraćaja
+						</heading>
+						<num>
+							Član 341
+						</num>
+						<paragraph eId="art_341_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_341_para_1_content">
+								<p>
+									Ko nepropisnim ili nepravilnim upravljanjem letom vazduhoplova, propuštanjem 
+									dužnosti ili nadzora u vezi sa sigurnošću vazdušnog saobraćaja, davanjem netačnih 
+									obavještenja od značaja za bezbjedan let vazduhoplova ili na drugi način dovede u 
+									opasnost sigurnost vazdušnog saobraćaja,
+									kazniće se zatvorom od jedne do šest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_341_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_341_para_2_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_341_para_1">
+										stava 1 ovog člana 
+									</ref>	
+									učinjeno iz nehata ili nehatnim uništenjem 
+									ili oštećenjem uređaja za navigaciju ili nehatnim nanošenjem druge štete na vazduhoplovu,
+									učinilac će se kazniti zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_341_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_341_para_3_content">
+								<p>
+									Ko izvrši akt nasilja uperen protiv lica na aerodromu za međunarodni civilni vazdušni 
+									saobraćaj koji prouzrokuje ili bi mogao da prouzrokuje tešku tjelesnu povredu ili smrt 
+									nekog lica,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_341_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_341_para_4_content">
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_341_para_3">
+										stava 3 ovog člana 
+									</ref>	
+									kazniće se i ko uništi ili ošteti uređaje na aerodromu 
+									za međunarodni civilni vazdušni saobraćaj ili vazduhoplovu koji nije u saobraćaju a nalazi 
+									se na tom aerodromu ili prekine rad službi na tom aerodromu, ako takav akt ugrožava ili 
+									bi mogao da ugrozi bezbjednost na tom aerodromu.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+
+					<article eId="art_344">
+						<heading>
+							Nepružanje pomoći brodu ili drugom plovnom objektu i licima u opasnosti na moru i unutrašnjim vodama
+						</heading>
+						<num>
+							Član 344
+						</num>
+						<paragraph eId="art_344_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_344_para_1_content">
+								<p>
+									Zapovjednik broda, čamca ili drugog plovnog objekta koji učestvuje u plovidbi, lice 
+									koje ga zamjenjuje ili lice koje samo upravlja nekim od navedenih plovnih objekata, koji 
+									protivno propisima ne preduzme spasavanje na moru ili unutrašnjim vodama broda, čamca 
+									ili drugog plovnog objekta, lica ili stvari koji su u opasnosti, ako je bez opasnosti za svoj 
+									brod, čamac ili drugi plovni objekat mogao da preduzme spasavanje,
+									kazniće se zatvorom od tri mjeseca do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_344_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_344_para_2_content">
+								<p>
+									Lice iz 
+									<ref href="/krivicni#art_344_para_1">
+										stava 1 ovog člana 
+									</ref>
+									koje protivno propisima ne ukloni sa plovnog puta na 
+									unutrašnjim vodama plovni objekat sa kojim se sudario plovni objekat kojim ono 
+									zapovijeda ili upravlja, a moglo je to da učini bez opasnosti za taj plovni objekat,
+									kazniće se zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+
+					<article eId="art_346">
+						<heading>
+							Nesavjesno vršenje nadzora nad javnim saobraćajem
+						</heading>
+						<num>
+							Član 346
+						</num>
+						<paragraph eId="art_346_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_346_para_1_content">
+								<p>
+									Službeno ili odgovorno lice kojem je povjeren nadzor nad stanjem i održavanjem 
+									saobraćajnica i objekata na njima, prevoznim sredstvima ili javnim saobraćajem ili nad 
+									ispunjavanjem propisanih uslova rada vozača, ili kojem je povjereno rukovođenje vožnjom, 
+									koje nesavjesnim vršenjem svoje dužnosti izazove opasnost za život ili tijelo ljudi ili za 
+									imovinu čija vrijednost prelazi iznos od dvadeset hiljada eura,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_346_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_346_para_2_content">
+								<p>
+									Kaznom iz 
+									<ref href="/krivicni#art_346_para_1">
+										stava 1 ovog člana 
+									</ref>	
+									kazniće se i odgovorno lice koje izda nalog za vožnju ili 
+									dopusti vožnju, iako zna da vozač zbog umora, uticaja alkohola ili drugih razloga nije u 
+									stanju da bezbjedno upravlja vozilom ili da vozilo nije ispravno i time izazove opasnost za 
+									život ili tijelo ljudi ili za imovinu čija vrijednost prelazi iznos od dvadeset hiljada eura.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_346_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_346_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_346_para_1">
+										stava 1 ovog člana 
+									</ref>
+									učinjeno iz nehata,
+									učinilac će se kazniti zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					
+					<article eId="art_348">
+						<heading>
+							Teška djela protiv bezbjednosti javnog saobraćaja
+						</heading>
+						<num>
+							Član 348
+						</num>
+						<paragraph eId="art_348_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_348_para_1_content">
+								<p>
+									Ako je usljed djela iz 
+									<ref href="/krivicni#art_339_para_1">
+										čl. 339 st. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_339_para_2">
+										2
+									</ref>
+									,
+									<ref href="/krivicni#art_340_para_1">
+										340 st. 1 
+									</ref>	
+									i
+									<ref href="/krivicni#art_340_para_2">
+										 2
+									</ref> 
+									, 
+									<ref href="/krivicni#art_341_para_1">
+										341 stav 1
+									</ref>
+									, 
+									<ref href="/krivicni#art_344">
+										344 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_346_para_1">
+										346 st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_346_para_2">
+										2 
+									</ref>	
+									ovog zakonika nastupila teška tjelesna povreda nekog lica ili imovinska šteta koja prelazi 
+									iznos od četrdeset hiljada eura,
+									učinilac će se kazniti zatvorom od jedne do osam godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_348_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_348_para_2_content">
+								<p>
+									Ako je usljed djela iz 
+									<ref href="/krivicni#art_339_para_1">
+										čl. 339 st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_339_para_2">
+										2
+									</ref>
+									, 
+									<ref href="/krivicni#art_340_para_1">
+										340 st. 1 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_340_para_2">
+										2
+									</ref>	
+									, 
+									<ref href="/krivicni#art_341_para_1">
+										341 stav 1
+									</ref>
+									, 
+									<ref href="/krivicni#art_344">
+										344 
+									</ref>
+									i 
+									<ref href="/krivicni#art_346_para_1">
+										346 st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_346_para_2">
+										2 
+									</ref>
+									ovog zakonika nastupila smrt jednog ili više lica,
+									učinilac će se kazniti zatvorom od dvije do dvanaest godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_348_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_348_para_3_content">
+								<p>
+									Ako je usljed djela iz 
+									<ref href="/krivicni#art_339_para_3">
+										čl. 339 stav 3
+									</ref>	
+									, 
+									<ref href="/krivicni#art_340_para_3">
+										340 stav 3
+									</ref>	
+									, 
+									<ref href="/krivicni#art_341_para_2">
+										341 stav 2 
+									</ref>	
+									i 
+									<ref href="/krivicni#art_346_para_3">
+										346 stav 3 
+									</ref>
+									ovog zakonika nastupila teška tjelesna povreda nekog lica ili imovinska šteta koja prelazi iznos od 
+									četrdeset hiljada eura,
+									učinilac će se kazniti zatvorom do četiri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_348_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_348_para_4_content">
+								<p>
+									Ako je usljed djela iz 
+									<ref href="/krivicni#art_339_para_3">
+										čl. 339 stav 3
+									</ref>
+									, 
+									<ref href="/krivicni#art_340_para_3">
+										340 stav 3
+									</ref>
+									, 
+									<ref href="/krivicni#art_341_para_2">
+										341 stav 2 
+									</ref>
+									i 
+									<ref href="/krivicni#art_346_para_3">
+										346 stav 3 
+									</ref>	
+									ovog zakonika nastupila smrt jednog ili više lica,
+									učinilac će se kazniti zatvorom od jedne do osam godina.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+
+<!--30. GLAVA-->
+			<chapter eId="chp_30">
+				<num>
+					GLAVA TRIDESETA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV DRŽAVNIH ORGANA
+				</heading>	
+				<section eId="chp_30_sec_1">
+					<article eId="art_376">
+						<heading>
+							Napad na službeno lice u vršenju službene dužnosti
+						</heading>
+						<num>
+							Član 376
+						</num>
+						<paragraph eId="art_376_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_376_para_1_content">
+								<p>
+									Ko napadne ili prijeti da će napasti službeno lice u vršenju službene dužnosti,
+									kazniće se zatvorom do tri godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_376_para_2_content">
+								<p>
+									Ako je pri izvršenju djela iz 
+									<ref href="/krivicni#art_376_para_1">
+										stava 1 
+									</ref>
+									ovog člana službenom licu nanesena laka tjelesna
+									povreda ili je prijećeno upotrebom oružja,
+									učinilac će se kazniti zatvorom od tri mjeseca do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_3">
+							<num>
+								(3)
+							</num>
+							<content eId="art_376_para_3_content">
+								<p>
+									Ako je djelo iz 
+									<ref href="/krivicni#art_376_para_1">
+										st. 1 
+									</ref>
+									i 
+									<ref href="/krivicni#art_376_para_2">
+										2 
+									</ref>
+									ovog člana učinjeno prema sudiji ili državnom tužiocu u vezi
+									sa vršenjem njihove sudijske, odnosno tužilačke dužnosti ili službenom licu u vezi sa
+									vršenjem poslova javne ili nacionalne bezbjednosti,
+									učinilac će se kazniti zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_4">
+							<num>
+								(4)
+							</num>
+							<content eId="art_376_para_4_content">
+								<p>
+									Za pokušaj djela iz 
+									<ref href="/krivicni#art_376_para_1">
+										stava 1 
+									</ref>
+									ovog člana kazniće se.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_376_para_5">
+							<num>
+								(5)
+							</num>
+							<content eId="art_376_para_5_content">
+								<p>
+									Učinilac djela iz 
+									<ref href="/krivicni#art_376_para_1">
+										st. 1 
+									</ref>
+									do 
+									<ref href="/krivicni#art_376_para_3">
+										3 
+									</ref>
+									ovog člana koji je bio izazvan nezakonitim ili grubim
+									postupanjem službenog lica može se osloboditi od kazne.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+					<article eId="art_381">
+						<heading>
+							Skidanje i povreda službenog pečata i znaka
+						</heading>
+						<num>
+							Član 381
+						</num>
+						<paragraph eId="art_381_para_1">
+							<num>
+								(1)
+							</num>
+							<content eId="art_381_para_1_content">
+								<p>
+									Ko skine ili povrijedi službeni pečat ili znak koji je ovlašćeno službeno lice stavilo radi 
+									osiguranja predmeta ili prostorije ili ko, bez skidanja ili povrede pečata ili znaka, uđe u 
+									takvu prostoriju ili otvori predmet na koji je bio stavljen službeni pečat ili znak,
+									kazniće se novčanom kaznom ili zatvorom do jedne godine.
+								</p>
+							</content>
+						</paragraph>
+						<paragraph eId="art_381_para_2">
+							<num>
+								(2)
+							</num>
+							<content eId="art_381_para_2_content">
+								<p>
+									Za pokušaj će se kazniti.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+<!--32. GLAVA-->
+			<chapter eId="chp_32">
+				<num>
+					GLAVA TRIDESET DRUGA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV JAVNOG REDA I MIRA
+				</heading>	
+				<section eId="chp_32_sec_1">
+					<article eId="art_399">
+						<heading>
+							Nasilničko ponašanje
+						</heading>
+						<num>
+							Član 399
+						</num>
+						<paragraph eId="art_399_para_1">
+							<content eId="art_399_para_1_content">
+								<p>
+									Ko grubim vrijeđanjem ili zlostavljanjem drugog, vršenjem nasilja prema drugom, 
+									izazivanjem tuče ili drskim ili bezobzirnim ponašanjem ugrozi spokojstvo građana ili remeti 
+									javni red i mir, ukoliko je to izvršeno u grupi ili je nekom licu nanesena laka tjelesna 
+									povreda ili je došlo do teškog ponižavanja građana,
+									kazniće se zatvorom od šest mjeseci do pet godina.
+								</p>
+							</content>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+
+<!--36. GLAVA-->
+			<chapter eId="chp_36">
+				<num>
+					GLAVA TRIDESET ŠESTA
+				</num>
+				<heading>
+					KRIVIČNA DJELA PROTIV VOJSKE CRNE GORE
+				</heading>	
+				<section eId="chp_36_sec_1">
+				</section>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

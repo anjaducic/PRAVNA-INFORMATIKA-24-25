@@ -4,6 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
@@ -39,6 +41,13 @@ public class SecurityConfig {
     public AuthenticationEntryPoint authenticationEntryPoint() {
         return new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED);
     }
+
+    //potrebno radi prikaza linkovanih clanova zakona u presudama
+   @Bean
+   public WebSecurityCustomizer webSecurityCustomizer() {
+       return (web) -> web.ignoring().requestMatchers("/Verdicts/**", "/Laws/**");
+   }
+
 
     //CORS Config
     @Bean

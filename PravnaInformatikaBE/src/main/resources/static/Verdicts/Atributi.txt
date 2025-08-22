@@ -1,0 +1,391 @@
+K 27/2018
+
+priznaoKrivicu (boolean):
+Vrijednost: true
+Obrazloženje: Okrivljeni je pristao na sporazum o priznanju krivice.
+
+nasiljeUPorodici (boolean):
+Vrijednost: true
+Obrazloženje: Predmet se tiče krivičnog djela nasilja u porodici.
+
+vrstaNasilja (enum):
+Moguće vrijednosti: “verbalna”, “fizička”, “kombinovana”
+Vrijednost: “verbalna”
+Obrazloženje: U presudi se navode izrečene riječi prijetnje, što ukazuje na verbalno nasilje.
+
+intenzitetPrijetnje (enum):
+Moguće vrijednosti: “nizak”, “srednji”, “visok”
+Vrijednost: “visok”
+Obrazloženje: Prijetnje poput “zaklaću te” i “ubiću je” upućene su u ozbiljnom tonu, a incident je zabilježen i u prisustvu djeteta.
+
+prethodneOsudjenosti (boolean):
+Vrijednost: false
+Obrazloženje: Okrivljeni je neosuđivan.
+
+imovinskoStanje (enum):
+Moguće vrijednosti: “loše”, “prosječno”, “dobro”
+Vrijednost: “loše”
+Obrazloženje: U presudi se navodi da je okrivljeni u lošem imovinskom stanju.
+
+bračniStatus (enum):
+Moguće vrijednosti: “neoženjen/neudata”, “u braku”, “razveden”
+Vrijednost: “razveden”
+Obrazloženje: Navodi se da je okrivljeni razveden.
+
+zaposlenje (enum):
+Moguće vrijednosti: “zaposlen”, “nezaposlen”, “student”
+Vrijednost: “nezaposlen”
+Obrazloženje: Okrivljeni je nezaposlen.
+
+brojDjece (integer):
+Vrijednost: 2
+Obrazloženje: Navodi se da je otac dvoje djece.
+
+prisutnostDjecePriIncidentu (boolean):
+Vrijednost: true
+Obrazloženje: Prijetnja je izrečena u kontekstu razgovora sa sinom.
+
+namjeraIzvrsenjaPrijetnje (boolean):
+Vrijednost: true
+Obrazloženje: Presuda ističe da je okrivljeni bio svjestan zabranjenosti svog djela i htio je izvršenje prijetnji.
+
+odnosSaOštećenom (enum):
+Moguće vrijednosti: “supruga/muž”, “bivša supruga/bivši muž”, “drugi član porodice”
+Vrijednost: “bivša supruga”
+Obrazloženje: Oštećena je bivša supruga okrivljenog.
+
+
+
+
+
+K 51/2021
+
+
+priznaoKrivicu (boolean):
+Vrednost: false
+Obrazloženje: Okrivljeni P.R. nije u potpunosti priznao krivicu na glavnom pretresu, već je negirao izvršenje djela, a sud je donio presudu na osnovu drugih dokaza.
+
+nasiljeUPorodici (boolean):
+Vrednost: true
+Obrazloženje: Predmet presude odnosi se na krivično djelo nasilja u porodici, odnosno narušavanje duševnog integriteta oštećenih (roditelja).
+
+vrstaNasilja (enum):
+Moguće vrednosti: “verbalno”, “fizičko”, “kombinovano”
+Vrednost: “verbalno”
+Obrazloženje: Okrivljeni je upućivao ozbiljne verbalne pretnje (npr. “sve ću vas pobiti i poklati noćas”), bez direktne primene fizičkog nasilja prema oštećenima u trenutku pretnji.
+
+intenzitetPrijetnje (enum):
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “visok”
+Obrazloženje: Sama formulacija pretnji i okolnosti (narušenje duševnog integriteta oštećenih, upotreba noža u prethodnim sukobima) ukazuju na visok intenzitet pretnji.
+
+prethodneOsudjenosti (boolean):
+Vrednost: true
+Obrazloženje: Presuda navodi da je okrivljeni ranije višestruko osuđivan, što predstavlja otežavajuću okolnost.
+
+imovinskoStanje (enum):
+Moguće vrednosti: “loše”, “srednje”, “dobro”
+Vrednost: “srednje”
+Obrazloženje: Okrivljeni je opisan kao osoba sa srednjim imovinskim stanjem.
+
+bračniStatus (enum):
+Moguće vrednosti: “neoženjen/neudata”, “u braku”, “razveden”
+Vrednost: “razveden”
+Obrazloženje: Navodi se da je okrivljeni razveden.
+
+zaposlenje (enum):
+Moguće vrednosti: “zaposlen”, “nezaposlen”, “student”
+Vrednost: “nezaposlen”
+Obrazloženje: Okrivljeni je naveden kao nezaposlen.
+
+brojDjece (integer):
+Vrednost: 7
+Obrazloženje: Presuda sadrži informaciju da je okrivljeni otac sedmoro djece.
+
+prisutnostDjecePriIncidentu (boolean):
+Vrednost: false
+Obrazloženje: Iako je okrivljeni otac sedmoro djece, u opisu incidenta se pre svega pominju oštećeni – njegovi roditelji – a ne njegovo dete kao svedok ili učesnik događaja.
+
+namjeraIzvrsenjaPrijetnje (boolean):
+Vrednost: true
+Obrazloženje: Sud je zaključio da je okrivljeni bio svestan zabranjenosti svojih postupaka i da je imao nameru da preduzme ono što je pretekao rečima, što ukazuje na umišljaj.
+
+odnosSaOštećenim (enum):
+Moguće vrednosti: “supruga/muž”, “bivša supruga/bivši muž”, “roditelj/roditeljica”, “drugi član porodice”
+Vrednost: “roditelj/roditeljica”
+Obrazloženje: Oštećeni su otac i majka okrivljenog, pa je odnos između njih definisan kao odnos deteta prema roditeljima.
+
+alkoholisan (boolean):
+Vrednost: true
+Obrazloženje: Okrivljeni je u toku događaja bio u stanju jakog pijanstva, što je uticalo na njegovo ponašanje.
+
+stepenPijanstva (enum):
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “visok”
+Obrazloženje: Opis konzumacije (oko deset čaša jabukove rakije) i uticaj alkohola na njegovo ponašanje ukazuju na visok stepen alkoholisanosti.
+
+poremećajLičnosti (boolean):
+Vrednost: true
+Obrazloženje: Vještačko mišljenje ukazuje da kod okrivljenog postoje znaci poremećaja ličnosti, što je primenjeno kao element u oceni njegovog ponašanja, ali se ne radi o mentalnoj bolesti.
+
+upotrebaNoža (boolean):
+Vrednost: false
+Obrazloženje: Iako je ranije tokom sukoba (pre incidenta) okrivljeni koristio nož, u trenutku kada je upućivao pretnje oštećenima (roditeljima) nije imao nož u ruci, što je značajno za kvalifikaciju djela.
+
+
+K 91/2022
+
+priznaoKrivicu (boolean)
+Vrednost: false
+Obrazloženje: Okrivljeni nije priznao izvršenje krivičnog djela, već je u odbrani negirao da je udario kćerku i naglašavao da je sve bilo „roditeljsko galamanje“.
+
+nasiljeUPorodici (boolean)
+Vrednost: true
+Obrazloženje: Predmet optužbe je krivično djelo nasilja u porodici (usmereno protiv kćerke), iako sud nije našao dokaze da je izvršeno „grubo nasilje“.
+
+vrstaNasilja (enum)
+Moguće vrednosti: “verbalno”, “fizičko”, “kombinovano”
+Vrednost: “verbalno”
+Obrazloženje: Iako je u optužbi navedeno i udaranje šakama, sud nije utvrdio postojanje neosporno fizičkog nasilja – potvrđeno je da je okrivljeni galamio i psovao, što se klasifikuje kao verbalno nasilje.
+
+intenzitetPretnji (enum)
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “srednji”
+Obrazloženje: Pretnje (npr. preko telefona: „Sad da si došla kući, šta si mi uradila, sa kim si šetala večeras, ti mene da brukaš“) ukazuju na upućivanje verbalne agresije, ali sud nije utvrdio ozbiljniju nameru koja bi prouzrokovala stvarno narušavanje tjelesnog ili duševnog integriteta.
+
+prethodneOsudjenosti (boolean)
+Vrednost: true
+Obrazloženje: Biografski podaci navode da je okrivljeni „osuđivan“, što ukazuje na prethodne presude.
+
+imovinskoStanje (enum)
+Moguće vrednosti: “loše”, “srednje”, “dobro”
+Vrednost: “srednje”
+Obrazloženje: Presuda navodi da je okrivljeni u srednjem imovinskom stanju.
+
+bračniStatus (enum)
+Moguće vrednosti: “neoženjen/neudata”, “u braku”, “razveden”
+Vrednost: “oženjen”
+Obrazloženje: Navodi se da je okrivljeni oženjen.
+
+brojDjece (integer)
+Vrednost: 5
+Obrazloženje: U biografskim podacima se navodi da je okrivljeni otac petoro djece.
+
+prisutnostOštećenog (boolean)
+Vrednost: true
+Obrazloženje: Kćerka (Đ.A.) je bila prisutna kao oštećena u događaju, što je i predmet optužbe.
+
+odnosSaOštećenim (enum)
+Moguće vrednosti: “roditelj/kćer”, “supružnici”, “drugi član porodice”
+Vrednost: “roditelj/kćer”
+Obrazloženje: Oštećena je kćerka okrivljenog, što uspostavlja odnos roditelj/kćerka.
+
+alkoholisan (boolean)
+Vrednost: false
+Obrazloženje: U toku događaja nema dokaza ili navoda o uticaju alkohola na okrivljenog.
+
+upotrebaOružja (boolean)
+Vrednost: false
+Obrazloženje: Iako okrivljeni poseduje sablju (koju je primio na poklon), nema dokaza da ju je upotrebio u toku događaja.
+
+postojanjeFizičkihPovreda (boolean)
+Vrednost: false
+Obrazloženje: Medicinska dokumentacija i nalazi vještaka nisu utvrdili postojanje fizičkih povreda koje bi neosporno ukazivale na primenu grubog nasilja.
+
+
+
+K 104/2016
+
+priznaoKrivicu (boolean)
+Vrednost: true
+Obrazloženje: Okrivljeni je na glavnom pretresu, uprkos delimičnoj nejasnoći zbog alkoholisanog stanja, priznao da se ponašao u skladu sa opisom iz optužbe i izrazio kajanje.
+
+nasiljeUPorodici (boolean)
+Vrednost: true
+Obrazloženje: Predmet optužbe je krivično djelo nasilja u porodici, usmerenog prema bivšoj supruzi.
+
+vrstaNasilja (enum)
+Moguće vrednosti: “verbalno”, “fizičko”, “kombinovano”
+Vrednost: “kombinovano”
+Obrazloženje: Okrivljeni je upućivao prijetnje (tekstualne poruke poput „mrtva si kurvo“) kao i fizički demonstrirao nasilje (lupao i zvonio na vrata) s ciljem zastrašivanja.
+
+intenzitetPretnji (enum)
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “visok”
+Obrazloženje: Poruke i izjava na zapisniku („došao da ubije ženu“) ukazuju na ozbiljnu, namernu prijetnju.
+
+narusenjeDuševnogIntegriteta (boolean)
+Vrednost: true
+Obrazloženje: Vještačko mišljenje psihijatra utvrdilo je da je duševni integritet oštećene narušen uslijed događaja, što je i presudno za kvalifikaciju djela.
+
+stepenNarusenostiDuševnogIntegriteta (enum)
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “srednji”
+Obrazloženje: Izvještaj vještaka ukazuje na srednje jak poremećaj psihičke ravnoteže kod oštećene i njenih bližnjih.
+
+prethodneOsudjenosti (boolean)
+Vrednost: false
+Obrazloženje: Presuda naglašava da se radi o neosuđivanom licu.
+
+imovinskoStanje (enum)
+Moguće vrednosti: “loše”, “srednje”, “dobro”
+Vrednost: “loše”
+Obrazloženje: Biografski podaci navode da je okrivljeni u lošem imovinskom stanju.
+
+bračniStatus (enum)
+Moguće vrednosti: “neoženjen/neudata”, “u braku”, “razveden”
+Vrednost: “oženjen”
+Obrazloženje: Navodi se da je okrivljeni oženjen.
+
+brojDjece (integer)
+Vrednost: 2
+Obrazloženje: Podaci s presude navode da je otac dvoje djece.
+
+alkoholisan (boolean)
+Vrednost: true
+Obrazloženje: Okrivljeni je u vreme događaja bio u alkoholisanom stanju, što potvrđuje i nalaz alkotestiranja (1,12 g/kg).
+
+stepenPijanstva (enum)
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “nizak”
+Obrazloženje: Vještak je utvrdio da je okrivljeni bio u pripitom stanju, što ukazuje na lak nivo alkoholisanosti.
+
+upotrebaOružja (boolean)
+Vrednost: false
+Obrazloženje: Iako je postojala verbalna prijetnja i fizička demonstracija nasilja, nema dokaza da je korišćen bilo kakav predmet ili oružje u pravom smislu te reči.
+
+namjeraIzvrsenjaPrijetnje (boolean)
+Vrednost: true
+Obrazloženje: Iz izjava na zapisniku i sadržaja poruka jasno je da je okrivljeni nameravao izvršiti ozbiljnu prijetnju, čak i ubistvo.
+
+pokazaoKajanje (boolean)
+Vrednost: true
+Obrazloženje: Okrivljeni je u završnoj riječi izrazio žaljenje i nada da se ovakvo ponašanje neće ponoviti, što je sud uzeo u obzir prilikom izricanja uslovne osude.
+
+prihvatioUslovnuOsudu (boolean)
+Vrednost: true
+Obrazloženje: Sud je izrekao uslovnu osudu (30 dana zatvora sa rokom provjere od 1 godine), čime je faktor kajanja i neosuđivanosti dodatno naglašen.
+
+
+
+K 408/2010
+
+priznaoKrivicu (boolean)
+Vrednost: true
+Obrazloženje: Okrivljeni u završnoj riječi priznaje da se prema supruzi ponašao onako kako je naveo u odbrani, čime potvrđuje izvršenje radnji navedenih u optužbi.
+
+nasiljeUPorodici (boolean)
+Vrednost: true
+Obrazloženje: Predmet optužbe je krivično djelo nasilja u porodici, usmjereno protiv supruge.
+
+vrstaNasilja (enum)
+Moguće vrednosti: “verbalno”, “fizičko”, “kombinovano”
+Vrednost: “kombinovano”
+Obrazloženje: Okrivljeni je, prema optužbi, upotrijebio riječi prijetnje („da će je ubiti i zaklati“) kao i fizičku radnju – udarac nogom u predjelu sjedala.
+
+intenzitetPretnji (enum)
+Moguće vrednosti: “nizak”, “srednji”, “visok”
+Vrednost: “visok”
+Obrazloženje: Izrečena prijetnja (ubiti i zaklati) ukazuje na ozbiljnu namjeru i predstavlja snažan element nasilja.
+
+narusenjeIntegriteta (boolean)
+Vrednost: true
+Obrazloženje: Iako oštećenoj nije zabilježena značajnija telesna povreda, njena tjelesna i duševna sigurnost je ugrožena prijetnjom i primjenom nasilja.
+
+prethodneOsudjenosti (boolean)
+Vrednost: true
+Obrazloženje: Okrivljeni je ranije osuđivan (presuda K. br. 131/06 iz 2007. godine), što se uzima kao otežavajuća okolnost.
+
+imovinskoStanje (enum)
+Moguće vrednosti: “loše”, “srednje”, “dobro”
+Vrednost: “loše”
+Obrazloženje: U biografskim podacima eksplicitno je navedeno da je okrivljeni u lošem imovinskom stanju.
+
+bračniStatus (enum)
+Moguće vrednosti: “neoženjen/neudata”, “u braku”, “razveden”
+Vrednost: “oženjen”
+Obrazloženje: Podaci potvrđuju da je okrivljeni u bračnoj zajednici.
+
+brojDjece (integer)
+Vrednost: 5
+Obrazloženje: Navodi se da je okrivljeni otac petoro djece.
+
+alkoholisan (boolean)
+Vrednost: false
+Obrazloženje: U ovom predmetu nema navoda niti dokaza da je okrivljeni bio alkoholisan u trenutku događaja.
+
+upotrebaOružja (boolean)
+Vrednost: false
+Obrazloženje: Iako je upućivao prijetnju i izvršio fizički udarac, nije primenio nikakvo oružje (nosiše je samo udarac nogom).
+
+namjeraIzvrsenjaPrijetnje (boolean)
+Vrednost: true
+Obrazloženje: Prema navodima, okrivljeni je, svjestan svojih postupaka, izrekao prijetnju smrti i zatim primijenio nasilje, što ukazuje na umišljenu namjeru.
+
+pokazaoKajanje (boolean)
+Vrednost: true
+Obrazloženje: U završnoj riječi izražava žaljenje i kajanje zbog izvršenog djela, što je sud uzeo u obzir prilikom izricanja sankcije.
+
+uslovnaOsuda (boolean)
+Vrednost: false
+Obrazloženje: Okrivljenom je izrečena stvarna kazna zatvora od 30 dana, a nije naređena uslovna (suspenzivna) osuda.
+
+
+K 264/2011 
+
+priznaoKrivicu (boolean)
+Vrednost: false
+Obrazloženje: Okrivljeni u svojoj odbrani tvrdi da nije fizički nasilje izvršio (da nije udarao pesnicama po glavi niti vukao za kosu), dok su dokazi (medicinska dokumentacija i mišljenje vještaka) pokazali suprotno.
+
+nasiljeUPorodici (boolean)
+Vrednost: true
+Obrazloženje: Predmet optužbe je krivično djelo nasilja u porodici, budući da je napad usmjeren na suprugu, člana iste porodice.
+
+odnosSaOštećenim (enum)
+Moguće vrijednosti: “supružnici”, “roditelj/roditeljica”, “drugi član porodice”
+Vrednost: “supružnici”
+Obrazloženje: Napad je izvršen nad suprugom, što uspostavlja odnos supružnika.
+
+vrstaNasilja (enum)
+Moguće vrijednosti: “verbalno”, “fizičko”, “kombinovano”
+Vrednost: “kombinovano”
+Obrazloženje: Okrivljeni je prvo upotrijebio riječi („kurvetino jedna, droljo“), a potom fizički nasilje (izudarao pesnicama i počupao za kosu).
+
+intenzitetNasilja (enum)
+Moguće vrijednosti: “nizak”, “srednji”, “visok”
+Vrednost: “srednji”
+Obrazloženje: Iako se radi o grubom nasilju, nanesena je laka tjelesna povreda (manji otok na poglavini), što ukazuje na umjereniji (srednji) nivo nasilja.
+
+narusenjeDuševnogIntegriteta (boolean)
+Vrednost: true
+Obrazloženje: Sud je utvrdio da je postupkom narušen i tjelesni i duševni integritet oštećene, jer su uvrijeđujuće riječi i fizički napad izazvali psihičku štetu.
+
+namjeraIzvrsenja (boolean)
+Vrednost: true
+Obrazloženje: Presuda navodi da je okrivljeni postupio s umišljajem – bio je svjestan da vrši nasilje i htio je da mu postupci imaju određeni učinak.
+
+prethodneOsudjenosti (boolean)
+Vrednost: true
+Obrazloženje: U biografskim podacima se navodi da je okrivljeni već bio osuđivan, što se uzima kao otežavajuća okolnost.
+
+imovinskoStanje (enum)
+Moguće vrednosti: “loše”, “srednje”, “dobro”
+Vrednost: “loše”
+Obrazloženje: Navodi se da je okrivljeni u lošem imovinskom stanju.
+
+bračniStatus (enum)
+Moguće vrednosti: “neoženjen/neudata”, “u braku”, “razveden”
+Vrednost: “oženjen”
+Obrazloženje: Podaci presude jasno navode da je okrivljeni u bračnoj zajednici.
+
+brojDjece (integer)
+Vrednost: 3
+Obrazloženje: Navodi se da je okrivljeni otac troje djece.
+
+alkoholisan (boolean)
+Vrednost: false
+Obrazloženje: U tekstu presude nema dokaza niti navoda o alkoholisanosti okrivljenog u trenutku događaja.
+
+upotrebaOružja (boolean)
+Vrednost: false
+Obrazloženje: Napad je izvršen isključivo pesnicama (fizička sila), bez upotrebe oružja.

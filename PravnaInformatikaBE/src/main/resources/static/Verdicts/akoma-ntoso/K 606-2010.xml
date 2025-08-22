@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>OSNOVNI SUD U BIJELOM POLJU</FRBRauthor>
+          <FRBRdate date="2010-12-22">2010-12-22</FRBRdate>
+          <FRBRtitle>K 606/2010</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju"/>
+        <TLCOrganization eId="csr" href="/ontology/organization/CentarZaSocijalniRad" showAs="Centar za socijalni rad"/>
+        <TLCPerson eId="dragana_mrdak" href="/ontology/person/dragana_mrdak" showAs="Dragana Mrdak"/>
+        <TLCPerson eId="sonja_markovic" href="/ontology/person/sonja_markovic" showAs="Sonja Marković"/>
+        <TLCPerson eId="dm" href="/ontology/person/dm" showAs="D.M."/>
+        <TLCPerson eId="bs" href="/ontology/person/bs" showAs="B.S."/>
+        <TLCPerson eId="or" href="/ontology/person/or" showAs="O.R."/>
+        <TLCPerson eId="slavenka_smolovic" href="/ontology/person/slavenka_smolovic" showAs="Slavenka Smolović"/>
+        <TLCPerson eId="mv" href="/ontology/person/mv" showAs="M.V."/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+        <TLCRole eId="legal_guardian" href="/ontology/role/legal_guardian" showAs="Legal Guardian"/>
+        <TLCRole eId="expert" href="/ontology/role/expert" showAs="Expert"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          <organization id="os" refersTo="#os">
+            OSNOVNI SUD U BIJELOM POLJU
+          </organization>,
+          kao prvostepeni krivični sud, sudija pojedinac 
+          <party id="dragana_mrdak" refersTo="#dragana_mrdak" as="#judge">
+            Dragana Mrdak
+          </party>,
+          uz učešće namještenika suda 
+          <party id="sonja_markovic" refersTo="#sonja_markovic" as="#clerk">
+            Sonje Marković
+          </party>,
+          zapisničara, u krivičnom predmetu protiv okrivljenog 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.a
+          </party>
+          iz Bijelog Polja, postupajući po optužnom predlogu 
+          <organization id="odt" refersTo="#odt">
+            ODT-a, iz Bijelog Polja
+          </organization>,
+          KT. br. 610/10 od 05.11.2010. godine, zbog krivičnog djela vanbračna zajednica sa maloljetnikom iz 
+          <ref href="/krivicni#art_216_para_1">čl. 216 st. 1 Krivičnog zakonika</ref>
+          nakon održanog usmenog, glavnog i javnog pretresa u prisustvu savjetnika u ODT-u Bijelom Polju 
+          <party id="slavenka_smolovic" refersTo="#slavenka_smolovic" as="#prosecutor">
+            Smolović Slavenka
+          </party>,
+          okrivljenog 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.a
+          </party>,
+          oštećene maloljetne 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>
+          i zakonske zastupnice maloljetne oštećene majke 
+          <party id="or" refersTo="#or" as="#legal_guardian">
+            O.R.
+          </party>,
+          dana 22.12.2010. godine, donio je i javno objavio:
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">
+          P R E S U D U
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.
+          </party>,
+          JMBG ...., od oca Z., majke V., rođene M., rođen ... godine, u Bijelom Polju, sa prebivalištem u mjestu rođenja, Z., državljanin Crne Gore, nezaposlen, pismen, sa završenom osnovnom školom, dobrog imovnog stanja, neosuđivan.
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">
+          K r i v j e
+        </p>
+        <p>
+          Što je:
+        </p>
+        <p>
+          -u vremenu od dana 14.09.2010. godine u mjestu Z., opština Bijelo Polje, živi u vanbračnoj zajednici sa maloljetnom 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>
+          iz mjesta C., opština Bijelo Polje, starom oko četrnaest i po godina,
+        </p>
+        <p>
+          - čime je izvršio krivično djelo vanbračna zajednica sa maloljetnikom iz 
+          <ref href="/krivicni#art_216_para_1">čl. 216 st. 1 Krivičnog zakonika</ref>
+        </p>
+        <p>
+          - pa mu sud primjenom citiranog zakonskog propisa i 
+          <ref href="/krivicni#art_2">čl. 2,</ref>
+          <ref href="/krivicni#art_4">4,</ref>
+          <ref href="/krivicni#art_5">5,</ref>
+          <ref href="/krivicni#art_13">13,</ref>
+          <ref href="/krivicni#art_15">15,</ref>
+          <ref href="/krivicni#art_32">32,</ref>
+          <ref href="/krivicni#art_36">36,</ref>
+          <ref href="/krivicni#art_42">42,</ref>
+          <ref href="/krivicni#art_52">52,</ref>
+          <ref href="/krivicni#art_53">53</ref>
+          i 
+          <ref href="/krivicni#art_54">54 Krivičnog zakonika</ref>,
+          i 
+          <ref href="/zkp#art_199">čl. 199,</ref>
+          <ref href="/zkp#art_202">202,</ref>
+          <ref href="/zkp#art_212">212</ref>
+          i 
+          <ref href="/zkp#art_364">364 Zakonika o krivičnom postupku</ref>,
+          i z r i č e:
+        </p>
+        <p class="subtitle">
+          USLOVNU OSUDU
+        </p>
+        <p>
+          Kojom mu utvrđuje kaznu zatvora u trajanju od 2 ( dva ) mjeseca, i istovremeno određuje da se ista neće izvršiti ukoliko okrivljeni u roku od 1 (jedne) godine, ne izvrši novo krivično djelo.
+        </p>
+        <p>
+          Okrivljeni se obavezuje da ovom sudu na ime paušala plati iznos od 30,00 €, koji iznos će uplatiti na žiro račun br. 832 - 151 - 35, depozita novčanih kazni, troškova postupka i paušala u roku od 15 dana, po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+        </p>
+        <p>
+          Imovinsko - pravnog zahtjeva i drugih troškova postupka, nije bilo.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">
+          O b r a z l o ž e n j e
+        </p>
+        <p>
+          Optužnim predlogom 
+          <organization id="odt" refersTo="#odt">
+            ODT-a iz B. Polja
+          </organization>
+          Kt. br. 610/10 od 05.11.2010. godine, optužen je 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.
+          </party>
+          iz Bijelog Polja, zbog krivičnog djela vanbračna zajednica sa maloljetnikom iz 
+          <ref href="/krivicni#art_216_para_1">čl. 216 st. 1 Krivičnog zakonika</ref>.
+        </p>
+        <p>
+          Glavni pretres je održan i zaključen dana 22.12.2010. godine u prisustvu savjetnika u ODT-u u Bijelom Polju 
+          <party id="slavenka_smolovic" refersTo="#slavenka_smolovic" as="#prosecutor">
+            Smolović Slavenka
+          </party>,
+          okrivljenog 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.a
+          </party>,
+          oštećene maloljetne 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>
+          i zakonske zastupnice maloljetne oštećene majke 
+          <party id="or" refersTo="#or" as="#legal_guardian">
+            O.R.
+          </party>.
+        </p>
+        <p>
+          U završnoj riječi savjetnik u ODT-u ostao pri podnijetom optužnom predlogu, jer je izvedenim dokazima utvrđeno, a samim tim i dokazano da je okrivljeni izvršio krivično djelo koje mu je stavljeno na teret optužnim predlogom, predlažući sudu da okrivljenog oglasi krivim i osudi na kaznu po zanonu.
+        </p>
+        <p>
+          U završnoj riječi zakonski zastupnik oštećene maloljetne 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>,
+          majka 
+          <party id="or" refersTo="#or" as="#legal_guardian">
+            O.R.a
+          </party>
+          nije se pridružila krivičnom gonjenju protiv okrivljenog, niti je prema istom istakla imovinsko pravni zahtjev.
+        </p>
+        <p>
+          Okrivljeni 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.
+          </party>
+          u svojoj odbrani u bitnom istakao da je tačno da je dana 14.09.2010. godine zasnovao vanbračnu zajednicu sa 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>,
+          i ako je znao da je ista maloljetna i da ona ima četrnaest i po godina. Sa S. se zabavljao od 31.05.2010. godine, a kako je ista ostala u drugom stanju, odlučio je da zasnuje prvo vanbračnu zajednicu, a nakon odobrenja njegovih roditelja i bračnu.
+        </p>
+        <p>
+          Radi utvrđivanja odlučnih činjenica i donošenja pravilne i zakonite odluke sud je u dokaznom postupku na glavnom pretresu izveo dokaze: saslušao maloljetnu oštećenu 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.a S.u
+          </party>,
+          zakonskog zastupnika maloljetne oštećene 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>,
+          majku 
+          <party id="or" refersTo="#or" as="#legal_guardian">
+            O.R.u
+          </party>,
+          predstavnika 
+          <organization id="csr" refersTo="#csr">
+            Centra za socijalni rad opština B. Polje i Mojkovac
+          </organization>
+          diplomiranog specijalnog pedagoga 
+          <party id="mv" refersTo="#mv" as="#expert">
+            M.V.
+          </party>,
+          izvršio uvid u izvod iz KE na ime okrivljenog. Drugih predloga za dopunu dokaznog postupka nije bilo.
+        </p>
+        <p>
+          Sud je cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi, a shodno 
+          <ref href="/zkp#art_360_para_2">čl. 360 st. 2 Zakonika o krivičnom postupku</ref>,
+          utvrdio činjenično stanje i na osnovu istog zaključio da je okrivljeni izvršio krivično djelo stavljeno mu na teret optužnim predlogom i da je za isto kriv i odgovoran.
+        </p>
+        <p>
+          Iz izvedenih dokaza nesporno je utvrđeno da okrivljeni 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.
+          </party>
+          u vremenu od dana 14.09.2010. godine u mjestu Z., opština Bijelo Polje, živi u vanbračnoj zajednici sa maloljetnom 
+          <party id="bs" refersTo="#bs" as="#victim">
+            B.S.
+          </party>
+          iz mjesta C., opština Bijelo Polje, starom oko četrnaest i po godina, pa je postupajući na opisani način okrivljeni 
+          <party id="dm" refersTo="#dm" as="#defendant">
+            D.M.
+          </party>
+          ovakvim svojim ponašanjem ostvario obilježja krivičnog djela vanbračna zajednica sa maloljetnikom iz 
+          <ref href="/krivicni#art_216_para_1">čl. 216 st. 1 Krivičnog zakonika</ref>
+          za koje je kriv i odgovoran.
+        </p>
+        <p>
+          Odlučujući u pogledu vrste i visine krivične sankcije, a cijeneći sve okolnosti iz 
+          <ref href="/krivicni#art_42">čl. 42 Krivičnog zakonika</ref>
+          sud je kod okrivljenog kao olakšavajuće okolnosti našao da se radi o mladom, neosuđivanom licu, koji se u toku pretresa korektno držao, kome se zakonski zastupnik oštećene nije pridružio krivičnom gonjenju, pa u odsustvu otežavajućih okolnosti sud je stanovišta da su ispunjeni uslovi za izricanje uslovne osude, kojom je okrivljenom utvrđena kazna zatvora u trajanju od dva mjeseca i istovremeno ocijenio da bi se pristupanjem izvršenju iste, suviše represivno djelovalo na okrivljenog nego da će i samo upozorenje uz prijetnju kaznom u odgovarajućem roku provjeravanja od jedne godine dovoljno uticati na istog da u buduće ne vrši ova i slična krivična djela i ostvariti se svrha kažnjavanja, predviđena u 
+          <ref href="/krivicni#art_32">čl. 32 Krivičnog zakonika</ref>.
+        </p>
+        <p>
+          Shodno 
+          <ref href="/zkp#art_199">čl. 199 Zakonika o krivičnom postupka</ref>,
+          odlučeno je u pogledu paušala, vodeći računa o imovinskim prilikama optuženog i dužini trajanja postupka.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">
+        OSNOVNI SUD U BIJELOM POLJU
+      </organization>
+      <p class="subtitle">
+        Dana 22.12.2010. godine
+      </p>
+      <p>
+        ZAPISNIČAR, S U D I J A,
+      </p>
+      <p>
+        <party id="sonja_markovic" refersTo="#sonja_markovic" as="#clerk">
+          Sonja Marković, s.r.
+        </party>
+        <party id="dragana_mrdak" refersTo="#dragana_mrdak" as="#judge">
+          Dragan Mrdak, s.r.
+        </party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

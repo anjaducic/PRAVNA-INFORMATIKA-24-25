@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2011-06-29"> 
+                        2011-06-29
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 264/2011
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>             
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="rbanda" href="/ontology/person/rbanda" showAs="Rahmo Banda" />
+                <TLCPerson eId="ljpopovic" href="/ontology/person/ljpopovic" showAs="Ljiljana Popović" />
+                <TLCPerson eId="ks" href="/ontology/person/ks" showAs="K.S." />
+                <TLCPerson eId="kn" href="/ontology/person/kn" showAs="K.N." />
+                <TLCPerson eId="sm" href="/ontology/person/sm" showAs="S.M." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p class="subtitle">
+                    U IME NARODA
+                </p>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        Osnovni sud u B.Polju 
+                    </organization>
+                    kao prvostepeni krivični i to sudija 
+                    <party id="rbanda" refersTo="#rbanda" as="#judge">
+                        Rahmo Banda
+                    </party>
+                    , kao sudija pojedinac uz učešće zapisničara 
+                    <party id="ljpopovic" refersTo="#ljpopovic" as="#clerk">
+                        Popović Ljiljane
+                    </party>
+                    , u krivičnom predmetu protiv okrivljenog 
+                    <party id="ks" refersTo="#ks" as="#defendant">   
+                        K.S.a 
+                    </party>
+                    iz Mojkovca, postupajući po Optužnom predlogu 
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a iz Bijelog Polja 
+                    </organization>
+                    <ref href="/cg/kt/2011-05-18/159_11"> 
+                        Kt. br.159/11 
+                    </ref>  
+                    od 18.05.2011.godine, zbog krivičnog djela nasilje
+                    u porodici ili u porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220. st. 1 Krivičnog zakonika
+                    </ref>
+                    , nakon dovršenog usmenog, glavnog i
+                    javnog pretresa, održanog dana 29.06.2011.godine, u prisustvu okrivljenog 
+                    <party id="ks" refersTo="#ks" as="#defendant">   
+                        K.S.a 
+                    </party>
+                    i oštećene 
+                    <party id="kn" refersTo="#kn" as="#victim">   
+                        K.N.
+                    </party>
+                    , a u odsustvu
+                    uredno obaviještenog 
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a iz Bijelog Polja 
+                    </organization>
+                    , istog dana donio je i javno objavio:
+                </p>
+            </introduction>
+            <background>
+                <p class="subtitle"> 
+                    P R E S U D U 
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.O
+                    </party>
+                    O, od oca Dj. i majke S. rodjene S., rodjen ....godine u Mojkovcu, živi u mjestu rodjenja
+                    – Š. bb, Crnogorac, državljanin Crne Gore, pismen, završio Osnovnu Školu, nezaposlen, oženjen, otac troje
+                    djece, vojsku služio 1985.godine u Kumanovo, lošeg imovnog stanja, osudjivan.
+                </p>
+            </background>
+            <decision>
+                <p class="subtitle">
+                    K r i v j e
+                </p>
+                <p>
+                    Što je:
+                </p>
+                <p>
+                        - dana 27.03.2011.godine oko 23,00 h, u stanu oštećene u M., Opština Mojkovac, primjenog grubog
+                    nasilja narušio tjelesni i duševni integritet člana svoje porodice – supruge oštećene 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N.
+                    </party>
+                    , na način što joj je uputio riječi '' kurvetino jedna, droljo'', nakon čega ju je izudarao pesnicama u predjelu glave i počupao za
+                    kosu, kojom prilikom joj je nanio laku tjelesnu povredu u vidu manjeg otoka poglavine,
+                </p>
+                <p>
+                        -čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220. st. 1 Krivičnog zakonika
+                    </ref>
+                    ,
+                </p>
+                <p>
+                        -pa ga sud primjenom citiranog zakonskog propisa i 
+                    <ref href="/krivicni#art_2">
+                        čl: 2,
+                    </ref>
+                    <ref href="/krivicni#art_4">
+                        4,
+                    </ref>
+                    <ref href="/krivicni#art_5">
+                        5,
+                    </ref>
+                    <ref href="/krivicni#art_13">
+                        13,
+                    </ref>
+                    <ref href="/krivicni#art_15">
+                        15,
+                    </ref>
+                    <ref href="/krivicni#art_32">
+                        32,
+                    </ref>
+                    <ref href="/krivicni#art_39">
+                        39,
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_42">
+                        42 Krivičnog zakonika Crne Gore 
+                    </ref>
+                    kao i
+                    <ref href="/zkp#art_199">
+                        čl: 199,
+                    </ref>
+                    <ref href="/zkp#art_202">
+                        202
+                    </ref>
+                    i
+                    <ref href="/zkp#art_364">
+                        364  ZKP-a
+                    </ref>
+                    ,
+                </p>
+                <p class="subtitle">
+                    O S U DJ U J E
+                </p>
+                <p>
+                        Na novčanu kaznu u iznosu od 600,00 € ( šeststotina eura ) eura koju kaznu je dužan uplatiti ovom sudu
+                    u roku od 3. mjeseca, po pravosnažnosti presude, ako osudjeni ne plati novčanu kaznu u odredjenom roku,
+                    ista će se zamijeniti tako što će se za svakih započetih 25,00€ (dvadeset pet) eura odrediti jedan dan zatvora, a
+                    ako osudjeni isplati samo dio novčane kazne ostatak će se srazmjerno pretvoriti u zatvor, a ukoliko osudjeni
+                    isplati i ostatak novčane kazne izvršenje zatvora će se obustaviti.
+                </p>
+                <p>
+                        Obavezuje se okrivljeni da ovom sudu na ime paušala uplati iznos od 30,00 € ( trideset ) eura, kao i na
+                    ime troškova krivičnog postupka u iznosu od 33,00 € ( tridesettri eura), sve u roku od 15 dana po
+                    pravosnažnosti presude.
+                </p>
+                <p>
+                        Imovinsko pravnog zahtjeva nije bilo.
+                </p>
+            </decision>
+            <arguments>
+                <p class="subtitle">
+                    O b r a z l o ž e nj e
+                </p>
+                <p>
+                        Osnovni državni tužilac iz B.Polja podnio je ovom sudu optužni predlog 
+                    <ref href="/cg/kt/2011-05-18/159_11">
+                        Kt. br.159/11 
+                    </ref>
+                    od 18.05.2011.godine, protiv 
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.a 
+                    </party>
+                    iz Mojkovca, zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220. st. 1 Krivičnog zakonika
+                    </ref>
+                    .
+                </p>
+                <p>
+                        Glavni pretres je održan i zaključen dana 29.06.2011.godine u odsustvu uredno obaviještenog 
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a iz Bijelog Polja
+                    </organization>
+                    , shodno 
+                    <ref href="/zkp#art_453">
+                        čl. 453. ZKP-a
+                    </ref>
+                    .
+                </p>
+                <p>
+                        Oštećena 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N.u 
+                    </party>
+                    završnoj riječi je izjavila, da se ne pridružuje krivičnom gonjenju protiv okrivljenog i ne
+                    postavlja imovinsko pravni zahtjev.
+                </p>
+                <p>
+                        Okrivljeni 
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.o
+                    </party>
+                    , u svojoj odbrani tokom postupka je naveo, da je sa 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N.
+                    </party>
+                    bio u braku 19 godina i odlučili
+                    su da se razvedu u novembru mjesecu 2010.godine, zbog 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party>
+                    nedoličnog ponašanja i preljube. Istakao je da je
+                    za vrijeme njihovog braka stekli su troje maloljetne djece, koja žive kod njega, a 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party>
+                    za vrijeme braka nije ni fizički ni psihički zlostavljao, što mogu potvrditi njegova djeca. Takodje, je istakao da je 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party> 
+                    napustila njihovu porodičnu kuću prošle godine u avgustu mjesecu, nakon čega je otišla kod njenih roditelja a nedugo zatim
+                    roditelji su je istjerali iz kuće, nakon čega je ona stupila u vanbračnu zajednicu sa licem iz Mojkovca. Nakon
+                    toga napustila je tog čovjeka, sa željom da se vrati njima, pa joj je on zajedno sa djecom našao stan koji je
+                    plaćao i imao ključ od stana. Posebno je istakao da dana 27.03.2011.godine, na molbu njegove djece on je
+                    otišao u stan od kojeg je imao ključ, da provjeri 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party> 
+                    zdravstveno stanje, jer im se žalila da je boli glava. Djeca su
+                    je toga dana zvala i nijesu mogla da je dobiju a pošto ni on nije mogao da je dobije odnosno nije se javljala na
+                    telefon, pošao je u iznajmljeni stan. Stan je bio zaključan pa ga je on odključao i odlučio da sačeka 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party> 
+                    . Negdje
+                    oko 23,45 h, 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party> 
+                    je stigla u stan i kad ga je vidjela upitala ga šta radi tu, a onda ga je počela mrškati i istjerivati iz
+                    stana. On ni u jednom trenutku 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party> 
+                    nije uputio riječi prijetnje, niti je nazivao pogrdnim imenima, a posebno je
+                    nije izudarao pesnicama po glavi, niti je vukao za kosu. Stan je odmah napustio i nije imao namjeru da se
+                    svadja sa 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        Nadom.
+                    </party> 
+                    Narednog dana obavijestila ga je policija da ga je 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N. 
+                    </party> 
+                    prijavila za nasilje u porodici koje nije
+                    počinio. U završnoj riječi je izjavio, da ostavlja sudu da odluči o njegovoj krivici.
+                </p>
+                <p>
+                        Sud je na glavnom pretresu u dokaznom postupku, saslušao oštećenu 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K. N. 
+                    </party>  
+                    u svojstvu svjedoka, izvršio uvid u medicinsku dokumentaciju na ime oštećene 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N.
+                    </party> 
+                     – izvještaj ljekara specijaliste Doma zdravlja '' Boško
+                    Dedejić'' Mojkovac broj protokola 1963 od 28.03.2011.godine, pročitao nalaz i mišljenje vještaka medicinske
+                    struke 
+                    <party id="sm" refersTo="#sm" as="#expertMedical">
+                        dr. S.M.a 
+                    </party>
+                    sa zapisnika kod istražnog sudije od 13.05.2011.godine i izvršio uvid u izvod iz Kaznene
+                    evidencije na ime okrivljenog 
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.a
+                    </party>
+                    , izdat od strane Uprave Policije – Ispostava Mojkovac od 13.06.2011.godine.
+                </p>
+                <p>
+                        Svjedokinja – oštećena 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N.
+                    </party> 
+                    , koja je supruga okrivljenog 
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.a
+                    </party>
+                    , nije svjedočila u ovom postupku, jer je iskoristila zakonsko pravo iz 
+                    <ref href="/zkp#art_97">
+                        čl. 97. ZKP-a
+                    </ref>
+                    , obzirom da je ista u smislu tog propisa lice koje je oslobodjeno dužnosti svjedočenja.
+                </p>
+                <p>
+                        Cijeneći izvedene dokaze pojedinačno i u kontekstu, pa ih dovodeći u vezi sa odbranom okrivljenog shodno 
+                    <ref href="/zkp#art_360_para_2">   
+                        čl. 360. st. 2. ZKP-a
+                    </ref>
+                    , sud je utvrdio činjenično stanje kao u izreci presude
+                </p>
+                <p>
+                        Odbranu okrivljenog 
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.a
+                    </party>
+                    da je dana 27.03.2011.godine pošao do stana gdje stanuje 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N. 
+                    </party> 
+                    , obzirom da su je djeca zvala i nijesu mogla da je dobiju, jer se nije javljala na telefon, a radi provjere njenog
+                    zdravstvenog stanja, jer se žalila da je boli glava i istu u stan nije našao, pa je odlučio da je pričeka. I oko 23,45 h, 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N.
+                    </party>  
+                    je stigla u stan, sud je prihvatio.
+                </p>
+                <p>
+                        Medjutim, njegovu odbranu u dijelu navoda u kojem tvrdi da kritičnom prilikom nije 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        N.
+                    </party>  
+                    izudarao pesnicama po glavi nije je vukao za kosu. A takodje tom prilikom istoj nije uputio riječi prijetnje, niti je
+                    nazivao pogrdnim imenima, ovaj sud je cijenio da je ista usmjerena u cilju izbjegavanja ili pak umanjenja
+                    sopstvene krivice.
+                </p>
+                <p>
+                        Pored toga ista odbrana je opovrgnuta izvedenim dokazima – medicinskom dokumentacijom i
+                    nalazom i mišljenjem vještaka med.struke 
+                    <party id="sm" refersTo="#sm" as="#expertMedical">
+                        dr. S.M.a 
+                    </party>
+                    koji je dat na zapisniku kod istražnog sudije od
+                    13.05.2011.godine, iz kojeg se utvrdjuje, da za oštećenu 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N. 
+                    </party> 
+                    od med.dokumentacije priložen je ljekarski
+                    izvještaj specijaliste Meidcine rada iz Doma zdravlja iz Mojkovca od 28.03.2011.godine, kada je oštećena
+                    pregledana zbog povrede zadobijene u tuči. Na pregledu se žalila na bolove u potiljačnom dijelu glave sa
+                    desne strane, gdje je postojala bolna osjetljivost na pipanje i bio vidljiv manji otok poglavine. Navedena
+                    povreda spada u laku tjelesnu povoredu koja je najvjerovatnije nastala od udara tupo – tvrdom mehaničkom
+                    silom i mogla je nastati od udarca pesnicom. Inače sud je nalaz ovog vještaka cijenio kao objektivno i stručno
+                    dat.
+                </p>
+                <p>
+                        Dakle, na osnovu predhodno izloženog, nesporno je, da je okrivljeni 
+                    <party id="ks" refersTo="#ks" as="#defendant">
+                        K.S.o
+                    </party>
+                    , dana 27.03.2011.godine oko 23,00 h, u stanu oštećene u M., Opština Mojkovac, primjenog grubog nasilja narušio tjelesni i duševni
+                    integritet člana svoje porodice – supruge oštećene 
+                    <party id="kn" refersTo="#kn" as="#victim">
+                        K.N. 
+                    </party> 
+                    , na način što joj je uputio riječi '' kurvetino jedna, droljo'', nakon čega ju je izudarao pesnicama u predjelu glave i počupao za kosu, kojom prilikom joj je nanio
+                    laku tjelesnu povredu u vidu manjeg otoka poglavine, a što znači da su u radnjama okrivljenog sadržani svi
+                    elementi bića krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220. st. 1. Krivičnog Zakonika
+                    </ref>
+                    , za koje je oglašen krivim. Po nalaženju ovog suda okrivljeni je izvršio krivično djelo s umišljajem, jer je bio
+                    svjestan da takvim postupanjem vrši krivično djelo i htio je njegovo izvršenje.
+                </p>
+                <p>
+                        Za konkretno krivično djelo u Krivičnom Zakoniku, propisano je da će se učinilac kazniti novčanom
+                    kaznom ili zatvorom do jedne godine.
+                </p>
+                <p>
+                        Prilikom odlučivanja o vrsti i visini kazne za okrivljenog, sud je imao u vidu sve okolnosti koje su od
+                    uticaja da kazna bude veća ili manja u smislu odredbi 
+                    <ref href="/krivicni#art_42">
+                        čl. 42 KZ
+                    </ref>
+                    , pa je od olakšavajućih okolnosti na strani
+                    okrivljenog našao da se radi o porodičnom licu – ocu troje maloljetno djece, u obavezi izdržavanja porodice,
+                    lošeg imovnog stanja, kod okolnosti nepridruživanja oštećene krivičnom gonjenju niti postavljanja imovinsko
+                    pravnog zahtjeva, dok mu je kao otežavajuću okolnost cijenio da je isti ranije više puta osudjivan za razna
+                    krivična djela. Sud je imajući u vidu navedene olakšavajuće okolnosti uz prisustvo otežavajuće – ranija
+                    osudjivanost, istog osudio na novčanu kaznu preciziranu izrekom presude u uvjerenju da će se i sa ovom
+                    vrstom i visinom kazne u cjelosti ostvariti svrha kažnjavanja predvidjena 
+                    <ref href="/krivicni#art_32">
+                        čl. 32.
+                    </ref>
+                    u vezi 
+                    <ref href="/krivicni#art_4_para_2">
+                        čl. 4. st. 2. KZ
+                    </ref>
+                    , te da okrivljeni više ne vrši krivična djela
+                </p>
+                <p>
+                        Sud je u smislu odredbi 
+                    <ref href="/zkp#art_199">
+                        čl.199. ZKP-a
+                    </ref>
+                    , obavezao okrivljenog da na ime troškova paušala ovom sudu
+                    uplati iznos od 30,00 eura, koji iznos je odmjeren u odnosu na trajanje i složenost krivičnog postupka i
+                    imovno stanje okrivljenog, kao i na ime troškova krivičnog postupka u iznosu od 33,00 €, koji troškovi se
+                    odnose na ime vještačenja od strane vještaka medicinske struke, tokom vodjenja kritičnog postupka, shodno
+                    <ref href="/zkp#art_202">
+                        čl. 202. ZKP-a.
+                    </ref>
+                </p>
+                <p>
+                        Imovinsko - pravnog zahtjeva nije bilo.
+                </p>
+                <p>
+                        Sa izloženog a u smislu odredbi 
+                    <ref href="/zkp#art_364">
+                        čl.364. ZKP-a
+                    </ref>
+                    , odlučeno je kao u izreci presude.
+                </p>
+            </arguments>
+        </judgmentBody>
+         <conclusions>
+            <organization class="subtitle" id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLJU
+            </organization>
+            <p class="subtitle">
+                Dana, 29.06.2011. godine
+            </p>
+            <p>
+                Zapisničar, S U D I J A,
+            </p>
+            <p>
+                <party id="ljpopovic" refersTo="#ljpopovic" as="#clerk">
+                    Ljiljana Popović 
+                </party>
+                <party id="rbanda" refersTo="#rbanda" as="#judge">
+                    Rahmo Banda
+                </party>
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso>    

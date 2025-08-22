@@ -33,10 +33,10 @@ public class VerdictController {
         return ResponseEntity.ok(verdicts);
     }
 
-    //vraca listu naziva presuda iz foldera resources/verdicts na bekendu
+    //vraca listu naziva presuda iz foldera resources/Verdicts/html na bekendu
     @GetMapping("/verdicts-names")
     public List<String> getVerdictFiles() throws IOException {
-        ClassPathResource folder = new ClassPathResource("verdicts/");
+        ClassPathResource folder = new ClassPathResource("static/Verdicts/html");
         return Arrays.stream(folder.getFile().listFiles())
                 .filter(File::isFile)
                 .map(File::getName)
@@ -46,7 +46,7 @@ public class VerdictController {
     //vraca html presudu prema nazivu presude
     @GetMapping("/{fileName:.+}")
     public ResponseEntity<InputStreamResource> getVerdictFile(@PathVariable String fileName) throws IOException {
-        ClassPathResource htmlFile = new ClassPathResource("verdicts/" + fileName);
+        ClassPathResource htmlFile = new ClassPathResource("static/Verdicts/html/" + fileName);
         if (!htmlFile.exists()) {
             return ResponseEntity.notFound().build();
         }

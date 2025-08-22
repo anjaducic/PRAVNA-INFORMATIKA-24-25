@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2016-07-05"> 
+                        2016-07-05
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 104/2016
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    <!--PROVJERITI STA SVE-->
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="dmrdak" href="/ontology/person/dmrdak" showAs="Dragan Mrdak" />
+                <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljke Lješnjak" />
+                <TLCPerson eId="bd" href="/ontology/person/bd" showAs="B.D." />
+                <TLCPerson eId="kkljajevic" href="/ontology/person/kkljajevic" showAs="Kljajević Katarine" />
+                <TLCPerson eId="bs" href="/ontology/person/bs" showAs="B.S." />
+                <!--TLCPerson eId="pm" href="/ontology/person/pm" showAs="P.M." /-->
+                <!--TLCPerson eId="fn" href="/ontology/person/fn" showAs="F.N." /-->
+                <!--TLCPerson eId="jv" href="/ontology/person/jv" showAs="J.V." /-->
+                <TLCPerson eId="kg" href="/ontology/person/kg" showAs="K.G." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p class="subtitle">
+                    U IME CRNE GORE
+                </p>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </organization>
+                    , prvostepeni krivični sud, sudija pojedinac
+                    <party id="dmrdak" refersTo="#dmrdak" as="#judge">
+                        Dragan Mrdak
+                    </party>
+                    , uz učešće samostalnog referenta-zapisničara
+                    <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                        Koviljke Lješnjak
+                    </party>
+                    , u krivičnom predmetu protiv okrivljenog
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.a
+                    </party>
+                    iz P., postupajući po optužnom predlogu 
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a, iz Bijelog Polja
+                    </organization>
+                    , 
+                    <ref href="/cg/kt/2016-06-07/150_16"> 
+                        KT. br. 150/16 od 07. 06. 2016 godine
+                    </ref>    
+                    , zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    nakon održanog usmenog, glavnog i javnog pretresa u prisustvu državne tužiteljke 
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a u Bijelom Polju
+                    </organization>
+                    <party id="kkljajevic" refersTo="#kkljajevic" as="#plaintiff">
+                        Kljajević Katarine
+                    </party>
+                    , okrivljenog
+                    <party id="bd" refersTo="#bd" as="#defendant">
+                        B.D.a
+                    </party>
+                    , oštećene
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    , dana 05. 07. 2016. godine, donio je i javno objavio:
+                </p>
+            </introduction>
+            <background>
+                <p class="subtitle"> 
+                    P R E S U D U 
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="bd" refersTo="#bd" as="#defendant">
+                        B.D.
+                    </party>
+                    JMB..., od oca P. i majke V., rođene B., rođen ... godine u Beranama, sa prebivalištem u
+                    P., S.A.- L.., državljanin Crne Gore, po nacionalnosti Crnogorac, govori crnogorskim jezikom, pismen, sa
+                    završenom srednjom školom, nezaposlen, oženjen, otac dvoje djece, po zanimanju trener, lošeg imovnog
+                    stanja, na zadržavanju boravio od 05.06.2016 godine do 08.06.2016 godine,
+                </p>
+            </background>
+            <decision>
+                <p class="subtitle">
+                    K r i v j e
+                </p>
+                <p>
+                    Što je
+                </p>
+                <p>
+                    - Dana 04. 06. 2016 godine, u Bijelom Polju, u U.N.M.primjenom grubog nasilja narušio duševni integritet
+                    člana svoje porodice, oštećene, bivše supruge
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    , na način što je nakon što se u alkoholisanom stanju
+                    dovezao iz P. u Bijelo Polje, i sa svog broja telefona 067/842-335 na broj telefona 067/217-326 koji koristi
+                    oštećena uputio poruku sadržine ''izađi ispred stana sam'', na šta mu je oštećena odgovorila da nije u Bijelom
+                    Polju, nakon čega je lupao i zvonio na spoljašna vrata stana, vlasništvo P.M.a, brata oštećene u kojem
+                    oštećena stanuje, da bi joj zatim ponovo sa svog broja telefona na njen broj telefona uputio poruku sa
+                    riječima prijetnje ''mrtva si kurvo'', a onda se vozilom uputio ka gradu, kada je u Ulici G.Ž.a'', oko 23,25 h
+                    zaustavljen i kontrolisan od strane OPS Uprave Policije – CB Bijelo Polje, F.N. i J.V.a, pred kojima je na zapisnik
+                    o izvršenoj kontroli učesnika u saobraćaju i vozila napisao da je ''došao da ubije ženu,
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    , pri čemu je bio
+                    sposoban da shvati značaj svoga djela i upravlja svojim postupcima i bio svjestan zabranjenosti svoga djela i
+                    htio njegovo izvršenje,
+                </p>
+                <p>
+                    - čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st. 1 Krivičnog zakonika
+                    </ref>
+                    ,
+                </p>
+                <p>
+                    za koje mu sud primjenom citiranog zakonskog propisa te
+                    <ref href="/krivicni#art_2">
+                        čl: 2,
+                    </ref>
+                    <ref href="/krivicni#art_4">
+                        4,
+                    </ref>
+                    <ref href="/krivicni#art_5">
+                        5,
+                    </ref>
+                    <ref href="/krivicni#art_13">
+                        13,
+                    </ref>
+                    <ref href="/krivicni#art_15">
+                        15,
+                    </ref>
+                    <ref href="/krivicni#art_32">
+                        32,
+                    </ref>
+                    <ref href="/krivicni#art_36">
+                        36,
+                    </ref>
+                    <ref href="/krivicni#art_42">
+                        42,
+                    </ref>
+                    <ref href="/krivicni#art_51">
+                        51,
+                    </ref>
+                    <ref href="/krivicni#art_52">
+                        52,
+                    </ref>
+                    <ref href="/krivicni#art_53">
+                        53
+                    </ref>
+                    i
+                    <ref href="/krivicni#art_54">
+                        54, Krivičnog Zakonika, 
+                    </ref>
+                    i
+                    <ref href="/zkp#art_226">
+                        čl: 226,
+                    </ref>
+                    <ref href="/zkp#art_229">
+                        229
+                    </ref>
+                    i
+                    <ref href="/zkp#art_374">
+                        374 Zakonika o Krivičnom postupku,
+                    </ref>
+                </p>
+                <p>
+                    i z r i č e
+                </p>
+                <p class="subtitle">
+                    USLOVNU OSUDU
+                </p>
+                <p>
+                    Kojom mu utvrdjuje kaznu zatvora od 30 (trideset) dana i istovremeno odredjuje da se ista neće izvršiti
+                    ukoliko okrivljeni u roku od 1 (jedne) godine ne učini novo krivično djelo. U slučaju opoziva uslovne osude,
+                    okrivljenom se u utvrđenu kaznu zatvora kao izdržano uračunava vrijeme provedeno na zadržavanju od
+                    05.06.2016 godine do 08. 06. 2016 godine.
+                </p>
+                <p>
+                    Okrivljeni se obavezuje da na ime paušala plati iznos od 30,00 €, kao i da na ime drugih troškova postupka
+                    plati iznos od 82,00 €, kao i troškove branioca po službenoj dužnosti o kojim troškovima će sud odlučiti
+                    posebnim rješenjem, koje iznose će uplatitil na žiro račun br. 832 -151 -35 Depozit novčanih kazni troškova
+                    postupka i paušala CG u roku od 15 dana od dana pravosnažnosti presude, s tim što će dokaz o izvršenoj
+                    uplati dostaviti krivičnoj pisarnici ovog suda.
+                </p>
+                <p>
+                    Imovinsko pravnog zahtjeva nije bilo.
+                </p>
+            </decision>
+            <arguments>
+                <p class="subtitle">
+                    O b r a z l o ž e nj e
+                </p>
+                <p>
+                    Optužnim predlogom
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a iz B. Polja
+                    </organization>
+                    <ref href="/cg/kt/2016-06-07/150_16">
+                        Kt. br. 150/16 od 07. 06. 2016 godine
+                    </ref>
+                    , optužen je
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.
+                    </party>  
+                    iz P., zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st. 1 Krivičnog zakonika.
+                    </ref>
+                </p>
+                <p>
+                    Glavni pretres je održan i zaključen dana 05. 07. 2016 godine u prisustvu državne tužiteljke
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a u Bijelom Polju
+                    </organization>
+                    <party id="kkljajevic" refersTo="#kkljajevic" as="#plaintiff">
+                        Kljajević Katarine
+                    </party>
+                    , okrivljenog 
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.a
+                    </party>
+                    i oštećene
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    .
+                </p>
+                <p>
+                    U završnoj riječi državna tužiteljka
+                    <organization id="odt" refersTo="#odt">
+                        ODT-a
+                    </organization>
+                    je istakla da cijeneći dokaze izvedene na pretresu smatra da je
+                    činjenično stanje iz dispozitiva optužnog predloga u potpunosti dokazano i samim tim utvrdjeno da je 
+                    okrivljeni izvršio krivično djelo koje mu je optužbom stavljeno na teret. Predložila je da sud okrivljenog oglasi
+                    krivim i osudi na kaznu po zakonu.
+                </p>
+                <p>
+                    U završnoj riječi oštećena
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.a
+                    </party>
+                    , nije postavila imovinsko pravni zahtjev, nije se pridružila krivičnom gonjenju 
+                    već je tražila blaže kažnjavanje.
+                </p>
+                <p>
+                    Okrivljeni
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.
+                    </party>
+                    u odbrani datoj u toku istražnog postupka je istakao: da je on fudbalski trener pa je dana 04.
+                    06. 2016 godine, imao utakmicu posle koje se našao sa društvom oko 14 časova. Sa društvom je boravio do 
+                    19,30 h popio je više piva pa je bio u alkoholisanom stanju. Odlučio je da pođe svojim vozilom za Bijelo Polje 
+                    i da se nađe sa bivšom suprugom
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.om
+                    </party>
+                    sa kojom se razveo prije dvije godine, s tim što su u braku bili 23
+                    godine. U braku su im se rodili ćerka V.a stara 22 godine, i sin P. star 17 godina.Nije se sudski razveo i nakon 
+                    prestanka braka djeca su ostala da žive sa njim s tim što se ćerka u međuvremenu udala. Htio je sa S. da se 
+                    pomiri pa je najvjerovatnije iz tog razloga došao u Bijelo Polje gdje je stigao oko 23,00 h i pošao u stan bivšeg 
+                    šure P.M.a. Pozvonio je na vrata niko se nije javljao, pa se potom vratio do vozila i krenuo za Podgoricu. U
+                    vožnji je kontrolisan od strane Policije kada mu je preko dregera utvrđeno da ima alkohola, potom je 
+                    priveden u prostorije policije gdje je dao izjavu. Šta je kazao u toj izjavi ne sjeća se, tokom noći je bio zadržan
+                    u prostorijama policije, u jutarnjim časovima policajci su mu saopštili da je prilikom davanja izjave kazao ''da
+                    je došao u Bijelo Polje, da ubije suprugu
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    . Bilo ga je stid jer nije mogao da povjeruje da je tako nešto 
+                    mogao da kaže. Inače sa suprugom
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        S.
+                    </party>
+                    nakon rastanka ima korektan odnos i kad ona dođe u Podgoricu da
+                    obiđe sina zajedno izađu na piće. Nakon rastanka nijesu imali nikakvih nesuglasica već su bili u izuzetno 
+                    dobrim odnosima. Na glavnom pretresu ostajući pri ovoj odbrani dodao je da se ne može izjasniti da li je 
+                    oštećenoj upućivao navedene riječi, sramota ga je što je u sudnici i što je sa ženom došao na sud iz razloga 
+                    što su u braku bili 23 godine. Posle kritičnog događaja sa suprugom je u korektnim odnosima.
+                </p>
+                <p>
+                    U završnoj riječi okrivljeni
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.
+                    </party>
+                    je istakao je da se sigurno ponašao na način kako je to opisano u optuženju, 
+                    mada se zbog pijanstva ne sjeća svih detalja, žao mu je i kaje se i misli da mu se ovo neće ponoviti. Tražio je 
+                    da ga sud što blaže kazni.
+                </p>
+                <p>
+                    Radi utvrdjivanja odlučnih činjenica i donošenja pravilne i zakonite odluke sud je na glavnom pretresu izveo
+                    dokaze: saslušao u svojstvu svjedoka oštećenu
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.u
+                    </party>
+                    ; i svjedoke P.M.a i F.N.; pročitao zapisnik o izvršenoj 
+                    kontroli prisustva alkohola u organizmu UP CB Bijelo Polje 499 49 od 04. 06. 2016 godine; nalaz i mišljenje 
+                    vještaka medicinske struke psihijatra dr
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        K.G.
+                    </party>
+                    od 07.06. 2016 godine; izvršio uvid u izvod registra kaznene
+                    evidencije Ministarstva pravde izdat od strane
+                    <organization id="os" refersTo="#os">
+                        Osnovnog suda u Bijelom Polju
+                    </organization>
+                    <ref href="/cg/ke/2016-06-08/198_16">
+                        KE broj 198/2016 od 08. 06.2016 godine.
+                    </ref>
+                    Predloga za izvođenje drugih dokaza nije bilo.
+                </p>
+                <p>
+                    Cijeneći odbranu okrivljenog, i dokaze pojedinačno i u medjusobnoj vezi, a na osnovu
+                    <ref href="/zkp#art_370">
+                        čl. 370 Zakonika o krivičnom postupku
+                    </ref>
+                    , sud je utvrdio činjenično stanje, i na osnovu istog zaključio da je okrivljeni izvršio 
+                    krivično djelo stavljeno mu na teret za koje je kriv.
+                </p>
+                <p>
+                    Okrivljeni se u postupku izviđaja i na glavnom pretresu branio da se zbog alkoholisanog stanja u kom se 
+                    nalazio kritične prilike ne sjeća svog ponašanja i da se ne može izjasniti da li je oštećenoj upućivao navedene 
+                    riječi da bi u završnoj riječi istakao da se sigurno ponašao na način kako je napisano u optuženju mada se 
+                    zbog pijanstva ne sjeća svih detalja, koje priznanje okrivljenog u završnoj riječi je sud cijenio kao jasno, 
+                    potpuno i neprotivrječno priznanje djela i krivice za isto, potvrđeno svim izvedenim dokazima u toku 
+                    postupka.
+                </p>
+                <p>
+                    Naime iz iskaza oštećene
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    saslušane u toku istražnog postupka proizilazi da je sa okrivljenim bila 23 
+                    godine u braku u kom su dobili dvoje djece starosti 22 i 17 godina. Zadnje dvije godine ne živi sa okrivljenim, 
+                    ona živi u Bijelom Polju, tu je i zaposlena, okrivljeni je sa sinom u P., dok im je ćerka udata. Često je boravila u 
+                    P. i posjećala sina P. koji živi sa okrivljenim. Dana 04.06.2016 godine, bila je u Srbiji na pola godine ujaku, kada
+                    je oko 22,34 h primila poruku sa telefona okrivljenog ''izađi ispred stana sam'', odgovorila mu je da nije u 
+                    Bijelom Polju i da je u Srbiji u romingu, nakon toga u 23,55 h, od okrivljenog je primila novu poruku ''mrtva si
+                    kurvo''. Kad je dobila ovu poruku iznenadila se, nije znala kako da reaguje već je poruku proslijedila bratu 
+                    P.M. u, koji živi u Bijelom Polju koji joj je napisao poruku da ništa ne odgovara. Nakon ovoga pozvala je snaha i 
+                    kazala joj da je ispred njenog stana dolazio okrivljeni, zvonio dva puta, da mu nijesu otvorili pa je otišao. 
+                    Takođe je obavijestila da je priveden od strane policije po prijavi njenog brata M.a koji je obavijestio policiju 
+                    da je okrivljeni dolazio ispred stana, zvonio i da su se djeca prepala. Kad se vratila iz Srbije, brat joj je ispričao 
+                    zbog čega je pozivan u policiju da da izjavu i da su se njegova djeca prepala i to da je okrivljeni došao ispred 
+                    njihovog stana. Nijesu joj poznati razlozi ovakvog ponašanja okrivljenog jer su ona i okrivljeni nakon rastanka 
+                    bili u korektnim odnosima, često je dolazila u Podgoricu i obilazila sina i ćerku, bivali su zajedno sa 
+                    okrivljenim a takođe se zajedno sa okrivljenim stara o P. i njegovom školovanju. Nekoliko dana prije ovog 
+                    događaja P. je trebao da pođe na ekskurziju pa je iz tog razloga bila u Podgoricu i razgovarala sa okrivljenim o 
+                    sinovoj ekskurziji. Na glavnom pretresu u potpunosti je ostala pri ovom iskazu i dodala da je njen bivši suprug 
+                    čovjek kojeg bi svako poželio, međutim kad isti popije druga je osoba i ima prekide filma i dok su bili u braku 
+                    on se možda tri puta napio. Iskaz ove svjedokinje, sud je u potpunosti prihvatio, kao jasan, logičan i uvjerljiv, 
+                    nesračunat na otežavanje ili pak olakšavanje krivično pravnog položaja okrivljenog, potvrđen navodima iz
+                    odbrane okrivljenog i iz iskaza svjedoka P.M.a, te sadržinom pisanih dokaza.
+                </p>
+                <p>
+                    Iz iskaza svjedoka P.M.a datog u toku istražnog postupka proizilazi da je on zaposlen u ZIKS-u Bijelo Polje u
+                    kom gradu posjeduje stan u ulici N.M.a gdje živi sa porodicom. Sa njim u istom stanu živi njegova sestra
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.a
+                    </party>
+                    koja je 23 godine bila u braku sa
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.om
+                    </party>
+                    u kom braku su im se rodili sin P. od 17 godina i ćerka V.a od 23 godine. Zadnje dvije godine 
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        S.a
+                    </party>
+                    i
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.
+                    </party>
+                    ne žive zajedno s tim što
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        S.a
+                    </party>
+                    živi u Bijelom Polju kod njega a povremeno odlazi u Podgoricu kod
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.a
+                    </party>
+                    koji živi sa P..
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.
+                    </party>
+                    često ne pije alkohol ali kad je u alkoholisanom stanju zna da bude agresivan. Dana 04.06.2016 godine,
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        S.a
+                    </party>
+                    je bila u Srbiji na polugodišnjici ujaku, on je bio na poslu i 
+                    negdje oko 23,10 h preko telefona supruga S.a mu je saopštila da je 
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.
+                    </party>
+                    dolazio do njihovog stana, zvonio i 
+                    kucao. Supruzi je kazao da mu ne otvaraju vrata. Takođe mu je i sestra
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        S.a
+                    </party>
+                    poslala poruku da je
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.
+                    </party>
+                    ispred njihovog stana u Bijelom Polju i da je tražio od nje da izađe kako bi se vidjeli. Pozvao je policiju i prijavio
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.a
+                    </party>
+                    da je dolazio ispred njegovog stana, zvonio i lupao. Sestra ga je takođe obavijestila da joj je
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.
+                    </party>
+                    poslao poruku sadržine ''mrtva si kurvo''. Sledećeg dana u policiji je dao izjavu u vezi ovog događaja. Na glavnom pretresu u potpunosti je ostao pri ovom iskazu.
+                </p>
+                <p>
+                    Iskaz ovog svjedoka, sud je u potpunosti prihvatio, kao jasan, logičan i uvjerljiv, nesračunat na otežavanje ili 
+                    pak olakšavanje krivično pravnog položaja okrivljenog, potvrđen navodima iz odbrane okrivljenog i iz iskaza 
+                    svjedoka
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    , te sadržinom pisanih dokaza.
+                </p>
+                <p>
+                    Iz iskaza svjedoka F.N. datog u toku istražnog postupka proizilazi da je on zaposlen u policiji na poslovima
+                    kontrole saobraćaja. Kritičnog dana bio je u smjeni od 18,00 h do 02,00 h kada su on i kolega J. pozvani od
+                    dežurne službe da dođu u ulicu G.Ž. na kružnom toku i da alkotestiraju jedno lice koje je zaustavila patrola. Na 
+                    licu mjesta su zatekli
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.a
+                    </party>
+                    kojeg su u 23,05 h alkotestirali i utvrdili da ima 1,12 g/kg alkohola u organizmu. 
+                    Nakon ovoga su sačinili zapisnik o alkotestiranju koji je potpisao
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.a
+                    </party>
+                    i kojem su saopštili da ga zbog te
+                    količine alkohola moraju isključiti iz saobraćaja i zadržati u prostoriji za zadržavanje. Nakon ovoga su pošli u
+                    dežurnu službu gdje je sačinio zapisnik o kontroli, potom isti pročitao okrivljenom i pitao ga da li ima
+                    primjedbi, isti je ćutao pa je on stavio da nema primjedbi, a nakon što je počeo da popunja zabilješku o
+                    lišenju slobode na zapisniku u rubrici primjedbe okrivljeni je nešto upisao. Kada je to pročitao utvrdio je da je
+                    okrivljeni tu stavio konstataciju '' došao je da ubije ženu 
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        S.u B.
+                    </party>
+                    . Okrivljenom je ovo pročitao i pitao ga ''ko mu je
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.a
+                    </party>
+                    '', isti je jedno vrijeme ćutao i na kraju mu kazao da mu je to supruga. Okrivljeni dalje nije htio da
+                    komunicira sa njim. Na glavnom pretresu u potpunosti je ostao pri ovom iskazu. Iskaz ove svjedokinje, sud je
+                    u potpunosti prihvatio, kao jasan, logičan i uvjerljiv, nesračunat na otežavanje ili pak olakšavanje krivično
+                    pravnog položaja okrivljenog, potvrđen navodima iz odbrane okrivljenog i iz iskaza svjedoka P.M.a i
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    , te sadržinom pisanih dokaza.
+                </p>
+                <p>
+                    Iz nalaza i mišljenja vještaka medicinske struke dr
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        K.G.
+                    </party>
+                    proizilazi da je zadatak vještaka bio da se na osnovu
+                    podataka iz spisa izjasni o stepenu alkoholisanosti okrivljenog
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.a
+                    </party>
+                    u vrijeme kritičnog događaja kao ipretrpljenog straha kod
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    i porodice P.M.a, pa je vještak na osnovu tih podataka iz spisa mišljenja da se u
+                    vrijeme kritičnog događaja od 22,34 h do 23,25 h
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        B.D.
+                    </party>
+                    nalazio u pripitom stanju sa stepenom alkoholisanostiod 1,12 promila. U tom stanju se kod ljudi oslobađa skrivena agresivnost koja je u trijeznom stanju 
+                    vaspitanjima i moralnim obzirima kontrolisana. U tom stanju osobe se vode nagonskim potrebama slabije 
+                    procjenjuju sopstvene interese, slabije mare za okolinu i posledice sopstvenog ponašanja. U stanju lakog 
+                    stepena alkoholisanosti-pripitom stanju apsolutno je nebezbjedno upravljanje motornim vozilom zbog 
+                    poremećaja čula vida (suženja vidnog polja slabije procjene dimenzija predmeta u pokretu i slabije 
+                    adaptacije vožnje u mraku) kao i sluha te oštećenja fine motorne koordinacije pokreta izazvane dejstvom 
+                    alkohola na senzomotorni sistem. Strah
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    se odnosio na zabrinutost za članove porodice svog brata pošto
+                    je ona u odnosu na osumnjičenog bila na bezbjednoj udaljenosti, taj strah je trajao od vremena kada je 
+                    primila poruku da se okrivljeni nalazi ispred stana do momenta kada je snaha obavijestila da je otišao. Taj 
+                    strah je bio srednje jakog intenziteta. Njena psihička ravnoteža bila je poremećena u srednje jakom stepenu. 
+                    Brat, snaha i djeca
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    trpjeli su strah srednje jakog intenziteta od momenta kada je
+                    <party id="bd" refersTo="#bd" as="#defendant">   
+                        D.
+                    </party>
+                    lupao na vrata dok nije otišao. Njihova psihička ravnoteža za to vrijeme bila je poremećena u srednje jakom stepenu. Nalaz i 
+                    mišljenje ovog vještaka, sud je u potpunosti prihvatio kao realan i objektivan, dat po osnovu činjenica 
+                    sadržanih u zapisniku o alkotestiranju, kao objektivnog pokazatelja alkoholisanosti okrivljenog po pravilima 
+                    struke i nauke.
+                </p>
+                <p>
+                    Iz izvedenih dokaza te navoda iz odbrane okrivljenog, sud je utvrdio činjenično stanje da je okrivljeni dana 
+                    04. 06. 2016 godine, u Bijelom Polju, u U.N.M.primjenom grubog nasilja narušio duševni integritet člana svoje 
+                    porodice, oštećene, bivše supruge
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    na način što je nakon što se u alkoholisanom stanju dovezao iz P. u 
+                    Bijelo Polje, i sa svog broja telefona 067/842-335 na broj telefona 067/217-326 koji koristi oštećena uputio
+                    poruku sadržine ''izađi ispred stana sam'', na šta mu je oštećena odgovorila da nije u Bijelom Polju, nakon 
+                    čega je lupao i zvonio na spoljašna vrata stana, vlasništvo P.M.a, brata oštećene u kojem oštećena stanuje, da
+                    bi joj zatim ponovo sa svog broja telefona na njen broj telefona uputio poruku sa riječima prijetnje ''mrtva si 
+                    kurvo'', a onda se vozilom uputio ka gradu, kada je u Ulici G.Ž.a'', oko 23,25 h zaustavljen i kontrolisan od 
+                    strane OPS Uprave Policije – CB Bijelo Polje, F.N. i J.V.a, pred kojima je na zapisnik o izvršenoj kontroli
+                    učesnika u saobraćaju i vozila napisao da je ''došao da ubije ženu,
+                    <party id="bs" refersTo="#bs" as="#victim">
+                        B.S.
+                    </party>
+                    , pri čemu je bio sposoban da shvati 
+                    značaj svoga djela i upravlja svojim postupcima i bio svjestan zabranjenosti svoga djela i htio njegovo 
+                    izvršenje.
+                </p>
+                <p>
+                    Postupajući na opisani način okrivljeni je ovakvim svojim ponašanjem ostvario obilježja krivičnog djela
+                    nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st.1 Krivičnog zakonika
+                    </ref>
+                    , pri čemu je okrivljeni bio svjestan
+                    da vrši grubo nasilje prema članu svoje porodice bivšoj supruzi i da će preduzetim radnjama narušiti njen 
+                    duševni integritet, pa je krivično djelo izvršio s umišljajem i za isto je kriv.
+                </p>
+                <p>
+                    U Krivičnom zakoniku (krivično djelo nasilje u porodici ili porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st.1.
+                    </ref>
+                    je definisano: ''ko primjenom grubog nasilja naruši tjelesni i duševni integritet članova svoje porodice ili članova svoje porodice 
+                    kazniće se novčanom kaznom ili zatvorom do jedne godine''. Dakle da bi postojalo krivično djelo nasilje u
+                    porodici ili porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st.1.
+                    </ref>
+                    mora postojati narušavanje tjelesnog ili duševnog integriteta, a 
+                    nije dovoljno samo ugrožavanje tog integriteta. Kada je narušen tjelesni i duševni integritet, nečijim nasiljem 
+                    u porodici u tom slučaju bi se radilo o krivičnom djelu. Iz čega proizilazi da svako nasilje kada ne dodje do 
+                    narušavanja tjelesnog i duševnog integriteta ne predstavlja ovo krivično djelo.I da se za postojanje ovog 
+                    krivičnog djela traži radnja grubog nasilja kojom se narušava tjelesni ili duševni integritet članova svoje 
+                    porodice ili porodične zajednice. Dakle ne traži se ugrožavanje tjelesnog ili duševnog integriteta, već da je taj 
+                    integritet narušen.
+                </p>
+                <p>
+                    Krivično djelo nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        čl. 220 st.1. Krivičnog zakonika
+                    </ref>
+                    postoji u težim slučajevima narušavanja tjelesnog ili duševnog integriteta kao posledice nečijeg nasilja u porodici ili u 
+                    porodičnoj zajednici. Za ovo krivično djelo je potrebna radnje grubog nasilja kojom se narušava tjelesni ili 
+                    duševni integritet člana svoje porodice ili porodične zajednice.
+                </p>
+                <p>
+                    Radi utvrđivanja stepena narušenosti duševnog intigriteta kod oštećene, kritičnog događaja angažovan je
+                    vještak medicinske struke psihijatra dr
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        K.G.
+                    </party>
+                    , koja se u svom nalazu i mišljenju decidno i određeno izjasnila da
+                    je oštećenoj kritičnog događaja duševni integritet bio narušen zbog ponašanja okrivljenog.
+                </p>
+                <p>
+                    Odlučujući u pogledu vrste i visine krivične sankcije, a cijeneći sve okolnosti iz
+                    <ref href="/krivicni#art_42">
+                        čl. 42 Krivičnog zakonika
+                    </ref>
+                    , sudje kod okrivljenog kao olakšavajuće okolnosti našao da se radi o neosuđivanom licu, ocu dvoje djece od kojih 
+                    jedno maloljetno, u obavezi izdržavanja istog, koji se u toku pretresa korektno držao, pokazujući po ocjeni 
+                    suda iskreno kajanje, kome se oštećena nije pridružila krivičnom gonjenju, već je tražila blaže kažnjavanje, pa 
+                    imajući u vidu da otežavajućih okolnosti nije bilo, sud je stanovišta da su ispunjeni uslovi za izricanje uslovne 
+                    osude kojom je okrivljenom utvrdio kaznu zatvora od 30 trideset) dana sa odgovarajućim rokom 
+                    provjeravanja od 1 (jedne) godine, smatrajući da će se uslovnom osudom dovoljno uticati na okrivljenog da u
+                    buduće ne vrši krivična djela i da će se prema njemu postići svrha izricanja uslovne osude iz
+                    <ref href="/krivicni#art_52_para_2">
+                        čl. 52. st.2. KZ
+                    </ref>
+                    , u pogledu specijalne prevencije, kao i da će izrečena uslovna osuda dovoljno uticati na ostale potencijalne 
+                    izvršioce da ne vrše krivična djela i da će se na ovaj način ostvariti ciljevi generalne prevencije, istovremeno je 
+                    okrivljenom ukazano na značaj uslovne osude i mogućnost njenog opoziva. U smislu
+                    <ref href="/krivicni#art_51">
+                        čl. 51. KZ-a
+                    </ref>
+                    , u slučaju opoziva uslovne osude, okrivljenom se u izrečenu zatvorsku kaznu kao izdržano ima uračunati vrijeme 
+                    provedeno na zadržavanje od 05.06.2016 godine do 08. 06. 2016 godine.
+                </p>
+                <p>
+                    U smislu
+                    <ref href="/zkp#art_226">
+                        čl. 226 Zakonika o krivičnom postupku
+                    </ref>
+                    , odlučeno je u pogledu paušala u iznosu od 30,00€ , pri 
+                    čemu je sud cijenio složenost i trajanje krivičnog postupka kao i imovinske prilike okrivljenog.
+                </p>
+                <p>
+                    Shodno
+                    <ref href="/zkp#art_229">
+                        čl. 229 ZKP-a
+                    </ref>
+                    , sud je okrivljenog obavezao da plati troškove postupka u iznosu od 82,00 €, koji
+                    troškovi se odnose na troškove vještačenja po vještaku medicinske struke psihijatru dr.
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        K.G.
+                    </party>
+                    kao i da plati troškove odbrane za branioca po službenoj dužnosti A.Đ.R.o kojim troškovima će sud odlučiti posebnim 
+                    rješenjem.
+                </p>
+                <p>
+                    Imovinsko pravnog zahtjeva nije bilo.
+                </p>
+                <p>
+                    Sa iznijetih razloga shodno
+                    <ref href="/zkp#art_374">
+                        čl. 374 Zakonika o krivičnom postupku
+                    </ref>
+                    , odlučeno je kao u izreci presude.
+                </p>
+            </arguments>
+        </judgmentBody>
+        <conclusions>
+            <organization class="subtitle" id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLJU
+            </organization>
+            <p class="subtitle">
+                Dana, 05. 07. 2016 godine
+            </p>
+            <p>
+                ZAPISNIČAR, S U D I J A,
+            </p>
+            <p>
+                <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                    Koviljke Lješnjak
+                </party>
+                <party id="dmrdak" refersTo="#dmrdak" as="#judge">
+                    Dragan Mrdak
+                </party>
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso>

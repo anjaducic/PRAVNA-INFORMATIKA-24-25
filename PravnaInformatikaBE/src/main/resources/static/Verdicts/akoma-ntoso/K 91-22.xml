@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju 
+                    </FRBRauthor>
+                    <FRBRdate date="2022-11-29"> 
+                        2022-11-29
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 91/2022
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="bradovic" href="/ontology/person/bradovic" showAs="Bojana Radović," />
+                <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljka Lješnjak" />
+                <TLCPerson eId="djm" href="/ontology/person/djm" showAs="Đ.M." />
+                <TLCPerson eId="djcmiljanic" href="/ontology/person/djcmiljanic" showAs="Đorđe Cmiljanić" />
+                <TLCPerson eId="km" href="/ontology/person/km" showAs="K.M." />
+                <TLCPerson eId="dja" href="/ontology/person/dja" showAs="Đ.A." />
+                <TLCPerson eId="nr" href="/ontology/person/nr" showAs="N.R." />
+                <TLCPerson eId="kg" href="/ontology/person/kg" showAs="K.G." />
+                <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+         <judgmentBody>
+            <introduction>
+                <p class="subtitle">
+                    U IME CRNE GORE
+                </p>
+                <p>
+                    <organization id="os" refersTo="#os">
+                        OSNOVNI SUD U BIJELOM POLJU
+                    </organization>
+                    , sudija 
+                    <party id="bradovic" refersTo="#bradovic" as="#judge">
+                        Bojana Radović
+                    </party>
+                    , uz učešće samostalnog referenta zapisničara
+                    <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                        Koviljke Lješnjak
+                    </party>
+                    , u krivičnom predmetu protiv okrivljenog 
+                    <party id="djm" refersTo="#djm" as="#defendant">   
+                        Đ.M. 
+                    </party>
+                    iz Bijelog Polja, zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        člana 220 stav 1 Krivičnog zakonika Crne Gore
+                    </ref>
+                    , odlučujući po optužnom predlogu 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u Bijelom Polju 
+                    </organization>
+                    <ref href="/cg/kt/2022-06-06/159_22">
+                        Kt.br.159/22 
+                    </ref>
+                    od 06.06.2022.godine, nakon održanog
+                    glavnog i javnog pretresa, u prisustvu savjetnika u 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnom državnom tužilaštvu u Bijelom, 
+                    </organization>
+                    <party id="djcmiljanic" refersTo="#djcmiljanic" as="#plaintiff">   
+                        Đorđija Cmiljanića
+                    </party>
+                    , okrivljenog 
+                    <party id="djm" refersTo="#djm" as="#defendant">   
+                        Đ.M. 
+                    </party>
+                    i branioca okrivljenog advokata 
+                    <party id="km" refersTo="#km" as="#lawyer">   
+                        K.M. 
+                    </party>
+                    , dana 29.11.2022. godine, donio je i javno objavio,
+                </p>
+            </introduction>
+            <background>
+                <p class="subtitle"> 
+                    P R E S U D U 
+                </p>
+                <p>
+                    Okrivljeni 
+                    <party id="djm" refersTo="#djm" as="#defendant">   
+                        Đ.M. 
+                    </party>
+                    , JMB ........., od oca V. i majke M., rođene B., rođen ........ godine u B. P. sa prebivalištem u
+                    opština B.P., oženjen, otac petoro djece, pismen, sa završenom srednjom trgovačkom školom, srednjeg
+                    imovnog stanja., osuđivan,
+                </p>
+                <p>
+                    Na osnovu 
+                    <ref href="/zkp#art_373_para_1">
+                        čl. 373 st. 1 tač. 2 Zakonika o krivičnom postupku,
+                    </ref>
+                </p>
+            </background>
+            <decision>
+                <p class="subtitle">
+                    OSLOBAĐA SE OD OPTUŽBE
+                </p>
+                <p>
+                    Kojom je predstavljano da je:
+                </p>
+                <p>
+                    Dana 29.05.2022. godine, oko 23:00 časa, u porodičnoj kući, koja se nalazi u u naselju P., opština B.P., svjestan
+                    svog djela čije je izvršenje htio, znajući da je isto zabranjeno, primjenom grubog nasilja narušio tjelesni i
+                    duševni integritet člana svoje porodice – kćerke 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A.
+                    </party>
+                    , na način što je pozvao mobilnim telefonom dok se
+                    nalazila na proslavi mature i uputio joj riječi: “Sad da si došla kući, šta si mi uradila, sa kim si šetala večeras, ti
+                    mene da brukaš“, da bi nakon što je oštećena došla kući, istu izudarao više puta šakama u predjelu glave i pri
+                    tom je vikao na nju i upućivao joj psovke, nakon čega je oštećena istrčala iz kuće,
+                </p>
+                <p>
+                    -čime bi izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">   
+                        člana 220 stav 1 Krivičnog zakonika Crne Gore
+                    </ref>
+                    ,
+                </p>
+                <p>
+                    -jer nije dokazano da je učinio krivično djelo za koje je optužen.
+                </p>
+                <p>
+                    Troškovi krivičnog postupka padaju na teret budžetskih sredstava i isplaćuju se iz posebnog razdjela budžeta
+                    za rad sudova.
+                </p>
+            </decision>
+            <arguments>
+                <p class="subtitle">
+                    O b r a z l o ž e nj e
+                </p>
+                <p>
+                    Optužnim predlogom 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnog državnog tužilaštva u Bijelom Polju 
+                    </organization>
+                    <ref href="/cg/kt/2022-06-06/159_22">
+                        Kt.br.159/22 
+                    </ref>
+                    od 06.06.2022.godine, okrivljenom 
+                    <party id="djm" refersTo="#djm" as="#defendant">   
+                        Đ.M.u 
+                    </party>
+                    je stavljeno na teret izvršenje krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz
+                    <ref href="/krivicni#art_220_para_1">
+                        člana 220 stav 1 Krivičnog zakonika Crne Gore 
+                    </ref>
+                    .
+                </p>
+                <p>
+                    Glavni pretres je zaključen u prisustvu savjetnika u 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnom državnom tužilaštvu u Bijelom Polju 
+                    </organization>
+                    <party id="djcmiljanic" refersTo="#djcmiljanic" as="#plaintiff">   
+                        Đorđija Cmiljanića
+                    </party>
+                    , okrivljenog 
+                    <party id="djm" refersTo="#djm" as="#defendant">   
+                        Đ.M. 
+                    </party>
+                    i njegovog branioca 
+                    <party id="km" refersTo="#km" as="#lawyer">   
+                        K.M. 
+                    </party>
+                    .
+                </p>
+                <p>
+                    Savjetnik u 
+                    <organization id="odt" refersTo="#odt">
+                        Osnovnom državnom tužilaštvu u Bijelom Polju 
+                    </organization>
+                    je u završnoj riječi ostao pri optužnom predlogu,
+                    koji je tokom postupka izmijenjen na način opisan u izreci ove presude. Naveo je da se, imajući u vidu
+                    odbranu okrviljenog, koju je dao pred državnim tužiocem, nalaz i mišljenje vještaka psihijatra, te medicinsku
+                    dokumentaciju zaključuje da je kritičnog događaja okrivljeni ispoljio veliku bezobzirnost i grubost prema
+                    kćerki 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    , počev od momenta kada je telefonskim putem pozvao da napusti matursko veče, pa nakon što je
+                    došla kući, kada je isti na nju vikao i upućivao joj psovke. Iz medicinske dokumentacije prozilazi da je šakama
+                    udarao po glavi, nakon čega je sa sestrom istrčala iz kuće bez stvari i novca, pa su se narednih dana u više
+                    navrata javljale ljekaru zbog posledica usljed fizičkog i psihičkog nasilja, koje su pretrpjele od svog oca.
+                    Konačno je predložio da se okrivljeni oglasi krivim i osudi po zakonu.
+                </p>
+                <p>
+                    Okrivljeni je u svojoj odbrani u istražnom postupku, naveo da je kritične prilike sa svojom suprugom D. i svoje
+                    petoro djece otišao u grad da gleda 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A. 
+                    </party>
+                    maturu, ne znajući sa kim će da šeta. Tog dana putem telefona ga je
+                    pozvao drug D.Đ. i rekao mu da brzo dođe, jer je umro V.K.. Nakon toga je otišao u kapelu gdje je bio sve do
+                    23:00 h, kada je otišao kući da legne i kada mu je žena pokazala slike sa 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    mature. Pitao je ko je momak koji je šetao sa 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    , a D. mu je odgovorila da je to neki momak M.. Kada je to izgovorila iznervirao se, jer je zbog M.a
+                    izdržavao kaznu zatvora u trajanju od 10 godina. Nakon toga povikao je ꞌꞌreci 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    da odmah dođe ꞌꞌ, a zatim je sam pozvao da dođe kući. Prvo je pozvao T. da dođe kući, nakon čega je ista došla, kada joj je rekao ꞌꞌ šta mi
+                    ovo uradi 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    , s kim je ovo šetala večeras ꞌꞌ, na šta je i ona u početku osuđivala 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    , međutim, kada je 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    došla, počela je da je brani, više nego što se i ona sama branila. Poslije toga,
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                     je počela da histeriše i pitala šta je
+                    uradila, a isti je primjetio da je popila, pa se malo ohrabrila. Tada ju je rekao ꞌꞌ šta mi ovo uradi noćas, obruka
+                    me ꞌꞌ, psovao je jer ga je toliko povrijedila, pa je zbog toga tako reagovao. Znao je da su se T. i 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                     družile sa sestrom M.a, sa kojim je šetala, ali na to nije reagovao. Inače ta porodica M. je u bliskom srodstvu sa
+                    porodicom M.a, zbog kojeg je dugo godina izdržavao kaznu zatvora. Dakle, nije im ništa prijetio, jer su to
+                    njegova djeca, puno se žrtvovao za njih, jer ih je kao male ostavila majka i on je zajedno sa svojom majkom
+                    brinuo o njima. Njegova bivša supruga bila je obavezana presudom da plaća alimentaciju za T. i 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    , ali on to nije dozvolio, jer mu od nje ništa nije trebalo, a djecu je podizao isključivo na osnovu zarade koju je ostvario.
+                    Te večeri istrčali su iz kuće nakon što je galamio i psovao, ali nije ni jednu ni drugu udarao, niti je potezao
+                    sablju jer je ista pričvršćena tiplovima za zid i obmotana morskom dlakom, a što je dobio na poklon, o čemu
+                    posjeduje ugovor o poklonu ovjeren od notara. Nakon što su izašle, potrčao je za njima da bi ih vratio ali kako
+                    ih nije našao, pošao je do grada da ih potraži, zatim na željezničku stanicu, pa ih zvao na telefon obje,
+                    međutim nijesu se javljale. Tada je poslao poruku T. ꞌꞌ je li se ti to solidarišeš sa sestrom, da nijeste kod H. ꞌꞌ ali
+                    mu nijesu odgovorile. Mislio je da su pošle za B., međutim istog je pozvala inspektorka S.N. i rekla mu da
+                    dođe u prostorije Centra bezbjednosti kako bi dao izjavu jer su ga prijavile kćerke za krivično djelo nasilje u
+                    porodici. Poslije toga pitao je da li su u sigurnu žensku kuću, ali rekli su mu da im je policija nudila smještaj
+                    koji su odbile i da se nalaze kod majke LJ.J., nakon čega mu je sve bilo jasno, jer je u lošim odnosima sa
+                    bivšom suprugom, koja je govorila nakon razvoda da će ga pritvoriti.
+                </p>
+                <p>
+                    Na glavnom pretresu okrivljeni je izjavio da ne priznaje izvršenje krivičnog djela, koje mu je stavljeno na teret,
+                    ponovio je odbranu koju je dao pred tužilaštvom i dodao je da tom prilikom nije pominjao nikakve
+                    muslimane niti da sve ovo ima ikakve veze sa nacionalističkom osnovom jer i on ima prijatelja muslimana, a
+                    jedini problem je što je to M.. Istina je da je te noći »vrištao iz mozga«, govorio što ga je obrukala, a sve
+                    vrijeme je bio na krevetu u poluležećem položaju, dok su T. i 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    bile sa lijeve strane u jednoj velikoj fotelji.
+                    Obje su skočile preko te fotelje, na šta im je isti rekao da se vrate, ali ga nijesu poslušale. Te noći je poslao
+                    dvije poruke T., želio je da zna gdje su, ali se nijesu javljale. Nakon nekoliko dana, kada je dobio poziv iz Supa, saznao je da su otišle kod majke. Nije ni jednu prstom takao, ali jeste galamio, jer da je on od 140 kg samo
+                    jedanput udario pesnicom 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    , morala bi ostati modrica. Pojasnio je da sablju nije uzeo, jer je ista pričvršćena
+                    tiplovima i šarafima sa kukama, zamotana morskom dlakom radi sigurnosti, tako da bi, kad bi se to isčupalo
+                    moralo ostati rupa u zidu. Mišljenja je da je sve to uradila T.na i 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    na majka, koja je njegova bivša supruga. Žao
+                    mu je zbog svega što se desilo, jer su to njegova djeca koju voli, poželio im je sve najbolje, ali im ovo nikada
+                    neće oprostiti i ne želi više da ih vidi u životu.
+                </p>
+                <p>
+                    Branilac okrivljenog advokat 
+                    <party id="km" refersTo="#km" as="#lawyer">   
+                        M.K. 
+                    </party>
+                    u završnoj riječi je izjavio da imajući u vidu sve izvedene dokaze, a posebno
+                    da su iskazi oštećenih izdvojeni iz spisa i da se ne mogu koristiti u ovom postupku, kao i odbranu okrivljenog i
+                    pojašnjenje vještaka da se stres koji se javio kod oštećene ne može povezati sa spornim događajem, a imajući
+                    u vidu pretpostavku nevinosti, predlaže sudu da donese oslobađajuću presudu.
+                </p>
+                <p>
+                    Okrivljeni 
+                    <party id="djm" refersTo="#djm" as="#defendant">   
+                        Đ.M. 
+                    </party>
+                    u završnoj riječi je izjavio da u cjelosti prihvata završnu riječ njegovog branioca i dodao da je
+                    na 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    galamio isključivo roditeljski, nikako drugačije, ali je prstom nije takao, niti joj je prijetila opasnost od njega. Sve je to ꞌꞌmasloꞌꞌ njegove bivše supruge. 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A.
+                    </party>
+                    mu se skoro javila porukom da se izvini zbog svega, međutim do kraja života se neće pomiriti sa njima.
+                </p>
+                <p>
+                    Radi utvrđivamja. odlučnih činjenica i donošenja pravilne i zakonite odluke sud je u dokaznom pročitao
+                    izvještaj ljekara specijaliste Kliničkog centra Crne Gore - Internističke ambulante, broj protokola 28463/2022
+                    od 30.05.2022.godine na ime 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A. 
+                    </party>
+                    , pročitao dva izvještaja ljekara specijaliste Kliničkog centra Crne Gore -
+                    neurološke ambulante, broj protokola 28463/2022 od 30.05.2022.godine, pročitao izvještaj ljekara specijaliste
+                    Kliničkog centra Crne Gore - hirurške ambulante broj protokola 29404/2022 od 04.06.2022.godine, pročitao
+                    uput za bolničko liječenje Zavoda za hitnu medicinsku pomoć, broj protokola 23859 od 04.06.2022.godine,
+                    pročitao nalaz i mišljenje vještaka sudske medicine 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        N.R. 
+                    </party>
+                    od 02.06.2022.godine, pročitao nalaz i mišljenje
+                    vještaka psihijatrijske struke 
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        K.G.
+                    </party>
+                    od 03.06.2022.godine i saslušao istu na glavnom pretresu i izvršio uvid u
+                    uvjerenje Ministarstva pravde Crne Gore broj 07-0702-11260/22 od 20.06.2022.godine.
+                </p>
+                <p>
+                    Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi, shodno 
+                    <ref href="/krivicni#art_370">
+                        čl. 370 Zakonika o krivičnom postupku
+                    </ref>
+                    , sud je zaključio da nije dokazano da je okrivljeni izvršio krivično djelo za koje je optužen.
+                </p>
+                <p>
+                    Ovo iz razloga što ne postoji ni jedan dokaz, na osnovu kojeg bi se moglo na nesumnjiv način zaključiti da je
+                    okrivljeni spornom prilikom više puta oštećenu 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A. 
+                    </party>
+                    udario šakama u predjelu glave, a kako mu je optužbom stavljeno na teret.
+                </p>
+                <p>
+                    Okrivljeni je negirao ovakve navode, a oštećena 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A. 
+                    </party>
+                    nije htjela da svjedoči na pretresu, kao ni svjedoci Đ. T. i
+                    Đ. D., što je njihovo pravo iz 
+                    <ref href="/zkp#art_109">
+                        čl. 109 Zakonika o krivičnom postupku
+                    </ref>
+                    , tako da nema opisa konkretnog dešava
+                    od strane oštećene, kao ni očevidaca događa.Ova tri svjedoka su dala iskaze u tužilaštvu, ali se isti nisu mogli
+                    koristiti kao dokaz, pa su ti zapisnici izdvojeni iz spisa predmeta. Razlozi za to su dati u odluci o izdvajanja
+                    zapisnika.
+                </p>
+                <p>
+                    Što se tiče medicinske dokumentacije na ime oštećene 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A. 
+                    </party>
+                    , ni to nije mogao biti dokaz postupanju
+                    okrivljenog, na način kako mu je stavljeno na teret. Ovo iz razloga što se, a kako se to tvrđuje iz nalaza i
+                    mišljenja vještaka medicinke struke, ne može nesumnjivo napraviti veza između predmetnog događaja i
+                    razloga za javljanje oštećene 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A. 
+                    </party>
+                    ljekaru, posebno kada i nema dokaza u vidu njenog iskaza.
+                </p>
+                <p>
+                    Naime, iz nalaza i mišljenja vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    prozilazi da nakon pregleda kod 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A. 
+                    </party>
+                    nijesu dijagnostifikovane
+                    tjelesne povrede, a u medicinskoj dokumentaciji je opisana glavobolja, koja predstavlja subjektivni simptom
+                    i može imati različite uzroke i akutna psihička reakcija na težak stres, što takođe nije tjelesna povreda, ali
+                    može biti u vezi sa nekim konfliktnim događajem.Vještak je naveo da, i ako svaki udarac ne dovodi nužno do
+                    nastanka tjelesnih povreda, što dominantno zavisi od intenziteta sile, kojom se udarci zadaju, za očekivati je
+                    da više udaraca pesnicom po glavi i tijelu dovode do nastanka makar neke tjelesne povrede. Udarci
+                    pesnicama silom jakog intenziteta obavezno dovode do nastanka tjelesnih povreda. Dakle, ovaj dokaz nije u
+                    prilog optužbi, kao što to nije ni nalaz vještaka 
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        dr G.K.
+                    </party>
+                    , koja je nakon razmatranja medicinske dokumentacije
+                    utvrdila da se radi o izvještaju ljekara, ali u hiruškoj ambulanti i da je oštećena pregledana zbog bola u
+                    predjelu želuca, koji je nastao 20 minuta pred pregled. Navedeno je da je imala stresnu situaciju, prije par
+                    dana, dat je lijek za smanjenje bola u želucu i navedeno je da je nakon toga došlo do poboljšA. tegoba, nije
+                    dat ni jedan psihijatrijski lijek, tako da vještak nije mogla povezati sa sigurnošću nastanak bola u želucu sa 
+                    stresnom reakcijom od prije nekoliko dana.Takođe je navela da je nalaz od 04. 06. 2022. godine nalaz ljekara
+                    Hitne pomoći zbog bola u želucu i pacijent je poslat hirurgu u Urgentnom centru, tako da je to prethodilo
+                    prethodnom nalazu, i nema riječi o psihičkom nalazu. Vještak je zaključila da se sva ova dokumentacija ne
+                    može povezati sa stresnom reakcijom u smislu da je stresna reakcija bila odlučujući uzrok za nastanak bola u
+                    želucu. Naročito iz razloga što nije ordinirana psihijatrijska terapija, već samo ljekovi, koji štite želudac i
+                    smA.ju bol, a nakon čega je došlo do poboljšA.. Obzirom da nema dalje medicinske dokumentaciju o tome da
+                    li je 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A. Đ. 
+                    </party>
+                    imala bilo kakve psihičke tegobe, o tome se dalje nije mogla izjašnjavati, a ukazala je da se po
+                    medicinskoj dokumentaciji 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        A. Đ. 
+                    </party>
+                    javila u Klinički centar posle 15 sati sledećeg dana i tom prilikom je izjavila
+                    da su se njene tegobe javile ujutru, nakon boravka u MUP-u.
+                </p>
+                <p>
+                    Stoga, medicinska dokumentacija i nalazi vještaka 
+                    <party id="nr" refersTo="#nr" as="#expertMedical">
+                        dr N.R. 
+                    </party>
+                    i 
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        dr G.K.
+                    </party>
+                    nisu u prilog navodima optužbe, jer niti
+                    ima povreda kod oštećene, kojih bi vjerovatno bilo da se radilo o višestrukom udara šakama, naročito jačim
+                    intenzitetom, niti ima dokaza da se oštećena odmah javila ljekaru, niti da je navela kao razlog tegoba zbog
+                    kojih se javlja direktno konkretni događaj, odnosno ono što je okrivljenom stavljeno na teret.
+                </p>
+                <p>
+                    Činjenica je da je okrivljeni priznao da je galamio i psovao, ali to svakako nije dovoljno za zaključak o
+                    postojanja grubog nasilja, posebno kada se ne znaju konkretne psovke i koje su to riječi, kojim je okrivljeni
+                    vikao na oštećenu, jer iste nisu sve konkretno ni navedene u konačnom optuženju. Što se tiče riječi, koje jesu
+                    navedene i koje se okrivljenom stavljaju na teret, tj riječi koje je okrivljeni uputio preko telefona “Sad da si
+                    došla kući, šta si mi uradila, sa kim si šetala večeras, ti mene da brukaš“, one same po sebe ne predstavljaju
+                    riječi grubog nasilja, niti ima dokaza da su za posledicu imale narušavanje duševnog integriteta oštećene, a
+                    kako je prethodno opisano kroz ocjenu nalaza i mišljena vještaka 
+                    <party id="kg" refersTo="#kg" as="#expertMedical">
+                        dr G.K.
+                    </party>
+                    .
+                </p>
+                <p>
+                    Da bi postojalo krivično djelo nasilje u porodici ili u porodičnoj zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        čl.220 st.1 Krivičnog zakonika
+                    </ref>
+                    , mora postojati narušavanje tjelesnog ili duševnog integriteta člana svoje porodice ili porodične zajednice, do
+                    kojeg je došlo usljed primjene grubog nasilja. U konkrenom slučaju, iz razloga kako je već opisano, nije
+                    dokazano postojanje ni grubog nasilja, ni povrede duševnog ili tjelesnog integriteta 
+                    <party id="dja" refersTo="#dja" as="#victim">   
+                        Đ.A.
+                    </party>
+                    .
+                </p>
+                <p>
+                    Sud nije prihvatio da se kao dokaz pročita upitnik za procjenu rizika i bezbjednosti, koji sačinjava Uprava
+                    policije,jer isti nikako ne može biti dokaz o radnjama i posledicama izvršenog djela.
+                </p>
+                <p>
+                    Zbog svega rečenog, sud je, imajući u vidu načelo ꞌꞌ in dubio pro reoꞌꞌ, po kojem činjenice koje idu na teret
+                    okrivljenom moraju biti na nesumljiv način dokazane, okrivljenog, shodno 
+                    <ref href="/zkp#art_373_para_1">
+                        čl.373 st.1 tač.2 Zakonika o krivičnom postupku
+                    </ref>
+                    , oslobodio od optužbe da je učinio krivično djelo nasilje u porodici ili u porodičnoj
+                    zajednici iz 
+                    <ref href="/krivicni#art_220_para_1">
+                        čl.220 st.1 Krivičnog zakonika Crne Gore
+                    </ref>
+                </p>
+                <p>
+                    Troškovi krivičnog postupka padaju na teret budžetskih sredstava i isplaćuju se iz posebnog razdjela budžeta
+                    za rad sudova, shodno
+                    <ref href="/zkp#art_230_para_1">
+                        čl. 230 st.1 Zakonika o krivičnom postupku
+                    </ref>
+                    .
+                </p>
+            </arguments>
+        </judgmentBody>
+        <conclusions>
+            <organization class="subtitle" id="os" refersTo="#os">
+                OSNOVNI SUD U BIJELOM POLjU
+            </organization>
+            <p class="subtitle">
+                Dana, 29.11.2022. godine,
+            </p>
+            <p>
+                ZAPISNIČAR, S U D I J A,
+            </p>
+            <p>
+                <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">
+                    Koviljka Lješnjaks.r
+                </party>
+                <party id="bradovic" refersTo="#bradovic" as="#judge">
+                    Bojana Radović s.r
+                </party>
+            </p>
+        </conclusions>
+    </judgment>
+</akomaNtoso>
