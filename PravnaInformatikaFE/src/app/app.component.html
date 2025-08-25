@@ -4,13 +4,13 @@
   <div *ngIf="lawData" style="padding: 8px 20px;">
     <!-- Naziv zakona -->
     <div style="font-weight: bold; font-size: 16px; text-transform: uppercase;">
-      <strong>{{ lawData['Name'] }}</strong>
+      <strong>{{ lawData['Naziv'] }}</strong>
     </div>
 
     <!-- Ostali detalji -->
     <div style="font-size: 14px; margin-top: 6px;">
-      <div>{{ lawData['Publisher'] }}, {{ lawData['Date_Created'] }}</div>
-      <div>Datum posljednje izmjene: {{ lawData['Last_Updated'] }}</div>
+      <div>{{ lawData['Izdavac'] }}, {{ lawData['Kreiran'] }}</div>
+      <div>Datum posljednje izmjene: {{ lawData['Zadnja_Izmjena'] }}</div>
     </div>
   </div>
 </button>
