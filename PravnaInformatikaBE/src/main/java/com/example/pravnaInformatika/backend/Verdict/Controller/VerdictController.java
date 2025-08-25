@@ -1,6 +1,7 @@
 package com.example.pravnaInformatika.backend.Verdict.Controller;
 
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
+import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
 import com.example.pravnaInformatika.backend.Verdict.Service.VerdictService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +47,7 @@ public class VerdictController {
     //vraca html presudu prema nazivu presude
     @GetMapping("/{fileName:.+}")
     public ResponseEntity<InputStreamResource> getVerdictFile(@PathVariable String fileName) throws IOException {
-        ClassPathResource htmlFile = new ClassPathResource("static/Verdicts/html/" + fileName);
+        ClassPathResource htmlFile = new ClassPathResource("static/Verdicts/html/" + fileName + ".html");
         if (!htmlFile.exists()) {
             return ResponseEntity.notFound().build();
         }
@@ -54,6 +55,12 @@ public class VerdictController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "inline;filename=" + fileName)
                 .contentType(MediaType.TEXT_HTML)
                 .body(new InputStreamResource(htmlFile.getInputStream()));
+    }
+
+    @GetMapping("/metadata")
+    public ResponseEntity<List<VerdictMetadataDTO>> getVerdictMetadata() throws IOException {
+        List<VerdictMetadataDTO> metadataList = verdictService.getAllMetadata();
+        return ResponseEntity.ok(metadataList);
     }
 
 

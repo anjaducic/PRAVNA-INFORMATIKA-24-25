@@ -3,7 +3,6 @@
     Pregled presuda - KRIVIČNA DJELA PROTIV BRAKA I PORODICE
   </h2>
 
-
   <div class="filter-container">
     <label for="verdictFilter">Filtriranje presuda:</label>
     <select id="verdictFilter" [(ngModel)]="selectedFilter" (change)="applyFilter()">
@@ -14,12 +13,33 @@
   </div>
 
   <ul class="verdict-list">
-    <li *ngFor="let file of filteredVerdicts" class="verdict-item">
-      <a (click)="openVerdict(file)" href="#" class="verdict-link">
+  <li *ngFor="let verdict of filteredVerdicts" class="verdict-item">
+    <a (click)="openVerdict(verdict.fileName)" href="#" class="verdict-link">
+      <div class="verdict-left">
         <span class="verdict-icon">📄</span>
-        {{ file }}
+        <span class="verdict-name">{{ verdict.caseName }}</span>
+      </div>
+
+      <div class="verdict-middle">
+        <p *ngIf="verdict.court">Sud: {{ verdict.court }}</p>
+        <p *ngIf="verdict.judge">Sudija: {{ verdict.judge }}</p>
+        <p *ngIf="verdict.clerk">Zapisničar: {{ verdict.clerk }}</p>
+        <p *ngIf="verdict.defendant">Okrivljeni: {{ verdict.defendant }}</p>
+        <p *ngIf="verdict.prosecutorAttorney">Zastupnik optužbe: {{ verdict.prosecutorAttorney }}</p>
+        <p *ngIf="verdict.defenseAttorney">Zastupnik okrivljene: {{ verdict.defenseAttorney }}</p>
+        <p *ngIf="verdict.injuredParty">Oštećeni: {{ verdict.injuredParty }}</p>
+        <p *ngIf="verdict.legalRepresentative">Zakonski zastupnik: {{ verdict.legalRepresentative }}</p>
+        <p *ngIf="verdict.expert">Ekspert: {{ verdict.expert }}</p>
+        <p *ngIf="verdict.participants">Učesnici: {{ verdict.participants }}</p>
+        <p *ngIf="verdict.organizations">Organizacije: {{ verdict.organizations }}</p>
+        <p *ngIf="verdict.date">Datum: {{ verdict.date }}</p>
+      </div>
+
+      <div class="verdict-right">
         <span class="open-icon">🔗</span>
-      </a>
-    </li>
-  </ul>
+      </div>
+    </a>
+  </li>
+</ul>
+
 </div>

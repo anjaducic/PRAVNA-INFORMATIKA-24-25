@@ -14,7 +14,7 @@ export class MenuComponent {
    constructor(private router: Router) {} 
 
   menuOptions = [
-    'Pregled postojećih presuda',
+    'Pregled presuda',
     'Unos atributa za rasuđivanje'
   ];
 

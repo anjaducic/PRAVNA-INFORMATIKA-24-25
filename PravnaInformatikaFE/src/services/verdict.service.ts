@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../env/environment';
+import { VerdictMetadata } from '../model/verdict-metadata.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +13,9 @@ export class VerdictService {
 
   constructor(private http: HttpClient) { }
 
-  // vraca listu imena fajlova sa backend-a
-  getVerdictFiles(): Observable<string[]> {
-    return this.http.get<string[]>(`${this.baseUrl}/verdicts-names`);
+  // vraca listu metapodataka fajlova sa backend-a
+  getVerdictFilesMetadata(): Observable<VerdictMetadata[]> {
+    return this.http.get<VerdictMetadata[]>(`${this.baseUrl}/metadata`);
   }
 
   // vraca URL za otvaranje fajla

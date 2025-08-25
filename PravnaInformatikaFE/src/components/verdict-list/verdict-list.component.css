@@ -73,7 +73,6 @@
 
 
 
-
 .verdict-list {
   list-style: none;
   padding: 0;
@@ -81,35 +80,65 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+
 }
 
 .verdict-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative; 
+  display: grid;
+  grid-template-columns: 220px 220px; 
+  gap: 10px;
+  align-items: start;
   padding: 12px 18px;
+  padding-right: 50px; 
   text-decoration: none;
   color: #1a73e8;
   border-radius: 10px;
   background-color: #f0f4ff;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease, transform 0.2s ease;
 }
 
 .verdict-link:hover {
-  background-color: #d9e4ff;
-  color: #0b4fbd;
-  transform: translateX(5px);
+  background-color: #e3e7f1; 
+  transform: scale(1.005); 
 }
 
-.verdict-icon {
-  margin-right: 12px;
-  font-size: 1.2rem;
+
+
+.verdict-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 220px;
 }
+
+.verdict-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.verdict-middle {
+  width: 220px;
+  font-size: 0.85rem;
+  color: #2c3e50;
+  white-space: normal; 
+  overflow: hidden; 
+}
+
+.verdict-middle p {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
 
 .open-icon {
-  font-size: 1rem;
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  font-size: 1.2rem;
   opacity: 0.6;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 
 .verdict-link:hover .open-icon {

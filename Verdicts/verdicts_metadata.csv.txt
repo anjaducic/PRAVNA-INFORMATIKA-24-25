@@ -1,0 +1,21 @@
+Presuda,Sud,Sudija,Zapisničar,Okrivljeni,Zastupnik optužbe,Zastupnik okrivljene,Oštećeni,Zakonski zastupnik,Ekspert,Učesnici,Organizacije,Datum
+K 13/2015,Osnovni Sud u Beranama,Dašić Dragan,Čukić Mirjana,Ć. I.,B. M.,,Ć. A.; Ć. S.; Ć. L.,Ć. A.,Š. M.,K. A.; D. S.; O. T.; Ć. Ž.,Osnovni sud u Beranama; Osnovno državno tužilaštvo u Beranama; Centar za socijalni rad opština B. i A.,2015-04-06
+K 27/2018,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Koviljka Lješnjak,B.S.,Smolović Slavenka,A.O.R.,B.Š.,,,"B.S.; B.A.",Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2018-03-20
+K 29/2016,Osnovni Sud u Bijelom Polju,Ivan Adamović,Draginja Bošković,R.O V.,Banka Kneževića,,V.J.,,,"R.O V.; V.A.",Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2016-03-15
+K 51/2021,Osnovni Sud u Bijelom Polju,Bojana Radović,Koviljka Lješnjak,P.R.,C.Lj.,,P.V.; P.Z.,,,P.R.; P.V.; P.Z.; P.L.; P.D.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2021-06-07
+K 56/2021,Osnovni Sud u Bijelom Polju,Bojana Radović,Koviljka Lješnjak,M.R.,Cmiljanić Đorđija,,B.N.,,, ,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2021-07-06
+K 85/2018,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Koviljka Lješnjak,M.S.,Knežević Banka,A.L.H.,M.Š.,,,A.A.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2018-05-18
+K 91/2022,Osnovni Sud u Bijelom Polju,Bojana Radović,Koviljka Lješnjak,Đ.M.,Osnovno državno tužilaštvo u Bijelom Polju,K.M.,Đ.A.,,,Đorđija Cmiljanić; Đ. T.; Đ. D.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2022-11-29
+K 104/2016,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Koviljke Lješnjak,B.D.,Kljajević Katarine,,B.S.,,,K.G.; P.M.; F.N.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2016-07-05
+K 106/2019,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Koviljka Lješnjak,Š.A.,Zvrko Denisa,adv. L.H.,M.H.,,,"",Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2019-06-13
+K 113/2019,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Koviljka Lješnjak,M.I.,Nišavić Tanje,adv. M. D.,Mi. Z.,,,"",Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2019-06-28
+K 113/2021,Osnovni Sud u Bijelom Polju,Bojana Radović,Koviljka Lješnjak,D.M.,A.H.,J.B.,V.Z.,,,I.P.; M.P.; F.F.; N.R.; M.V.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju; Viši sud u Bijelom Polju,2022-04-19
+K 149/2019,Osnovni Sud u Bijelom Polju,Ivan Adamović,Draginja Bošković,B. P.,Ljubica Caković,,M. P.,J. C.,,,"",Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju; Centar za socijalni rad u Bijelom Polju,2019-10-14
+K 200/2013,Osnovni Sud u Bijelom Polju,Ivan Adamović,Draginje Bošković,G.F.,Osnovno državno tužilaštvo u Bijelom Polju,,G.M.,,Š.D.,,D.a M.a; G.e K.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2013-10-10
+K 229/2010,Osnovni Sud u Bijelom Polju,Svetlana Načić,Zorica Šćekić,J.D.,,,J.D.,,,,S.M.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2010-04-30
+K 264/2011,Osnovni Sud u Bijelom Polju,Rahmo Banda,Ljiljana Popović,K.S.,,,K.N.,,,S.M.,,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2011-06-29
+K 286/2012,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Koviljka Lješnjak,R.N.,Šćepanović Vesna,,R.D.,,,V.M.; R.N.; M.o; D.u; M.a; Š.V.,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2012-09-21
+K 320/2022,Osnovni Sud u Kotoru,K.P.,T.P.,M.T.,J.Č.,I.B.,K.T.,,,,,Osnovni sud u Kotoru; Osnovno državno tužilaštvo u Kotoru,2023-03-31
+K 408/2010,Osnovni Sud u Bijelom Polju,Dragan Mrdak,Sonje Marković,R.N.,Osnovno državno tužilaštvo u B. Polju,,,R.D.,,,,,R.D.a; R.D.i; D.a; D.e,Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2010-12-06
+K 430/2013,Osnovni sud u Kotoru,Momirka Marović,Ana Marija Petković,N. M.,Danke Živković,,N. M.,R. M.,,,,Osnovni sud u Kotoru; Osnovno državno tužilaštvo u Kotoru,2014-03-20
+K 606/2010,Osnovni Sud u Bijelom Polju,Dragana Mrdak,Sonja Marković,D.M.,Slavenka Smolović,O.R.,B.S.,O.R.,M.V.,,Centar za socijalni rad opština B. Polje i Mojkovac; Osnovni sud u Bijelom Polju; Osnovno državno tužilaštvo u Bijelom Polju,2010-12-22
