@@ -3,6 +3,8 @@ import { VerdictService } from '../../services/verdict.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { VerdictMetadata } from '../../model/verdict-metadata.model';
+import { forkJoin } from 'rxjs';
+import { Verdict } from '../../model/verdict.model';
 
 @Component({
   selector: 'app-verdict-list',
@@ -15,6 +17,7 @@ export class VerdictListComponent implements OnInit {
 
   verdicts: VerdictMetadata[] = [];
   filteredVerdicts: VerdictMetadata[] = [];
+  verdictAttributesMap: { [fileName: string]: Partial<Verdict> } = {};
   selectedFilter: 'all' | 'existing' | 'generated' = 'all';
 
   constructor(private verdictService: VerdictService) {}
@@ -22,7 +25,18 @@ export class VerdictListComponent implements OnInit {
   ngOnInit(): void {
     this.verdictService.getVerdictFilesMetadata().subscribe(list => {
       this.verdicts = list;
-      this.applyFilter();
+
+      const attributeRequests = this.verdicts.map(v =>
+        this.verdictService.getVerdictAttributes(v.fileName)
+      );
+
+      forkJoin(attributeRequests).subscribe(attributesList => {
+        attributesList.forEach((attrs, index) => {
+          this.verdictAttributesMap[this.verdicts[index].fileName] = attrs;
+        });
+
+        this.applyFilter();
+      });
     });
   }
 

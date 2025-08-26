@@ -86,10 +86,10 @@
 .verdict-link {
   position: relative; 
   display: grid;
-  grid-template-columns: 220px 220px; 
+  grid-template-columns: 300px 220px 220px;
   gap: 10px;
   align-items: start;
-  padding: 12px 18px;
+  padding: 8px 12px; 
   padding-right: 50px; 
   text-decoration: none;
   color: #1a73e8;
@@ -97,6 +97,19 @@
   background-color: #f0f4ff;
   transition: all 0.2s ease, transform 0.2s ease;
 }
+
+.verdict-right {
+  font-size: 0.85rem;
+  color: #2c3e50;
+  white-space: normal; 
+  overflow: hidden; 
+}
+
+.verdict-right p {
+  margin: 2px 0;       
+  line-height: 1.2;
+}
+
 
 .verdict-link:hover {
   background-color: #e3e7f1; 
@@ -126,9 +139,10 @@
 }
 
 .verdict-middle p {
-  margin: 4px 0;
-  line-height: 1.4;
+  margin: 2px 0;       
+  line-height: 1.2;
 }
+
 
 
 .open-icon {
@@ -143,4 +157,12 @@
 
 .verdict-link:hover .open-icon {
   opacity: 1;
+}
+
+.column-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #2c3e50;
+  text-transform: uppercase; 
 }

@@ -63,5 +63,16 @@ public class VerdictController {
         return ResponseEntity.ok(metadataList);
     }
 
+    @GetMapping("/attributes/{caseName}")
+    public ResponseEntity<VerdictDTO> getVerdictAttributes(@PathVariable String caseName) throws IOException {
+        VerdictDTO dto = verdictService.getAttributesByCaseName(caseName);
+        if (dto == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(dto);
+    }
+
+
+
 
 }

@@ -1,5 +1,6 @@
 package com.example.pravnaInformatika.backend.Verdict.Service;
 
+import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
 import com.example.pravnaInformatika.backend.Verdict.Repository.VerdictRepository;
@@ -62,7 +63,45 @@ public class VerdictService {
                 metadataList.add(dto);
             }
         }
-
         return metadataList;
     }
+
+
+    public VerdictDTO getAttributesByCaseName(String caseName) throws IOException {
+        ClassPathResource csvFile = new ClassPathResource("static/Verdicts/Atributes.csv");
+
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(csvFile.getInputStream()))) {
+            String headerLine = br.readLine(); // прва линија са именима колона
+            if (headerLine == null) return null;
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",", -1);
+                if (values.length > 0 && values[0].equalsIgnoreCase(caseName)) {
+                    VerdictDTO dto = new VerdictDTO();
+                    dto.setFileName(values[0]);
+                    dto.setAcknowledged(parseBoolean(values[1]));
+                    dto.setConvicted(parseBoolean(values[2]));
+                    dto.setFinancialStatus(values[3]);
+                    dto.setMaintenance(parseBoolean(values[4]));
+                    dto.setRepentance(parseBoolean(values[5]));
+                    dto.setPreviousFamilyIssues(parseBoolean(values[6]));
+                    dto.setInjuryType(values[7]);
+                    dto.setCorrectBehavior(parseBoolean(values[8]));
+                    dto.setInjuredCriminalProsecution(parseBoolean(values[9]));
+                    dto.setPropertyClaim(parseBoolean(values[10]));
+                    dto.setAccountability(values[11]);
+                    dto.setIntentional(parseBoolean(values[12]));
+                    return dto;
+                }
+            }
+        }
+        return null;
+    }
+
+    private Boolean parseBoolean(String value) {
+        if (value == null || value.isEmpty()) return null;
+        return value.equalsIgnoreCase("TRUE");
+    }
+
 }
