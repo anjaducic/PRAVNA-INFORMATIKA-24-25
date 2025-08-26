@@ -1,0 +1,128 @@
+<div class="verdict-form-page">
+  <h2 class="page-title">Unos podataka o slučaju</h2>
+
+  <!-- Levi wrapper: Metapodaci -->
+  <div class="form-wrapper-left">
+     <div class="form-section">
+        <h3>Osnovni podaci:</h3>
+        <label></label>
+        <label>Naziv predmeta:*</label>
+        <input [(ngModel)]="metadata.caseName" name="caseName"  required>
+
+        <label>Datum:*</label>
+        <input type="date" [(ngModel)]="metadata.date" name="date" [max]="today" required>
+
+        <label>Sud:*</label>
+        <input [(ngModel)]="metadata.court" name="court"  required>
+
+        <label>Sudija:*</label>
+        <input [(ngModel)]="metadata.judge" name="judge" required>
+
+        <label>Zapisničar:</label>
+        <input [(ngModel)]="metadata.clerk" name="clerk">
+
+        <label>Optuženi:</label>
+        <input [(ngModel)]="metadata.defendant" name="defendant">
+
+        <label>Tužilac:</label>
+        <input [(ngModel)]="metadata.prosecutorAttorney" name="prosecutorAttorney" >
+
+        <label>Branilac:</label>
+        <input [(ngModel)]="metadata.defenseAttorney" name="defenseAttorney" >
+
+        <label>Oštećeni:</label>
+        <input [(ngModel)]="metadata.injuredParty" name="injuredParty">
+
+        <label>Pravni zastupnik:</label>
+        <input [(ngModel)]="metadata.legalRepresentative" name="legalRepresentative">
+
+        <label>Vještak:</label>
+        <input [(ngModel)]="metadata.expert" name="expert">
+
+        <label>Učesnici:</label>
+        <input [(ngModel)]="metadata.participants" name="participants">
+
+        <label>Organizacije:</label>
+        <input [(ngModel)]="metadata.organizations" name="organizations">
+
+     </div>
+  </div>
+ 
+  
+
+  <!-- Atributi -->
+  <div class="form-wrapper-right">
+    <div class="form-section">
+        <h3>Pravne činjenice:</h3>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.acknowledged"> Priznao
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.convicted"> Osuđivan
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.maintenance"> Izdržavanje članova porodice
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.repentance"> Kajanje
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.previousFamilyIssues"> Porodični problemi
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.correctBehavior"> Korektno držanje
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.injuredCriminalProsecution"> Oštećeni goni krivično
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.propertyClaim"> Imovinsko-pravni zahtjev
+        </label>
+
+        <label>
+        <input type="checkbox" [(ngModel)]="attributes.intentional"> Sa umišljajem
+        </label>
+
+        <label>Materijalno stanje:</label>
+        <select id="financialStatus" [(ngModel)]="attributes.financialStatus" class="form-select">
+            <option value="/" selected>/</option>
+            <option value="Dobro">Dobro</option>
+            <option value="Srednje">Srednje</option>
+            <option value="Lose">Lose</option>
+        </select>
+
+        <label>Tip povrede:</label>
+        <select id="injuryType" [(ngModel)]="attributes.injuryType" class="form-select">
+            <option value="/">/</option>
+            <option value="Nema">Nema</option>
+            <option value="Lake">Lake</option>
+            <option value="Srednje">Srednje</option>
+            <option value="Teske">Teske</option>
+        </select>
+
+        <label>Uračunljivost:</label>
+        <select id="accountability" [(ngModel)]="attributes.accountability" class="form-select">
+            <option value="/">/</option>
+            <option value="Uracunljiv">Uracunljiv</option>
+            <option value="Smanjena uracunljivost">Smanjena uracunljivost</option>
+            <option value="Neuracunljiv">Neuracunljiv</option>
+        </select>
+    </div>
+    
+  </div>
+
+  <!-- Prazna kolona za rezultate rasudjivanja -->
+  <div></div>
+
+  <div class="actions">
+    <button class="fancy-btn" [disabled]="!metadata.caseName || !metadata.court || !metadata.judge || !metadata.date" (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
+  </div>
+</div>

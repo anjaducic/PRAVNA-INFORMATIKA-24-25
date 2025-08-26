@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { VerdictFormComponent } from '../verdict-form/verdict-form.component';
 
 @Component({
   selector: 'app-menu',
@@ -11,11 +13,11 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent {
 
-   constructor(private router: Router) {} 
+   constructor(private router: Router, private dialog: MatDialog) {} 
 
   menuOptions = [
     'Pregled presuda',
-    'Unos atributa za rasuđivanje'
+    'Unos podataka o slučaju'
   ];
 
   activeOption = this.menuOptions[0];
@@ -23,8 +25,13 @@ export class MenuComponent {
   setActive(option: string) {
     this.activeOption = option;
 
-    if(option === 'Pregled postojećih presuda') {
-    this.router.navigate(['']);
-  }
+    if(option === 'Pregled presuda') {
+      this.router.navigate(['']);
+    }
+
+
+    if(option === 'Unos podataka o slučaju') {
+      this.router.navigate(['unos-slucaja']); 
+    }
   }
 }

@@ -1,5 +1,4 @@
 export interface VerdictMetadata {
-  fileName: string;
   caseName: string;
   court?: string;
   judge?: string;

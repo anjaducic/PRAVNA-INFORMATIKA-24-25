@@ -14,7 +14,7 @@
 
   <ul class="verdict-list">
   <li *ngFor="let verdict of filteredVerdicts" class="verdict-item">
-    <a (click)="openVerdict(verdict.fileName)" href="#" class="verdict-link">
+    <a (click)="openVerdict(verdict.caseName)" href="#" class="verdict-link">
       <!--ime presude-->
       <div class="verdict-left">
         <span class="verdict-icon">📄</span>
@@ -23,7 +23,7 @@
 
       <!--metapodaci-->
       <div class="verdict-middle">
-         <p class="column-title">Osnovi podaci:</p>
+        <p class="column-title">Osnovi podaci:</p>
         <p *ngIf="verdict.court">Sud: {{ verdict.court }}</p>
         <p *ngIf="verdict.judge">Sudija: {{ verdict.judge }}</p>
         <p *ngIf="verdict.clerk">Zapisničar: {{ verdict.clerk }}</p>
@@ -40,41 +40,41 @@
 
       <div class="verdict-right">
         <p class="column-title">Pravne činjenice:</p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.acknowledged !== undefined">
-          Priznao: {{ verdictAttributesMap[verdict.fileName].acknowledged ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.acknowledged !== undefined && verdictAttributesMap[verdict.caseName]?.acknowledged?.toString() != '/'">
+          Priznao: {{ verdictAttributesMap[verdict.caseName].acknowledged ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.convicted !== undefined">
-          Osudjivan: {{ verdictAttributesMap[verdict.fileName].convicted ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.convicted !== undefined && verdictAttributesMap[verdict.caseName]?.convicted?.toString() != '/'">
+          Osudjivan: {{ verdictAttributesMap[verdict.caseName].convicted ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.financialStatus">
-          Materijalno stanje: {{ verdictAttributesMap[verdict.fileName].financialStatus }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.financialStatus && verdictAttributesMap[verdict.caseName]?.financialStatus?.toString() != '/'">
+          Materijalno stanje: {{ verdictAttributesMap[verdict.caseName].financialStatus }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.maintenance !== undefined">
-          Izdržavanje: {{ verdictAttributesMap[verdict.fileName].maintenance ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.maintenance !== undefined && verdictAttributesMap[verdict.caseName]?.maintenance?.toString() != '/'">
+          Izdržavanje: {{ verdictAttributesMap[verdict.caseName].maintenance ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.repentance !== undefined">
-          Kajanje: {{ verdictAttributesMap[verdict.fileName].repentance ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.repentance !== undefined && verdictAttributesMap[verdict.caseName]?.repentance?.toString() != '/'">
+          Kajanje: {{ verdictAttributesMap[verdict.caseName].repentance ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.previousFamilyIssues !== undefined">
-          Prethodni porodični problemi: {{ verdictAttributesMap[verdict.fileName].previousFamilyIssues ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.previousFamilyIssues !== undefined && verdictAttributesMap[verdict.caseName]?.previousFamilyIssues?.toString() != '/'">
+          Prethodni porodični problemi: {{ verdictAttributesMap[verdict.caseName].previousFamilyIssues ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.injuryType">
-          Tip povrede: {{ verdictAttributesMap[verdict.fileName].injuryType }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.injuryType && verdictAttributesMap[verdict.caseName]?.injuryType?.toString() != '/'">
+          Tip povrede: {{ verdictAttributesMap[verdict.caseName].injuryType }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.correctBehavior !== undefined">
-          Korektno držanje: {{ verdictAttributesMap[verdict.fileName].correctBehavior ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.correctBehavior !== undefined && verdictAttributesMap[verdict.caseName]?.correctBehavior?.toString() != '/'">
+          Korektno držanje: {{ verdictAttributesMap[verdict.caseName].correctBehavior ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.injuredCriminalProsecution !== undefined">
-          Oštećeni goni krivično: {{ verdictAttributesMap[verdict.fileName].injuredCriminalProsecution ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.injuredCriminalProsecution !== undefined && verdictAttributesMap[verdict.caseName]?.injuredCriminalProsecution?.toString() != '/'">
+          Oštećeni goni krivično: {{ verdictAttributesMap[verdict.caseName].injuredCriminalProsecution ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.propertyClaim !== undefined">
-          Imovinsko-pravni zahtev: {{ verdictAttributesMap[verdict.fileName].propertyClaim ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.propertyClaim !== undefined && verdictAttributesMap[verdict.caseName]?.propertyClaim?.toString() != '/'">
+          Imovinsko-pravni zahtev: {{ verdictAttributesMap[verdict.caseName].propertyClaim ? 'DA' : 'NE' }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.accountability">
-          Uračunljivost: {{ verdictAttributesMap[verdict.fileName].accountability }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.accountability && verdictAttributesMap[verdict.caseName]?.accountability?.toString() != '/'">
+          Uračunljivost: {{ verdictAttributesMap[verdict.caseName].accountability }}
         </p>
-        <p *ngIf="verdictAttributesMap[verdict.fileName]?.intentional !== undefined">
-          Sa umišljajem: {{ verdictAttributesMap[verdict.fileName].intentional ? 'DA' : 'NE' }}
+        <p *ngIf="verdictAttributesMap[verdict.caseName]?.intentional !== undefined && verdictAttributesMap[verdict.caseName]?.intentional?.toString() != '/'">
+          Sa umišljajem: {{ verdictAttributesMap[verdict.caseName].intentional ? 'DA' : 'NE' }}
         </p>
         <span class="open-icon">🔗</span>
       </div>

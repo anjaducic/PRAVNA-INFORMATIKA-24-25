@@ -45,7 +45,6 @@ public class VerdictService {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",", -1);
                 VerdictMetadataDTO dto = new VerdictMetadataDTO();
-                dto.setFileName(values[0]);
                 dto.setCaseName(values[0]);
                 dto.setCourt(values.length > 1 ? values[1] : "");
                 dto.setJudge(values.length > 2 ? values[2] : "");

@@ -1,7 +1,6 @@
 package com.example.pravnaInformatika.backend.Verdict.DTO;
 
 public class VerdictMetadataDTO {
-    private String fileName;
     private String caseName;
     private String court;
     private String judge;
@@ -17,7 +16,6 @@ public class VerdictMetadataDTO {
     private String date;
 
     // Getters
-    public String getFileName() { return fileName; }
     public String getCaseName() { return caseName; }
     public String getCourt() { return court; }
     public String getJudge() { return judge; }
@@ -33,7 +31,6 @@ public class VerdictMetadataDTO {
     public String getDate() { return date; }
 
     // Setters
-    public void setFileName(String fileName) { this.fileName = fileName; }
     public void setCaseName(String caseName) { this.caseName = caseName; }
     public void setCourt(String court) { this.court = court; }
     public void setJudge(String judge) { this.judge = judge; }

@@ -1,5 +1,5 @@
 export interface Verdict {
-  filenName: string; // Presuda
+  caseName: string; // Presuda
   acknowledged?: boolean; // Priznao
   convicted?: boolean; // Osudjivan
   financialStatus?: string; // Materijalno_stanje
