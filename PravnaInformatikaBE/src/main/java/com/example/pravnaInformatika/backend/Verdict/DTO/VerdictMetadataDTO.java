@@ -1,5 +1,8 @@
 package com.example.pravnaInformatika.backend.Verdict.DTO;
 
+import cbr.CbrApplication;
+import connector.CsvConnector;
+
 public class VerdictMetadataDTO {
     private String caseName;
     private String court;
@@ -14,6 +17,7 @@ public class VerdictMetadataDTO {
     private String participants;
     private String organizations;
     private String date;
+
 
     // Getters
     public String getCaseName() { return caseName; }
