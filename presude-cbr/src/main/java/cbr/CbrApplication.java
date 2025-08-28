@@ -29,19 +29,24 @@ public class CbrApplication implements StandardCBRApplication {
 	CBRCaseBase _caseBase;  /** CaseBase object */
 
 	NNConfig simConfig;  /** KNN configuration */
-	
+
 	public void configure() throws ExecutionException {
 		_connector =  new CsvConnector();
 		
 		_caseBase = new LinealCaseBase();  // Create a Lineal case base for in-memory organization
-		
+
+		//definise kako se racuna slicnost izmedju slucajeva
 		simConfig = new NNConfig(); // KNN configuration
-		simConfig.setDescriptionSimFunction(new Average());  // global similarity function = average
-		
+		simConfig.setDescriptionSimFunction(new Average());  // global similarity function = average, ukupna slicnost 2 presude se racuna prema prosjeku slicnosti svih atributa
+
+		//zelim da poredim atribut krivicnoDelo, po Equal fji slicnosti
 		simConfig.addMapping(new Attribute("krivicnoDelo", CaseDescription.class), new Equal());
+
+		//
 		TabularSimilarity slicnostPovreda = new TabularSimilarity(Arrays.asList(new String[] {"lake", "teske"}));
 		slicnostPovreda.setSimilarity("lake", "teske", .5);
 		simConfig.addMapping(new Attribute("telesnePovrede", CaseDescription.class), slicnostPovreda);
+
 		TabularSimilarity slicnostPropisa = new TabularSimilarity(Arrays.asList(new String[] {
 				"cl. 42 st. 1 ZOBSNP",
 				"cl. 43 st. 1 ZOBSNP",
@@ -53,7 +58,8 @@ public class CbrApplication implements StandardCBRApplication {
 		slicnostPropisa.setSimilarity("cl. 47 st. 3 ZOBSNP", "cl. 47 st. 4 ZOBSNP", .5);
 		slicnostPropisa.setSimilarity("cl. 47 st. 1 ZOBSNP", "cl. 47 st. 4 ZOBSNP", .5);
 		simConfig.addMapping(new Attribute("primenjeniPropisi", CaseDescription.class), slicnostPropisa);
-		
+
+		//fje koje postoje u colibriju koje mozemo koristiti, procitati
 		// Equal - returns 1 if both individuals are equal, otherwise returns 0
 		// Interval - returns the similarity of two number inside an interval: sim(x,y) = 1-(|x-y|/interval)
 		// Threshold - returns 1 if the difference between two numbers is less than a threshold, 0 in the other case
@@ -66,19 +72,20 @@ public class CbrApplication implements StandardCBRApplication {
 	}
 
 	public void cycle(CBRQuery query) throws ExecutionException {
-		Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), query, simConfig);
-		eval = SelectCases.selectTopKRR(eval, 5);
+		Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), query, simConfig);	//racunaju se lokalne sl. i globalna sl.
+		eval = SelectCases.selectTopKRR(eval, 5);	//najslicnijih 5
 		System.out.println("Retrieved cases:");
 		for (RetrievalResult nse : eval)
 			System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
 	}
 
+	//to se poziva kad se zavrsi rad sa dokumentom i kada se izbace rezultati, moze se iskoristiti da se sacuva dokument
 	public void postCycle() throws ExecutionException {
 		
 	}
 
 	public CBRCaseBase preCycle() throws ExecutionException {
-		_caseBase.init(_connector);
+		_caseBase.init(_connector);	//inic.baze slucajeva preko mog konektora, pozvace retrieveAllCases, i ucitati sve presude u _caseBase
 		java.util.Collection<CBRCase> cases = _caseBase.getCases();
 //		for (CBRCase c: cases)
 //			System.out.println(c.getDescription());
@@ -88,11 +95,15 @@ public class CbrApplication implements StandardCBRApplication {
 	public static void main(String[] args) {
 		StandardCBRApplication recommender = new CbrApplication();
 		try {
+			//podesimo sve slicnosti
 			recommender.configure();
 
+			//ucitamo sve slucajeve iz baze
 			recommender.preCycle();
 
 			CBRQuery query = new CBRQuery();
+
+			//ovaj slucaj rasudjujemo
 			CaseDescription caseDescription = new CaseDescription();
 			
 			caseDescription.setKrivicnoDelo("cl. 289 st. 3 KZ");
@@ -103,7 +114,8 @@ public class CbrApplication implements StandardCBRApplication {
 			List<String> telesnePovrede = new ArrayList();
 			telesnePovrede.add("lake");
 			caseDescription.setTelesnePovrede(telesnePovrede);
-			
+
+			//postavljamo ga u opis
 			query.setDescription( caseDescription );
 
 			recommender.cycle(query);

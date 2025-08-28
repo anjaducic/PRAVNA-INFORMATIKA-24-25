@@ -22,6 +22,7 @@ public class CsvConnector implements Connector {
 		LinkedList<CBRCase> cases = new LinkedList<CBRCase>();
 		
 		try {
+			//tu ubaciti nas fajl sa atributima
 			BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/presude.csv")));
 			if (br == null)
 				throw new Exception("Error opening file");
@@ -34,6 +35,7 @@ public class CsvConnector implements Connector {
 
 				CBRCase cbrCase = new CBRCase();
 
+				//opis slucaja preko atributa
 				CaseDescription caseDescription = new CaseDescription();
 				caseDescription.setId(Integer.parseInt(values[0]));
 				caseDescription.setSud(values[1]);

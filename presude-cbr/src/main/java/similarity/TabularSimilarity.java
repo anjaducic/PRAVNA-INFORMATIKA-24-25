@@ -5,8 +5,10 @@ import java.util.List;
 import es.ucm.fdi.gaia.jcolibri.exception.NoApplicableSimilarityFunctionException;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 
+//za 1 atribut se gleda
 public class TabularSimilarity implements LocalSimilarityFunction {
 
+	//za polja koja imaju nabrajanje
 	private double matrix[][];
 	List<String> categories;
 	
@@ -21,7 +23,8 @@ public class TabularSimilarity implements LocalSimilarityFunction {
 	public void setSimilarity(String value1, String value2, double sim) {
 		setSimilarity(value1, value2, sim, sim);
 	}
-	
+
+	//izmedju 2 kategorije postavljam slicnost
 	public void setSimilarity(String value1, String value2, double sim1, double sim2) {
 		int index1 = categories.indexOf(value1);
 		int index2 = categories.indexOf(value2);
@@ -39,7 +42,8 @@ public class TabularSimilarity implements LocalSimilarityFunction {
 			return compute((List)value1, (List)value2);
 		return 0;
 	}
-	
+
+	//vraca slicnost za atribut tipa string
 	public double compute(String str1, String str2) {
 		int index1 = categories.indexOf(str1);
 		int index2 = categories.indexOf(str2);
@@ -50,6 +54,7 @@ public class TabularSimilarity implements LocalSimilarityFunction {
 		return 0;
 	}
 
+	//ne traba nam
 	public double compute(List<String> list1, List<String> list2) {
 		if (list1.isEmpty() && list2.isEmpty())
 			return 1;
@@ -70,6 +75,7 @@ public class TabularSimilarity implements LocalSimilarityFunction {
 		return (sim1to2 + sim2to1)/(list1.size() + list2.size());
 	}
 
+	//da li se fja slicnosti moze primijeniti na dati par vrijednosti
 	@Override
 	public boolean isApplicable(Object value1, Object value2) {
 		if (value1 instanceof String && value2 instanceof String)

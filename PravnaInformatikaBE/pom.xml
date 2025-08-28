@@ -67,7 +67,11 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!-- jCOLIBRI -->
-
+		<dependency>
+			<groupId>es.ucm.fdi.gaia</groupId>
+			<artifactId>jCOLIBRI</artifactId>
+			<version>3.2</version>
+		</dependency>
 
 
 	</dependencies>

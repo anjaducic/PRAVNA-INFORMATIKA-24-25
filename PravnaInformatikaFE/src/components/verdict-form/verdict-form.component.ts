@@ -34,15 +34,15 @@ export class VerdictFormComponent {
     caseName: '',
     acknowledged: false,
     convicted: false,
-    financialStatus: '/',
+    financialStatus: 'Dobro',
     maintenance: false,
     repentance: false,
     previousFamilyIssues: false,
-    injuryType: '/',
+    injuryType: 'Nema',
     correctBehavior: false,
     injuredCriminalProsecution: false,
     propertyClaim: false,
-    accountability: '/',
+    accountability: 'Uracunljiv',
     intentional: false
   };
 

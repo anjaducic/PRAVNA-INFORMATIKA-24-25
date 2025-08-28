@@ -93,7 +93,6 @@
 
         <label>Materijalno stanje:</label>
         <select id="financialStatus" [(ngModel)]="attributes.financialStatus" class="form-select">
-            <option value="/" selected>/</option>
             <option value="Dobro">Dobro</option>
             <option value="Srednje">Srednje</option>
             <option value="Lose">Lose</option>
@@ -101,16 +100,15 @@
 
         <label>Tip povrede:</label>
         <select id="injuryType" [(ngModel)]="attributes.injuryType" class="form-select">
-            <option value="/">/</option>
             <option value="Nema">Nema</option>
             <option value="Lake">Lake</option>
             <option value="Srednje">Srednje</option>
             <option value="Teske">Teske</option>
+            <option value="Dusevne">Dusevne</option>
         </select>
 
         <label>Uračunljivost:</label>
         <select id="accountability" [(ngModel)]="attributes.accountability" class="form-select">
-            <option value="/">/</option>
             <option value="Uracunljiv">Uracunljiv</option>
             <option value="Smanjena uracunljivost">Smanjena uracunljivost</option>
             <option value="Neuracunljiv">Neuracunljiv</option>

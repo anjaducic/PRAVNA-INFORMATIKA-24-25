@@ -78,7 +78,7 @@ public class VerdictService {
                 String[] values = line.split(",", -1);
                 if (values.length > 0 && values[0].equalsIgnoreCase(caseName)) {
                     VerdictDTO dto = new VerdictDTO();
-                    dto.setFileName(values[0]);
+                    dto.setCaseName(values[0]);
                     dto.setAcknowledged(parseBoolean(values[1]));
                     dto.setConvicted(parseBoolean(values[2]));
                     dto.setFinancialStatus(values[3]);

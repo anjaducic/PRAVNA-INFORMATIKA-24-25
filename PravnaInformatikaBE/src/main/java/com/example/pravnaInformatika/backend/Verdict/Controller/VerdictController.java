@@ -1,5 +1,6 @@
 package com.example.pravnaInformatika.backend.Verdict.Controller;
 
+import com.example.pravnaInformatika.backend.Verdict.CBR.VerdictCBRService;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
@@ -10,10 +11,7 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,6 +25,9 @@ public class VerdictController {
 
     @Autowired
     private VerdictService verdictService;
+
+    @Autowired
+    private VerdictCBRService cbrService;
 
     @GetMapping("/all")
     public ResponseEntity<List<Verdict>> getAllVerdicts(){
@@ -70,6 +71,11 @@ public class VerdictController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(dto);
+    }
+
+    @PostMapping("/predict")
+    public List<String> predictSimilar(@RequestBody VerdictDTO input) throws Exception {
+        return cbrService.findTop5Similar(input);
     }
 
 

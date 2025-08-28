@@ -1,7 +1,10 @@
 package com.example.pravnaInformatika.backend.Verdict.DTO;
 
-public class VerdictDTO {
-    private String fileName; // Presuda
+import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
+import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
+
+public class VerdictDTO implements CaseComponent{
+    private String caseName; // Presuda
     private Boolean acknowledged; // Priznao
     private Boolean convicted; // Osudjivan
     private String financialStatus; // Materijalno_stanje
@@ -16,7 +19,7 @@ public class VerdictDTO {
     private Boolean intentional; // Sa_umisljajem
 
     // Getters
-    public String getFileName() { return fileName; }
+    public String getCaseName() { return caseName; }
     public Boolean getAcknowledged() { return acknowledged; }
     public Boolean getConvicted() { return convicted; }
     public String getFinancialStatus() { return financialStatus; }
@@ -31,7 +34,7 @@ public class VerdictDTO {
     public Boolean getIntentional() { return intentional; }
 
     // Setters
-    public void setFileName(String fileName) { this.fileName = fileName; }
+    public void setCaseName(String fileName) { this.caseName = fileName; }
     public void setAcknowledged(Boolean acknowledged) { this.acknowledged = acknowledged; }
     public void setConvicted(Boolean convicted) { this.convicted = convicted; }
     public void setFinancialStatus(String financialStatus) { this.financialStatus = financialStatus; }
@@ -44,4 +47,9 @@ public class VerdictDTO {
     public void setPropertyClaim(Boolean propertyClaim) { this.propertyClaim = propertyClaim; }
     public void setAccountability(String accountability) { this.accountability = accountability; }
     public void setIntentional(Boolean intentional) { this.intentional = intentional; }
+
+    @Override
+    public Attribute getIdAttribute() {
+        return null;
+    }
 }
