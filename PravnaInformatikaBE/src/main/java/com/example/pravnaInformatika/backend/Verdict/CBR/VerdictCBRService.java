@@ -24,18 +24,17 @@ import java.util.stream.Collectors;
 @Service
 public class VerdictCBRService {
 
-    private final CsvConnector connector;
+
     private final NNConfig simConfig;
-    private final CBRCaseBase caseBase;
 
     public VerdictCBRService() throws ExecutionException {
-        this.connector = new CsvConnector();
-        caseBase = new LinealCaseBase();
-
-
         simConfig = new NNConfig();
         simConfig.setDescriptionSimFunction(new Average());
+        configureSimilarities();
 
+    }
+
+    private void configureSimilarities() {
         // Boolean atributi
         List<String> booleanAttrs = Arrays.asList(
                 "acknowledged", "convicted", "maintenance", "repentance",
@@ -43,8 +42,7 @@ public class VerdictCBRService {
                 "propertyClaim", "intentional"
         );
         for (String attr : booleanAttrs)
-            simConfig.addMapping(new Attribute(attr, VerdictDTO.class), new EqualsStringIgnoreCase());  //true/false poredimo samo
-
+            simConfig.addMapping(new Attribute(attr, VerdictDTO.class), new EqualsStringIgnoreCase());
 
         // Tip povrede
         TabularSimilarity injuryTypeSim = new TabularSimilarity(
@@ -66,8 +64,7 @@ public class VerdictCBRService {
 
         simConfig.addMapping(new Attribute("injuryType", VerdictDTO.class), injuryTypeSim);
 
-
-        //uracunljivost
+        // Uracunljivost
         TabularSimilarity accountabilitySim = new TabularSimilarity(
                 Arrays.asList("Uracunljiv", "Smanjena uracunljivost", "Neuracunljiv")
         );
@@ -78,7 +75,7 @@ public class VerdictCBRService {
 
         simConfig.addMapping(new Attribute("accountability", VerdictDTO.class), accountabilitySim);
 
-        //Materijalno stanje
+        // Materijalno stanje
         TabularSimilarity financialStatusSim = new TabularSimilarity(
                 Arrays.asList("Lose", "Srednje", "Dobro")
         );
@@ -88,18 +85,23 @@ public class VerdictCBRService {
         financialStatusSim.setSimilarity("Lose", "Dobro", 0.0);
 
         simConfig.addMapping(new Attribute("financialStatus", VerdictDTO.class), financialStatusSim);
-
-
     }
 
+
     public List<String> findTop5Similar(VerdictDTO input) throws ExecutionException {
+        // kreiranje novog konektora i baze slucajeva svaki put, da bi se refresovalo prilikom generisanja presude, nisam koristila cbrapp - pitatiiiii
+        CsvConnector freshConnector = new CsvConnector();
+        CBRCaseBase freshCaseBase = new LinealCaseBase();
+        freshCaseBase.init(freshConnector);
+
+        //slucaj
         CBRQuery query = new CBRQuery();
         query.setDescription(input);
 
-        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(caseBase.getCases(), query, simConfig);
+        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(freshCaseBase.getCases(), query, simConfig);
         eval = SelectCases.selectTopKRR(eval, 5);
 
-        System.out.println("Retrieved cases:");
+        System.out.println("Top 5 presuda:");
         for (RetrievalResult nse : eval)
             System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
 
@@ -107,4 +109,5 @@ public class VerdictCBRService {
                 .map(r -> ((VerdictDTO) r.get_case().getDescription()).getCaseName())
                 .collect(Collectors.toList());
     }
+
 }
