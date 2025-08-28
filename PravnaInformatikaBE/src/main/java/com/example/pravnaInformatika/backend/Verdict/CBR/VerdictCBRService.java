@@ -14,20 +14,23 @@ import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Equ
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.EqualsStringIgnoreCase;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.selection.SelectCases;
+import gate.util.Pair;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
 public class VerdictCBRService {
 
-
     private final NNConfig simConfig;
+    private final CBRCaseBase caseBase;   // globalno dostupna baza
+    private final CsvConnector connector;
 
     public VerdictCBRService() throws ExecutionException {
+        this.connector = new CsvConnector();
+        this.caseBase = new LinealCaseBase();
+        this.caseBase.init(connector);
         simConfig = new NNConfig();
         simConfig.setDescriptionSimFunction(new Average());
         configureSimilarities();
@@ -42,7 +45,7 @@ public class VerdictCBRService {
                 "propertyClaim", "intentional"
         );
         for (String attr : booleanAttrs)
-            simConfig.addMapping(new Attribute(attr, VerdictDTO.class), new EqualsStringIgnoreCase());
+            simConfig.addMapping(new Attribute(attr, VerdictDTO.class), new Equal());
 
         // Tip povrede
         TabularSimilarity injuryTypeSim = new TabularSimilarity(
@@ -64,7 +67,7 @@ public class VerdictCBRService {
 
         simConfig.addMapping(new Attribute("injuryType", VerdictDTO.class), injuryTypeSim);
 
-        // Uracunljivost
+        // uracunljivost
         TabularSimilarity accountabilitySim = new TabularSimilarity(
                 Arrays.asList("Uracunljiv", "Smanjena uracunljivost", "Neuracunljiv")
         );
@@ -75,7 +78,7 @@ public class VerdictCBRService {
 
         simConfig.addMapping(new Attribute("accountability", VerdictDTO.class), accountabilitySim);
 
-        // Materijalno stanje
+        // materijalno stanje
         TabularSimilarity financialStatusSim = new TabularSimilarity(
                 Arrays.asList("Lose", "Srednje", "Dobro")
         );
@@ -88,26 +91,61 @@ public class VerdictCBRService {
     }
 
 
-    public List<String> findTop5Similar(VerdictDTO input) throws ExecutionException {
-        // kreiranje novog konektora i baze slucajeva svaki put, da bi se refresovalo prilikom generisanja presude, nisam koristila cbrapp - pitatiiiii
-        CsvConnector freshConnector = new CsvConnector();
-        CBRCaseBase freshCaseBase = new LinealCaseBase();
-        freshCaseBase.init(freshConnector);
-
-        //slucaj
+    public List<VerdictSimilarity> findTop5Similar(VerdictDTO input) throws ExecutionException {
+        // novi slucaj
         CBRQuery query = new CBRQuery();
         query.setDescription(input);
 
-        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(freshCaseBase.getCases(), query, simConfig);
-        eval = SelectCases.selectTopKRR(eval, 5);
+        // eval. slicnosti
+        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(caseBase.getCases(), query, simConfig);
 
+        // ispis svih presuda u bazi
+        System.out.println("\nSve presude u bazi:");
+        for (RetrievalResult nse : eval)
+            System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
+
+        // top 5 presuda
+        eval = SelectCases.selectTopKRR(eval, 5);
         System.out.println("Top 5 presuda:");
         for (RetrievalResult nse : eval)
             System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
 
-        return eval.stream()
-                .map(r -> ((VerdictDTO) r.get_case().getDescription()).getCaseName())
-                .collect(Collectors.toList());
+        // vracamo listu VerdictSimilarity objekata
+        return eval.stream().map(r -> {
+            VerdictDTO dto = (VerdictDTO) r.get_case().getDescription();
+            VerdictSimilarity vs = new VerdictSimilarity();
+            vs.setCaseName(dto.getCaseName());
+            vs.setAcknowledged(dto.getAcknowledged());
+            vs.setConvicted(dto.getConvicted());
+            vs.setFinancialStatus(dto.getFinancialStatus());
+            vs.setMaintenance(dto.getMaintenance());
+            vs.setRepentance(dto.getRepentance());
+            vs.setPreviousFamilyIssues(dto.getPreviousFamilyIssues());
+            vs.setInjuryType(dto.getInjuryType());
+            vs.setCorrectBehavior(dto.getCorrectBehavior());
+            vs.setInjuredCriminalProsecution(dto.getInjuredCriminalProsecution());
+            vs.setPropertyClaim(dto.getPropertyClaim());
+            vs.setAccountability(dto.getAccountability());
+            vs.setIntentional(dto.getIntentional());
+            vs.setSimilarity(r.getEval());
+            return vs;
+        }).collect(Collectors.toList());
     }
+
+
+
+    //pozvati kod generisanja presude
+    //paziti da learnCases vjerovatno cuva i atribute u fajl, pa ne treba duplirati, ali provjeriti. Sacuvati metapodatke rucno kod generisanja presude
+    public void addCaseToBase(VerdictDTO dto) throws ExecutionException {
+        // napravimo novi CBRCase
+        CBRCase newCase = new CBRCase();
+        newCase.setDescription(dto);
+
+        // dodavanje ga u memorijsku bazu
+        caseBase.learnCases(Collections.singletonList(newCase));
+
+        System.out.println("Novi slucaj dodat u bazu: " + dto);
+    }
+
 
 }

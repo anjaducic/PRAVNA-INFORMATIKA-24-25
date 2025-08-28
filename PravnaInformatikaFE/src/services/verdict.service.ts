@@ -28,4 +28,9 @@ export class VerdictService {
   getVerdictAttributes(fileName: string): Observable<Partial<Verdict>> {
     return this.http.get<Partial<Verdict>>(`${this.baseUrl}/attributes/${fileName}`);
   }
+
+  //rasudjivanje po slucajevima
+  findTop5Similar(input: Verdict): Observable<Verdict[]> {
+    return this.http.post<Verdict[]>(`${this.baseUrl}/findTop5Similar`, input);
+  }
 }

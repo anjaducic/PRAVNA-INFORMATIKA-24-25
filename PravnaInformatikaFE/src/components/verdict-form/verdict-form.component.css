@@ -24,7 +24,7 @@ body, :host {
               linear-gradient(180deg, var(--bg1), var(--bg2));
   color: var(--text);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.7fr 0.7fr 1fr;
   grid-template-rows: auto auto; 
   gap: 2px;
   align-items: stretch;
@@ -229,6 +229,161 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   background: linear-gradient(90deg, rgba(26, 188, 156, 0.4), rgba(22, 160, 133, 0.4));
 }
+
+
+.verdict-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.verdict-link {
+  position: relative; 
+  display: grid;
+  grid-template-columns: 140px 400px;
+  gap: 10px;
+  align-items: start;
+  padding: 8px 12px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #1abc9c; 
+  border-radius: 18px;
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  transition: all 0.2s ease, transform 0.2s ease;
+  width: 600px;
+}
+
+.verdict-link:hover {
+  transform: scale(1.005);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  background-color: var(--card-strong);
+}
+
+.verdict-similarity {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+.verdict-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 500px;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+.icon-name {
+  display: flex;           
+  align-items: center;
+  gap: 5px;                
+}
+.verdict-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #5bdbff;
+}
+
+.verdict-middle,
+.verdict-right {
+  width: 420px;
+  font-size: 0.85rem;
+  color: #bababa;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.verdict-middle p,
+.verdict-right p {
+  margin: 2px 0;
+  line-height: 1.2;
+}
+
+.open-icon {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  font-size: 1.2rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.verdict-link:hover .open-icon {
+  opacity: 1;
+}
+
+.column-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #ecf0f1;
+  text-transform: uppercase;
+}
+
+.similar-verdicts-title {
+  margin-left: 25px;
+}
+
+.scrollable-column {
+  margin-left: 25px;
+  max-height: 370px;          
+  overflow-y: auto;          
+  padding-right: 10px;       
+}
+
+.scrollable-column::-webkit-scrollbar {
+  width: 10px;               
+}
+
+.scrollable-column::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05); 
+  border-radius: 10px;
+}
+
+.scrollable-column::-webkit-scrollbar-thumb {
+  background: #1abc9c;      
+  border-radius: 10px;
+}
+
+.scrollable-column::-webkit-scrollbar-thumb:hover {
+  background: #16a085;       
+}
+
+
+.scrollable-column {
+  scrollbar-width: thin;
+  scrollbar-color: #1abc9c rgba(255,255,255,0.05);
+}
+
+.verdict-attributes {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  column-gap: 12px; 
+  row-gap: 2px;
+  white-space: nowrap;
+}
+
+.verdict-attributes div {
+  display: flex;          
+  justify-content: space-between; 
+  white-space: nowrap;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.85rem;
+  color: #bababa;
+  
+}
+
+
+
+
 
 
 @media (max-width: 1200px) {

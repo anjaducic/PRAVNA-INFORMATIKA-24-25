@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { VerdictMetadata } from '../../model/verdict-metadata.model';
 import { Verdict } from '../../model/verdict.model';
+import { VerdictService } from '../../services/verdict.service';
+import { Observable, of } from 'rxjs';
+import { VerdictSimilarity } from '../../model/verdict-similarity.model';
 
 
 @Component({
@@ -51,12 +54,22 @@ export class VerdictFormComponent {
   }
 
  
+  constructor(private verdictService: VerdictService) {}
 
-
+  similarVerdicts$: Observable<VerdictSimilarity[]> = of([]);
 
   // ovdje se poziva rasudjivanje po pravilima i slucajevima
   executeReasoning() {
     console.log('Metapodaci:', this.metadata);
     console.log('Atributi:', this.attributes);
+
+    this.attributes.caseName = this.metadata.caseName;
+
+    this.similarVerdicts$ = this.verdictService.findTop5Similar(this.attributes);
+
+  }
+  openVerdict(caseName: string): void {
+    const url = this.verdictService.getVerdictFileUrl(caseName);
+    window.open(url, '_blank');
   }
 }

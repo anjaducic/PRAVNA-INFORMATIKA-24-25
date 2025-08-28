@@ -1,9 +1,9 @@
-package com.example.pravnaInformatika.backend.Verdict.DTO;
+package com.example.pravnaInformatika.backend.Verdict.CBR;
 
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
 
-public class VerdictDTO implements CaseComponent{
+public class VerdictSimilarity implements CaseComponent{
     private String caseName; // Presuda
     private Boolean acknowledged; // Priznao
     private Boolean convicted; // Osudjivan
@@ -17,6 +17,15 @@ public class VerdictDTO implements CaseComponent{
     private Boolean propertyClaim; // Imovinsko_pravni_zahtjev
     private String accountability; // Uracunljivost
     private Boolean intentional; // Sa_umisljajem
+    private double similarity;
+
+    public double getSimilarity() {
+        return similarity;
+    }
+
+    public void setSimilarity(double similarity) {
+        this.similarity = similarity;
+    }
 
     // Getters
     public String getCaseName() { return caseName; }

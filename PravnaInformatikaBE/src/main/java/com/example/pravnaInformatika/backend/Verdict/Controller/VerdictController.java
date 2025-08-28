@@ -1,6 +1,7 @@
 package com.example.pravnaInformatika.backend.Verdict.Controller;
 
 import com.example.pravnaInformatika.backend.Verdict.CBR.VerdictCBRService;
+import com.example.pravnaInformatika.backend.Verdict.CBR.VerdictSimilarity;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
@@ -15,8 +16,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.AbstractMap;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController
@@ -73,8 +76,8 @@ public class VerdictController {
         return ResponseEntity.ok(dto);
     }
 
-    @PostMapping("/predict")
-    public List<String> predictSimilar(@RequestBody VerdictDTO input) throws Exception {
+    @PostMapping("/findTop5Similar")
+    public List<VerdictSimilarity> predictSimilar(@RequestBody VerdictDTO input) throws Exception {
         return cbrService.findTop5Similar(input);
     }
 

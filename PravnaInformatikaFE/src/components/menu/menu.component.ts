@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { VerdictFormComponent } from '../verdict-form/verdict-form.component';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +12,7 @@ import { VerdictFormComponent } from '../verdict-form/verdict-form.component';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
 
    constructor(private router: Router, private dialog: MatDialog) {} 
 
@@ -21,6 +22,19 @@ export class MenuComponent {
   ];
 
   activeOption = this.menuOptions[0];
+
+  ngOnInit() {
+    // Prati promjenu rute
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        if (this.router.url === '/unos-slucaja') {
+          this.activeOption = 'Unos podataka o slučaju';
+        } else {
+          this.activeOption = 'Pregled presuda';
+        }
+      });
+  }
 
   setActive(option: string) {
     this.activeOption = option;
