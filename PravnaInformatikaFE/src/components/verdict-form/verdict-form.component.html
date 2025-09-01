@@ -18,20 +18,20 @@
         <label>Sudija:*</label>
         <input [(ngModel)]="metadata.judge" name="judge" required>
 
-        <label>Zapisničar:</label>
-        <input [(ngModel)]="metadata.clerk" name="clerk">
+        <label>Zapisničar:*</label>
+        <input [(ngModel)]="metadata.clerk" name="clerk" required>
 
-        <label>Optuženi:</label>
-        <input [(ngModel)]="metadata.defendant" name="defendant">
+        <label>Optuženi:*</label>
+        <input [(ngModel)]="metadata.defendant" name="defendant" required>
+
+        <label>Oštećeni:*</label>
+        <input [(ngModel)]="metadata.injuredParty" name="injuredParty" required>
 
         <label>Tužilac:</label>
         <input [(ngModel)]="metadata.prosecutorAttorney" name="prosecutorAttorney" >
 
         <label>Branilac:</label>
         <input [(ngModel)]="metadata.defenseAttorney" name="defenseAttorney" >
-
-        <label>Oštećeni:</label>
-        <input [(ngModel)]="metadata.injuredParty" name="injuredParty">
 
         <label>Pravni zastupnik:</label>
         <input [(ngModel)]="metadata.legalRepresentative" name="legalRepresentative">
@@ -165,6 +165,6 @@
 
 
   <div class="actions">
-    <button class="fancy-btn" [disabled]="!metadata.caseName ||caseName.invalid || !metadata.court || !metadata.judge || !metadata.date" (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
+    <button class="fancy-btn" [disabled]="!metadata.caseName ||caseName.invalid || !metadata.court || !metadata.judge || !metadata.date || !metadata.defendant || !metadata.injuredParty || !metadata.clerk" (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
   </div>
 </div>

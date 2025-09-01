@@ -61,7 +61,7 @@ public class VerdictCBRService {
         injuryTypeSim.setSimilarity("Lake", "Dusevne", 0.25);
         injuryTypeSim.setSimilarity("Lake", "Teske", 0.50);
 
-        injuryTypeSim.setSimilarity("Srednje", "Dusevne", 1.0);
+        injuryTypeSim.setSimilarity("Srednje", "Dusevne", 1.0); //prema kaznama
         injuryTypeSim.setSimilarity("Srednje", "Teske", 0.25);
         injuryTypeSim.setSimilarity("Dusevne", "Teske", 0.25);
 
