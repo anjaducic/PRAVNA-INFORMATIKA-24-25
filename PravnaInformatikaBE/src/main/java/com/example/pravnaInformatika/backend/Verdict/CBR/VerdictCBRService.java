@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 public class VerdictCBRService {
 
     private final NNConfig simConfig;
-    private final CBRCaseBase caseBase;   // globalno dostupna baza
+    private final CBRCaseBase caseBase;
     private final CsvConnector connector;
 
     public VerdictCBRService() throws ExecutionException {
