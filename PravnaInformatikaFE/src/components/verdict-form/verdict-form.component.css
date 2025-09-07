@@ -15,7 +15,6 @@ body, :host {
   --danger: #e74c3c;
 }
 
-
 .verdict-form-page {
   min-height: 100dvh;
   padding: 48px 20px;
@@ -31,7 +30,6 @@ body, :host {
   height: 900px; 
 }
 
-
 .form-wrapper-left,
 .form-wrapper-right {
   display: grid;
@@ -41,29 +39,21 @@ body, :host {
   overflow-y: auto;
   padding-bottom: 10px; 
 }
+
 .form-wrapper-left .form-section,
 .form-wrapper-right .form-section {
   width: 92%;
 }
 
-.verdict-form-page .form-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
-
-
-.verdict-form-page .page-title {
+.page-title {
   grid-column: 1 / -1;
   margin: 0 0 0px;
   text-align: center;
   font-size: 1.7rem;
 }
 
-
-
-.verdict-form-page .form-section,
-.verdict-form-page .form-shell {
+.form-section,
+.form-shell {
   background: var(--card);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -72,8 +62,10 @@ body, :host {
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
   padding: 18px;
   margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
-
 
 .form-section h3 {
   margin: 0 0 14px;
@@ -83,35 +75,17 @@ body, :host {
   text-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
 
-.form-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px 8px;
-}
-
-
 .form-section label {
   align-self: center;
   font-weight: 600;
   color: var(--muted);
 }
 
+/* Input and Select Styling - Consolidated */
 .form-section input[type="text"],
-.form-section input[type="date"],
+.form-section input[type="date"], 
 .form-section input:not([type]),
-.form-section textarea {
-  grid-column: 2 / 3;
-  width: 12rem;
-  padding: 5px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: var(--card-strong);
-  color: #fff;
-  outline: none;
-  transition: border-color .2s, box-shadow .2s, transform .06s;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 3px 10px rgba(0,0,0,0.15);
-}
-
+.form-section textarea,
 .form-section select {
   grid-column: 2 / 3;
   width: 100%;
@@ -125,14 +99,13 @@ body, :host {
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 3px 10px rgba(0,0,0,0.15);
 }
 
-.form-section select option {
-    background: rgba(255,255,255,0.1); 
-    color: #2c2c2c;                     
-    padding: 6px 12px;                 
-    font-weight: 600;
-    font-size: 14px;
+.form-section input[type="text"],
+.form-section input[type="date"], 
+.form-section input:not([type]),
+.form-section textarea {
+  width: 12rem;
+  padding: 5px 12px;
 }
-
 
 .form-section input:focus,
 .form-section select:focus,
@@ -142,27 +115,26 @@ body, :host {
   transform: translateY(-1px);
 }
 
-
-::placeholder {
-  color: rgba(255,255,255,0.55);
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1) opacity(0.75);
-}
-
+/* Select specific styling */
 .form-section select {
   appearance: none;
   -webkit-appearance: none;
-  background-image:
-    linear-gradient(180deg, transparent, transparent),
-    url("data:image/svg+xml;utf8,<svg fill='%23ecf0f1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M5.5 7l4.5 6 4.5-6z'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ecf0f1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M5.5 7l4.5 6 4.5-6z'/></svg>");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 14px;
   padding-right: 38px;
 }
 
+.form-section select option {
+  background: rgba(255,255,255,0.1); 
+  color: #2c2c2c;                     
+  padding: 6px 12px;                 
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Checkbox styling */
 .form-section label:has(input[type="checkbox"]) {
   grid-column: 1 / -1;
   display: flex;
@@ -181,13 +153,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+/* Rule section separator */
+.section-separator {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+
+.section-separator hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  width: 100%;
+}
+
+.rule-section-title {
+  margin: 15px 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+/* Button styling */
 .actions {
   grid-column: 2 / 3;
   justify-self: end;   
   margin-top: -40px;   
   z-index: 1;          
 }
-
 
 .fancy-btn {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
@@ -203,17 +197,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transition: all 0.3s ease;
 }
 
-
-
 .fancy-btn:hover {
   background: linear-gradient(145deg, #16a085, #1abc9c);
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 12px 25px rgba(0,0,0,0.35), 0 0 25px rgba(26, 188, 156, 0.7);
-}
-
-.fancy-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 8px 18px rgba(26, 188, 156, 0.35);
 }
 
 .fancy-btn:disabled {
@@ -224,18 +211,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: none;
 }
 
-.fancy-btn:disabled:hover {
-  transform: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  background: linear-gradient(90deg, rgba(26, 188, 156, 0.4), rgba(22, 160, 133, 0.4));
-}
-
-
+/* Verdict list styling */
 .verdict-list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-left: 5px;
+  margin: 0 0 0 5px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -247,17 +227,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   grid-template-columns: 140px 400px;
   gap: 10px;
   align-items: start;
-  padding: 8px 12px;
-  padding-right: 10px;
+  padding: 8px 12px 8px 12px;
   text-decoration: none;
   color: #1abc9c; 
   border-radius: 18px;
   background: var(--card);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border);
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-  transition: all 0.2s ease, transform 0.2s ease;
+  transition: all 0.2s ease;
   width: 600px;
 }
 
@@ -267,39 +245,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: var(--card-strong);
 }
 
-.verdict-similarity {
-  font-size: 0.9em;
-  margin-bottom: 0;
-}
 .verdict-left {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 500px;
   flex-direction: column; 
   align-items: flex-start;
+  gap: 8px;
+  width: 500px;
 }
+
 .icon-name {
   display: flex;           
   align-items: center;
   gap: 5px;                
 }
+
 .verdict-name {
   font-size: 1.3rem;
   font-weight: 600;
   color: #5bdbff;
 }
 
-.verdict-middle,
+.verdict-similarity {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
 .verdict-right {
   width: 420px;
   font-size: 0.85rem;
   color: #bababa;
-  white-space: normal;
-  overflow: hidden;
 }
 
-.verdict-middle p,
 .verdict-right p {
   margin: 2px 0;
   line-height: 1.2;
@@ -312,7 +288,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 1.2rem;
   opacity: 0.6;
   transition: opacity 0.2s;
-  cursor: pointer;
 }
 
 .verdict-link:hover .open-icon {
@@ -327,15 +302,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
 }
 
-.similar-verdicts-title {
-  margin-left: 25px;
-}
-
 .scrollable-column {
   margin-left: 25px;
   max-height: 370px;          
   overflow-y: auto;          
-  padding-right: 10px;       
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #1abc9c rgba(255,255,255,0.05);
 }
 
 .scrollable-column::-webkit-scrollbar {
@@ -356,12 +329,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: #16a085;       
 }
 
-
-.scrollable-column {
-  scrollbar-width: thin;
-  scrollbar-color: #1abc9c rgba(255,255,255,0.05);
-}
-
 .verdict-attributes {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
@@ -378,13 +345,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-overflow: ellipsis;
   font-size: 0.85rem;
   color: #bababa;
-  
 }
 
+::placeholder {
+  color: rgba(255,255,255,0.55);
+}
 
-
-
-
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) opacity(0.75);
+}
 
 @media (max-width: 1200px) {
   .verdict-form-page {
@@ -394,8 +363,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     grid-column: 1 / -1;
     justify-self: center;
   }
-  .form-wrapper-left {
-    grid-template-columns: 1fr;
-  }
 }
-

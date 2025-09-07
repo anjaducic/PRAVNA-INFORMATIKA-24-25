@@ -13,5 +13,12 @@ export interface VerdictSimilarity {
   accountability?: string; // Uracunljivost
   intentional?: boolean; // Sa_umisljajem
   similarity?: number
+
+  //novi atributi za rasudjivanje po pravilima
+  familyObligationsViolation?: string;  //krsenje porodicnih obaveza, korisno za ruleBase rasudjivanje
+  extramaritalRelationshipMinor?: string; //vanbracna veza sa maloletnikom, korisno za ruleBase rasudjivanje, ostavljamo string posto je dropdown (zavisno koliko clanova je prekrseno)
+  unlawfulDetention?: string; //ilegalno zadrzanje deteta, korisno za ruleBase rasudjivanje
+  familyMemberMaintenance?: string;
+  domesticViolence?: string;
 }
 

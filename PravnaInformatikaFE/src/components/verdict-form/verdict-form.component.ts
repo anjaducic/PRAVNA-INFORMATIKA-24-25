@@ -46,7 +46,13 @@ export class VerdictFormComponent {
     injuredCriminalProsecution: false,
     propertyClaim: false,
     accountability: 'Uracunljiv',
-    intentional: false
+    intentional: false,
+
+    familyObligationsViolation: 'Nema',
+    extramaritalRelationshipMinor: 'Nema',
+    unlawfulDetention: 'Nema',
+    familyMemberMaintenance: 'Nema',
+    domesticViolence: 'Nema'
   };
 
   get today(): string {

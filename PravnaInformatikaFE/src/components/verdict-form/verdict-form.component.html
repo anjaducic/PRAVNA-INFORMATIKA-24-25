@@ -113,6 +113,54 @@
             <option value="Smanjena uracunljivost">Smanjena uracunljivost</option>
             <option value="Neuracunljiv">Neuracunljiv</option>
         </select>
+
+        <!-- Rasudjivanje po pravilima -->
+        <div class="section-separator">
+            <hr style="margin: 20px 0; border: 1px solid #ccc;">
+            <h3 style="margin: 15px 0; color: #ffffff; font-weight: bold;">Rasuđivanje po pravilima</h3>
+        </div>
+
+        <label>Vanbračna zajednica sa maloletnikom:</label>
+        <select id="extramaritalRelationshipMinor" [(ngModel)]="attributes.extramaritalRelationshipMinor" class="form-select">
+            <option value="Nema">Nema</option>
+            <option value="Osnovni prekrsaj">Osnovni prekrsaj</option>
+            <option value="Omogucavanje">Omogucavanje</option>
+            <option value="Otezano omogucavanje">Otezano omogucavanje</option>
+        </select>
+
+        <label>Kršenje porodičnih obaveza:</label>
+        <select id="familyObligationsViolation" [(ngModel)]="attributes.familyObligationsViolation" class="form-select">
+            <option value="Nema">Nema</option>
+            <option value="Osnovno krsenje">Osnovno krsenje</option>
+            <option value="Otezano zdravstvena steta">Otezano zdravstvena steta</option>
+            <option value="Otezano smrt">Otezano smrt</option>
+        </select>
+
+        <label>Nezakonito držanje člana porodice:</label>
+        <select id="unlawfulDetention" [(ngModel)]="attributes.unlawfulDetention" class="form-select">
+            <option value="Nema">Nema</option>
+            <option value="Osnovno zadrzavanje">Osnovno zadrzavanje</option>
+            <option value="Sprecavanje kontakta">Sprecavanje kontakta</option>
+            <option value="Otezano">Otezano</option>
+        </select>
+
+        <label>Nedavanje izdržavanja:</label>
+        <select id="familyMemberMaintenance" [(ngModel)]="attributes.familyMemberMaintenance" class="form-select">
+            <option value="Nema">Nema</option>
+            <option value="Osnovno krsenje">Osnovno</option>
+            <option value="Otezano zdravstvena steta">Otezano</option>
+        </select>
+
+        <label>Nasilje u porodici:</label>
+        <select id="domesticViolence" [(ngModel)]="attributes.domesticViolence" class="form-select">
+            <option value="Nema">Nema</option>
+            <option value="Osnovno krsenje">Osnovno krsenje</option>
+            <option value="Oruzje ili dete prisutno">Oruzje ili dete prisutno</option>
+            <option value="Teska povreda">Teska povreda/Laka povreda protiv deteta</option>
+            <option value="Smrt">Smrt</option>
+            <option value="Krsenje mere zastite">Krsenje mere zastite</option>
+        </select>
+
     </div>
     
   </div>
@@ -150,9 +198,20 @@
         <p *ngIf="verdict.injuredCriminalProsecution !== undefined">Oštećeni goni krivično: {{ verdict.injuredCriminalProsecution ? 'DA' : 'NE' }}</p>
         <p *ngIf="verdict.propertyClaim !== undefined">Imovinsko-pravni zahtev: {{ verdict.propertyClaim ? 'DA' : 'NE' }}</p>
         <p *ngIf="verdict.intentional !== undefined">Sa umišljajem: {{ verdict.intentional ? 'DA' : 'NE' }}</p>
+
         <p *ngIf="verdict.financialStatus">Materijalno stanje: {{ verdict.financialStatus }}</p>
         <p *ngIf="verdict.injuryType">Tip povrede: {{ verdict.injuryType }}</p>
         <p *ngIf="verdict.accountability">Uračunljivost: {{ verdict.accountability }}</p>
+
+
+        <!-- Rasudjivanje po pravilima -->
+        <p *ngIf="verdict.familyObligationsViolation">Kršenje porodičnih obaveza: {{ verdict.familyObligationsViolation }}</p>
+        <p *ngIf="verdict.extramaritalRelationshipMinor">Vanbračna zajednica sa maloletnikom: {{ verdict.extramaritalRelationshipMinor }}</p>
+        <p *ngIf="verdict.unlawfulDetention">Nezakonito držanje članova porodice: {{ verdict.unlawfulDetention }}</p>
+        <p *ngIf="verdict.familyMemberMaintenance">Nedavanje izdržavanja: {{ verdict.familyMemberMaintenance }}</p>
+        <p *ngIf="verdict.domesticViolence">Nasilje u porodici: {{ verdict.domesticViolence }}</p>
+      
+      
       </div>
       <span class="open-icon">🔗</span>
     </div>
