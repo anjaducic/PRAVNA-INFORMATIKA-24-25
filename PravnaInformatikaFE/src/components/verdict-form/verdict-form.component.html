@@ -120,48 +120,28 @@
             <h3 style="margin: 15px 0; color: #ffffff; font-weight: bold;">Rasuđivanje po pravilima</h3>
         </div>
 
-        <label>Vanbračna zajednica sa maloletnikom:</label>
-        <select id="extramaritalRelationshipMinor" [(ngModel)]="attributes.extramaritalRelationshipMinor" class="form-select">
-            <option value="Nema">Nema</option>
-            <option value="Osnovni prekrsaj">Osnovni prekrsaj</option>
-            <option value="Omogucavanje">Omogucavanje</option>
-            <option value="Otezano omogucavanje">Otezano omogucavanje</option>
-        </select>
+        <label>Član 221 - Nedavanje izdržavanja:</label>
+        <div class="custom-select-wrapper">
+          <div class="custom-select-header" (click)="toggleDropdown()" [class.open]="isDropdownOpen">
+            <span>Nema</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="custom-select-options" *ngIf="isDropdownOpen">
+            <div class="option" *ngFor="let option of article221Options" (click)="toggleOption(option.value)">
+              <input type="checkbox" [checked]="isSelected(option.value)" readonly>
+              <span>{{ option.label }}</span>
+            </div>
+          </div>
+        </div>
 
-        <label>Kršenje porodičnih obaveza:</label>
-        <select id="familyObligationsViolation" [(ngModel)]="attributes.familyObligationsViolation" class="form-select">
-            <option value="Nema">Nema</option>
-            <option value="Osnovno krsenje">Osnovno krsenje</option>
-            <option value="Otezano zdravstvena steta">Otezano zdravstvena steta</option>
-            <option value="Otezano smrt">Otezano smrt</option>
-        </select>
-
-        <label>Nezakonito držanje člana porodice:</label>
-        <select id="unlawfulDetention" [(ngModel)]="attributes.unlawfulDetention" class="form-select">
-            <option value="Nema">Nema</option>
-            <option value="Osnovno zadrzavanje">Osnovno zadrzavanje</option>
-            <option value="Sprecavanje kontakta">Sprecavanje kontakta</option>
-            <option value="Otezano">Otezano</option>
-        </select>
-
-        <label>Nedavanje izdržavanja:</label>
-        <select id="familyMemberMaintenance" [(ngModel)]="attributes.familyMemberMaintenance" class="form-select">
-            <option value="Nema">Nema</option>
-            <option value="Osnovno krsenje">Osnovno</option>
-            <option value="Otezano zdravstvena steta">Otezano</option>
-        </select>
-
-        <label>Nasilje u porodici:</label>
-        <select id="domesticViolence" [(ngModel)]="attributes.domesticViolence" class="form-select">
-            <option value="Nema">Nema</option>
-            <option value="Osnovno krsenje">Osnovno krsenje</option>
-            <option value="Oruzje ili dete prisutno">Oruzje ili dete prisutno</option>
-            <option value="Teska povreda">Teska povreda/Laka povreda protiv deteta</option>
-            <option value="Smrt">Smrt</option>
-            <option value="Krsenje mere zastite">Krsenje mere zastite</option>
-        </select>
-
-    </div>
+        <!-- Article 220: Domestic Violence
+        <label>Član 220 - Nasilje u porodici:</label>
+        <select [(ngModel)]="selectedConditions.article220" multiple class="form-select">
+            <option value="commits_domestic_violence">Počinio nasilje u porodici</option>
+            <option value="used_weapon_or_child_present">Oružje korišćeno ili dete prisutno</option>
+            <option value="caused_severe_injury_or_against_child">Teška povreda ili protiv deteta</option>
+            <option value="violates_domestic_violence_protection_order">Kršenje mere zaštite</option>
+        </select> -->
     
   </div>
 

@@ -7,7 +7,6 @@ import { VerdictService } from '../../services/verdict.service';
 import { Observable, of } from 'rxjs';
 import { VerdictSimilarity } from '../../model/verdict-similarity.model';
 
-
 @Component({
   selector: 'app-verdict-form',
   standalone: true,
@@ -48,12 +47,42 @@ export class VerdictFormComponent {
     accountability: 'Uracunljiv',
     intentional: false,
 
-    familyObligationsViolation: 'Nema',
-    extramaritalRelationshipMinor: 'Nema',
-    unlawfulDetention: 'Nema',
-    familyMemberMaintenance: 'Nema',
-    domesticViolence: 'Nema'
   };
+
+
+ 
+
+  isDropdownOpen = false;
+
+    selectedConditions: {
+    article221: string[]
+  } = {
+    article221: []
+  };
+
+ article221Options = [
+    { value: 'fails_to_provide_support', label: 'Ne daje izdržavanje' },
+    { value: 'support_duty_legally_established', label: 'Obaveza izdržavanja pravno ustanovljena' },
+    { value: 'severe_consequences_occurred', label: 'Nastupile teške posledice' }
+  ];
+
+  toggleDropdown() {
+  this.isDropdownOpen = !this.isDropdownOpen;
+}
+
+toggleOption(value: string) {
+  const index = this.selectedConditions.article221.indexOf(value);
+  if (index > -1) {
+    this.selectedConditions.article221.splice(index, 1);
+  } else {
+    this.selectedConditions.article221.push(value);
+  }
+}
+
+isSelected(value: string): boolean {
+  return this.selectedConditions.article221.includes(value);
+}
+
 
   get today(): string {
     return new Date().toISOString().split('T')[0];
@@ -63,6 +92,20 @@ export class VerdictFormComponent {
   constructor(private verdictService: VerdictService) {}
 
   similarVerdicts$: Observable<VerdictSimilarity[]> = of([]);
+
+
+  // Convert to format expected by backend
+  convertToRdfData(): any {
+    return {
+      caseName: this.metadata.caseName,
+      defendant: this.metadata.defendant,
+      dependent: this.metadata.injuredParty,
+      
+      // Include all detailed conditions
+      //...this.detailedConditions
+    };
+  }
+
 
   // ovdje se poziva rasudjivanje po pravilima i slucajevima
   executeReasoning() {
