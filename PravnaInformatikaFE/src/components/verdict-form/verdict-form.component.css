@@ -2,7 +2,8 @@
   display: block;
 }
 
-body, :host {
+body,
+:host {
   --bg1: #2c3e50;
   --bg2: #1f2a36;
   --card: rgba(255, 255, 255, 0.12);
@@ -19,15 +20,15 @@ body, :host {
   min-height: 100dvh;
   padding: 48px 20px;
   background: radial-gradient(1200px 800px at 20% 10%, #3a5068 0%, transparent 55%),
-              radial-gradient(1200px 800px at 80% 0%, #1e3a4a 0%, transparent 55%),
-              linear-gradient(180deg, var(--bg1), var(--bg2));
+    radial-gradient(1200px 800px at 80% 0%, #1e3a4a 0%, transparent 55%),
+    linear-gradient(180deg, var(--bg1), var(--bg2));
   color: var(--text);
   display: grid;
   grid-template-columns: 0.7fr 0.7fr 1fr;
-  grid-template-rows: auto auto; 
+  grid-template-rows: auto auto;
   gap: 2px;
   align-items: stretch;
-  height: 900px; 
+  height: 900px;
 }
 
 .form-wrapper-left,
@@ -35,9 +36,9 @@ body, :host {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
-  height: 90%; 
+  height: 90%;
   overflow-y: auto;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .form-wrapper-left .form-section,
@@ -59,7 +60,7 @@ body, :host {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   padding: 18px;
   margin-bottom: 16px;
   display: grid;
@@ -72,7 +73,7 @@ body, :host {
   font-weight: 700;
   letter-spacing: 0.4px;
   color: #ffffff;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .form-section label {
@@ -83,7 +84,7 @@ body, :host {
 
 /* Input and Select Styling - Consolidated */
 .form-section input[type="text"],
-.form-section input[type="date"], 
+.form-section input[type="date"],
 .form-section input:not([type]),
 .form-section textarea,
 .form-section select {
@@ -91,16 +92,16 @@ body, :host {
   width: 100%;
   padding: 8px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   background: var(--card-strong);
   color: #fff;
   outline: none;
   transition: border-color .2s, box-shadow .2s, transform .06s;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .form-section input[type="text"],
-.form-section input[type="date"], 
+.form-section input[type="date"],
 .form-section input:not([type]),
 .form-section textarea {
   width: 12rem;
@@ -111,7 +112,7 @@ body, :host {
 .form-section select:focus,
 .form-section textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.25), inset 0 1px 0 rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   transform: translateY(-1px);
 }
 
@@ -127,9 +128,9 @@ body, :host {
 }
 
 .form-section select option {
-  background: rgba(255,255,255,0.1); 
-  color: #2c2c2c;                     
-  padding: 6px 12px;                 
+  background: rgba(255, 255, 255, 0.1);
+  color: #2c2c2c;
+  padding: 6px 12px;
   font-weight: 600;
   font-size: 14px;
 }
@@ -141,8 +142,8 @@ body, :host {
   align-items: center;
   gap: 8px;
   padding: 2px 12px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
 }
 
@@ -162,7 +163,7 @@ body, :host {
 .section-separator hr {
   margin: 20px 0;
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   width: 100%;
 }
 
@@ -172,15 +173,15 @@ body, :host {
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Button styling */
 .actions {
   grid-column: 2 / 3;
-  justify-self: end;   
-  margin-top: -40px;   
-  z-index: 1;          
+  justify-self: end;
+  margin-top: -40px;
+  z-index: 1;
 }
 
 .fancy-btn {
@@ -200,14 +201,14 @@ body, :host {
 .fancy-btn:hover {
   background: linear-gradient(145deg, #16a085, #1abc9c);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.35), 0 0 25px rgba(26, 188, 156, 0.7);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35), 0 0 25px rgba(26, 188, 156, 0.7);
 }
 
 .fancy-btn:disabled {
   background: linear-gradient(90deg, rgba(26, 188, 156, 0.4), rgba(22, 160, 133, 0.4));
   color: rgba(255, 255, 255, 0.6);
   cursor: not-allowed;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: none;
 }
 
@@ -222,41 +223,41 @@ body, :host {
 }
 
 .verdict-link {
-  position: relative; 
+  position: relative;
   display: grid;
   grid-template-columns: 140px 400px;
   gap: 10px;
   align-items: start;
   padding: 8px 12px 8px 12px;
   text-decoration: none;
-  color: #1abc9c; 
+  color: #1abc9c;
   border-radius: 18px;
   background: var(--card);
   backdrop-filter: blur(10px);
   border: 1px solid var(--border);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease;
   width: 600px;
 }
 
 .verdict-link:hover {
   transform: scale(1.005);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   background-color: var(--card-strong);
 }
 
 .verdict-left {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   gap: 8px;
   width: 500px;
 }
 
 .icon-name {
-  display: flex;           
+  display: flex;
   align-items: center;
-  gap: 5px;                
+  gap: 5px;
 }
 
 .verdict-name {
@@ -283,8 +284,8 @@ body, :host {
 
 .open-icon {
   position: absolute;
-  top: 10px; 
-  right: 10px; 
+  top: 10px;
+  right: 10px;
   font-size: 1.2rem;
   opacity: 0.6;
   transition: opacity 0.2s;
@@ -304,43 +305,43 @@ body, :host {
 
 .scrollable-column {
   margin-left: 25px;
-  max-height: 370px;          
-  overflow-y: auto;          
+  max-height: 370px;
+  overflow-y: auto;
   padding-right: 10px;
   scrollbar-width: thin;
-  scrollbar-color: #1abc9c rgba(255,255,255,0.05);
+  scrollbar-color: #1abc9c rgba(255, 255, 255, 0.05);
 }
 
 .scrollable-column::-webkit-scrollbar {
-  width: 10px;               
+  width: 10px;
 }
 
 .scrollable-column::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.05); 
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
 }
 
 .scrollable-column::-webkit-scrollbar-thumb {
-  background: #1abc9c;      
+  background: #1abc9c;
   border-radius: 10px;
 }
 
 .scrollable-column::-webkit-scrollbar-thumb:hover {
-  background: #16a085;       
+  background: #16a085;
 }
 
 .verdict-attributes {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
-  column-gap: 12px; 
+  column-gap: 12px;
   row-gap: 2px;
   white-space: nowrap;
 }
 
 .verdict-attributes div {
-  display: flex;          
-  justify-content: space-between; 
-  white-space: nowrap;  
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.85rem;
@@ -348,7 +349,7 @@ body, :host {
 }
 
 ::placeholder {
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -359,8 +360,103 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .verdict-form-page {
     grid-template-columns: 1fr;
   }
+
   .actions {
     grid-column: 1 / -1;
     justify-self: center;
   }
+}
+
+
+
+/* Stilizovanje multiple select */
+.dropdown-container {
+  margin-top: 20px;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--card-strong);
+  color: #fff;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, transform .06s;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 3px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle.active {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  color: #ecf0f1;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: none;
+  border-radius: 12px 12px 12px 12px;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-option {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.dropdown-option:hover {
+  background: rgb(197, 196, 196);
+}
+
+.dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.dropdown-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.dropdown-option span {
+  color: #2c2c2c;
+  font-weight: 500;
 }
