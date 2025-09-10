@@ -1,0 +1,23 @@
+<div class="modal-content">
+  <h2 class="page-title">Unos podataka o presudi</h2>
+
+  <p class="form-description">
+    Unesite podatke o prekršenom članu zakona.
+  </p>
+
+  <form class="form-section">
+    <label for="articleId">Član zakona:</label>
+    <input id="articleId" [(ngModel)]="articleId" name="articleId" />
+
+    <label for="paragraphId">Stav:</label>
+    <input id="paragraphId" [(ngModel)]="paragraphId" name="paragraphId" />
+    
+    <label for="penalty">Sankcija:</label>
+    <input id="penalty" [(ngModel)]="penalty" name="penalty" />
+  </form>
+
+  <div class="modal-actions">
+    <button class="fancy-btn" (click)="onCancel()">❌ Odustani</button>
+    <button class="fancy-btn" (click)="onSave()">💾 Sačuvaj</button>
+  </div>
+</div>

@@ -2,6 +2,8 @@ from datetime import datetime
 import os
 import xml.etree.ElementTree as ET
 from html import escape
+import sys
+from pathlib import Path
 
 
 def format_date(date_str):
@@ -289,22 +291,22 @@ def law_xml_act_to_html(xml_file, output_html):
 
 #kod za prevodjenje presuda u html
 
-input_folder = "Verdicts/akoma-ntoso"
-output_folder = "Verdicts/html"
+# input_folder = "Verdicts/akoma-ntoso"
+# output_folder = "Verdicts/html"
 
-if not os.path.exists(output_folder):
-    os.makedirs(output_folder)
+# if not os.path.exists(output_folder):
+#     os.makedirs(output_folder)
 
-for filename in os.listdir(input_folder):
-    if filename.endswith(".xml"):
-        input_path = os.path.join(input_folder, filename)
-        output_path = os.path.join(output_folder, filename.replace(".xml", ".html"))
-        print(f"Obrada fajla: {filename}")
-        try:
-            verdict_xml_to_html(input_path, output_path)
-            print(f"Generisan HTML: {output_path}")
-        except Exception as e:
-            print(f"Greska pri obradi fajla {filename}: {e}")
+# for filename in os.listdir(input_folder):
+#     if filename.endswith(".xml"):
+#         input_path = os.path.join(input_folder, filename)
+#         output_path = os.path.join(output_folder, filename.replace(".xml", ".html"))
+#         print(f"Obrada fajla: {filename}")
+#         try:
+#             verdict_xml_to_html(input_path, output_path)
+#             print(f"Generisan HTML: {output_path}")
+#         except Exception as e:
+#             print(f"Greska pri obradi fajla {filename}: {e}")
 
 
 #kod za prevodjenje krivicnog zakona u html
@@ -326,3 +328,32 @@ for filename in os.listdir(input_folder):
         except Exception as e:
             print(f"Greska pri obradi fajla {filename}: {e}")
 """
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python akomaNtoso_to_html_translator.py <filename>")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    input_folder = "src/main/resources/static/Verdicts/akoma-ntoso"
+    output_folder = "src/main/resources/static/Verdicts/html"
+
+    # print("Current working directory:", os.getcwd())
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    # input_path = os.path.join(input_folder, filename + ".xml")
+    # output_path = os.path.join(output_folder, filename.replace(".xml", ".html"))
+    # input_path = input_folder + "/" + filename + ".xml"
+    # output_path = output_folder
+
+    input_path = Path(input_folder) / f"{filename}.xml"
+    output_path = Path(output_folder) / f"{filename}.html"
+
+    print(f"Obrada fajla: {filename}")
+    try:
+        verdict_xml_to_html(input_path, output_path)
+        print(f"Generisan HTML: {output_path}")
+    except Exception as e:
+        print(f"Greska pri obradi fajla {filename}: {e}")

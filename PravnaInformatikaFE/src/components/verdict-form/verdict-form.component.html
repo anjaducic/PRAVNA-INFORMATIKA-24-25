@@ -161,10 +161,26 @@
   </ng-container>
   </ul>
   </div>
+</div>
+
+  <!-- Spinner overlay -->
+  <div *ngIf="loading" class="spinner-overlay">
+    <mat-progress-spinner
+      mode="indeterminate"
+      diameter="50"
+      color="primary">
+    </mat-progress-spinner>
+    <p class="loading-spinner">Molimo sačekajte, generisanje može potrajati nekoliko minuta...</p>
   </div>
 
+  <div *ngIf="!loading && fileName" class="spinner-overlay">
+    <button class="fancy-btn" (click)="openVerdict(fileName)">Pogledajte presudu</button>
+  </div>
 
   <div class="actions">
     <button class="fancy-btn" [disabled]="!metadata.caseName ||caseName.invalid || !metadata.court || !metadata.judge || !metadata.date || !metadata.defendant || !metadata.injuredParty || !metadata.clerk" (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
+  </div>
+  <div class="actions">
+        <button class="fancy-btn" [disabled]="!allowVerdict" (click)="openVerdictCreateForm()">👨‍⚖️ DONESI PRESUDU 👨‍⚖️</button>
   </div>
 </div>

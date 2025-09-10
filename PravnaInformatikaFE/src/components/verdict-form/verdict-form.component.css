@@ -381,10 +381,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   
 }
 
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.error-snackbar {
+  background-color: #f44336;
+  color: white;
+}
 
-
-
+.loading-spinner{
+  color: black;
+  font-weight: bold;
+}
 
 @media (max-width: 1200px) {
   .verdict-form-page {

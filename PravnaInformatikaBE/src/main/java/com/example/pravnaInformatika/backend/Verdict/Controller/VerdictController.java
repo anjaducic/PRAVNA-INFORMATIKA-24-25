@@ -2,6 +2,8 @@ package com.example.pravnaInformatika.backend.Verdict.Controller;
 
 import com.example.pravnaInformatika.backend.Verdict.CBR.VerdictCBRService;
 import com.example.pravnaInformatika.backend.Verdict.CBR.VerdictSimilarity;
+import com.example.pravnaInformatika.backend.Verdict.DTO.CreatedVerdtictDTO;
+import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictCreateDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
@@ -81,6 +83,15 @@ public class VerdictController {
         return cbrService.findTop5Similar(input);
     }
 
+    @PostMapping("/generate")
+    public ResponseEntity<CreatedVerdtictDTO> createVerdict(@RequestBody VerdictCreateDTO verdict) throws IOException {
+        String fileName = verdictService.createVerdict(verdict); //creates verdict and returns html filename of new verdict
+
+        if (fileName == null) {return ResponseEntity.internalServerError().build();}
+        CreatedVerdtictDTO result = new CreatedVerdtictDTO();
+        result.setFileName(fileName);
+        return ResponseEntity.ok(result);
+    }
 
 
 
