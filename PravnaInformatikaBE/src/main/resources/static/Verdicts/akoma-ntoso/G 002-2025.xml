@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>OSNOVNI SUD U BIJELOM POLJU</FRBRauthor>
+          <FRBRdate date="2025-08-31">2025-08-31</FRBRdate>
+          <FRBRtitle>G 002-2025</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju"/>
+        <TLCOrganization eId="csr" href="/ontology/organization/CentarZaSocijalniRad" showAs="Centar za socijalni rad"/>
+
+        <TLCPerson eId="judge" href="/ontology/person/anja_lovric" showAs="Anja Lovric"/>
+        <TLCPerson eId="clerk" href="/ontology/person/anja_ducic" showAs="Anja Ducic"/>
+        <TLCPerson eId="defendant" href="/ontology/person/dusan_vukovic" showAs="Dusan Vukovic"/>
+        <TLCPerson eId="injured" href="/ontology/person/milica_milic" showAs="Milica Milic"/>
+        <TLCPerson eId="defense" href="/ontology/person/pera_peric" showAs="Pera Peric"/>
+        <TLCPerson eId="legal_rep" href="/ontology/person/petar_peric" showAs="Petar Peric"/>
+        <TLCPerson eId="expert" href="/ontology/person/milan_todorovic" showAs="Milan Todorovic"/>
+        <TLCPerson eId="participant" href="/ontology/person/nemanja_nemanjic" showAs="Nemanja Nemanjic"/>
+
+        <TLCRole eId="judgeRole" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerkRole" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="defendantRole" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+        <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer"/>
+        <TLCRole eId="legal_guardian" href="/ontology/role/legal_guardian" showAs="Legal Guardian"/>
+        <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical"/>
+        <TLCRole eId="advisor" href="/ontology/role/advisor" showAs="Advisor"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          <organization id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac
+          <party id="judge" refersTo="#judge" as="#judgeRole">Anja Lovric</party>, uz učešće zapisničara
+          <party id="clerk" refersTo="#clerk" as="#clerkRole">Anja Ducic</party>, postupajući po optužnom predlogu
+          <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Bijelom Polju</organization>, KT. br. 002/25 od 31.08.2025. godine, protiv okrivljenog
+          <party id="defendant" refersTo="#defendant" as="#defendantRole">Dusan Vukovic</party>, uz prisustvo
+          <party id="defense" refersTo="#defense" as="#lawyer">Pera Peric</party> i oštećene
+          <party id="injured" refersTo="#injured" as="#victim">Milice Milic</party>, dana 31.08.2025. godine, donio je i objavio
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">P R E S U D U</p>
+        <p>
+          Okrivljeni
+          <party id="defendant" refersTo="#defendant" as="#defendantRole">Dusan Vukovic</party>, JMBG ........, od oca..., majke..., rođen/a ..., državljanin Crne Gore, nezaposlen/a, ima prebivalište u Bijelom Polju, optužen je za krivično djelo nasilje u porodici ili u porodičnoj zajednici iz čl. 222 st. 1 Krivičnog zakonika Crne Gore, po optužnom predlogu
+          <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Bijelom Polju</organization>, od 31.08.2025. godine.
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">K R I V J E</p>
+        <p>
+          - Okrivljenom <party id="defendant" refersTo="#defendant" as="#defendantRole">Dusan Vukovic</party> se stavlja na teret krivično djelo nasilje u porodici ili u porodičnoj zajednici iz čl. 222 st. 1 Krivičnog zakonika Crne Gore.
+        </p>
+        <p>
+          - Na osnovu izvedenih dokaza i iskaza oštećene <party id="injured" refersTo="#injured" as="#victim">Milice Milic</party>, uz medicinsku dokumentaciju i nalaz vještaka medicine, sud je utvrdio da su počinjeni događaji i povrede u punom smislu ispunili elemente krivičnog djela nasilje u porodici ili u porodičnoj zajednici.
+        </p>
+        <p>
+          - Budući da je okrivljeni priznao djelo, iskazao kajanje i izrazio želju da ublaži posljedice, sud je cijenio priznanje i okolnosti te zaključio da je ispunjena krucijalna okolnost za eventualnu uslovnu osudu.
+        </p>
+        <p class="subtitle">USLOVNU OSUDU</p>
+        <p>
+          Kojom mu utvrđuje kaznu zatvora u trajanju od 2 (dva) mjeseca, uz mogućnost da se ista neće izvršiti ako okrivljeni u roku od 1 (jedne) godine od pravosnažnosti presude ne počini novo krivično djelo i ako se ispuni uslov vezan za korektno ponašanje.
+        </p>
+        <p>
+          Okrivljenom se obavezuje da u roku od 30 dana od dana pravosnažnosti presude plati uzdržavanje Milici Milic na mjesečnom osnovnom iznosu koji će biti utvrđen posebnim rješenjem suda, te da troškove postupka i troškove vještačenja plati u skladu sa zakonom, u ukupnom iznosu koji će biti definisan posebnim rješenjem.
+        </p>
+        <p>
+          Imovinsko-pravni zahtjev nije bilo.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">O b r a z l o ž e n j e</p>
+        <p>
+          Optužnim predlogom <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Bijelom Polju</organization>, KT. br. 002/25 od 31.08.2025. godine, okrivljenom
+          <party id="defendant" refersTo="#defendant" as="#defendantRole">Dusan Vukovic</party> optužen je za krivično djelo nasilje u porodici ili u porodičnoj zajednici iz čl. 222 st. 1 Krivičnog zakonika CG.
+        </p>
+        <p>
+          Glavni pretres je održan u prisustvu savjetnika u odbrani i oštećene Milice Milic, te je provedeno dokazivanje putem iskaza oštećene, svjedoka i vještačkog nalaza. Priznanje okrivljenog i izvođeni dokazi potvrđuju izvođenje djela.
+        </p>
+        <p>
+          Shodno čl. 42 Krivičnog zakonika i ostalim relevantnim odredbama, sud je u vezi sa uslovnom osudom ocijenio da postoji svrha kažnjavanja i prevencija ponavljanja.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>
+      <p class="subtitle">Dana 31.08.2025. godine</p>
+      <p>ZAPISNIČAR, S U D I J A,</p>
+      <p>
+        <party id="clerk" refersTo="#clerk" as="#clerkRole">Anja Ducic</party>, 
+        <party id="judge" refersTo="#judge" as="#judgeRole">Anja Lovric</party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

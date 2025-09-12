@@ -80,7 +80,12 @@ export class VerdictFormComponent {
     this.allowVerdict = true;
   }
 
-   openVerdict(caseName: string): void {
+  openVerdict(caseName: string): void {
+    const url = this.verdictService.getVerdictFileUrl(caseName);
+    window.open(url, '_blank');
+  }
+  
+   openCreatedVerdict(caseName: string): void {
 
     setTimeout(() => {
       const url = this.verdictService.getVerdictFileUrl(caseName);

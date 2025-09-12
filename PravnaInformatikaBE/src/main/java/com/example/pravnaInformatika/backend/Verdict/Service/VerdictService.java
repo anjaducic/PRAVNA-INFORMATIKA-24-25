@@ -1,14 +1,18 @@
 package com.example.pravnaInformatika.backend.Verdict.Service;
 
+import com.example.pravnaInformatika.backend.Verdict.CBR.VerdictCBRService;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictCreateDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
 import com.example.pravnaInformatika.backend.Verdict.Repository.VerdictRepository;
+import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -29,6 +33,9 @@ public class VerdictService {
 
     @Value("${api_key}")
     private String api_Key;
+
+    @Autowired
+    private VerdictCBRService verdictCBRService;
 
     public List<Verdict> getAll() {
 
@@ -110,7 +117,7 @@ public class VerdictService {
         return value.equalsIgnoreCase("TRUE");
     }
 
-    public String createVerdict(VerdictCreateDTO verdict) {
+    public String createVerdict(VerdictCreateDTO verdict) throws ExecutionException {
         //generate verdict text and save to xml and html file
         String generateResponse = generateVerdictText(verdict);
         if (generateResponse == null) return null;
@@ -121,7 +128,7 @@ public class VerdictService {
         return verdict.getCaseName();
     }
 
-    private String generateVerdictText(VerdictCreateDTO verdict) {
+    private String generateVerdictText(VerdictCreateDTO verdict) throws ExecutionException {
         OpenAIClient client = OpenAIOkHttpClient.builder()
                 .apiKey(api_Key)
                 .build();
@@ -1016,7 +1023,7 @@ public class VerdictService {
                         "    </conclusions>\n" +
                         "  </judgment>\n" +
                         "</akomaNtoso>")
-                .addUserMessage("Generate me a verdict in akomontoso format. I sent you tree examples of the format, use them as a model. Write text in MONTENEGRIN language. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
+                .addUserMessage("Generate me a verdict in akomontoso format. Pay attention to use tags correctly! I sent you tree examples of the format, use them as a model. Write text in MONTENEGRIN language. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
                 .model(ChatModel.GPT_5_NANO)
                 .build();
 
@@ -1033,6 +1040,9 @@ public class VerdictService {
         String convertResult = convertXMLtoHTML(verdict.getCaseName());
         if (saveResult == null || convertResult == null) {return null;}
 
+        verdictCBRService.addCaseToBase(convertToDTO(verdict));
+        addToMetadata(verdict);
+        addToAttributes(verdict);
         return llmResponse;
     }
 
@@ -1090,6 +1100,54 @@ public class VerdictService {
         return null;
     }
 
+    private VerdictDTO convertToDTO(VerdictCreateDTO verdict) {
+        VerdictDTO dto = new VerdictDTO();
+        dto.setCaseName(verdict.getCaseName());
+        dto.setAccountability(verdict.getAccountability());
+        dto.setAcknowledged(verdict.getAcknowledged());
+        dto.setCorrectBehavior(verdict.getCorrectBehavior());
+        dto.setConvicted(verdict.getConvicted());
+        dto.setMaintenance(verdict.getMaintenance());
+        dto.setFinancialStatus(verdict.getFinancialStatus());
+        dto.setInjuredCriminalProsecution(verdict.getInjuredCriminalProsecution());
+        dto.setInjuryType(verdict.getInjuryType());
+        dto.setIntentional(verdict.getIntentional());
+        dto.setPreviousFamilyIssues(verdict.getPreviousFamilyIssues());
+        dto.setRepentance(verdict.getRepentance());
+        dto.setPropertyClaim(verdict.getPropertyClaim());
 
+        return dto;
+    }
 
+    private void addToMetadata(VerdictCreateDTO verdict) {
+        String filePath = "src/main/resources/static/Verdicts/metadata/verdicts_metadata.csv";
+        String[] values = {verdict.getCaseName(), verdict.getCourt(), verdict.getJudge(), verdict.getClerk(), verdict.getDefendant(), verdict.getProsecutorAttorney(), verdict.getDefenseAttorney(), verdict.getInjuredParty(), verdict.getLegalRepresentative(), verdict.getExpert(), verdict.getParticipants(), verdict.getOrganizations(), verdict.getDate()};
+
+        String newRow = String.join(",", values);
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true))) {
+//            bw.newLine();
+            bw.write(newRow);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addToAttributes(VerdictCreateDTO verdict) {
+        String filePath = "src/main/resources/static/Verdicts/Atributes.csv";
+        String[] values = {verdict.getCaseName(), verdict.getAcknowledged().toString(), verdict.getConvicted().toString(),
+        verdict.getFinancialStatus(), verdict.getMaintenance().toString(), verdict.getRepentance().toString(), verdict.getPreviousFamilyIssues().toString(),
+                verdict.getInjuryType(), verdict.getCorrectBehavior().toString(), verdict.getInjuredCriminalProsecution().toString(),
+                verdict.getPropertyClaim().toString(), verdict.getAccountability(), verdict.getIntentional().toString()
+        };
+
+        String newRow = String.join(",", values);
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true))) {
+//            bw.newLine();
+            bw.write(newRow);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -8,6 +8,7 @@ import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictDTO;
 import com.example.pravnaInformatika.backend.Verdict.DTO.VerdictMetadataDTO;
 import com.example.pravnaInformatika.backend.Verdict.Model.Verdict;
 import com.example.pravnaInformatika.backend.Verdict.Service.VerdictService;
+import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.InputStreamResource;
@@ -84,7 +85,7 @@ public class VerdictController {
     }
 
     @PostMapping("/generate")
-    public ResponseEntity<CreatedVerdtictDTO> createVerdict(@RequestBody VerdictCreateDTO verdict) throws IOException {
+    public ResponseEntity<CreatedVerdtictDTO> createVerdict(@RequestBody VerdictCreateDTO verdict) throws IOException, ExecutionException {
         String fileName = verdictService.createVerdict(verdict); //creates verdict and returns html filename of new verdict
 
         if (fileName == null) {return ResponseEntity.internalServerError().build();}
