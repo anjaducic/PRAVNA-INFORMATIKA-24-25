@@ -27,7 +27,8 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/api/verdict/**").permitAll() //Ovde dodati za svaki novi controller, kako ne bismo dobijali 403 forbidden error
-                        .anyRequest().authenticated()
+                        .requestMatchers("/api/rdf-input/**").permitAll()
+                        .anyRequest().permitAll()
                 )
                 .httpBasic(httpBasic -> httpBasic
                 .authenticationEntryPoint(authenticationEntryPoint()) // Returns 401 instead of 403 forbidden
