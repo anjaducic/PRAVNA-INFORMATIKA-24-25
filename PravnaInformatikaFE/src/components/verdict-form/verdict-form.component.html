@@ -7,8 +7,8 @@
       <h3>Osnovni podaci:</h3>
       <label></label>
       <label>Naziv predmeta:*</label>
-      <input [(ngModel)]="metadata.caseName" name="caseName" pattern="^G \d{1,3}-\d{1,4}$" #caseName="ngModel"
-        placeholder="G 123-1234">
+      <input [(ngModel)]="metadata.caseName" name="caseName" pattern="^G_\d{1,3}-\d{1,4}$" #caseName="ngModel"
+        placeholder="G_123-1234">
 
       <label>Datum:*</label>
       <input type="date" [(ngModel)]="metadata.date" name="date" [max]="today" required>
@@ -131,7 +131,7 @@
           <span class="arrow" [class.open]="dropdownStates.article221">▼</span>
         </button>
         <div class="dropdown-options" *ngIf="dropdownStates.article221">
-          <div *ngFor="let option of article221Options" class="dropdown-option"
+          <div *ngFor="let option of articleOptions.article221" class="dropdown-option"
             (click)="toggleOption('article221', option.value)">
             <input type="checkbox" [checked]="selectedConditions.article221.includes(option.value)">
             <span>{{ option.label }}</span>
@@ -148,7 +148,7 @@
           <span class="arrow" [class.open]="dropdownStates.article222">▼</span>
         </button>
         <div class="dropdown-options" *ngIf="dropdownStates.article222">
-          <div *ngFor="let option of article222Options" class="dropdown-option"
+          <div *ngFor="let option of articleOptions.article222" class="dropdown-option"
             (click)="toggleOption('article222', option.value)">
             <input type="checkbox" [checked]="selectedConditions.article222.includes(option.value)">
             <span>{{ option.label }}</span>
@@ -157,7 +157,7 @@
       </div>
 
       <!-- Article 216 -->
-      <label>Omogućavanje uživanja opojnih droga:</label>
+      <label>Vanbračna zajednica sa maloletnikom:</label>
       <div class="custom-dropdown">
         <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article216')">
           <span>{{ selectedConditions.article216.length > 0 ? selectedConditions.article216.length + ' izabrano' :
@@ -165,7 +165,7 @@
           <span class="arrow" [class.open]="dropdownStates.article216">▼</span>
         </button>
         <div class="dropdown-options" *ngIf="dropdownStates.article216">
-          <div *ngFor="let option of article216Options" class="dropdown-option"
+          <div *ngFor="let option of articleOptions.article216" class="dropdown-option"
             (click)="toggleOption('article216', option.value)">
             <input type="checkbox" [checked]="selectedConditions.article216.includes(option.value)">
             <span>{{ option.label }}</span>
@@ -174,7 +174,7 @@
       </div>
 
       <!-- Article 217 -->
-      <label>Odvođenje maloletnog lica:</label>
+      <label>Oduzimanje deteta:</label>
       <div class="custom-dropdown">
         <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article217')">
           <span>{{ selectedConditions.article217.length > 0 ? selectedConditions.article217.length + ' izabrano' :
@@ -182,7 +182,7 @@
           <span class="arrow" [class.open]="dropdownStates.article217">▼</span>
         </button>
         <div class="dropdown-options" *ngIf="dropdownStates.article217">
-          <div *ngFor="let option of article217Options" class="dropdown-option"
+          <div *ngFor="let option of articleOptions.article217" class="dropdown-option"
             (click)="toggleOption('article217', option.value)">
             <input type="checkbox" [checked]="selectedConditions.article217.includes(option.value)">
             <span>{{ option.label }}</span>
@@ -199,7 +199,7 @@
           <span class="arrow" [class.open]="dropdownStates.article220">▼</span>
         </button>
         <div class="dropdown-options" *ngIf="dropdownStates.article220">
-          <div *ngFor="let option of article220Options" class="dropdown-option"
+          <div *ngFor="let option of articleOptions.article220" class="dropdown-option"
             (click)="toggleOption('article220', option.value)">
             <input type="checkbox" [checked]="selectedConditions.article220.includes(option.value)">
             <span>{{ option.label }}</span>

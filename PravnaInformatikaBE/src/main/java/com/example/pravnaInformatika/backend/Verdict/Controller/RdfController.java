@@ -1,6 +1,7 @@
 package com.example.pravnaInformatika.backend.Verdict.Controller;
 
 import com.example.pravnaInformatika.backend.Verdict.DTO.RdfInputDTO;
+import com.example.pravnaInformatika.backend.Verdict.DTO.RdfResponse;
 import com.example.pravnaInformatika.backend.Verdict.Service.RdfService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -22,22 +23,26 @@ public class RdfController {
 
 
     @PostMapping("/generate-rdf")
-    public ResponseEntity<Map<String, String>> generateAndSaveRdf(@RequestBody RdfInputDTO request) {
+    public ResponseEntity<RdfResponse> generateAndSaveRdf(@RequestBody RdfInputDTO request) {
         try {
             String rdfContent = rdfGeneratorService.generateRdfForCase(request);
             String filePath = rdfGeneratorService.saveRdfToFile(rdfContent, "facts.rdf");
 
-            Map<String, String> response = new HashMap<>();
-            response.put("message", "facts.rdf generated and saved successfully");
-            response.put("filePath", filePath);
-            response.put("fileName", "facts.rdf");
-            response.put("caseName", request.getCaseName());
-
+            RdfResponse response = new RdfResponse(
+                    "facts.rdf generated, saved successfully, and dr-device executed",
+                    filePath,
+                    "facts.rdf",
+                    request.getCaseName()
+            );
             return ResponseEntity.ok(response);
 
         } catch (Exception e) {
-            Map<String, String> errorResponse = new HashMap<>();
-            errorResponse.put("error", "Error generating RDF: " + e.getMessage());
+            RdfResponse errorResponse = new RdfResponse(
+                    "Error generating RDF: " + e.getMessage(),
+                    null,
+                    null,
+                    request.getCaseName()
+            );
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorResponse);
         }
     }

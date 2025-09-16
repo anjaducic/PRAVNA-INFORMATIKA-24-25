@@ -6,14 +6,15 @@ import { Verdict } from '../../model/verdict.model';
 import { VerdictService } from '../../services/verdict.service';
 import { Observable, of } from 'rxjs';
 import { VerdictSimilarity } from '../../model/verdict-similarity.model';
-import { MatSelectModule } from '@angular/material/select';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { ArticleViolations } from '../../model/articles-violation-model';
+import { ARTICLE_OPTIONS } from '../../model/articles-options.constants';
+import { RdfService } from '../../services/rdf.service';
+import { RdfInputDTO } from '../../model/rdfDTO-model';
 
 @Component({
   selector: 'app-verdict-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, MatSelectModule, MatFormFieldModule, MatInputModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './verdict-form.component.html',
   styleUrls: ['./verdict-form.component.css']
 })
@@ -51,55 +52,15 @@ export class VerdictFormComponent {
     intentional: false,
   };
 
+  selectedConditions: ArticleViolations = {
+    article221: [],
+    article222: [],
+    article216: [],
+    article217: [],
+    article220: []
+  };
 
-  selectedConditions: {  //Definisemo svaki artikal kao prazan niz (posto je multipleSelect niz)
-    article221: string[];
-    article222: string[];
-    article216: string[];
-    article217: string[];
-    article220: string[];
-  } = {
-      article221: [],
-      article222: [],
-      article216: [],
-      article217: [],
-      article220: []
-    };
-
-  //Opcije definisemo ovde za dropdown
-  article221Options = [
-    { value: 'fails_to_provide_support', label: 'Ne daje izdržavanje' },
-    { value: 'support_duty_legally_established', label: 'Obaveza izdržavanja pravno ustanovljena' },
-    { value: 'severe_consequences_occurred', label: 'Nastupile teške posledice' }
-  ];
-
-  article222Options = [
-    { value: 'violates_family_obligations', label: 'Krši porodične obaveze' },
-    { value: 'family_member_left_in_hardship', label: 'Član porodice ostavljen u nevolji' },
-    { value: 'severe_health_damage_occurred', label: 'Nastupila teška šteta po zdravlje' },
-    { value: 'family_member_died', label: 'Član porodice je umro' }
-  ];
-
-  article216Options = [
-    { value: 'is_adult', label: 'Punoletan je' },
-    { value: 'lives_in_extramarital_union_with_minor', label: 'Živi u vanbračnoj zajednici sa maloletnim licem' },
-    { value: 'is_parent_or_guardian', label: 'Roditelj ili staratelj' },
-    { value: 'enables_minor_extramarital_union', label: 'Omogućava maloletnom licu vanbračnu zajednicu' },
-    { value: 'used_force_threat_or_greed', label: 'Koristio silu, pretnju ili koristoljublje' }
-  ];
-
-  article217Options = [
-    { value: 'unlawfully_handles_child_custody', label: 'Nezakonito rukuje čuvanjem deteta' },
-    { value: 'prevents_contact_execution', label: 'Sprečava izvršavanje kontakta' },
-    { value: 'endangered_child_wellbeing', label: 'Ugrožava blagostanje deteta' }
-  ];
-
-  article220Options = [
-    { value: 'commits_domestic_violence', label: 'Čini nasilje u porodici' },
-    { value: 'used_weapon_or_child_present', label: 'Koristio oružje ili u prisustvu deteta' },
-    { value: 'caused_severe_injury_or_against_child', label: 'Prouzrokovao tešku povredu ili protiv deteta' },
-    { value: 'violates_domestic_violence_protection_order', label: 'Krši zaštitnu meru nasilja u porodici' }
-  ];
+  articleOptions = ARTICLE_OPTIONS; //  Ovde smo definisali opcije pa samo importujemo
 
   dropdownStates = {
     article221: false,
@@ -108,6 +69,7 @@ export class VerdictFormComponent {
     article217: false,
     article220: false
   };
+
 
   // Gledamo da li je kliknuto van dropdown, ako jeste, onda ga zatvori
   @HostListener('document:click', ['$event'])
@@ -141,13 +103,13 @@ export class VerdictFormComponent {
     }
   }
 
-  getSelectedOptionsDisplay(article: keyof typeof this.selectedConditions): string {
+  getSelectedOptionsDisplay(article: keyof ArticleViolations): string {
     const selected = this.selectedConditions[article];
     if (selected.length === 0) {
       return 'Izaberite opcije...';
     }
 
-    const optionsMap = this.getOptionsForArticle(article);
+    const optionsMap = this.articleOptions[article];
     const selectedLabels = selected.map(value =>
       optionsMap.find(opt => opt.value === value)?.label || value
     );
@@ -155,27 +117,17 @@ export class VerdictFormComponent {
     return selectedLabels.join(', ');
   }
 
-  getOptionsForArticle(article: keyof typeof this.selectedConditions) { //Uzmi opcije za svaki artikal po id
-    switch (article) {
-      case 'article221': return this.article221Options;
-      case 'article222': return this.article222Options;
-      case 'article216': return this.article216Options;
-      case 'article217': return this.article217Options;
-      case 'article220': return this.article220Options;
-      default: return [];
-    }
-  }
-
-  isOptionSelected(article: keyof typeof this.selectedConditions, value: string): boolean {
+  isOptionSelected(article: keyof ArticleViolations, value: string): boolean {
     return this.selectedConditions[article].includes(value);
   }
+
 
   get today(): string {
     return new Date().toISOString().split('T')[0];
   }
 
 
-  constructor(private verdictService: VerdictService) { }
+  constructor(private verdictService: VerdictService, private rdfService: RdfService) { }
 
   similarVerdicts$: Observable<VerdictSimilarity[]> = of([]);
 
@@ -184,14 +136,55 @@ export class VerdictFormComponent {
   executeReasoning() {
     console.log('Metapodaci:', this.metadata);
     console.log('Atributi:', this.attributes);
+    console.log('Izabrani članci zakona:', this.selectedConditions);
+
 
     this.attributes.caseName = this.metadata.caseName;
 
     this.similarVerdicts$ = this.verdictService.findTop5Similar(this.attributes);
 
+    //Generisemo rdf iz forme
+    this.generateRdfFromSelectedArticles();
+
   }
   openVerdict(caseName: string): void {
     const url = this.verdictService.getVerdictFileUrl(caseName);
     window.open(url, '_blank');
+  }
+
+
+  generateRdfFromSelectedArticles(): void {
+    const hasArticleViolations = Object.values(this.selectedConditions).some(article => article.length > 0);
+
+    if (!hasArticleViolations) {
+      console.log('Nema izabranih prekršaja iz članova zakona - preskačemo generisanje RDF-a');
+      return;
+    }
+
+    const violations: { [key: string]: boolean } = {};
+
+    Object.values(this.selectedConditions).flat().forEach(violation => {
+      violations[violation] = true;
+    });
+
+    const rdfInput: RdfInputDTO = {
+      caseName: this.metadata.caseName,
+      defendant: this.metadata.defendant,
+      dependent: this.metadata.injuredParty,
+      violations: violations // Multiple select iz dropdowna, za nasih 5 artikala koji su modelovani
+    };
+
+    console.log('Generisanje RDF sa članovima zakona:', rdfInput);
+
+    this.rdfService.generateRdf(rdfInput).subscribe({
+      next: (response) => {
+        console.log('RDF uspešno generisan sa članovima zakona:', response);
+        // alert(`RDF fajl kreiran sa izabranim članovima!\nLokacija: ${response.filePath}`);
+      },
+      error: (error) => {
+        console.error('Greška pri generisanju RDF sa članovima:', error);
+        alert('Greška pri kreiranju RDF fajla sa članovima zakona.');
+      }
+    });
   }
 }

@@ -3,6 +3,7 @@ package com.example.pravnaInformatika.backend.Verdict.Service;
 import com.example.pravnaInformatika.backend.Verdict.DTO.RdfInputDTO;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -25,11 +26,10 @@ public class RdfService {
 
     private static final String RDF_FOOTER = "</rdf:RDF>";
 
-    public String generateRdfForCase(RdfInputDTO caseData) {
+    public String generateRdfForCase(RdfInputDTO caseData) {    //  Pravimo vestacki facts.rdf, koji nam sluzi kao input za dr-device
         StringBuilder rdf = new StringBuilder();
         rdf.append(RDF_HEADER);
 
-        // Case opening tag
         rdf.append(String.format("""
             
                 <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#%s">
@@ -52,21 +52,45 @@ public class RdfService {
     }
 
     public String saveRdfToFile(String rdfContent, String fileName) throws IOException {
-        // Create directory if it doesn't exist
         Path directory = Paths.get(RDF_OUTPUT_DIRECTORY);
         if (!Files.exists(directory)) {
             Files.createDirectories(directory);
         }
 
-        // Full file path
         String fullPath = RDF_OUTPUT_DIRECTORY + fileName;
 
-        // Write content to file
         try (FileWriter writer = new FileWriter(fullPath)) {
             writer.write(rdfContent);
         }
 
+        try {
+            startDrDevice();    //  Pokrecemo dr-device nakon sto je fajl facts.rdf napravljen
+        } catch (Exception e) {
+            // File was saved successfully, but dr-device failed
+            throw new IOException("RDF file saved successfully, but dr-device execution failed: " + e.getMessage(), e);
+        }
+
         return fullPath;
+    }
+
+
+    private void startDrDevice() throws IOException, InterruptedException {
+        ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "clean.bat && start.bat");
+        processBuilder.directory(new File(RDF_OUTPUT_DIRECTORY));
+
+        // Sav output od dr-device sklonimo, da nam proces ne bi zapucao. Ovaj output je ustvari sta se ispisuje u konzoli kad pokrenemo dr-device, nije korisno
+        processBuilder.redirectOutput(ProcessBuilder.Redirect.DISCARD);
+        processBuilder.redirectError(ProcessBuilder.Redirect.DISCARD);
+
+        Process process = processBuilder.start();
+        int exitCode = process.waitFor();
+
+        System.out.println("DR-Device finished with exit code: " + exitCode);
+
+        File exportFile = new File(RDF_OUTPUT_DIRECTORY + "export.rdf");
+        if (exportFile.exists()) {
+            System.out.println("SUCCESS: export.rdf created!");
+        }
     }
 
     private void addViolations(StringBuilder rdf, RdfInputDTO caseData) {
@@ -99,6 +123,7 @@ public class RdfService {
         addBooleanPropertyIfTrue(rdf, violations, "commits_domestic_violence");
         addBooleanPropertyIfTrue(rdf, violations, "used_weapon_or_child_present");
         addBooleanPropertyIfTrue(rdf, violations, "caused_severe_injury_or_against_child");
+        addBooleanPropertyIfTrue(rdf, violations, "family_member_died");
         addBooleanPropertyIfTrue(rdf, violations, "violates_domestic_violence_protection_order");
     }
 

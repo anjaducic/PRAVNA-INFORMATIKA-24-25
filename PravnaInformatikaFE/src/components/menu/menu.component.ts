@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { VerdictFormComponent } from '../verdict-form/verdict-form.component';
@@ -8,13 +8,13 @@ import { filter } from 'rxjs';
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule],  
+  imports: [CommonModule],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
 
-   constructor(private router: Router, private dialog: MatDialog) {} 
+  constructor(private router: Router, private dialog: MatDialog) { }
 
   menuOptions = [
     'Pregled presuda',
@@ -39,13 +39,13 @@ export class MenuComponent implements OnInit {
   setActive(option: string) {
     this.activeOption = option;
 
-    if(option === 'Pregled presuda') {
+    if (option === 'Pregled presuda') {
       this.router.navigate(['']);
     }
 
 
-    if(option === 'Unos podataka o slučaju') {
-      this.router.navigate(['unos-slucaja']); 
+    if (option === 'Unos podataka o slučaju') {
+      this.router.navigate(['unos-slucaja']);
     }
   }
 }
