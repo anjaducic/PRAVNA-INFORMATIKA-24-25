@@ -127,7 +127,7 @@ def verdict_xml_to_html(xml_file, output_html):
     with open(output_html, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-
+    return html_content
 
 
 
@@ -353,7 +353,10 @@ if __name__ == "__main__":
 
     print(f"Obrada fajla: {filename}")
     try:
-        verdict_xml_to_html(input_path, output_path)
+        verdictHTML = verdict_xml_to_html(input_path, output_path)
         print(f"Generisan HTML: {output_path}")
+        print("===HTML_START===")
+        print(verdictHTML)
+        print("===HTML_END===")
     except Exception as e:
         print(f"Greska pri obradi fajla {filename}: {e}")

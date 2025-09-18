@@ -119,13 +119,8 @@ public class VerdictService {
 
     public String createVerdict(VerdictCreateDTO verdict) throws ExecutionException {
         //generate verdict text and save to xml and html file
-        String generateResponse = generateVerdictText(verdict);
-        if (generateResponse == null) return null;
-
-        //save in csv
-
         //return verdict html name
-        return verdict.getCaseName();
+        return generateVerdictText(verdict);
     }
 
     private String generateVerdictText(VerdictCreateDTO verdict) throws ExecutionException {
@@ -1023,7 +1018,32 @@ public class VerdictService {
                         "    </conclusions>\n" +
                         "  </judgment>\n" +
                         "</akomaNtoso>")
-                .addUserMessage("Generate me a verdict in akomontoso format. Pay attention to use tags correctly! I sent you tree examples of the format, use them as a model. Write text in MONTENEGRIN language. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
+                .addDeveloperMessage("This is the translation of parameters of verdict into Montenegrin: caseName = presuda;\n" +
+                        "court = sud;\n" +
+                        "judge = sudija;\n" +
+                        "clerk = zapisničar;\n" +
+                        "defendant = okrivljeni;\n" +
+                        "prosecutorAttorney = zastupnik optužbe;\n" +
+                        "defenseAttorney = zastupnik okrivljene;\n" +
+                        "injuredParty = oštećeni;\n" +
+                        "legalRepresentative = pravni zastupnik;\n" +
+                        "expert = ekspert;\n" +
+                        "participants = učesnici;\n" +
+                        "organizations = organizacije;\n" +
+                        "date = datum;\n" +
+                        "acknowledged = priznao;\n" +
+                        "convicted = osudjivan;\n" +
+                        "financialStatus = materijalno stanje;\n" +
+                        "maintenance = izdržavanje;\n" +
+                        "repentance = kajanje;\n" +
+                        "previousFamilyIssues = prethodni porodični problem;\n" +
+                        "injuryType = tip povrede;\n" +
+                        "correctBehavior = korektno držanje;\n" +
+                        "injuredCriminalProsecution = oštećeni goni krivično;\n" +
+                        "propertyClaim = imovinsko pravni zahtjev;\n" +
+                        "accountability = uračunljivost;\n" +
+                        "intentional = sa umišljajem;")
+                .addUserMessage("Generate me a verdict in akomontoso format. Pay attention to use tags correctly! I sent you three examples of the format, use them as a model. Write text in MONTENEGRIN language and use the legal terms translations I sent you. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
                 .model(ChatModel.GPT_5_NANO)
                 .build();
 
@@ -1043,7 +1063,7 @@ public class VerdictService {
         verdictCBRService.addCaseToBase(convertToDTO(verdict));
         addToMetadata(verdict);
         addToAttributes(verdict);
-        return llmResponse;
+        return convertResult;
     }
 
 
@@ -1072,23 +1092,38 @@ public class VerdictService {
                     "py", "../akomaNtoso_to_html_translator.py",
                     filename
             );
-
             pb.redirectErrorStream(true);
 
             Process process = pb.start();
 
+            StringBuilder output = new StringBuilder();
             try (BufferedReader reader = new BufferedReader(
                     new InputStreamReader(process.getInputStream()))) {
                 String line;
                 while ((line = reader.readLine()) != null) {
-                    System.out.println(line);
+                    output.append(line).append("\n");
                 }
             }
 
             int exitCode = process.waitFor();
             if (exitCode == 0) {
                 System.out.println("✅ HTML fajl uspešno kreiran!");
-                return filename;
+
+                String fullOutput = output.toString();
+
+                int start = fullOutput.indexOf("===HTML_START===");
+                int end = fullOutput.indexOf("===HTML_END===");
+
+                if (start != -1 && end != -1 && end > start) {
+                    String htmlContent = fullOutput.substring(
+                            start + "===HTML_START===".length(),
+                            end
+                    ).trim();
+                    return htmlContent;
+                } else {
+                    System.out.println("⚠️ HTML marker nije pronađen u outputu.");
+                    return null;
+                }
             } else {
                 System.out.println("⚠️ Greška u konverziji, exit code: " + exitCode);
                 return null;
@@ -1099,6 +1134,7 @@ public class VerdictService {
         }
         return null;
     }
+
 
     private VerdictDTO convertToDTO(VerdictCreateDTO verdict) {
         VerdictDTO dto = new VerdictDTO();

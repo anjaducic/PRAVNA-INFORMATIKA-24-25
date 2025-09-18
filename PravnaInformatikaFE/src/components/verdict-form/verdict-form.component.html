@@ -173,8 +173,8 @@
     <p class="loading-spinner">Molimo sačekajte, generisanje može potrajati nekoliko minuta...</p>
   </div>
 
-  <div *ngIf="!loading && fileName" class="spinner-overlay">
-    <button class="fancy-btn" (click)="openCreatedVerdict(fileName)">Pogledajte presudu</button>
+  <div *ngIf="!loading && newVerdictHTML" class="spinner-overlay">
+    <button class="fancy-btn" (click)="openCreatedVerdict(newVerdictHTML)">Pogledajte presudu</button>
   </div>
 
   <div class="actions">

@@ -58,7 +58,7 @@ export class VerdictFormComponent {
 
   allowVerdict: boolean = false;
   loading: boolean = false;
-  fileName: string = "";
+  newVerdictHTML: string = "";
 
   get today(): string {
     return new Date().toISOString().split('T')[0];
@@ -85,13 +85,20 @@ export class VerdictFormComponent {
     window.open(url, '_blank');
   }
   
-   openCreatedVerdict(caseName: string): void {
+   openCreatedVerdict(verdictHTML: string): void {
 
-    setTimeout(() => {
-      const url = this.verdictService.getVerdictFileUrl(caseName);
-      window.open(url, '_blank');
-      this.router.navigate(['']);
-    }, 2000)
+    // setTimeout(() => {
+    //   const url = this.verdictService.getVerdictFileUrl(caseName);
+    //   window.open(url, '_blank');
+    // }, 2000)
+    const newWindow = window.open('', '_blank');
+
+    if (newWindow) {
+      newWindow.document.open();
+      newWindow.document.write(verdictHTML);
+      newWindow.document.close();
+    }
+    this.router.navigate(['']);
 
   }
 
@@ -145,13 +152,16 @@ openVerdictCreateForm() {
         this.loading = true;
         this.verdictService.createVerdict(payload).subscribe({
           next: (response) => {
-            console.log('Response from backend:', response);
-            setTimeout(() => {
-              this.loading = false;
-              console.log(response.fileName);
-              this.fileName = response.fileName;
-              // this.openVerdict(response.fileName);
-            }, 125000);
+            console.log('Response from backend!');
+            // setTimeout(() => {
+            //   this.loading = false;
+            //   console.log(response.fileName);
+            //   this.fileName = response.fileName;
+            //   // this.openVerdict(response.fileName);
+            // }, 125000);
+            this.loading = false;
+            console.log(response.fileName);
+            this.newVerdictHTML = response.fileName;
           },
           error: (err) => {
             console.error('Error:', err);
