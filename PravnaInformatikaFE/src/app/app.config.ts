@@ -2,16 +2,15 @@ import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } fr
 import { provideRouter, withRouterConfig } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-import { provideHttpClient, withFetch } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideClientHydration(),
     provideHttpClient(withFetch()),
-    provideRouter(routes, withRouterConfig({ onSameUrlNavigation: 'reload' })),
-    importProvidersFrom(BrowserAnimationsModule)
+    provideRouter(routes, withRouterConfig({ onSameUrlNavigation: 'reload' })), provideAnimationsAsync()
   ]
 };
 

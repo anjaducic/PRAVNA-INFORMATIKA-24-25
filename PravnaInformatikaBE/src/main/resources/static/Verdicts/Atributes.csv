@@ -1,24 +1,22 @@
-Presuda,Priznao,Osudjivan,Materijalno_stanje,Izdrzavanje,Kajanje,Prethodni_porodicni_problemi,Tip_povrede,Korektno_drzanje,Osteceni_goni_krivicno,Imovinsko_pravni_zahtjev,Uracunljivost,Sa_umisljajem,Krsenje_porodicnih_obaveza,Nezakonito_drzanje,Vanbracna_zajednica,Nedavanje_izdrzavanja,Porodicno_nasilje
-
-K 56-21,TRUE,FALSE,Lose,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 85-18,TRUE,TRUE,Lose,FALSE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 91-22,FALSE,TRUE,Srednje,TRUE,FALSE,TRUE,Nema,TRUE,FALSE,FALSE,Uracunljiv,FALSE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 104-16,TRUE,FALSE,Lose,FALSE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 106-19,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Smanjena uracunljivost,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 113-19,TRUE,TRUE,Srednje,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 113-21,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 200-13,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 229-10,TRUE,TRUE,Srednje,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 264-11,TRUE,TRUE,Lose,TRUE,FALSE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 286-12,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,TRUE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 408-10,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 27-18,TRUE,FALSE,Lose,TRUE,FALSE,TRUE,Dusevne,TRUE,TRUE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 29-16,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-K 51-21,FALSE,TRUE,Srednje,FALSE,FALSE,TRUE,Dusevne,FALSE,TRUE,FALSE,Uracunljiv,TRUE, Nema, Nema, Nema, Nema, Osnovno krsenje
-
-
-K 13-2015,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE, Osnovno krsenje, Nema, Nema, Nema, Nema
-K 149-2019,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE, Nema, Osnovno zadrzavanje, Nema, Nema, Nema
-K 320-2022,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE, Nema, Nema, Nema, Nema, Teska povreda
-K 430-2013,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE, Nema, Nema, Nema, Osnovno, Nema
-K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRUE, Nema, Nema, Osnovni prekrsaj, Nema, Nema
+Presuda,Priznao,Osudjivan,Materijalno_stanje,Izdrzavanje,Kajanje,Prethodni_porodicni_problemi,Tip_povrede,Korektno_drzanje,Osteceni_goni_krivicno,Imovinsko_pravni_zahtjev,Uracunljivost,Sa_umisljajem
+K 56-21,TRUE,FALSE,Lose,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 85-18,TRUE,TRUE,Lose,FALSE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 91-22,FALSE,TRUE,Srednje,TRUE,FALSE,TRUE,Nema,TRUE,FALSE,FALSE,Uracunljiv,FALSE
+K 104-16,TRUE,FALSE,Lose,FALSE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 106-19,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Smanjena uracunljivost,TRUE
+K 113-19,TRUE,TRUE,Srednje,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 113-21,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 200-13,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 229-10,TRUE,TRUE,Srednje,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 264-11,TRUE,TRUE,Lose,TRUE,FALSE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 286-12,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,TRUE,FALSE,Uracunljiv,TRUE
+K 408-10,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 27-18,TRUE,FALSE,Lose,TRUE,FALSE,TRUE,Dusevne,TRUE,TRUE,FALSE,Uracunljiv,TRUE
+K 29-16,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+K 51-21,FALSE,TRUE,Srednje,FALSE,FALSE,TRUE,Dusevne,FALSE,TRUE,FALSE,Uracunljiv,TRUE
+K 13-2015,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE
+K 149-2019,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE
+K 320-2022,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE
+K 430-2013,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE
+K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRUE
+G 003-2025,true,true,Srednje,false,true,false,Nema,false,false,false,Uracunljiv,falseG 004-2025,false,false,Dobro,true,true,false,Srednje,true,false,false,Uracunljiv,falseG 005-2025,false,false,Dobro,true,true,false,Srednje,true,false,false,Uracunljiv,falseG 005-2025,false,true,Dobro,false,true,true,Lake,false,false,false,Uracunljiv,false

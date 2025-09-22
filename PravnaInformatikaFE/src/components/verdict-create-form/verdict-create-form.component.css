@@ -1,0 +1,104 @@
+/* ====== Pozadina (overlay) ====== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ====== Sadržaj modala ====== */
+.modal-content {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Animacija pri otvaranju */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ====== Naslov ====== */
+.page-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ====== Opis ====== */
+.form-description {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ====== Sekcija forme ====== */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-section label {
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.form-section input,
+.form-section select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+/* ====== Dugmad u modalu ====== */
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.fancy-btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.fancy-btn:hover {
+  transform: translateY(-1px);
+}
+
+.fancy-btn:first-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+.fancy-btn:last-child {
+  background-color: #4caf50;
+  color: white;
+}
