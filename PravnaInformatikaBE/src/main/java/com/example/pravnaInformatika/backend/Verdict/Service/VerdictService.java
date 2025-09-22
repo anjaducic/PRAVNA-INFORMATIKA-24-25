@@ -106,12 +106,6 @@ public class VerdictService {
                     dto.setAccountability(values[11]);
                     dto.setIntentional(parseBoolean(values[12]));
 
-                    //Novi atributi
-                    dto.setFamilyObligationsViolation(values[13]);
-                    dto.setExtramaritalRelationshipMinor(values[14]);
-                    dto.setUnlawfulDetention(values[15]);
-                    dto.setFamilyMemberMaintenance(values[16]);
-                    dto.setDomesticViolence(values[17]);
 
                     return dto;
                 }
