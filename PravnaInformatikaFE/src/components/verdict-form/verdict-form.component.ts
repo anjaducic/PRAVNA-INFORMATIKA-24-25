@@ -202,7 +202,7 @@ export class VerdictFormComponent {
     this.rdfService.analyzeCase(rdfInput).subscribe({
       next: (response) => {
         console.log('Odgovor od dr-device:', response); //  Ovde izvlacimo podatke iz export.rdf od dr-device, dobijamo koje glave kog clana iz zakonika je prekrsio
-        this.legalAnalysisResult = response;  // ADD THIS LINE
+        this.legalAnalysisResult = response;
         this.isAnalyzing = false;
       },
       error: (error) => {
@@ -215,10 +215,6 @@ export class VerdictFormComponent {
 
   openCreatedVerdict(verdictHTML: string): void {
 
-    // setTimeout(() => {
-    //   const url = this.verdictService.getVerdictFileUrl(caseName);
-    //   window.open(url, '_blank');
-    // }, 2000)
     const newWindow = window.open('', '_blank');
 
     if (newWindow) {

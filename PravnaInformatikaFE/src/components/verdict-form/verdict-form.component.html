@@ -243,29 +243,30 @@
         <div class="verdict-right">
           <p class="column-title">Pravne činjenice:</p>
           <div class="verdict-attributes">
-            <p *ngIf="verdict.acknowledged !== undefined">Priznao: {{ verdict.acknowledged ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.convicted !== undefined">Osuđivan: {{ verdict.convicted ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.maintenance !== undefined">Izdržavanje: {{ verdict.maintenance ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.repentance !== undefined">Kajanje: {{ verdict.repentance ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.previousFamilyIssues !== undefined">Prethodni porodični problemi: {{
-              verdict.previousFamilyIssues ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.correctBehavior !== undefined">Korektno držanje: {{ verdict.correctBehavior ? 'DA' : 'NE'
+            <p *ngIf="attributes.acknowledged !== undefined">Priznao: {{ attributes.acknowledged ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.convicted !== undefined">Osuđivan: {{ attributes.convicted ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.maintenance !== undefined">Izdržavanje: {{ attributes.maintenance ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.repentance !== undefined">Kajanje: {{ attributes.repentance ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.previousFamilyIssues !== undefined">Prethodni porodični problemi: {{
+              attributes.previousFamilyIssues ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.correctBehavior !== undefined">Korektno držanje: {{ attributes.correctBehavior ? 'DA' :
+              'NE'
               }}</p>
-            <p *ngIf="verdict.injuredCriminalProsecution !== undefined">Oštećeni goni krivično: {{
-              verdict.injuredCriminalProsecution ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.propertyClaim !== undefined">Imovinsko-pravni zahtev: {{ verdict.propertyClaim ? 'DA' :
+            <p *ngIf="attributes.injuredCriminalProsecution !== undefined">Oštećeni goni krivično: {{
+              attributes.injuredCriminalProsecution ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.propertyClaim !== undefined">Imovinsko-pravni zahtev: {{ attributes.propertyClaim ?
+              'DA' :
               'NE' }}</p>
-            <p *ngIf="verdict.intentional !== undefined">Sa umišljajem: {{ verdict.intentional ? 'DA' : 'NE' }}</p>
-            <p *ngIf="verdict.financialStatus">Materijalno stanje: {{ verdict.financialStatus }}</p>
-            <p *ngIf="verdict.injuryType">Tip povrede: {{ verdict.injuryType }}</p>
-            <p *ngIf="verdict.accountability">Uračunljivost: {{ verdict.accountability }}</p>
+            <p *ngIf="attributes.intentional !== undefined">Sa umišljajem: {{ attributes.intentional ? 'DA' : 'NE' }}
+            </p>
+            <p *ngIf="attributes.financialStatus">Materijalno stanje: {{ attributes.financialStatus }}</p>
+            <p *ngIf="attributes.injuryType">Tip povrede: {{ attributes.injuryType }}</p>
+            <p *ngIf="attributes.accountability">Uračunljivost: {{ attributes.accountability }}</p>
           </div>
           <span class="open-icon">🔗</span>
         </div>
-        </a>
-        </li>
-        </ng-container>
-        </ul>
+
+
       </div>
     </div>
 
@@ -353,12 +354,6 @@
       </div>
     </div>
 
-
-    <div class="actions">
-      <button class="fancy-btn"
-        [disabled]="!metadata.caseName ||caseName.invalid || !metadata.court || !metadata.judge || !metadata.date || !metadata.defendant || !metadata.injuredParty || !metadata.clerk"
-        (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
-    </div>
   </div>
   <div class="actions">
     <button class="fancy-btn"
