@@ -1,6 +1,7 @@
 package com.example.pravnaInformatika.backend.Verdict.Service;
 
 import com.example.pravnaInformatika.backend.Verdict.DTO.RdfInputDTO;
+import com.example.pravnaInformatika.backend.Verdict.DTO.RdfOutputDTO;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -9,7 +10,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class RdfService {
@@ -51,47 +56,45 @@ public class RdfService {
         return rdf.toString();
     }
 
-    public String saveRdfToFile(String rdfContent, String fileName) throws IOException {
-        Path directory = Paths.get(RDF_OUTPUT_DIRECTORY);
-        if (!Files.exists(directory)) {
-            Files.createDirectories(directory);
-        }
+    public RdfOutputDTO processLegalCase(RdfInputDTO caseData) throws IOException, InterruptedException {
+        String rdfContent = generateRdfForCase(caseData);   //  Napravi sablon za facts.rdf
 
-        String fullPath = RDF_OUTPUT_DIRECTORY + fileName;
+        saveRdfAndExecuteDrDevice(rdfContent, "facts.rdf"); //  Sacuvaj facts.rdf i pokreni dr-device
 
-        try (FileWriter writer = new FileWriter(fullPath)) {
-            writer.write(rdfContent);
-        }
-
-        try {
-            startDrDevice();    //  Pokrecemo dr-device nakon sto je fajl facts.rdf napravljen
-        } catch (Exception e) {
-            // File was saved successfully, but dr-device failed
-            throw new IOException("RDF file saved successfully, but dr-device execution failed: " + e.getMessage(), e);
-        }
-
-        return fullPath;
+        return parseExportResults();    //  Uzmi export iz dr-device i upisi ga u response
     }
 
+    public void saveRdfAndExecuteDrDevice(String rdfContent, String fileName) throws IOException, InterruptedException {
+        Path filePath = Paths.get(RDF_OUTPUT_DIRECTORY, fileName);
+        Files.createDirectories(filePath.getParent());
+        Files.writeString(filePath, rdfContent);
+
+        startDrDevice();
+    }
 
     private void startDrDevice() throws IOException, InterruptedException {
         ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "clean.bat && start.bat");
         processBuilder.directory(new File(RDF_OUTPUT_DIRECTORY));
 
-        // Sav output od dr-device sklonimo, da nam proces ne bi zapucao. Ovaj output je ustvari sta se ispisuje u konzoli kad pokrenemo dr-device, nije korisno
+        // Sav output od dr-device sklonimo, da nam proces ne bi zapucao. Ovaj output je ustvari sta se ispisuje u konzoli kad pokrenemo dr-device, nije jako korisno
         processBuilder.redirectOutput(ProcessBuilder.Redirect.DISCARD);
         processBuilder.redirectError(ProcessBuilder.Redirect.DISCARD);
 
         Process process = processBuilder.start();
         int exitCode = process.waitFor();
 
-        System.out.println("DR-Device finished with exit code: " + exitCode);
-
-        File exportFile = new File(RDF_OUTPUT_DIRECTORY + "export.rdf");
-        if (exportFile.exists()) {
-            System.out.println("SUCCESS: export.rdf created!");
+        if (exitCode != 0) {
+            throw new IOException("DR-Device failed with exit code: " + exitCode);
         }
+
+        Path exportFile = Paths.get(RDF_OUTPUT_DIRECTORY, "export.rdf");
+        if (!Files.exists(exportFile) || Files.size(exportFile) == 0) {
+            throw new IOException("DR-Device completed but export.rdf was not created properly");
+        }
+
+        System.out.println("SUCCESS: export.rdf created and validated!");
     }
+
 
     private void addViolations(StringBuilder rdf, RdfInputDTO caseData) {
         Map<String, Boolean> violations = caseData.getViolations();
@@ -137,5 +140,49 @@ public class RdfService {
         rdf.append(String.format("\n        <lc:%s>%s</lc:%s>",
                 property, "yes", property));
     }
+
+
+    //parsiranje exporta
+    public RdfOutputDTO parseExportResults() throws IOException {
+        File exportFile = new File(RDF_OUTPUT_DIRECTORY + "export.rdf");
+        String exportContent = Files.readString(exportFile.toPath());
+
+        List<String> violations = new ArrayList<>();
+        List<Integer> minValues = new ArrayList<>();
+        List<Integer> maxValues = new ArrayList<>();
+
+        //Parsiranje onoga sto je prekrseno
+        Pattern violationPattern = Pattern.compile("<export:(\\w+)\\s+rdf:about[^>]*>\\s*<export:defendant>([^<]+)</export:defendant>\\s*<defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>");
+        Matcher violationMatcher = violationPattern.matcher(exportContent);
+
+        while (violationMatcher.find()) {
+            String violation = violationMatcher.group(1);
+            if (!violation.contains("imprisonment")) {  //Ako ima imprisonment u nazivu, onda preskacemo, posto se ovo tice min, max kazne
+                violations.add(violation);
+            }
+        }
+
+        //  Parsiranje min prekrsaja
+        Pattern minPattern = Pattern.compile("<export:min_imprisonment[^>]*>\\s*<export:value>(\\d+)</export:value>");
+        Matcher minMatcher = minPattern.matcher(exportContent);
+        while (minMatcher.find()) {
+            minValues.add(Integer.parseInt(minMatcher.group(1)));
+        }
+
+        //  Parsiranje max prekrsaja
+        Pattern maxPattern = Pattern.compile("<export:max_imprisonment[^>]*>\\s*<export:value>(\\d+)</export:value>");
+        Matcher maxMatcher = maxPattern.matcher(exportContent);
+        while (maxMatcher.find()) {
+            maxValues.add(Integer.parseInt(maxMatcher.group(1)));
+        }
+
+        //  Dodatna logika ako je vise clanova prekrseno, kako onda ide kazna
+        int minSentence = minValues.stream().mapToInt(Integer::intValue).max().orElse(0);
+        int maxSentence = maxValues.stream().mapToInt(Integer::intValue).max().orElse(0);
+
+        return new RdfOutputDTO(violations, minSentence, maxSentence);
+    }
+
+
 }
 

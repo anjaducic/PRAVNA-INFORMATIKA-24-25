@@ -10,6 +10,7 @@ import { ArticleViolations } from '../../model/articles-violation-model';
 import { ARTICLE_OPTIONS } from '../../model/articles-options.constants';
 import { RdfService } from '../../services/rdf.service';
 import { RdfInputDTO } from '../../model/rdfDTO-model';
+import { ViolationService } from '../../services/violations.service';
 
 @Component({
   selector: 'app-verdict-form',
@@ -19,6 +20,10 @@ import { RdfInputDTO } from '../../model/rdfDTO-model';
   styleUrls: ['./verdict-form.component.css']
 })
 export class VerdictFormComponent {
+
+  legalAnalysisResult: any = null;
+  isAnalyzing: boolean = false;
+  analysisError: string = '';
 
   metadata: VerdictMetadata = {
     caseName: '',
@@ -127,20 +132,21 @@ export class VerdictFormComponent {
   }
 
 
-  constructor(private verdictService: VerdictService, private rdfService: RdfService) { }
+  constructor(private verdictService: VerdictService, private rdfService: RdfService, private violationService: ViolationService) { }
 
   similarVerdicts$: Observable<VerdictSimilarity[]> = of([]);
 
+  //  Posto sa BE dobijemo na engleskom imena, onda ih formatiramo ovako
+  formatViolationName(violation: string): string {
+    return this.violationService.translateViolation(violation);
+  }
 
   // ovdje se poziva rasudjivanje po pravilima i slucajevima
   executeReasoning() {
     console.log('Metapodaci:', this.metadata);
     console.log('Atributi:', this.attributes);
-    console.log('Izabrani članci zakona:', this.selectedConditions);
-
 
     this.attributes.caseName = this.metadata.caseName;
-
     this.similarVerdicts$ = this.verdictService.findTop5Similar(this.attributes);
 
     //Generisemo rdf iz forme
@@ -176,14 +182,20 @@ export class VerdictFormComponent {
 
     console.log('Generisanje RDF sa članovima zakona:', rdfInput);
 
-    this.rdfService.generateRdf(rdfInput).subscribe({
+    this.isAnalyzing = true;
+    this.analysisError = '';
+    this.legalAnalysisResult = null;
+
+    this.rdfService.analyzeCase(rdfInput).subscribe({
       next: (response) => {
-        console.log('RDF uspešno generisan sa članovima zakona:', response);
-        // alert(`RDF fajl kreiran sa izabranim članovima!\nLokacija: ${response.filePath}`);
+        console.log('Odgovor od dr-device:', response); //  Ovde izvlacimo podatke iz export.rdf od dr-device, dobijamo koje glave kog clana iz zakonika je prekrsio
+        this.legalAnalysisResult = response;  // ADD THIS LINE
+        this.isAnalyzing = false;
       },
       error: (error) => {
         console.error('Greška pri generisanju RDF sa članovima:', error);
-        alert('Greška pri kreiranju RDF fajla sa članovima zakona.');
+        this.analysisError = 'Greška pri kreiranju RDF fajla sa članovima zakona.';
+        this.isAnalyzing = false;
       }
     });
   }

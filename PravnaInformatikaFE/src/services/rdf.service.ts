@@ -7,10 +7,9 @@ import { RdfInputDTO } from '../model/rdfDTO-model';
 
 // Interface for the API response
 export interface RdfApiResponse {
-    message: string;
-    filePath: string;
-    fileName: string;
-    caseName: string;
+    provenViolations: string[];
+    minSentenceDays: number;
+    maxSentenceDays: number;
 }
 
 
@@ -23,8 +22,8 @@ export class RdfService {
 
     constructor(private http: HttpClient) { }
 
-    generateRdf(rdfInput: RdfInputDTO): Observable<RdfApiResponse> {
-        const url = `${this.baseUrl}/generate-rdf`;
+    analyzeCase(rdfInput: RdfInputDTO): Observable<RdfApiResponse> {
+        const url = `${this.baseUrl}/analyze-case`;
         const headers = new HttpHeaders({
             'Content-Type': 'application/json'
         });
