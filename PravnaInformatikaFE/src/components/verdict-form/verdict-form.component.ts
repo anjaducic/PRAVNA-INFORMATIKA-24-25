@@ -2,6 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { VerdictMetadata } from '../../model/verdict-metadata.model';
+import { Violation } from '../../model/violation.model';
 import { Verdict } from '../../model/verdict.model';
 import { VerdictService } from '../../services/verdict.service';
 import { Observable, of } from 'rxjs';
@@ -12,12 +13,12 @@ import { RdfService } from '../../services/rdf.service';
 import { RdfInputDTO } from '../../model/rdfDTO-model';
 import { ViolationService } from '../../services/violations.service';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { VerdictCreateFormComponent } from '../verdict-create-form/verdict-create-form.component';
 import { VerdictCreate } from '../../model/verdict-create.model';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { VerdictMainCreateFormComponent } from '../verdict-main-create-form/verdict-main-create-form.component';
 
 
 @Component({
@@ -231,7 +232,7 @@ export class VerdictFormComponent {
     if (overlayContainer) {
       overlayContainer.style.zIndex = '2000';
     }
-    const dialogRef = this.dialog.open(VerdictCreateFormComponent, {
+    const dialogRef = this.dialog.open(VerdictMainCreateFormComponent, {
       width: '1000px',
       // height: '500px',
       disableClose: true,
@@ -239,6 +240,12 @@ export class VerdictFormComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+
+        result.violations.forEach((v: Violation) => {
+        console.log(`Član ${v.articleId}, stav ${v.paragraphId}, kazna: ${v.penalty}`);
+          });
+        console.log(result.isGuilty);
+
         const payload: VerdictCreate = {
           caseName: this.metadata.caseName,
           court: this.metadata.court,
@@ -267,9 +274,8 @@ export class VerdictFormComponent {
           accountability: this.attributes.accountability,
           intentional: this.attributes.intentional,
 
-          articleId: result.articleId,
-          paragraphId: result.paragraphId,
-          penalty: result.penalty
+          violations: result.violations,
+          foundGuilty: result.isGuilty
         };
 
         console.log(payload);

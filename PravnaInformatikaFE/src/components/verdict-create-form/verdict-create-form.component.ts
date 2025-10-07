@@ -25,6 +25,6 @@ export class VerdictCreateFormComponent {
   }
 
   onSave() {
-    this.dialogRef.close({ articleId: this.articleId, paragraphId: this.paragraphId });
+    this.dialogRef.close({ articleId: this.articleId, paragraphId: this.paragraphId, penalty: this.penalty });
   }
 }

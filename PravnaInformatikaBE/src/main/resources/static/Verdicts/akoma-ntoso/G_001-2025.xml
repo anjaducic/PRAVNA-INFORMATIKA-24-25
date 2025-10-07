@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni sud u Bijelom Polju</FRBRauthor>
+          <FRBRdate date="2025-09-29">2025-09-29</FRBRdate>
+          <FRBRtitle>G_001-2025</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju"/>
+        <TLCPerson eId="alovric" href="/ontology/person/alovric" showAs="Anja Lovric"/>
+        <TLCPerson eId="aducic" href="/ontology/person/aducic" showAs="Anja Ducic"/>
+        <TLCPerson eId="dvukovic" href="/ontology/person/dvukovic" showAs="Dusan Vukovic"/>
+        <TLCPerson eId="ttatjanic" href="/ontology/person/ttatjanic" showAs="Tatjana Tatjanic"/>
+        <TLCPerson eId="pperic" href="/ontology/person/pperic" showAs="Pera Peric"/>
+        <TLCPerson eId="mmilic" href="/ontology/person/mmilic" showAs="Milica Milic"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Sudija"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Zapisničar"/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Okrivljeni"/>
+        <TLCRole eId="prosecutorAttorney" href="/ontology/role/prosecutorAttorney" showAs="Zastupnik optužbe"/>
+        <TLCRole eId="defenseAttorney" href="/ontology/role/defenseAttorney" showAs="Zastupnik okrivljene"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Oštećeni"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>
+          U IME CRNE GORE, 
+          <organization id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac 
+          <party id="alovric" refersTo="#alovric" as="#judge">Anja Lovric</party>, uz učešće zapisničara 
+          <party id="aducic" refersTo="#aducic" as="#clerk">Anja Ducic</party>, rješavajući po optužnom predlogu 
+          <party id="ttatjanic" refersTo="#ttatjanic" as="#prosecutorAttorney">Tatjana Tatjanic</party>, protiv okrivljenog 
+          <party id="dvukovic" refersTo="#dvukovic" as="#defendant">Dusan Vukovic</party>, zbog krivičnog djela, nakon održanog glavnog pretresa, dana 29. septembra 2025. godine, donio je i objavio
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">P R E S U D U</p>
+        <p>
+          Okrivljeni 
+          <party id="dvukovic" refersTo="#dvukovic" as="#defendant">Dusan Vukovic</party>, JMBG …, prema izvršenim radnjama nije priznao optužbu. Okolnosti su pokazale da su njegove materijalne prilike dobre, dok su prethodni porodični problemi nisu evidentirani, a oštećeni su odlučili da potraže pravdu.
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">K R I V J E</p>
+        <p>
+          Okrivljen je za krivično djelo nasilje u porodici ili u porodičnoj zajednici, te ga sud našao krivim za
+          <ref href="/krivicni#art_220_para_2">čl. 220 st. 2 Krivičnog zakonika Crne Gore</ref>. 
+        </p>
+        <p class="subtitle">O S U Đ U J E</p>
+        <p>
+          Kazna rada u javnom interesu u trajanju od 90 (devedeset) časova, koji rad će se obaviti u vremenskom periodu od 2 (dva) mjeseca po pravosnažnosti presude.
+        </p>
+        <p>
+          Okrivljenom se nalaže da u roku od 15 dana po pravosnažnosti presude plati iznos od 30,00 € na ime paušala, i 
+          60,50 € na ime troškova postupka, sve na račun 832-151-35.
+        </p>
+        <p>
+          Imovinsko pravnog zahtjeva nije bilo.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">O b r a z l o ž e nj e</p>
+        <p>
+          Okrivljeni <party id="dvukovic" refersTo="#dvukovic" as="#defendant">Dusan Vukovic</party> nije priznao djelo, ali su dokazi pružili dovoljnu osnovu da se potvrdi izvršenje krivičnog dijela. Također, očigledne su bile okolnosti koje su potvrdile da su oštećeni pokrenuli krivični postupak.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>
+      <p class="subtitle">Dana, 29. septembra 2025. godine</p>
+      <p>ZAPISNIČAR, S U D I J A,</p>
+      <p>
+        <party id="aducic" refersTo="#aducic" as="#clerk">Anja Ducic</party>
+        <party id="alovric" refersTo="#alovric" as="#judge">Anja Lovric</party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

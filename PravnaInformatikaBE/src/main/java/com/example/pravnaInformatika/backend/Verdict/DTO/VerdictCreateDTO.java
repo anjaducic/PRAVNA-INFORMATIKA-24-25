@@ -1,5 +1,7 @@
 package com.example.pravnaInformatika.backend.Verdict.DTO;
 
+import java.util.List;
+
 public class VerdictCreateDTO {
     private String caseName;
     private String court;
@@ -28,9 +30,58 @@ public class VerdictCreateDTO {
     private String accountability; // Uracunljivost
     private Boolean intentional; // Sa_umisljajem
 
-    private String articleId;
-    private String paragraphId;
-    private String penalty;
+    private Boolean foundGuilty;
+
+    public Boolean getFoundGuilty() {
+        return foundGuilty;
+    }
+
+    @Override
+    public String toString() {
+        return "VerdictCreateDTO{" +
+                "caseName='" + caseName + '\'' +
+                ", court='" + court + '\'' +
+                ", judge='" + judge + '\'' +
+                ", clerk='" + clerk + '\'' +
+                ", defendant='" + defendant + '\'' +
+                ", prosecutorAttorney='" + prosecutorAttorney + '\'' +
+                ", defenseAttorney='" + defenseAttorney + '\'' +
+                ", injuredParty='" + injuredParty + '\'' +
+                ", legalRepresentative='" + legalRepresentative + '\'' +
+                ", expert='" + expert + '\'' +
+                ", participants='" + participants + '\'' +
+                ", organizations='" + organizations + '\'' +
+                ", date='" + date + '\'' +
+                ", acknowledged=" + acknowledged +
+                ", convicted=" + convicted +
+                ", financialStatus='" + financialStatus + '\'' +
+                ", maintenance=" + maintenance +
+                ", repentance=" + repentance +
+                ", previousFamilyIssues=" + previousFamilyIssues +
+                ", injuryType='" + injuryType + '\'' +
+                ", correctBehavior=" + correctBehavior +
+                ", injuredCriminalProsecution=" + injuredCriminalProsecution +
+                ", propertyClaim=" + propertyClaim +
+                ", accountability='" + accountability + '\'' +
+                ", intentional=" + intentional +
+                ", foundGuilty=" + foundGuilty +
+                ", violations=" + violations +
+                '}';
+    }
+
+    public void setFoundGuilty(Boolean foundGuilty) {
+        this.foundGuilty = foundGuilty;
+    }
+
+    private List<ViolationDTO> violations;
+
+    public List<ViolationDTO> getViolations() {
+        return violations;
+    }
+
+    public void setViolations(List<ViolationDTO> violations) {
+        this.violations = violations;
+    }
 
     public String getCaseName() {
         return caseName;
@@ -232,61 +283,5 @@ public class VerdictCreateDTO {
         this.intentional = intentional;
     }
 
-    public String getArticleId() {
-        return articleId;
-    }
 
-    public void setArticleId(String articleId) {
-        this.articleId = articleId;
-    }
-
-    public String getParagraphId() {
-        return paragraphId;
-    }
-
-    public void setParagraphId(String paragraphId) {
-        this.paragraphId = paragraphId;
-    }
-
-    public String getPenalty() {
-        return penalty;
-    }
-
-    public void setPenalty(String penalty) {
-        this.penalty = penalty;
-    }
-
-    @Override
-    public String toString() {
-        return "VerdictCreateDTO{" +
-                "caseName='" + caseName + '\'' +
-                ", court='" + court + '\'' +
-                ", judge='" + judge + '\'' +
-                ", clerk='" + clerk + '\'' +
-                ", defendant='" + defendant + '\'' +
-                ", prosecutorAttorney='" + prosecutorAttorney + '\'' +
-                ", defenseAttorney='" + defenseAttorney + '\'' +
-                ", injuredParty='" + injuredParty + '\'' +
-                ", legalRepresentative='" + legalRepresentative + '\'' +
-                ", expert='" + expert + '\'' +
-                ", participants='" + participants + '\'' +
-                ", organizations='" + organizations + '\'' +
-                ", date='" + date + '\'' +
-                ", acknowledged=" + acknowledged +
-                ", convicted=" + convicted +
-                ", financialStatus='" + financialStatus + '\'' +
-                ", maintenance=" + maintenance +
-                ", repentance=" + repentance +
-                ", previousFamilyIssues=" + previousFamilyIssues +
-                ", injuryType='" + injuryType + '\'' +
-                ", correctBehavior=" + correctBehavior +
-                ", injuredCriminalProsecution=" + injuredCriminalProsecution +
-                ", propertyClaim=" + propertyClaim +
-                ", accountability='" + accountability + '\'' +
-                ", intentional=" + intentional +
-                ", articleId='" + articleId + '\'' +
-                ", paragraphId='" + paragraphId + '\'' +
-                ", penalty='" + penalty + '\'' +
-                '}';
-    }
 }

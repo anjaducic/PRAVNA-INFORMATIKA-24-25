@@ -1,3 +1,5 @@
+import { Violation } from "./violation.model";
+
 export interface VerdictCreate {
   caseName: string;
   court?: string;
@@ -26,7 +28,6 @@ export interface VerdictCreate {
   accountability?: string; // Uracunljivost
   intentional?: boolean; // Sa_umisljajem
 
-  articleId: string;
-  paragraphId: string;
-  penalty: string;
+  violations: Violation[];
+  foundGuilty: boolean;
 }

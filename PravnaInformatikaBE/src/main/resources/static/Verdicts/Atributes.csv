@@ -19,7 +19,6 @@ K 149-2019,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE
 K 320-2022,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE
 K 430-2013,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE
 K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-G 003-2025,true,true,Srednje,false,true,false,Nema,false,false,false,Uracunljiv,false
-G 004-2025,false,false,Dobro,true,true,false,Srednje,true,false,false,Uracunljiv,false
-G 005-2025,false,false,Dobro,true,true,false,Srednje,true,false,false,Uracunljiv,false
-G 006-2025,false,true,Dobro,false,true,true,Lake,false,false,false,Uracunljiv,false
+G_001-2025,FALSE,FALSE,Dobro,FALSE,TRUE,FALSE,Nema,TRUE,TRUE,FALSE,Uracunljiv,FALSE
+G_002-2025,false,false,Dobro,true,false,true,Nema,false,true,false,Uracunljiv,false
+G_003-2025,false,false,Dobro,false,true,false,Nema,false,true,false,Uracunljiv,false

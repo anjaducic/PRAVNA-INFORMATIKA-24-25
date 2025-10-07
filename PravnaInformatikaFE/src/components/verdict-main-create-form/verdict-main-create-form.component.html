@@ -1,0 +1,33 @@
+<div class="modal-content">
+  <h2 class="page-title">Unos presude</h2>
+
+  <p class="form-description">
+    Odaberite da li je lice krivo ili nije krivo, i po potrebi dodajte prekršene zakone.
+  </p>
+
+  <div class="verdict-section">
+    <button class="fancy-btn" [class.active]="isGuilty === true" (click)="setVerdict(true)">
+     Kriv
+    </button>
+    <button class="fancy-btn" [class.active]="isGuilty === false" (click)="setVerdict(false)">
+     Nije kriv
+    </button>
+  </div>
+
+  <div *ngIf="isGuilty === true" class="violations-section">
+    <h3>Prekršeni zakoni</h3>
+    <ul class="violations-list">
+      <li *ngFor="let v of violations; let i = index">
+        <span>Član {{ v.articleId }}, stav {{ v.paragraphId }}, kazna: {{ v.penalty }}</span>
+        <button class="remove-btn" (click)="removeViolation(i)">🗑️</button>
+      </li>
+    </ul>
+
+    <button class="fancy-btn add-btn" (click)="addViolation()">➕ Dodaj prekršeni zakon</button>
+  </div>
+
+  <div class="modal-actions">
+    <button class="fancy-btn" (click)="onCancel()">❌ Odustani</button>
+    <button class="fancy-btn" (click)="onSave()" [disabled]="isGuilty === null">💾 Sačuvaj</button>
+  </div>
+</div>
