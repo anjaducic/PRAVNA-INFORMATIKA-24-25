@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
+
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_12-2012">
+        <lc:name>G_12-2012</lc:name>
+        <lc:defendant>q</lc:defendant>
+        <lc:dependent>q</lc:dependent>
+
+        <lc:commits_domestic_violence>yes</lc:commits_domestic_violence>
+    </lc:case>
+</rdf:RDF>

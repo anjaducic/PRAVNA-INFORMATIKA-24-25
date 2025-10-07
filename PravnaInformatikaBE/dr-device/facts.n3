@@ -1,9 +1,0 @@
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case> .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#name> "G_123-2024" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#defendant> "Desni" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#dependent> "Duki Suzuki" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#fails_to_provide_support> "yes" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#support_duty_legally_established> "yes" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#severe_consequences_occurred> "yes" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#is_adult> "yes" .
-<http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_123-2024> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#endangered_child_wellbeing> "yes" .

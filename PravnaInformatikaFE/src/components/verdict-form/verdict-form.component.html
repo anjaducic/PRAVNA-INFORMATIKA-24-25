@@ -53,7 +53,10 @@
 
   <!-- Atributi -->
   <div class="form-wrapper-right">
-    <div class="form-section">
+  <div class="form-section dual-section">
+
+    <!-- LEVA STRANA — Pravne činjenice -->
+    <div class="form-subsection">
       <h3>Pravne činjenice:</h3>
 
       <label>
@@ -114,12 +117,13 @@
         <option value="Smanjena uracunljivost">Smanjena uracunljivost</option>
         <option value="Neuracunljiv">Neuracunljiv</option>
       </select>
+    </div>
 
-
+    <div class="form-subsection">
       <!-- Rasudjivanje po pravilima -->
       <div class="section-separator">
-        <hr style="margin: 20px 0; border: 1px solid #ccc;">
-        <h3 style="margin: 15px 0; color: #ffffff; font-weight: bold;">Rasuđivanje po pravilima</h3>
+        <!--hr style="margin: 20px 0; border: 1px solid #ccc;"-->
+        <!--h3 style="color: #ffffff; font-weight: bold;">Rasuđivanje po pravilima:</h3-->
       </div>
 
       <!-- Article 221 -->
@@ -207,81 +211,12 @@
         </div>
       </div>
 
-
     </div>
-
-    <div>
-      <div class="form-wrapper-right scrollable-column">
-
-        <!-- Deo za ispis kazni -->
-        <div *ngIf="legalAnalysisResult" class="legal-analysis-section">
-          <h4>Rezultat pravne analize:</h4>
-          <div class="analysis-content">
-            <p><strong>Optuženi:</strong> {{ metadata.defendant }}</p>
-            <p><strong>Kazna:</strong> {{ legalAnalysisResult.minSentenceDays }} - {{
-              legalAnalysisResult.maxSentenceDays }} dana
-              ({{ (legalAnalysisResult.minSentenceDays / 365).toFixed(1) }} - {{ (legalAnalysisResult.maxSentenceDays /
-              365).toFixed(1) }} godina)</p>
-
-            <div class="proven-violations">
-              <p><strong>Dokazani prekršaji:</strong></p>
-              <ul>
-                <li *ngFor="let violation of legalAnalysisResult.provenViolations">
-                  {{ formatViolationName(violation) }}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div *ngIf="isAnalyzing" class="loading-state">
-          <p>Analiza u toku...</p>
-        </div>
-        <div *ngIf="analysisError" class="error-state">
-          <p>{{ analysisError }}</p>
-        </div>
-        <!-- pravne cinjenice -->
-        <div class="verdict-right">
-          <p class="column-title">Pravne činjenice:</p>
-          <div class="verdict-attributes">
-            <p *ngIf="attributes.acknowledged !== undefined">Priznao: {{ attributes.acknowledged ? 'DA' : 'NE' }}</p>
-            <p *ngIf="attributes.convicted !== undefined">Osuđivan: {{ attributes.convicted ? 'DA' : 'NE' }}</p>
-            <p *ngIf="attributes.maintenance !== undefined">Izdržavanje: {{ attributes.maintenance ? 'DA' : 'NE' }}</p>
-            <p *ngIf="attributes.repentance !== undefined">Kajanje: {{ attributes.repentance ? 'DA' : 'NE' }}</p>
-            <p *ngIf="attributes.previousFamilyIssues !== undefined">Prethodni porodični problemi: {{
-              attributes.previousFamilyIssues ? 'DA' : 'NE' }}</p>
-            <p *ngIf="attributes.correctBehavior !== undefined">Korektno držanje: {{ attributes.correctBehavior ? 'DA' :
-              'NE'
-              }}</p>
-            <p *ngIf="attributes.injuredCriminalProsecution !== undefined">Oštećeni goni krivično: {{
-              attributes.injuredCriminalProsecution ? 'DA' : 'NE' }}</p>
-            <p *ngIf="attributes.propertyClaim !== undefined">Imovinsko-pravni zahtev: {{ attributes.propertyClaim ?
-              'DA' :
-              'NE' }}</p>
-            <p *ngIf="attributes.intentional !== undefined">Sa umišljajem: {{ attributes.intentional ? 'DA' : 'NE' }}
-            </p>
-            <p *ngIf="attributes.financialStatus">Materijalno stanje: {{ attributes.financialStatus }}</p>
-            <p *ngIf="attributes.injuryType">Tip povrede: {{ attributes.injuryType }}</p>
-            <p *ngIf="attributes.accountability">Uračunljivost: {{ attributes.accountability }}</p>
-          </div>
-          <span class="open-icon">🔗</span>
-        </div>
-
-
-      </div>
     </div>
-
-    <!-- Spinner overlay -->
-    <div *ngIf="loading" class="spinner-overlay">
-      <mat-progress-spinner mode="indeterminate" diameter="50" color="primary">
-      </mat-progress-spinner>
-      <p class="loading-spinner">Molimo sačekajte, generisanje može potrajati nekoliko minuta...</p>
-    </div>
-
-    <div *ngIf="!loading && newVerdictHTML" class="spinner-overlay">
-      <button class="fancy-btn" (click)="openCreatedVerdict(newVerdictHTML)">Pogledajte presudu</button>
-    </div>
-
+  </div>
+  <div>
     <!-- treca kolona: prijedlozi slicnih presuda i ispod dodati rezultate rasudjivanja po pravilima-->
+  
     <div>
       <div class="form-wrapper-right scrollable-column">
         Slične presude:
@@ -353,15 +288,85 @@
         </ul>
       </div>
     </div>
+    <div>
+      <div class="form-wrapper-right scrollable-column">
+
+        <!-- Deo za ispis kazni -->
+        <div *ngIf="legalAnalysisResult" class="legal-analysis-section">
+          <h4>Rezultat pravne analize:</h4>
+          <div class="analysis-content">
+            <p><strong>Optuženi:</strong> {{ metadata.defendant }}</p>
+            <p><strong>Kazna:</strong> {{ legalAnalysisResult.minSentenceDays }} - {{
+              legalAnalysisResult.maxSentenceDays }} dana
+              ({{ (legalAnalysisResult.minSentenceDays / 365).toFixed(1) }} - {{ (legalAnalysisResult.maxSentenceDays /
+              365).toFixed(1) }} godina)</p>
+
+            <div class="proven-violations">
+              <p><strong>Dokazani prekršaji:</strong></p>
+              <ul>
+                <li *ngFor="let violation of legalAnalysisResult.provenViolations">
+                  {{ formatViolationName(violation) }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="isAnalyzing" class="loading-state">
+          <p>Analiza u toku...</p>
+        </div>
+        <div *ngIf="analysisError" class="error-state">
+          <p>{{ analysisError }}</p>
+        </div>
+        <!-- pravne cinjenice -->
+        <!--div class="verdict-right">
+          <p class="column-title">Pravne činjenice:</p>
+          <div class="verdict-attributes">
+            <p *ngIf="attributes.acknowledged !== undefined">Priznao: {{ attributes.acknowledged ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.convicted !== undefined">Osuđivan: {{ attributes.convicted ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.maintenance !== undefined">Izdržavanje: {{ attributes.maintenance ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.repentance !== undefined">Kajanje: {{ attributes.repentance ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.previousFamilyIssues !== undefined">Prethodni porodični problemi: {{
+              attributes.previousFamilyIssues ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.correctBehavior !== undefined">Korektno držanje: {{ attributes.correctBehavior ? 'DA' :
+              'NE'
+              }}</p>
+            <p *ngIf="attributes.injuredCriminalProsecution !== undefined">Oštećeni goni krivično: {{
+              attributes.injuredCriminalProsecution ? 'DA' : 'NE' }}</p>
+            <p *ngIf="attributes.propertyClaim !== undefined">Imovinsko-pravni zahtev: {{ attributes.propertyClaim ?
+              'DA' :
+              'NE' }}</p>
+            <p *ngIf="attributes.intentional !== undefined">Sa umišljajem: {{ attributes.intentional ? 'DA' : 'NE' }}
+            </p>
+            <p *ngIf="attributes.financialStatus">Materijalno stanje: {{ attributes.financialStatus }}</p>
+            <p *ngIf="attributes.injuryType">Tip povrede: {{ attributes.injuryType }}</p>
+            <p *ngIf="attributes.accountability">Uračunljivost: {{ attributes.accountability }}</p>
+          </div>
+          <span class="open-icon">🔗</span>
+        </div-->
+
+
+      </div>
+    </div>
+
+    <!-- Spinner overlay -->
+    <div *ngIf="loading" class="spinner-overlay">
+      <mat-progress-spinner mode="indeterminate" diameter="50" color="primary">
+      </mat-progress-spinner>
+      <p class="loading-spinner">Molimo sačekajte, generisanje može potrajati nekoliko minuta...</p>
+    </div>
+
+    <div *ngIf="!loading && newVerdictHTML" class="spinner-overlay">
+      <button class="fancy-btn" (click)="openCreatedVerdict(newVerdictHTML)">Pogledajte presudu</button>
+    </div>
+
+    
 
   </div>
   <div class="actions">
     <button class="fancy-btn"
       [disabled]="!metadata.caseName ||caseName.invalid || !metadata.court || !metadata.judge || !metadata.date || !metadata.defendant || !metadata.injuredParty || !metadata.clerk"
       (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
-  </div>
-  <div class="actions">
-    <button class="fancy-btn" [disabled]="!allowVerdict" (click)="openVerdictCreateForm()">👨‍⚖️ DONESI PRESUDU
-      👨‍⚖️</button>
+  
+    <button class="fancy-btn" [disabled]="!allowVerdict" (click)="openVerdictCreateForm()">👨‍⚖️ DONESI PRESUDU 👨‍⚖️</button>
   </div>
 </div>

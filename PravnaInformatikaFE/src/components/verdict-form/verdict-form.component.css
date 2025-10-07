@@ -24,9 +24,9 @@ body,
     linear-gradient(180deg, var(--bg1), var(--bg2));
   color: var(--text);
   display: grid;
-  grid-template-columns: 0.7fr 0.7fr 1fr;
+  grid-template-columns: 0.55fr 0.7fr 1fr;
   grid-template-rows: auto auto;
-  gap: 2px;
+  gap: 5px;
   align-items: stretch;
   height: 900px;
 }
@@ -39,6 +39,7 @@ body,
   height: 90%;
   overflow-y: auto;
   padding-bottom: 10px;
+  margin-top: 0px;
 }
 
 .form-wrapper-left .form-section,
@@ -61,7 +62,7 @@ body,
   border: 1px solid var(--border);
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-  padding: 18px;
+  padding: 15px;
   margin-bottom: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,9 +81,9 @@ body,
   align-self: center;
   font-weight: 600;
   color: var(--muted);
+  font-size: 14px;
 }
 
-/* Input and Select Styling - Consolidated */
 .form-section input[type="text"],
 .form-section input[type="date"],
 .form-section input:not([type]),
@@ -104,7 +105,7 @@ body,
 .form-section input[type="date"],
 .form-section input:not([type]),
 .form-section textarea {
-  width: 12rem;
+  width: 9rem;
   padding: 5px 12px;
 }
 
@@ -116,7 +117,6 @@ body,
   transform: translateY(-1px);
 }
 
-/* Select specific styling */
 .form-section select {
   appearance: none;
   -webkit-appearance: none;
@@ -135,7 +135,6 @@ body,
   font-size: 14px;
 }
 
-/* Checkbox styling */
 .form-section label:has(input[type="checkbox"]) {
   grid-column: 1 / -1;
   display: flex;
@@ -145,19 +144,23 @@ body,
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
+  font-size: 14px;
+  width: fit-content;
+  
 }
 
 .form-section input[type="checkbox"] {
-  width: 18px;
+  width: 15px;
   height: 18px;
   accent-color: var(--accent);
   cursor: pointer;
 }
 
-/* Rule section separator */
+
+
 .section-separator {
   grid-column: 1 / -1;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .section-separator hr {
@@ -176,20 +179,23 @@ body,
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* Button styling */
+
 .actions {
   grid-column: 2 / 3;
-  justify-self: end;
-  margin-top: -40px;
+  display: flex;      
+  gap: 10px;          
+  justify-content: flex-start; 
+  margin-top: -70px;
   z-index: 1;
 }
+
 
 .fancy-btn {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: #fff;
   font-weight: 800;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 15px;
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(26, 188, 156, 0.35);
@@ -212,7 +218,6 @@ body,
   transform: none;
 }
 
-/* Verdict list styling */
 .verdict-list {
   list-style: none;
   padding: 0;
@@ -384,7 +389,7 @@ body,
 
 
 
-/* Stilizovanje multiple select */
+
 .dropdown-container {
   margin-top: 20px;
 }
@@ -474,4 +479,118 @@ body,
 .dropdown-option span {
   color: #2c2c2c;
   font-weight: 500;
+}
+
+
+.dual-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  max-height: 600px; 
+  overflow-y: auto;
+  
+  scrollbar-width: thin;
+  scrollbar-color: #1abc9c rgba(255, 255, 255, 0.05);
+}
+
+.dual-section .form-subsection:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%;
+}
+
+.dual-section .form-subsection:last-child label,
+.dual-section .form-subsection:last-child input,
+.dual-section .form-subsection:last-child select,
+.dual-section .form-subsection:last-child textarea {
+  align-self: flex-start;
+  text-align: left;
+  width: 100%; 
+  margin-left: 0;
+}
+.dual-section .form-subsection:last-child label:has(input[type="checkbox"]),
+.dual-section .form-subsection:last-child .custom-dropdown {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.dual-section .form-subsection:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%;
+}
+
+
+.dual-section .form-subsection:first-child input[type="checkbox"] {
+  margin-left: 0; 
+}
+
+.dual-section .form-subsection:first-child label {
+  align-self: flex-start;
+  text-align: left;
+  width: 100%; 
+  margin-left: 0;
+}
+.dual-section .form-subsection:first-child .checkbox-wrapper {
+  padding-left: 0;
+}
+
+.dual-section .form-subsection:first-child label:has(input[type="checkbox"]) {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+
+.form-subsection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+
+.form-subsection h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: left;
+}
+
+
+
+.dual-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dual-section::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.dual-section::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+  border-radius: 10px;
+}
+
+.dual-section::-webkit-scrollbar-thumb:hover {
+  background: #16a085;
+}
+
+
+@media (max-width: 1200px) {
+  .dual-section {
+    flex-direction: column;
+  }
 }
