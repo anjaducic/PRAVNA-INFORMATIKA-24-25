@@ -3,14 +3,22 @@ export interface Verdict {
   acknowledged?: boolean; // Priznao
   convicted?: boolean; // Osudjivan
   financialStatus?: string; // Materijalno_stanje
-  maintenance?: boolean; // Izdrzavanje
+  maintenance?: boolean; // Izdrzavanje, korisno za ruleBase rasudjivanje
   repentance?: boolean; // Kajanje
   previousFamilyIssues?: boolean; // Prethodni_porodicni_problemi
-  injuryType?: string; // Tip_povrede
+  injuryType?: string; // Tip_povrede, korisno za ruleBase rasudjivanje
   correctBehavior?: boolean; // Korektno_drzanje
   injuredCriminalProsecution?: boolean; // Osteceni_goni_krivicno
   propertyClaim?: boolean; // Imovinsko_pravni_zahtjev
   accountability?: string; // Uracunljivost
   intentional?: boolean; // Sa_umisljajem
+
+  //novi atributi za rasudjivanje po pravilima
+  familyObligationsViolation?: string;  //krsenje porodicnih obaveza, korisno za ruleBase rasudjivanje
+  extramaritalRelationshipMinor?: string; //vanbracna veza sa maloletnikom, korisno za ruleBase rasudjivanje, ostavljamo string posto je dropdown (zavisno koliko clanova je prekrseno)
+  unlawfulDetention?: string; //ilegalno zadrzanje deteta, korisno za ruleBase rasudjivanje
+  familyMemberMaintenance?: string;
+  domesticViolence?: string;
+
 }
 

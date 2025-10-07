@@ -13,73 +13,87 @@
   </div>
 
   <ul class="verdict-list">
-  <li *ngFor="let verdict of filteredVerdicts" class="verdict-item">
-    <a (click)="openVerdict(verdict.caseName)" href="#" class="verdict-link">
-      <!--ime presude-->
-      <div class="verdict-left">
-        <span class="verdict-icon">📄</span>
-        <span class="verdict-name">{{ verdict.caseName }}</span>
-      </div>
+    <li *ngFor="let verdict of filteredVerdicts" class="verdict-item">
+      <a (click)="openVerdict(verdict.caseName)" href="#" class="verdict-link">
+        <!--ime presude-->
+        <div class="verdict-left">
+          <span class="verdict-icon">📄</span>
+          <span class="verdict-name">{{ verdict.caseName }}</span>
+        </div>
 
-      <!--metapodaci-->
-      <div class="verdict-middle">
-        <p class="column-title">Osnovi podaci:</p>
-        <p *ngIf="verdict.court">Sud: {{ verdict.court }}</p>
-        <p *ngIf="verdict.judge">Sudija: {{ verdict.judge }}</p>
-        <p *ngIf="verdict.clerk">Zapisničar: {{ verdict.clerk }}</p>
-        <p *ngIf="verdict.defendant">Okrivljeni: {{ verdict.defendant }}</p>
-        <p *ngIf="verdict.prosecutorAttorney">Zastupnik optužbe: {{ verdict.prosecutorAttorney }}</p>
-        <p *ngIf="verdict.defenseAttorney">Zastupnik okrivljene: {{ verdict.defenseAttorney }}</p>
-        <p *ngIf="verdict.injuredParty">Oštećeni: {{ verdict.injuredParty }}</p>
-        <p *ngIf="verdict.legalRepresentative">Zakonski zastupnik: {{ verdict.legalRepresentative }}</p>
-        <p *ngIf="verdict.expert">Ekspert: {{ verdict.expert }}</p>
-        <p *ngIf="verdict.participants">Učesnici: {{ verdict.participants }}</p>
-        <p *ngIf="verdict.organizations">Organizacije: {{ verdict.organizations }}</p>
-        <p *ngIf="verdict.date">Datum: {{ verdict.date }}</p>
-      </div>
+        <!--metapodaci-->
+        <div class="verdict-middle">
+          <p class="column-title">Osnovi podaci:</p>
+          <p *ngIf="verdict.court">Sud: {{ verdict.court }}</p>
+          <p *ngIf="verdict.judge">Sudija: {{ verdict.judge }}</p>
+          <p *ngIf="verdict.clerk">Zapisničar: {{ verdict.clerk }}</p>
+          <p *ngIf="verdict.defendant">Okrivljeni: {{ verdict.defendant }}</p>
+          <p *ngIf="verdict.prosecutorAttorney">Zastupnik optužbe: {{ verdict.prosecutorAttorney }}</p>
+          <p *ngIf="verdict.defenseAttorney">Zastupnik okrivljene: {{ verdict.defenseAttorney }}</p>
+          <p *ngIf="verdict.injuredParty">Oštećeni: {{ verdict.injuredParty }}</p>
+          <p *ngIf="verdict.legalRepresentative">Zakonski zastupnik: {{ verdict.legalRepresentative }}</p>
+          <p *ngIf="verdict.expert">Ekspert: {{ verdict.expert }}</p>
+          <p *ngIf="verdict.participants">Učesnici: {{ verdict.participants }}</p>
+          <p *ngIf="verdict.organizations">Organizacije: {{ verdict.organizations }}</p>
+          <p *ngIf="verdict.date">Datum: {{ verdict.date }}</p>
+        </div>
 
-      <div class="verdict-right">
-        <p class="column-title">Pravne činjenice:</p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.acknowledged !== undefined && verdictAttributesMap[verdict.caseName]?.acknowledged?.toString() != '/'">
-          Priznao: {{ verdictAttributesMap[verdict.caseName].acknowledged ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.convicted !== undefined && verdictAttributesMap[verdict.caseName]?.convicted?.toString() != '/'">
-          Osudjivan: {{ verdictAttributesMap[verdict.caseName].convicted ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.financialStatus && verdictAttributesMap[verdict.caseName]?.financialStatus?.toString() != '/'">
-          Materijalno stanje: {{ verdictAttributesMap[verdict.caseName].financialStatus }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.maintenance !== undefined && verdictAttributesMap[verdict.caseName]?.maintenance?.toString() != '/'">
-          Izdržavanje: {{ verdictAttributesMap[verdict.caseName].maintenance ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.repentance !== undefined && verdictAttributesMap[verdict.caseName]?.repentance?.toString() != '/'">
-          Kajanje: {{ verdictAttributesMap[verdict.caseName].repentance ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.previousFamilyIssues !== undefined && verdictAttributesMap[verdict.caseName]?.previousFamilyIssues?.toString() != '/'">
-          Prethodni porodični problemi: {{ verdictAttributesMap[verdict.caseName].previousFamilyIssues ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.injuryType && verdictAttributesMap[verdict.caseName]?.injuryType?.toString() != '/'">
-          Tip povrede: {{ verdictAttributesMap[verdict.caseName].injuryType }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.correctBehavior !== undefined && verdictAttributesMap[verdict.caseName]?.correctBehavior?.toString() != '/'">
-          Korektno držanje: {{ verdictAttributesMap[verdict.caseName].correctBehavior ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.injuredCriminalProsecution !== undefined && verdictAttributesMap[verdict.caseName]?.injuredCriminalProsecution?.toString() != '/'">
-          Oštećeni goni krivično: {{ verdictAttributesMap[verdict.caseName].injuredCriminalProsecution ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.propertyClaim !== undefined && verdictAttributesMap[verdict.caseName]?.propertyClaim?.toString() != '/'">
-          Imovinsko-pravni zahtev: {{ verdictAttributesMap[verdict.caseName].propertyClaim ? 'DA' : 'NE' }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.accountability && verdictAttributesMap[verdict.caseName]?.accountability?.toString() != '/'">
-          Uračunljivost: {{ verdictAttributesMap[verdict.caseName].accountability }}
-        </p>
-        <p *ngIf="verdictAttributesMap[verdict.caseName]?.intentional !== undefined && verdictAttributesMap[verdict.caseName]?.intentional?.toString() != '/'">
-          Sa umišljajem: {{ verdictAttributesMap[verdict.caseName].intentional ? 'DA' : 'NE' }}
-        </p>
-        <span class="open-icon">🔗</span>
-      </div>
-    </a>
-  </li>
-</ul>
+        <div class="verdict-right">
+          <p class="column-title">Pravne činjenice:</p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.acknowledged !== undefined && verdictAttributesMap[verdict.caseName]?.acknowledged?.toString() != '/'">
+            Priznao: {{ verdictAttributesMap[verdict.caseName].acknowledged ? 'DA' : 'NE' }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.convicted !== undefined && verdictAttributesMap[verdict.caseName]?.convicted?.toString() != '/'">
+            Osudjivan: {{ verdictAttributesMap[verdict.caseName].convicted ? 'DA' : 'NE' }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.financialStatus && verdictAttributesMap[verdict.caseName]?.financialStatus?.toString() != '/'">
+            Materijalno stanje: {{ verdictAttributesMap[verdict.caseName].financialStatus }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.maintenance !== undefined && verdictAttributesMap[verdict.caseName]?.maintenance?.toString() != '/'">
+            Izdržavanje: {{ verdictAttributesMap[verdict.caseName].maintenance ? 'DA' : 'NE' }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.repentance !== undefined && verdictAttributesMap[verdict.caseName]?.repentance?.toString() != '/'">
+            Kajanje: {{ verdictAttributesMap[verdict.caseName].repentance ? 'DA' : 'NE' }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.previousFamilyIssues !== undefined && verdictAttributesMap[verdict.caseName]?.previousFamilyIssues?.toString() != '/'">
+            Prethodni porodični problemi: {{ verdictAttributesMap[verdict.caseName].previousFamilyIssues ? 'DA' : 'NE'
+            }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.injuryType && verdictAttributesMap[verdict.caseName]?.injuryType?.toString() != '/'">
+            Tip povrede: {{ verdictAttributesMap[verdict.caseName].injuryType }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.correctBehavior !== undefined && verdictAttributesMap[verdict.caseName]?.correctBehavior?.toString() != '/'">
+            Korektno držanje: {{ verdictAttributesMap[verdict.caseName].correctBehavior ? 'DA' : 'NE' }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.injuredCriminalProsecution !== undefined && verdictAttributesMap[verdict.caseName]?.injuredCriminalProsecution?.toString() != '/'">
+            Oštećeni goni krivično: {{ verdictAttributesMap[verdict.caseName].injuredCriminalProsecution ? 'DA' : 'NE'
+            }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.propertyClaim !== undefined && verdictAttributesMap[verdict.caseName]?.propertyClaim?.toString() != '/'">
+            Imovinsko-pravni zahtev: {{ verdictAttributesMap[verdict.caseName].propertyClaim ? 'DA' : 'NE' }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.accountability && verdictAttributesMap[verdict.caseName]?.accountability?.toString() != '/'">
+            Uračunljivost: {{ verdictAttributesMap[verdict.caseName].accountability }}
+          </p>
+          <p
+            *ngIf="verdictAttributesMap[verdict.caseName]?.intentional !== undefined && verdictAttributesMap[verdict.caseName]?.intentional?.toString() != '/'">
+            Sa umišljajem: {{ verdictAttributesMap[verdict.caseName].intentional ? 'DA' : 'NE' }}
+          </p>
+          <span class="open-icon">🔗</span>
+        </div>
+      </a>
+    </li>
+  </ul>
 
 </div>

@@ -88,6 +88,80 @@ public class VerdictCBRService {
         financialStatusSim.setSimilarity("Lose", "Dobro", 0.0);
 
         simConfig.addMapping(new Attribute("financialStatus", VerdictDTO.class), financialStatusSim);
+
+
+        // familyObligationsViolation
+        TabularSimilarity familyObligationsSim = new TabularSimilarity(
+                Arrays.asList("Nema", "Osnovno krsenje", "Otezano zdravstvena steta", "Otezano smrt")
+        );
+        familyObligationsSim.setSimilarity("Nema", "Osnovno krsenje", 0.7);
+        familyObligationsSim.setSimilarity("Nema", "Otezano zdravstvena steta", 0.4);
+        familyObligationsSim.setSimilarity("Nema", "Otezano smrt", 0.2);
+        familyObligationsSim.setSimilarity("Osnovno krsenje", "Otezano zdravstvena steta", 0.75);
+        familyObligationsSim.setSimilarity("Osnovno krsenje", "Otezano smrt", 0.35);
+        familyObligationsSim.setSimilarity("Otezano zdravstvena steta", "Otezano smrt", 0.6);
+        simConfig.addMapping(new Attribute("familyObligationsViolation", VerdictDTO.class), familyObligationsSim);
+
+
+        // extramaritalRelationshipMinor
+        TabularSimilarity extramaritalSim = new TabularSimilarity(
+                Arrays.asList("Nema", "Osnovni prekrsaj", "Omogucavanje", "Otezano omogucavanje")
+        );
+        extramaritalSim.setSimilarity("Nema", "Osnovni prekrsaj", 0.6);
+        extramaritalSim.setSimilarity("Nema", "Omogucavanje", 0.25);
+        extramaritalSim.setSimilarity("Nema", "Otezano omogucavanje", 0.1);
+        extramaritalSim.setSimilarity("Osnovni prekrsaj", "Omogucavanje", 0.7);
+        extramaritalSim.setSimilarity("Osnovni prekrsaj", "Otezano omogucavanje", 0.3);
+        extramaritalSim.setSimilarity("Omogucavanje", "Otezano omogucavanje", 0.65);
+        simConfig.addMapping(new Attribute("extramaritalRelationshipMinor", VerdictDTO.class), extramaritalSim);
+
+        // unlawfulDetention
+        TabularSimilarity detentionSim = new TabularSimilarity(
+                Arrays.asList("Nema", "Osnovno zadrzavanje", "Sprecavanje kontakta", "Otezano")
+        );
+        detentionSim.setSimilarity("Nema", "Osnovno zadrzavanje", 0.65);
+        detentionSim.setSimilarity("Nema", "Sprecavanje kontakta", 0.35);
+        detentionSim.setSimilarity("Nema", "Otezano", 0.15);
+        detentionSim.setSimilarity("Osnovno zadrzavanje", "Sprecavanje kontakta", 0.8);
+        detentionSim.setSimilarity("Osnovno zadrzavanje", "Otezano", 0.4);
+        detentionSim.setSimilarity("Sprecavanje kontakta", "Otezano", 0.7);
+        simConfig.addMapping(new Attribute("unlawfulDetention", VerdictDTO.class), detentionSim);
+
+        // familyMemberMaintenance
+        TabularSimilarity maintenanceSim = new TabularSimilarity(
+                Arrays.asList("Nema", "Osnovno", "Otezano")
+        );
+        maintenanceSim.setSimilarity("Nema", "Osnovno", 0.75);
+        maintenanceSim.setSimilarity("Nema", "Otezano", 0.25);
+        maintenanceSim.setSimilarity("Osnovno", "Otezano", 0.6);
+        simConfig.addMapping(new Attribute("familyMemberMaintenance", VerdictDTO.class), maintenanceSim);
+
+
+        // domesticViolence
+        TabularSimilarity domesticViolenceSim = new TabularSimilarity(
+                Arrays.asList("Nema", "Osnovno krsenje", "Oruzje ili dete prisutno", "Teska povreda/Laka povreda protiv deteta", "Smrt", "Krsenje mere zastite")
+        );
+        // Nema to others
+        domesticViolenceSim.setSimilarity("Nema", "Osnovno krsenje", 0.6);
+        domesticViolenceSim.setSimilarity("Nema", "Oruzje ili dete prisutno", 0.3);
+        domesticViolenceSim.setSimilarity("Nema", "Teska povreda/Laka povreda protiv deteta", 0.2);
+        domesticViolenceSim.setSimilarity("Nema", "Smrt", 0.1);
+        domesticViolenceSim.setSimilarity("Nema", "Krsenje mere zastite", 0.4);
+        domesticViolenceSim.setSimilarity("Osnovno krsenje", "Oruzje ili dete prisutno", 0.65);
+        domesticViolenceSim.setSimilarity("Osnovno krsenje", "Teska povreda/Laka povreda protiv deteta", 0.4);
+        domesticViolenceSim.setSimilarity("Osnovno krsenje", "Smrt", 0.2);
+        domesticViolenceSim.setSimilarity("Osnovno krsenje", "Krsenje mere zastite", 0.7);
+
+        domesticViolenceSim.setSimilarity("Oruzje ili dete prisutno", "Teska povreda/Laka povreda protiv deteta", 0.75);
+        domesticViolenceSim.setSimilarity("Oruzje ili dete prisutno", "Smrt", 0.35);
+        domesticViolenceSim.setSimilarity("Oruzje ili dete prisutno", "Krsenje mere zastite", 0.5);
+
+        domesticViolenceSim.setSimilarity("Teska povreda/Laka povreda protiv deteta", "Smrt", 0.6);
+        domesticViolenceSim.setSimilarity("Teska povreda/Laka povreda protiv deteta", "Krsenje mere zastite", 0.45);
+
+        domesticViolenceSim.setSimilarity("Smrt", "Krsenje mere zastite", 0.3);
+
+        simConfig.addMapping(new Attribute("domesticViolence", VerdictDTO.class), domesticViolenceSim);
     }
 
 
@@ -127,11 +201,18 @@ public class VerdictCBRService {
             vs.setPropertyClaim(dto.getPropertyClaim());
             vs.setAccountability(dto.getAccountability());
             vs.setIntentional(dto.getIntentional());
+
+            //Novi enum atributi
+            vs.setFamilyObligationsViolation(dto.getFamilyObligationsViolation());
+            vs.setExtramaritalRelationshipMinor(dto.getExtramaritalRelationshipMinor());
+            vs.setUnlawfulDetention(dto.getUnlawfulDetention());
+            vs.setFamilyMemberMaintenance(dto.getFamilyMemberMaintenance());
+            vs.setDomesticViolence(dto.getDomesticViolence());
+
             vs.setSimilarity(r.getEval());
             return vs;
         }).collect(Collectors.toList());
     }
-
 
 
     //pozvati kod generisanja presude

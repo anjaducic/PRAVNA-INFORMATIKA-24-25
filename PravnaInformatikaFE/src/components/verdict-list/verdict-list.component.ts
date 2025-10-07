@@ -21,8 +21,8 @@ export class VerdictListComponent implements OnInit {
   verdictAttributesMap: { [caseName: string]: Partial<Verdict> } = {};
   selectedFilter: 'all' | 'existing' | 'generated' = 'all';
 
-  constructor(private verdictService: VerdictService) {}
-  
+  constructor(private verdictService: VerdictService) { }
+
   public loadVerdicts(): void {
     this.verdictService.getVerdictFilesMetadata().subscribe(list => {
       this.verdicts = list;
@@ -39,15 +39,15 @@ export class VerdictListComponent implements OnInit {
         this.applyFilter();
       });
     });
-  
+
   }
   ngOnInit(): void {
-      this.loadVerdicts();
+    this.loadVerdicts();
   }
 
-  
 
-   openVerdict(caseName: string): void {
+
+  openVerdict(caseName: string): void {
     const url = this.verdictService.getVerdictFileUrl(caseName);
     window.open(url, '_blank');
   }

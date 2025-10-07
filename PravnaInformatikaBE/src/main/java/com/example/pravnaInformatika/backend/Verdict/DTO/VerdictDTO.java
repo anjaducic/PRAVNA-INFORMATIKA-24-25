@@ -18,6 +18,14 @@ public class VerdictDTO implements CaseComponent{
     private String accountability; // Uracunljivost
     private Boolean intentional; // Sa_umisljajem
 
+    //Dodatni atributi za rasudjivanje po slucajevima
+    private String familyObligationsViolation;
+    private String extramaritalRelationshipMinor;
+    private String unlawfulDetention;
+    private String familyMemberMaintenance;
+    private String domesticViolence;
+
+
     // Getters
     public String getCaseName() { return caseName; }
     public Boolean getAcknowledged() { return acknowledged; }
@@ -33,6 +41,14 @@ public class VerdictDTO implements CaseComponent{
     public String getAccountability() { return accountability; }
     public Boolean getIntentional() { return intentional; }
 
+    //Novi getteri za nove atribute
+    public String getFamilyObligationsViolation() { return familyObligationsViolation; }
+    public String getExtramaritalRelationshipMinor() { return extramaritalRelationshipMinor; }
+    public String getUnlawfulDetention() { return unlawfulDetention; }
+    public String getFamilyMemberMaintenance() { return familyMemberMaintenance; }
+    public String getDomesticViolence() { return domesticViolence; }
+
+
     // Setters
     public void setCaseName(String fileName) { this.caseName = fileName; }
     public void setAcknowledged(Boolean acknowledged) { this.acknowledged = acknowledged; }
@@ -47,6 +63,13 @@ public class VerdictDTO implements CaseComponent{
     public void setPropertyClaim(Boolean propertyClaim) { this.propertyClaim = propertyClaim; }
     public void setAccountability(String accountability) { this.accountability = accountability; }
     public void setIntentional(Boolean intentional) { this.intentional = intentional; }
+
+    //Novi setteri za nove atribute
+    public void setFamilyObligationsViolation(String familyObligationsViolation) {this.familyObligationsViolation = familyObligationsViolation;}
+    public void setExtramaritalRelationshipMinor(String extramaritalRelationshipMinor) {this.extramaritalRelationshipMinor = extramaritalRelationshipMinor;}
+    public void setUnlawfulDetention(String unlawfulDetention) {this.unlawfulDetention = unlawfulDetention;}
+    public void setFamilyMemberMaintenance(String familyMemberMaintenance) {this.familyMemberMaintenance = familyMemberMaintenance;}
+    public void setDomesticViolence(String domesticViolence) {this.domesticViolence = domesticViolence;}
 
     @Override
     public String toString() {
@@ -64,6 +87,11 @@ public class VerdictDTO implements CaseComponent{
                 ", propertyClaim=" + propertyClaim +
                 ", accountability='" + accountability + '\'' +
                 ", intentional=" + intentional +
+                ", familyObligationsViolation='" + familyObligationsViolation + '\'' +
+                ", extramaritalRelationshipMinor='" + extramaritalRelationshipMinor + '\'' +
+                ", unlawfulDetention='" + unlawfulDetention + '\'' +
+                ", familyMemberMaintenance='" + familyMemberMaintenance + '\'' +
+                ", domesticViolence='" + domesticViolence + '\'' +
                 '}';
     }
 

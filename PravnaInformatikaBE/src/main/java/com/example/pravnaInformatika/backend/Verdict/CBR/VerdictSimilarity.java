@@ -19,6 +19,14 @@ public class VerdictSimilarity implements CaseComponent{
     private Boolean intentional; // Sa_umisljajem
     private double similarity;
 
+
+    //Dodatni atributi za rasudjivanje po slucajevima
+    private String familyObligationsViolation;
+    private String extramaritalRelationshipMinor;
+    private String unlawfulDetention;
+    private String familyMemberMaintenance;
+    private String domesticViolence;
+
     public double getSimilarity() {
         return similarity;
     }
@@ -42,6 +50,12 @@ public class VerdictSimilarity implements CaseComponent{
     public String getAccountability() { return accountability; }
     public Boolean getIntentional() { return intentional; }
 
+    public String getFamilyObligationsViolation() { return familyObligationsViolation; }
+    public String getExtramaritalRelationshipMinor() { return extramaritalRelationshipMinor; }
+    public String getUnlawfulDetention() { return unlawfulDetention; }
+    public String getFamilyMemberMaintenance() { return familyMemberMaintenance; }
+    public String getDomesticViolence() { return domesticViolence; }
+
     // Setters
     public void setCaseName(String fileName) { this.caseName = fileName; }
     public void setAcknowledged(Boolean acknowledged) { this.acknowledged = acknowledged; }
@@ -56,6 +70,12 @@ public class VerdictSimilarity implements CaseComponent{
     public void setPropertyClaim(Boolean propertyClaim) { this.propertyClaim = propertyClaim; }
     public void setAccountability(String accountability) { this.accountability = accountability; }
     public void setIntentional(Boolean intentional) { this.intentional = intentional; }
+
+    public void setFamilyObligationsViolation(String familyObligationsViolation) {this.familyObligationsViolation = familyObligationsViolation;}
+    public void setExtramaritalRelationshipMinor(String extramaritalRelationshipMinor) {this.extramaritalRelationshipMinor = extramaritalRelationshipMinor;}
+    public void setUnlawfulDetention(String unlawfulDetention) {this.unlawfulDetention = unlawfulDetention;}
+    public void setFamilyMemberMaintenance(String familyMemberMaintenance) {this.familyMemberMaintenance = familyMemberMaintenance;}
+    public void setDomesticViolence(String domesticViolence) {this.domesticViolence = domesticViolence;}
 
     @Override
     public String toString() {
@@ -73,6 +93,11 @@ public class VerdictSimilarity implements CaseComponent{
                 ", propertyClaim=" + propertyClaim +
                 ", accountability='" + accountability + '\'' +
                 ", intentional=" + intentional +
+                ", familyObligationsViolation='" + familyObligationsViolation + '\'' +
+                ", extramaritalRelationshipMinor='" + extramaritalRelationshipMinor + '\'' +
+                ", unlawfulDetention='" + unlawfulDetention + '\'' +
+                ", familyMemberMaintenance='" + familyMemberMaintenance + '\'' +
+                ", domesticViolence='" + domesticViolence + '\'' +
                 '}';
     }
 
