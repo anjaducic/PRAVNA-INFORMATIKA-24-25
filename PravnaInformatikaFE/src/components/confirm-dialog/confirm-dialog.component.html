@@ -1,0 +1,11 @@
+<div class="modal-overlay" @dialogAnimation>
+  <div class="modal-content animated">
+    <h2 class="page-title">Potvrda</h2>
+    <p>{{ message }}</p>
+
+    <div class="modal-actions">
+      <button class="fancy-btn cancel" (click)="onCancel()">Odustani</button>
+      <button class="fancy-btn confirm" (click)="onConfirm()">Potvrdi</button>
+    </div>
+  </div>
+</div>

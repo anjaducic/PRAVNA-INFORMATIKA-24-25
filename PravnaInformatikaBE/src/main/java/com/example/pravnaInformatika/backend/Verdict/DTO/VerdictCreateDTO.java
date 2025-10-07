@@ -30,6 +30,7 @@ public class VerdictCreateDTO {
     private String accountability; // Uracunljivost
     private Boolean intentional; // Sa_umisljajem
 
+    private List<ViolationDTO> violations;
     private Boolean foundGuilty;
 
     public Boolean getFoundGuilty() {
@@ -73,7 +74,6 @@ public class VerdictCreateDTO {
         this.foundGuilty = foundGuilty;
     }
 
-    private List<ViolationDTO> violations;
 
     public List<ViolationDTO> getViolations() {
         return violations;

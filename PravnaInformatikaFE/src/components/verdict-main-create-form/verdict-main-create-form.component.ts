@@ -2,6 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { VerdictCreateFormComponent } from '../verdict-create-form/verdict-create-form.component';
+import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Inject } from '@angular/core';
 
 @Component({
   selector: 'app-verdict-main-create-form',
@@ -16,7 +19,8 @@ export class VerdictMainCreateFormComponent {
 
   constructor(
     private dialog: MatDialog,
-    private dialogRef: MatDialogRef<VerdictCreateFormComponent>
+    private dialogRef: MatDialogRef<VerdictCreateFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: { caseName: string }
   ) {}
 
   setVerdict(result: boolean) {
@@ -25,7 +29,8 @@ export class VerdictMainCreateFormComponent {
 
   addViolation() {
     const dialogRef = this.dialog.open(VerdictCreateFormComponent, {
-      width: '400px',
+      width: '700px',
+      // height: '450px',
       disableClose: true
     });
 
@@ -41,10 +46,25 @@ export class VerdictMainCreateFormComponent {
   }
 
   onSave() {
-    this.dialogRef.close({
-      isGuilty: this.isGuilty,
-      violations: this.violations
+
+    const verdict = this.data.caseName;
+
+    const confirmDialog = this.dialog.open(ConfirmDialogComponent, {
+      width: '420px',
+      data: { title: "Potvrda generisanja" , message: "Da li ste sigurni da želite da generišete presudu${verdictTitle}?"}
     });
+
+    confirmDialog.afterClosed().subscribe(result => {
+      if (result) {
+        this.dialogRef.close({
+          isGuilty: this.isGuilty,
+          violations: this.violations
+        });
+      } else {
+        console.log('Generisanje presude otkazano.');
+      }
+    });
+
   }
 
   onCancel() {

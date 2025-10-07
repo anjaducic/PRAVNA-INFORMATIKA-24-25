@@ -233,9 +233,10 @@ export class VerdictFormComponent {
       overlayContainer.style.zIndex = '2000';
     }
     const dialogRef = this.dialog.open(VerdictMainCreateFormComponent, {
-      width: '1000px',
+      // width: '1000px',
       // height: '500px',
       disableClose: true,
+      data: { caseName: this.metadata.caseName }
     });
 
     dialogRef.afterClosed().subscribe(result => {

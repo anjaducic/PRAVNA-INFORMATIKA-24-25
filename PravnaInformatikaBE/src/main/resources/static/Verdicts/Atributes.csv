@@ -22,3 +22,15 @@ K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRU
 G_001-2025,FALSE,FALSE,Dobro,FALSE,TRUE,FALSE,Nema,TRUE,TRUE,FALSE,Uracunljiv,FALSE
 G_002-2025,false,false,Dobro,true,false,true,Nema,false,true,false,Uracunljiv,false
 G_003-2025,false,false,Dobro,false,true,false,Nema,false,true,false,Uracunljiv,false
+G_003-2025,false,true,Dobro,false,false,true,Nema,false,true,false,Uracunljiv,false
+G_004-2025,true,false,Dobro,false,true,true,Srednje,true,false,false,Uracunljiv,true
+G_004-2025,false,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false
+G_005-2025,false,true,Srednje,false,true,false,Nema,false,false,true,Uracunljiv,false
+G_005-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false
+G_006-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false
+G_006-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false
+G_009-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false
+G_009-2025,true,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false
+G_010-2025,true,true,Dobro,true,false,false,Srednje,false,false,false,Uracunljiv,false
+G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,true,Uracunljiv,false
+G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,false,Uracunljiv,false

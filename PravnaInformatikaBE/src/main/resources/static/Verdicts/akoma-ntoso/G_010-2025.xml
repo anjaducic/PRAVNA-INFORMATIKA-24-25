@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+  <judgment>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni sud u Bijelom polju</FRBRauthor>
+          <FRBRdate date="2025-09-29">2025-09-29</FRBRdate>
+          <FRBRtitle>G_010-2025</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom polju"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju"/>
+        <TLCPerson eId="judge" href="/ontology/person/anjalovric" showAs="Anja Lovric"/>
+        <TLCPerson eId="clerk" href="/ontology/person/anjaducic" showAs="Anja Ducic"/>
+        <TLCPerson eId="defendant" href="/ontology/person/dusanvukovic" showAs="Dusan Vukovic"/>
+        <TLCPerson eId="tatjanic" href="/ontology/person/tatjanic" showAs="Tatjana Tatjanic"/>
+        <TLCPerson eId="peraperic" href="/ontology/person/peraperic" showAs="Pera Peric"/>
+        <TLCPerson eId="milic" href="/ontology/person/milic" showAs="Milica Milic"/>
+        <TLCRole eId="defendantRole" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="judgeRole" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerkRole" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="defense" href="/ontology/role/lawyer" showAs="Defense"/>
+        <TLCRole eId="injured" href="/ontology/role/injured" showAs="Injured party"/>
+        <TLCRole eId="legalRepresentative" href="/ontology/role/legalRepresentative" showAs="Legal representative"/>
+      </references>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p id="subtitle">U IME CRNE GORE</p>
+        <p>
+          <organization id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac 
+          <party id="judge" refersTo="#judge" as="#judge">Anja Lovric</party>, uz učešće zapisničara 
+          <party id="clerk" refersTo="#clerk" as="#clerk">Anja Ducic</party>, u krivičnom predmetu okrivljenog 
+          <party id="defendant" refersTo="#defendant" as="#defendant">Dusan Vukovic</party>, po optužnom predlogu 
+          <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Bijelom Polju</organization>, dana 29.09.2025. godine, 
+          uz prisustvo zastupnika optužbe <party id="tatjanic" refersTo="#tatjanic" as="#prosecutor">Tatjana Tatjanic</party> i branioca po službenoj dužnosti 
+          <party id="peraperic" refersTo="#peraperic" as="#defense">Pera Peric</party>, donio je i objavio
+        </p>
+      </introduction>
+      <background>
+        <p class="subtitle">P R E S U D U</p>
+        <p>
+          Okrivljeni <party id="defendant" refersTo="#defendant" as="#defendant">Dusan Vukovic</party> JMBG., od oca i majke, rođen ..., državljanin Crne Gore, bez ranijeg upisa u matičnu evidenciju, 
+          ima dobro materijalno stanje, nisu navedene druge okolnosti sa aspekta krivičnog djela.
+        </p>
+      </background>
+      <decision>
+        <p class="subtitle">K R I V J E</p>
+        <p>
+          - Zbog počinjenja krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz člana 222 st. 1 i st. 2 Krivičnog zakonika Crne Gore
+          <ref href="/krivicni#art_222_para_1">čl. 222 st. 1 Krivičnog zakonika</ref>
+          i
+          <ref href="/krivicni#art_222_para_2">čl. 222 st. 2 Krivičnog zakonika</ref>.
+        </p>
+        <p>
+          - Sud utvrđuje da je okrivljeni krivično djelo počinio sa direktnim umišljajem, te da se radi o krivičnom djelu iz navedenih članova.
+        </p>
+        <p>
+          - Po osnovu ovakvog činjeničnog stanja i uzimajući u obzir sve okolnosti predmeta, izriče se slijedeća sankcija:
+        </p>
+        <p>
+          <ref href="/krivicni#art_222_para_1">Novčana kazna od 1000 evra</ref>.
+        </p>
+        <p>
+          <ref href="/krivicni#art_222_para_2">Kazna zatvora u trajanju od 3 meseca</ref>.
+        </p>
+        <p>
+          U skladu sa odredbama čl. 42 Krivičnog zakonika, uz uračunavanje eventualnih vanrednih okolnosti, izriče se kazna uz mogućnost primjene uslovnog otpusta pod uslovom provođenja uslovne osude, uz mjere iz ZKP-a ako budu primjenjive.
+        </p>
+        <p class="subtitle">O S U Đ U J E</p>
+        <p>
+          Okrivljeni se osuđuje na navedene sankcije, a utvrđeno je da je imovinsko-pravni zahtjev nije bilo.
+        </p>
+      </decision>
+      <arguments>
+        <p class="subtitle">O b r a z l o ž e nj e</p>
+        <p>
+          Optužnim predlogom <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Bijelom Polju</organization> okrivljeni <party id="defendant" refersTo="#defendant" as="#defendant">Dusan Vukovic</party> je teretom stavljan na teret izvršenja krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz čl. 222 st. 1 i 2 Krivičnog zakonika CG. 
+        </p>
+        <p>
+          U završnim riječima, odbrana i optužba su dali svoje konstatacije, te je sud uz detaljnije navedene dokaze i izvod iz KE i medicinsku dokumentaciju utvrdio činjenice na osnovu kojih je donio presudu.
+        </p>
+        <p>
+          Navedene kazne su izrečene uz mogućnost primjene uslovnog otvaranja, uz obavezu po provodi i mogućih naknada, u skladu sa zakonom i pravilima postupka.
+        </p>
+      </arguments>
+    </judgmentBody>
+    <conclusions>
+      <organization class="subtitle" id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>
+      <p class="subtitle">Dana, 29.09.2025. godine</p>
+      <p>ZAPISNIČAR, S U D I J A,</p>
+      <p>
+        <party id="clerk" refersTo="#clerk" as="#clerk">Anja Ducic</party>
+        <party id="judge" refersTo="#judge" as="#judge">Anja Lovric</party>
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

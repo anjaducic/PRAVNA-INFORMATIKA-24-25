@@ -2,77 +2,79 @@
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" 
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
              xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd">
-  <judgment>
-    <meta>
-      <identification source="#court">
-        <FRBRWork>
-          <FRBRauthor>Osnovni sud u Bijelom Polju</FRBRauthor>
-          <FRBRdate date="2025-09-29">2025-09-29</FRBRdate>
-          <FRBRtitle>G_003-2025</FRBRtitle>
-          <FRBRcountry>CG</FRBRcountry>
-        </FRBRWork>
-      </identification>
-      <references>
-        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju"/>
-        <TLCPerson eId="ajlovric" href="/ontology/person/ajlovric" showAs="Anja Lovric"/>
-        <TLCPerson eId="aduic" href="/ontology/person/aduic" showAs="Anja Ducic"/>
-        <TLCPerson eId="dvukovic" href="/ontology/person/dvukovic" showAs="Dusan Vukovic"/>
-        <TLCPerson eId="ttatjanic" href="/ontology/person/ttatjanic" showAs="Tatjana Tatjanic"/>
-        <TLCPerson eId="pperic" href="/ontology/person/pperic" showAs="Pera Peric"/>
-        <TLCPerson eId="mmilic" href="/ontology/person/mmilic" showAs="Milica Milic"/>
-        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Okrivljeni"/>
-        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Sudija"/>
-        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Zapisničar"/>
-        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Zastupnik optužbe"/>
-        <TLCRole eId="defense" href="/ontology/role/defense" showAs="Zastupnik okrivljene"/>
-        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Oštećeni"/>
-      </references>
-    </meta>
-    <judgmentBody>
-      <introduction>
-        <p>
-          <organization id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac 
-          <party id="ajlovric" refersTo="#ajlovric" as="#judge">Anja Lovric</party>, uz učešće zapisničara 
-          <party id="aduic" refersTo="#aduic" as="#clerk">Anja Ducic</party>, rješavajući po optužnom predlogu 
-          <party id="ttatjanic" refersTo="#ttatjanic" as="#prosecutor">Tatjana Tatjanic</party> protiv 
-          <party id="dvukovic" refersTo="#dvukovic" as="#defendant">Dusan Vukovic</party> zbog krivičnog djela, dana 29.09.2025. godine, donio je i objavio
-        </p>
-      </introduction>
-      <background>
-        <p class="subtitle">P R E S U D U</p>
-        <p>
-          Okrivljeni 
-          <party id="dvukovic" refersTo="#dvukovic" as="#defendant">Dusan Vukovic</party> nije priznao krivicu. Upravni organ je utvrdio da je njegovo materijalno stanje 
-          <ref href="/pravni#art_1">dobro</ref>, a nije prikazano ni prethodnih porodičnih problema. Takođe, oštećeni, 
-          <party id="mmilic" refersTo="#mmilic" as="#victim">Milica Milic</party>, goni krivično, dok je okrivljeni izrazio kajanje za svoje postupke.
-        </p>
-      </background>
-      <decision>
-        <p class="subtitle">K r i v j e</p>
-        <p>
-          Okrivljeni <party id="dvukovic" refersTo="#dvukovic" as="#defendant">Dusan Vukovic</party> je proglašen krivim zbog kršenja propisa i narušavanja prava oštećenog.
-        </p>
-        <p class="subtitle">O S U Đ U J E</p>
-        <p>
-          Na osnovu relevantnih zakonskih propisa, sud izriče okrivljenom kaznu, koja je biće utvrđena naknadnim rješenjem.
-        </p>
-      </decision>
-      <arguments>
-        <p class="subtitle">O b r a z l o ž e nj e</p>
-        <p>
-          Okrivljeni nije priznao krivicu, ali su dokazi pokazali da je nastala šteta. Oštećeni se izjasnio da želi da goni krivično. Sud je cijenio njegov 
-          <ref href="/krivi#art_220">član 220 Krivičnog zakonika</ref> i na osnovu svih okolnosti slučaja donio presudu.
-        </p>
-      </arguments>
-    </judgmentBody>
-    <conclusions>
-      <organization class="subtitle" id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>
-      <p class="subtitle">Dana, 29.09.2025. godine</p>
-      <p>ZAPISNIČAR, S U D I J A,</p>
-      <p>
-        <party id="aduic" refersTo="#aduic" as="#clerk">Anja Ducic</party>
-        <party id="ajlovric" refersTo="#ajlovric" as="#judge">Anja Lovric</party>
-      </p>
-    </conclusions>
-  </judgment>
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Bijelom Polju</FRBRauthor>
+                    <FRBRdate date="2025-09-29">2025-09-29</FRBRdate>
+                    <FRBRtitle>G_003-2025</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCPerson eId="al" href="/ontology/person/al" showAs="Anja Lovric" />
+                <TLCPerson eId="ad" href="/ontology/person/ad" showAs="Anja Ducic" />
+                <TLCPerson eId="dv" href="/ontology/person/dv" showAs="Dušan Vuković" />
+                <TLCPerson eId="tt" href="/ontology/person/tt" showAs="Tatjana Tatjanic" />
+                <TLCPerson eId="pp" href="/ontology/person/pp" showAs="Pera Peric" />
+                <TLCPerson eId="mm" href="/ontology/person/mm" showAs="Milica Milic" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Okrivljeni" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Sudija" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Zapisničar" />
+                <TLCRole eId="prosecutorAttorney" href="/ontology/role/prosecutorAttorney" showAs="Zastupnik optužbe" />
+                <TLCRole eId="defenseAttorney" href="/ontology/role/defenseAttorney" showAs="Zastupnik okrivljene" />
+                <TLCRole eId="victim" href="/ontology/role/victim" showAs="Oštećenik" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <introduction>
+                <p>
+                    <organization id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac 
+                    <party id="al" refersTo="#al" as="#judge">Anja Lovric</party>, uz učešće zapisničara 
+                    <party id="ad" refersTo="#ad" as="#clerk">Anja Ducic</party>, rješavajući po optužnom predlogu 
+                    <party id="tt" refersTo="#tt" as="#prosecutorAttorney">Tatjana Tatjanic</party> protiv 
+                    <party id="dv" refersTo="#dv" as="#defendant">Dušana Vukovića</party>, dana 29.09.2025. godine, donio je i objavio
+                </p>
+            </introduction>
+            <background>
+                <p class="subtitle">P R E S U D U</p>
+                <p>
+                    Okrivljeni <party id="dv" refersTo="#dv" as="#defendant">Dušan Vuković</party>, priznao je krivicu, a ovim putem se navodi da je u vezi sa optužnim predlogom koji je podnijela <party id="tt" refersTo="#tt" as="#prosecutorAttorney">Tatjana Tatjanic</party>, okrivljeni nije preuzeo odgovornost za ranije porodične probleme.
+                </p>
+            </background>
+            <decision>
+                <p class="subtitle">K r i v j e</p>
+                <p>
+                    Okrivljeni <party id="dv" refersTo="#dv" as="#defendant">Dušan Vuković</party> je izvršio krivično djelo iz <ref href="/krivicni#art_220_para_1">čl. 220 st. 1 Krivičnog zakonika</ref>, za koje je sud utvrdio da je kriv, a uzimajući u obzir sve izrečene okolnosti, uključujući njegov <party id="dv" refersTo="#dv" as="#defendant">Dušan Vuković</party> priznanjem krivice.
+                </p>
+                <p class="subtitle">O S U Đ U J E</p>
+                <p>
+                    Na kaznu zatvora od 6 mjeseci, koja se ne izvršava ukoliko okrivljeni ne učini novo krivično djelo u roku od 2 godine.
+                </p>
+                <p>
+                    Imovinsko pravnog zahtjeva nije bilo.
+                </p>
+            </decision>
+            <arguments>
+                <p class="subtitle">O b r a z l o ž e nj e</p>
+                <p>
+                    Okrivljeni <party id="dv" refersTo="#dv" as="#defendant">Dušan Vuković</party> važi kao odgovoran, pri čemu je sud ocijenio njegovu saznanju i mentalnu sposobnost shvatanja svojih djela kao <party id="dv" refersTo="#dv" as="#defendant">uračunljiv</party>.
+                </p>
+                <p>
+                    Optužba je prikupila dokaze koji ukazuju na ozbiljnost počinjenog djela, a loše ekonomsko stanje nije bilo relevantno za izricanje kazne.
+                </p>
+            </arguments>
+        </judgmentBody>
+        <conclusions>
+            <organization class="subtitle" id="os" refersTo="#os">OSNOVNI SUD U BIJELOM POLJU</organization>
+            <p class="subtitle">Dana, 29.09.2025. godine</p>
+            <p>ZAPISNIČAR, S U D I J A,</p>
+            <p>
+                <party id="ad" refersTo="#ad" as="#clerk">Anja Ducic</party>
+                <party id="al" refersTo="#al" as="#judge">Anja Lovric</party>
+            </p>
+        </conclusions>
+    </judgment>
 </akomaNtoso>
