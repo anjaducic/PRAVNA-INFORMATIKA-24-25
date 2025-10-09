@@ -518,7 +518,7 @@
         </lrml:PenaltyStatement>
 
         <!-- Article 216 Penalties -->
-        <lrml:PenaltyStatement key="pen8">
+        <lrml:PenaltyStatement key="pen8_ps6">
             <lrml:SuborderList>
                 <lrml:Obligation>
                     <ruleml:Atom>
@@ -530,7 +530,31 @@
             </lrml:SuborderList>
         </lrml:PenaltyStatement>
 
-        <lrml:PenaltyStatement key="pen9">
+        <lrml:PenaltyStatement key="pen9_ps6">
+            <lrml:SuborderList>
+                <lrml:Obligation>
+                    <ruleml:Atom>
+                        <ruleml:Rel iri=":max_imprisonment"/>
+                        <ruleml:Var>Days</ruleml:Var>
+                        <ruleml:Ind>1095</ruleml:Ind>
+                    </ruleml:Atom>
+                </lrml:Obligation>
+            </lrml:SuborderList>
+        </lrml:PenaltyStatement>
+
+        <lrml:PenaltyStatement key="pen8_ps7">
+            <lrml:SuborderList>
+                <lrml:Obligation>
+                    <ruleml:Atom>
+                        <ruleml:Rel iri=":min_imprisonment"/>
+                        <ruleml:Var>Days</ruleml:Var>
+                        <ruleml:Ind>90</ruleml:Ind>
+                    </ruleml:Atom>
+                </lrml:Obligation>
+            </lrml:SuborderList>
+        </lrml:PenaltyStatement>
+
+        <lrml:PenaltyStatement key="pen9_ps7">
             <lrml:SuborderList>
                 <lrml:Obligation>
                     <ruleml:Atom>
@@ -640,7 +664,31 @@
             </lrml:SuborderList>
         </lrml:PenaltyStatement>
 
+        <lrml:PenaltyStatement key="pen17_ps13">
+            <lrml:SuborderList>
+                <lrml:Obligation>
+                    <ruleml:Atom>
+                        <ruleml:Rel iri=":max_imprisonment"/>
+                        <ruleml:Var>Days</ruleml:Var>
+                        <ruleml:Ind>1825</ruleml:Ind>
+                    </ruleml:Atom>
+                </lrml:Obligation>
+            </lrml:SuborderList>
+        </lrml:PenaltyStatement>
+
         <lrml:PenaltyStatement key="pen18">
+            <lrml:SuborderList>
+                <lrml:Obligation>
+                    <ruleml:Atom>
+                        <ruleml:Rel iri=":min_imprisonment"/>
+                        <ruleml:Var>Days</ruleml:Var>
+                        <ruleml:Ind>365</ruleml:Ind>
+                    </ruleml:Atom>
+                </lrml:Obligation>
+            </lrml:SuborderList>
+        </lrml:PenaltyStatement>
+
+        <lrml:PenaltyStatement key="pen18_ps14">
             <lrml:SuborderList>
                 <lrml:Obligation>
                     <ruleml:Atom>
@@ -748,20 +796,6 @@
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen6"/>
-                <lrml:toPrescriptiveStatement keyref="#ps5"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen7"/>
-                <lrml:toPrescriptiveStatement keyref="#ps4"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
                 <lrml:appliesPenalty keyref="#pen7"/>
                 <lrml:toPrescriptiveStatement keyref="#ps5"/>
             </lrml:Reparation>
@@ -770,28 +804,28 @@
         <!-- Article 216 Reparations -->
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen8"/>
+                <lrml:appliesPenalty keyref="#pen8_ps6"/>
                 <lrml:toPrescriptiveStatement keyref="#ps6"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen9"/>
+                <lrml:appliesPenalty keyref="#pen9_ps6"/>
                 <lrml:toPrescriptiveStatement keyref="#ps6"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen8"/>
+                <lrml:appliesPenalty keyref="#pen8_ps7"/>
                 <lrml:toPrescriptiveStatement keyref="#ps7"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen9"/>
+                <lrml:appliesPenalty keyref="#pen9_ps7"/>
                 <lrml:toPrescriptiveStatement keyref="#ps7"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
@@ -863,14 +897,14 @@
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen17"/>
+                <lrml:appliesPenalty keyref="#pen17_ps13"/>
                 <lrml:toPrescriptiveStatement keyref="#ps13"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen18"/>
+                <lrml:appliesPenalty keyref="#pen18_ps14"/>
                 <lrml:toPrescriptiveStatement keyref="#ps14"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>

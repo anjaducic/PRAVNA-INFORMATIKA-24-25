@@ -4,16 +4,21 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
 
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_004-2025">
-        <lc:name>G_004-2025</lc:name>
-        <lc:defendant>Dusan Vukovic</lc:defendant>
-        <lc:dependent>Milica Milic</lc:dependent>
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_12-2015">
+        <lc:name>G_12-2015</lc:name>
+        <lc:defendant>saa</lc:defendant>
+        <lc:dependent>asas</lc:dependent>
 
+        <lc:fails_to_provide_support>yes</lc:fails_to_provide_support>
         <lc:support_duty_legally_established>yes</lc:support_duty_legally_established>
         <lc:violates_family_obligations>yes</lc:violates_family_obligations>
+        <lc:family_member_left_in_hardship>yes</lc:family_member_left_in_hardship>
         <lc:is_adult>yes</lc:is_adult>
+        <lc:lives_in_extramarital_union_with_minor>yes</lc:lives_in_extramarital_union_with_minor>
+        <lc:is_parent_or_guardian>yes</lc:is_parent_or_guardian>
         <lc:unlawfully_handles_child_custody>yes</lc:unlawfully_handles_child_custody>
         <lc:prevents_contact_execution>yes</lc:prevents_contact_execution>
         <lc:commits_domestic_violence>yes</lc:commits_domestic_violence>
+        <lc:caused_severe_injury_or_against_child>yes</lc:caused_severe_injury_or_against_child>
     </lc:case>
 </rdf:RDF>

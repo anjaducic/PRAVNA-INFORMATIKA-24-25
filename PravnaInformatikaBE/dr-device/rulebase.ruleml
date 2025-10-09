@@ -950,60 +950,6 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen6">pen6</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>family_obligation_violation_aggravated_death</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>min_imprisonment</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">365</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="pen7">pen7</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>family_obligation_violation_aggravated_health</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>max_imprisonment</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">2920</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
             <Ind uri="pen7">pen7</Ind>
          </oid>
          <body>
@@ -1031,7 +977,7 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen8">pen8</Ind>
+            <Ind uri="pen8_ps6">pen8_ps6</Ind>
          </oid>
          <body>
             <Atom>
@@ -1058,7 +1004,7 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen9">pen9</Ind>
+            <Ind uri="pen9_ps6">pen9_ps6</Ind>
          </oid>
          <body>
             <Atom>
@@ -1085,7 +1031,7 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen8">pen8</Ind>
+            <Ind uri="pen8_ps7">pen8_ps7</Ind>
          </oid>
          <body>
             <Atom>
@@ -1112,7 +1058,7 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen9">pen9</Ind>
+            <Ind uri="pen9_ps7">pen9_ps7</Ind>
          </oid>
          <body>
             <Atom>
@@ -1382,7 +1328,7 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen17">pen17</Ind>
+            <Ind uri="pen17_ps13">pen17_ps13</Ind>
          </oid>
          <body>
             <Atom>
@@ -1409,7 +1355,7 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen18">pen18</Ind>
+            <Ind uri="pen18_ps14">pen18_ps14</Ind>
          </oid>
          <body>
             <Atom>

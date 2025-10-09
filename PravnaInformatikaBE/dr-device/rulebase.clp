@@ -482,34 +482,6 @@
 	) 
 ) 
 	
-(defeasiblerule pen6
-		 
-	(family_obligation_violation_aggravated_death 
-		(
-		 defendant ?Defendant)
-	) 
-  => 
-	 
-	(min_imprisonment 
-		(
-		 value 365)
-	) 
-) 
-	
-(defeasiblerule pen7
-		 
-	(family_obligation_violation_aggravated_health 
-		(
-		 defendant ?Defendant)
-	) 
-  => 
-	 
-	(max_imprisonment 
-		(
-		 value 2920)
-	) 
-) 
-	
 (defeasiblerule pen7
 		 
 	(family_obligation_violation_aggravated_death 
@@ -524,7 +496,7 @@
 	) 
 ) 
 	
-(defeasiblerule pen8
+(defeasiblerule pen8_ps6
 		 
 	(extramarital_union_with_minor_basic 
 		(
@@ -538,7 +510,7 @@
 	) 
 ) 
 	
-(defeasiblerule pen9
+(defeasiblerule pen9_ps6
 		 
 	(extramarital_union_with_minor_basic 
 		(
@@ -552,7 +524,7 @@
 	) 
 ) 
 	
-(defeasiblerule pen8
+(defeasiblerule pen8_ps7
 		 
 	(enabling_minor_extramarital_union 
 		(
@@ -566,7 +538,7 @@
 	) 
 ) 
 	
-(defeasiblerule pen9
+(defeasiblerule pen9_ps7
 		 
 	(enabling_minor_extramarital_union 
 		(
@@ -706,7 +678,7 @@
 	) 
 ) 
 	
-(defeasiblerule pen17
+(defeasiblerule pen17_ps13
 		 
 	(domestic_violence_aggravated_weapon 
 		(
@@ -720,7 +692,7 @@
 	) 
 ) 
 	
-(defeasiblerule pen18
+(defeasiblerule pen18_ps14
 		 
 	(domestic_violence_aggravated_severe 
 		(
