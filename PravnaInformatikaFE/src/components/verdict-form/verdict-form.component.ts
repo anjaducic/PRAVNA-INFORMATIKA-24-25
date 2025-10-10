@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { VerdictMetadata } from '../../model/verdict-metadata.model';
@@ -7,8 +7,10 @@ import { Verdict } from '../../model/verdict.model';
 import { VerdictService } from '../../services/verdict.service';
 import { Observable, of } from 'rxjs';
 import { VerdictSimilarity } from '../../model/verdict-similarity.model';
-import { ArticleViolations } from '../../model/articles-violation-model';
-import { ARTICLE_OPTIONS } from '../../model/articles-options.constants';
+import {
+  VIOLATION_KEYS,
+  ViolationKey,
+} from '../../model/articles-options.constants';
 import { RdfService } from '../../services/rdf.service';
 import { RdfInputDTO } from '../../model/rdfDTO-model';
 import { ViolationService } from '../../services/violations.service';
@@ -72,25 +74,14 @@ export class VerdictFormComponent {
     //Novi
     fails_to_provide_support: false,
     support_duty_legally_established: false,
-    severe_consequences_occurred: false,
     violates_family_obligations: false,
-    family_member_left_in_hardship: false,
-    severe_health_damage_occurred: false,
-    family_member_died: false,
-    is_adult: false,
-    lives_in_extramarital_union_with_minor: false,
-    is_parent_or_guardian: false,
-    enables_minor_extramarital_union: false,
     used_force_threat_or_greed: false,
-    unlawfully_handles_child_custody: false,
-    prevents_contact_execution: false,
     endangered_child_wellbeing: false,
     commits_domestic_violence: false,
     used_weapon_or_child_present: false,
     caused_severe_injury_or_against_child: false,
-    violates_domestic_violence_protection_order: false
+    family_member_died: false,
   };
-
 
   allowVerdict: boolean = false;
   loading: boolean = false;
@@ -107,7 +98,7 @@ export class VerdictFormComponent {
     private router: Router,
     private rdfService: RdfService,
     private violationService: ViolationService
-  ) { }
+  ) {}
 
   similarVerdicts$: Observable<VerdictSimilarity[]> = of([]);
 
@@ -137,30 +128,24 @@ export class VerdictFormComponent {
   }
 
   generateRdfFromSelectedArticles(): void {
-    const hasArticleViolations = Object.values(this.selectedConditions).some(
-      (article) => article.length > 0
-    );
+    const violations: Record<string, boolean> = {}; //  Pravimo mapu od atributa koji se salju na BE, posto servis prima mapu
+    for (const key of VIOLATION_KEYS as readonly ViolationKey[]) {
+      if (this.attributes[key] === true) {
+        violations[key] = true;
+      }
+    }
 
-    if (!hasArticleViolations) {
-      console.log(
-        'Nema izabranih prekršaja iz članova zakona - preskačemo generisanje RDF-a'
-      );
+    if (Object.keys(violations).length === 0) {
+      console.log('Nema izabranih prekršaja — preskačemo generisanje RDF-a');
       return;
     }
 
-    const violations: { [key: string]: boolean } = {};
-
-    Object.values(this.selectedConditions)
-      .flat()
-      .forEach((violation) => {
-        violations[violation] = true;
-      });
-
+    // 3) Prepare DTO
     const rdfInput: RdfInputDTO = {
       caseName: this.metadata.caseName,
       defendant: this.metadata.defendant,
       dependent: this.metadata.injuredParty,
-      violations: violations, // Multiple select iz dropdowna, za nasih 5 artikala koji su modelovani
+      violations, // ovde idu checkboxi koji su modelovani za dr-device
     };
 
     console.log('Generisanje RDF sa članovima zakona:', rdfInput);
@@ -171,7 +156,7 @@ export class VerdictFormComponent {
 
     this.rdfService.analyzeCase(rdfInput).subscribe({
       next: (response) => {
-        console.log('Odgovor od dr-device:', response); //  Ovde izvlacimo podatke iz export.rdf od dr-device, dobijamo koje glave kog clana iz zakonika je prekrsio
+        console.log('Odgovor od dr-device:', response);
         this.legalAnalysisResult = response;
         this.isAnalyzing = false;
       },

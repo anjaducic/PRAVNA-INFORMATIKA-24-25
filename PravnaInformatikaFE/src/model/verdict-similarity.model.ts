@@ -12,13 +12,16 @@ export interface VerdictSimilarity {
   propertyClaim?: boolean; // Imovinsko_pravni_zahtjev
   accountability?: string; // Uracunljivost
   intentional?: boolean; // Sa_umisljajem
-  similarity?: number
+  similarity?: number;
 
   //novi atributi za rasudjivanje po pravilima
-  familyObligationsViolation?: string;  //krsenje porodicnih obaveza, korisno za ruleBase rasudjivanje
-  extramaritalRelationshipMinor?: string; //vanbracna veza sa maloletnikom, korisno za ruleBase rasudjivanje, ostavljamo string posto je dropdown (zavisno koliko clanova je prekrseno)
-  unlawfulDetention?: string; //ilegalno zadrzanje deteta, korisno za ruleBase rasudjivanje
-  familyMemberMaintenance?: string;
-  domesticViolence?: string;
+  fails_to_provide_support: boolean;
+  support_duty_legally_established: boolean;
+  violates_family_obligations: boolean;
+  used_force_threat_or_greed: boolean;
+  endangered_child_wellbeing: boolean;
+  commits_domestic_violence: boolean;
+  used_weapon_or_child_present: boolean;
+  caused_severe_injury_or_against_child: boolean;
+  family_member_died: boolean;
 }
-

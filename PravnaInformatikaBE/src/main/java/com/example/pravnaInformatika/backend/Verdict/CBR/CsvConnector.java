@@ -54,12 +54,16 @@ public class CsvConnector implements Connector {
                 v.setPropertyClaim(parseBoolean(values[10]));
                 v.setAccountability(values[11]);
                 v.setIntentional(parseBoolean(values[12]));
-
-//                v.setFamilyObligationsViolation(values[13]);
-//                v.setExtramaritalRelationshipMinor(values[14]);
-//                v.setUnlawfulDetention(values[15]);
-//                v.setFamilyMemberMaintenance(values[16]);
-//                v.setDomesticViolence(values[17]);
+                //Novi atributi
+                v.setFails_to_provide_support(parseBoolean(values[13]));
+                v.setSupport_duty_legally_established(parseBoolean(values[14]));
+                v.setViolates_family_obligations(parseBoolean(values[15]));
+                v.setUsed_force_threat_or_greed(parseBoolean(values[16]));
+                v.setEndangered_child_wellbeing(parseBoolean(values[17]));
+                v.setCommits_domestic_violence(parseBoolean(values[18]));
+                v.setUsed_weapon_or_child_present(parseBoolean(values[19]));
+                v.setCaused_severe_injury_or_against_child(parseBoolean(values[20]));
+                v.setFamily_member_died(parseBoolean(values[21]));
 
                 cbrCase.setDescription(v);
                 cases.add(cbrCase);

@@ -19,13 +19,16 @@ public class VerdictSimilarity implements CaseComponent{
     private Boolean intentional; // Sa_umisljajem
     private double similarity;
 
-
     //Dodatni atributi za rasudjivanje po slucajevima
-    private String familyObligationsViolation;
-    private String extramaritalRelationshipMinor;
-    private String unlawfulDetention;
-    private String familyMemberMaintenance;
-    private String domesticViolence;
+    private Boolean fails_to_provide_support;
+    private Boolean support_duty_legally_established;
+    private Boolean violates_family_obligations;
+    private Boolean used_force_threat_or_greed;
+    private Boolean endangered_child_wellbeing;
+    private Boolean commits_domestic_violence;
+    private Boolean used_weapon_or_child_present;
+    private Boolean caused_severe_injury_or_against_child;
+    private Boolean family_member_died;
 
     public double getSimilarity() {
         return similarity;
@@ -50,11 +53,16 @@ public class VerdictSimilarity implements CaseComponent{
     public String getAccountability() { return accountability; }
     public Boolean getIntentional() { return intentional; }
 
-    public String getFamilyObligationsViolation() { return familyObligationsViolation; }
-    public String getExtramaritalRelationshipMinor() { return extramaritalRelationshipMinor; }
-    public String getUnlawfulDetention() { return unlawfulDetention; }
-    public String getFamilyMemberMaintenance() { return familyMemberMaintenance; }
-    public String getDomesticViolence() { return domesticViolence; }
+    //Novi atributi
+    public Boolean getFails_to_provide_support() {return fails_to_provide_support;}
+    public Boolean getSupport_duty_legally_established() {return support_duty_legally_established;}
+    public Boolean getViolates_family_obligations() {return violates_family_obligations;}
+    public Boolean getUsed_force_threat_or_greed() {return used_force_threat_or_greed;}
+    public Boolean getEndangered_child_wellbeing() {return endangered_child_wellbeing;}
+    public Boolean getCommits_domestic_violence() {return commits_domestic_violence;}
+    public Boolean getUsed_weapon_or_child_present() {return used_weapon_or_child_present;}
+    public Boolean getCaused_severe_injury_or_against_child() {return caused_severe_injury_or_against_child;}
+    public Boolean getFamily_member_died() {return family_member_died;}
 
     // Setters
     public void setCaseName(String fileName) { this.caseName = fileName; }
@@ -70,12 +78,16 @@ public class VerdictSimilarity implements CaseComponent{
     public void setPropertyClaim(Boolean propertyClaim) { this.propertyClaim = propertyClaim; }
     public void setAccountability(String accountability) { this.accountability = accountability; }
     public void setIntentional(Boolean intentional) { this.intentional = intentional; }
-
-    public void setFamilyObligationsViolation(String familyObligationsViolation) {this.familyObligationsViolation = familyObligationsViolation;}
-    public void setExtramaritalRelationshipMinor(String extramaritalRelationshipMinor) {this.extramaritalRelationshipMinor = extramaritalRelationshipMinor;}
-    public void setUnlawfulDetention(String unlawfulDetention) {this.unlawfulDetention = unlawfulDetention;}
-    public void setFamilyMemberMaintenance(String familyMemberMaintenance) {this.familyMemberMaintenance = familyMemberMaintenance;}
-    public void setDomesticViolence(String domesticViolence) {this.domesticViolence = domesticViolence;}
+    //Novi atributi
+    public void setFails_to_provide_support(Boolean fails_to_provide_support) {this.fails_to_provide_support = fails_to_provide_support;}
+    public void setSupport_duty_legally_established(Boolean support_duty_legally_established) {this.support_duty_legally_established = support_duty_legally_established;}
+    public void setViolates_family_obligations(Boolean violates_family_obligations) {this.violates_family_obligations = violates_family_obligations;}
+    public void setUsed_force_threat_or_greed(Boolean used_force_threat_or_greed) {this.used_force_threat_or_greed = used_force_threat_or_greed;}
+    public void setEndangered_child_wellbeing(Boolean endangered_child_wellbeing) {this.endangered_child_wellbeing = endangered_child_wellbeing;}
+    public void setCommits_domestic_violence(Boolean commits_domestic_violence) {this.commits_domestic_violence = commits_domestic_violence;}
+    public void setUsed_weapon_or_child_present(Boolean used_weapon_or_child_present) {this.used_weapon_or_child_present = used_weapon_or_child_present;}
+    public void setCaused_severe_injury_or_against_child(Boolean caused_severe_injury_or_against_child) {this.caused_severe_injury_or_against_child = caused_severe_injury_or_against_child;}
+    public void setFamily_member_died(Boolean family_member_died) {this.family_member_died = family_member_died;}
 
     @Override
     public String toString() {
@@ -93,11 +105,15 @@ public class VerdictSimilarity implements CaseComponent{
                 ", propertyClaim=" + propertyClaim +
                 ", accountability='" + accountability + '\'' +
                 ", intentional=" + intentional +
-                ", familyObligationsViolation='" + familyObligationsViolation + '\'' +
-                ", extramaritalRelationshipMinor='" + extramaritalRelationshipMinor + '\'' +
-                ", unlawfulDetention='" + unlawfulDetention + '\'' +
-                ", familyMemberMaintenance='" + familyMemberMaintenance + '\'' +
-                ", domesticViolence='" + domesticViolence + '\'' +
+                ", fails_to_provide_support=" + fails_to_provide_support +  //  novi atributi
+                ", support_duty_legally_established=" + support_duty_legally_established +
+                ", violates_family_obligations=" + violates_family_obligations +
+                ", used_force_threat_or_greed=" + used_force_threat_or_greed +
+                ", endangered_child_wellbeing=" + endangered_child_wellbeing +
+                ", commits_domestic_violence=" + commits_domestic_violence +
+                ", used_weapon_or_child_present=" + used_weapon_or_child_present +
+                ", caused_severe_injury_or_against_child=" + caused_severe_injury_or_against_child +
+                ", family_member_died=" + family_member_died +
                 '}';
     }
 

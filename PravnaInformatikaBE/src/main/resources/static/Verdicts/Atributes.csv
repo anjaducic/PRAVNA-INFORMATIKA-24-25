@@ -1,36 +1,36 @@
-Presuda,Priznao,Osudjivan,Materijalno_stanje,Izdrzavanje,Kajanje,Prethodni_porodicni_problemi,Tip_povrede,Korektno_drzanje,Osteceni_goni_krivicno,Imovinsko_pravni_zahtjev,Uracunljivost,Sa_umisljajem
-K 56-21,TRUE,FALSE,Lose,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 85-18,TRUE,TRUE,Lose,FALSE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 91-22,FALSE,TRUE,Srednje,TRUE,FALSE,TRUE,Nema,TRUE,FALSE,FALSE,Uracunljiv,FALSE
-K 104-16,TRUE,FALSE,Lose,FALSE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 106-19,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Smanjena uracunljivost,TRUE
-K 113-19,TRUE,TRUE,Srednje,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 113-21,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 200-13,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 229-10,TRUE,TRUE,Srednje,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 264-11,TRUE,TRUE,Lose,TRUE,FALSE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 286-12,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,TRUE,FALSE,Uracunljiv,TRUE
-K 408-10,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 27-18,TRUE,FALSE,Lose,TRUE,FALSE,TRUE,Dusevne,TRUE,TRUE,FALSE,Uracunljiv,TRUE
-K 29-16,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-K 51-21,FALSE,TRUE,Srednje,FALSE,FALSE,TRUE,Dusevne,FALSE,TRUE,FALSE,Uracunljiv,TRUE
-K 13-2015,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE
-K 149-2019,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE
-K 320-2022,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE
-K 430-2013,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE
-K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRUE
-G_001-2025,FALSE,FALSE,Dobro,FALSE,TRUE,FALSE,Nema,TRUE,TRUE,FALSE,Uracunljiv,FALSE
-G_002-2025,false,false,Dobro,true,false,true,Nema,false,true,false,Uracunljiv,false
-G_003-2025,false,false,Dobro,false,true,false,Nema,false,true,false,Uracunljiv,false
-G_003-2025,false,true,Dobro,false,false,true,Nema,false,true,false,Uracunljiv,false
-G_004-2025,true,false,Dobro,false,true,true,Srednje,true,false,false,Uracunljiv,true
-G_004-2025,false,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false
-G_005-2025,false,true,Srednje,false,true,false,Nema,false,false,true,Uracunljiv,false
-G_005-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false
-G_006-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false
-G_006-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false
-G_009-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false
-G_009-2025,true,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false
-G_010-2025,true,true,Dobro,true,false,false,Srednje,false,false,false,Uracunljiv,false
-G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,true,Uracunljiv,false
-G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,false,Uracunljiv,false
+Presuda,Priznao,Osudjivan,Materijalno_stanje,Izdrzavanje,Kajanje,Prethodni_porodicni_problemi,Tip_povrede,Korektno_drzanje,Osteceni_goni_krivicno,Imovinsko_pravni_zahtjev,Uracunljivost,Sa_umisljajem, Ne_daje_izdrzavanje, Obaveza_izdrzavanja_je_pravno_ustanovljena, Krsi_porodicne_obaveze, Upotrebio_silu_pretnju_ili_vodjen_pohlepom, Ugrozio_je_dobrobit_deteta, Vrsi_nasilje_u_porodici, Upotrebio_oruzje_ili_u_prisustvu_deteta, Prouzrokovao_tesku_povredu_ili_protiv_deteta, Clan_porodice_je_umro
+K 56-21,TRUE,FALSE,Lose,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+K 85-18,TRUE,TRUE,Lose,FALSE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE
+K 91-22,FALSE,TRUE,Srednje,TRUE,FALSE,TRUE,Nema,TRUE,FALSE,FALSE,Uracunljiv,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+K 104-16,TRUE,FALSE,Lose,FALSE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+K 106-19,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Smanjena uracunljivost,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+K 113-19,TRUE,TRUE,Srednje,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+K 113-21,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+K 200-13,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,FALSE,FALSE,Uracunljiv,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE
+K 229-10,TRUE,TRUE,Srednje,TRUE,TRUE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+K 264-11,TRUE,TRUE,Lose,TRUE,FALSE,FALSE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+K 286-12,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Teske,TRUE,TRUE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE
+K 408-10,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Dusevne,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+K 27-18,TRUE,FALSE,Lose,TRUE,FALSE,TRUE,Dusevne,TRUE,TRUE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+K 29-16,TRUE,TRUE,Lose,TRUE,TRUE,TRUE,Lake,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+K 51-21,FALSE,TRUE,Srednje,FALSE,FALSE,TRUE,Dusevne,FALSE,TRUE,FALSE,Uracunljiv,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+K 13-2015,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+K 149-2019,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+K 320-2022,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+K 430-2013,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,true,FALSE,FALSE,FALSE
+K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+G_001-2025,FALSE,FALSE,Dobro,FALSE,TRUE,FALSE,Nema,TRUE,TRUE,FALSE,Uracunljiv,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+G_002-2025,false,false,Dobro,true,false,true,Nema,false,true,false,Uracunljiv,false,false,true,false,false,false,true,false,false,false
+G_003-2025,false,false,Dobro,false,true,false,Nema,false,true,false,Uracunljiv,false,false,true,false,false,false,true,false,false,false
+G_003-2025,false,true,Dobro,false,false,true,Nema,false,true,false,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_004-2025,true,false,Dobro,false,true,true,Srednje,true,false,false,Uracunljiv,true,true,false,false,false,false,false,false,false,false
+G_004-2025,false,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_005-2025,false,true,Srednje,false,true,false,Nema,false,false,true,Uracunljiv,false,true,false,false,false,false,false,false,false,false
+G_005-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_006-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_006-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_009-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_009-2025,true,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_010-2025,true,true,Dobro,true,false,false,Srednje,false,false,false,Uracunljiv,false,true,false,false,false,false,false,false,false,false
+G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,false,Uracunljiv,false,false,true,false,false,false,false,false,false,false

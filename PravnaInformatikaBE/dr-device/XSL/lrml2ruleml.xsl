@@ -17,10 +17,10 @@
             <xsl:attribute name="rdf_export">export.rdf</xsl:attribute>
 
             <xsl:attribute name="rdf_export_classes">failure_to_provide_support_basic failure_to_provide_support_aggravated     
-            family_obligation_violation_basic family_obligation_violation_aggravated_health family_obligation_violation_aggravated_death
-            extramarital_union_with_minor_basic enabling_minor_extramarital_union enabling_minor_extramarital_union_aggravated 
-            child_abduction_basic preventing_child_contact child_abduction_aggravated 
-            domestic_violence_basic domestic_violence_aggravated_weapon domestic_violence_aggravated_severe domestic_violence_aggravated_death domestic_violence_protection_violation 
+            family_obligation_violation_basic 
+            enabling_minor_extramarital_union  
+            child_abduction_aggravated 
+            domestic_violence_basic domestic_violence_aggravated_weapon domestic_violence_aggravated_severe domestic_violence_aggravated_death 
             max_imprisonment min_imprisonment</xsl:attribute>
 
             <xsl:attribute name="rdf_import">&quot;facts.rdf&quot;</xsl:attribute>
