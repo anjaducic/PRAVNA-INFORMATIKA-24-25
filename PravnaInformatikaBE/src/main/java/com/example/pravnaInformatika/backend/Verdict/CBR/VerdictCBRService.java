@@ -52,18 +52,23 @@ public class VerdictCBRService {
                 Arrays.asList("Nema", "Lake", "Srednje", "Dusevne", "Teske")
         );
 
+        // Nema
         injuryTypeSim.setSimilarity("Nema", "Lake", 0.25);
-        injuryTypeSim.setSimilarity("Nema", "Srednje", 0.50);
-        injuryTypeSim.setSimilarity("Nema", "Dusevne", 0.50);
-        injuryTypeSim.setSimilarity("Nema", "Teske", 0.75);
+        injuryTypeSim.setSimilarity("Nema", "Srednje", 0.1);
+        injuryTypeSim.setSimilarity("Nema", "Dusevne", 0.15);
+        injuryTypeSim.setSimilarity("Nema", "Teske", 0.0);
 
-        injuryTypeSim.setSimilarity("Lake", "Srednje", 0.25);
-        injuryTypeSim.setSimilarity("Lake", "Dusevne", 0.25);
-        injuryTypeSim.setSimilarity("Lake", "Teske", 0.50);
+        // Lake
+        injuryTypeSim.setSimilarity("Lake", "Srednje", 0.6);
+        injuryTypeSim.setSimilarity("Lake", "Dusevne", 0.3);
+        injuryTypeSim.setSimilarity("Lake", "Teske", 0.1);
 
-        injuryTypeSim.setSimilarity("Srednje", "Dusevne", 1.0); //prema kaznama
-        injuryTypeSim.setSimilarity("Srednje", "Teske", 0.25);
-        injuryTypeSim.setSimilarity("Dusevne", "Teske", 0.25);
+        // Srednje
+        injuryTypeSim.setSimilarity("Srednje", "Dusevne", 0.5);
+        injuryTypeSim.setSimilarity("Srednje", "Teske", 0.7);
+
+        // Dusevne
+        injuryTypeSim.setSimilarity("Dusevne", "Teske", 0.6);
 
         simConfig.addMapping(new Attribute("injuryType", VerdictDTO.class), injuryTypeSim);
 
@@ -74,7 +79,7 @@ public class VerdictCBRService {
 
         accountabilitySim.setSimilarity("Uracunljiv", "Smanjena uracunljivost", 0.5);
         accountabilitySim.setSimilarity("Uracunljiv", "Neuracunljiv", 0.0);
-        accountabilitySim.setSimilarity("Smanjena uracunljivost", "Neuracunljiv", 0.5);
+        accountabilitySim.setSimilarity("Smanjena uracunljivost", "Neuracunljiv", 0.75);
 
         simConfig.addMapping(new Attribute("accountability", VerdictDTO.class), accountabilitySim);
 
