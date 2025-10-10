@@ -1,5 +1,0 @@
-(import-rdf )
-(import-rdf-files facts.rdf)
-(load-compiled-dr-device rulebase.clp)
-(go-dr-device)
-(dr-device_export_rdf rulebase.ruleml export.rdf proof.ruleml failure_to_provide_support_basic failure_to_provide_support_aggravated family_obligation_violation_basic enabling_minor_extramarital_union child_abduction_aggravated domestic_violence_basic domestic_violence_aggravated_weapon domestic_violence_aggravated_severe domestic_violence_aggravated_death max_imprisonment min_imprisonment)

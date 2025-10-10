@@ -45,7 +45,7 @@ public class VerdictCBRService {
                 "propertyClaim", "intentional",
                 //Novi atributi
                 "fails_to_provide_support", "support_duty_legally_established", "violates_family_obligations", "used_force_threat_or_greed",
-                "endangered_child_wellbeing", "commits_domestic_violence", "used_weapon_or_child_present", "caused_severe_injury_or_against_child", "family_member_died"
+                "endangered_child_wellbeing", "used_weapon_or_child_present", "caused_severe_injury_or_against_child", "family_member_died"
         );
         for (String attr : booleanAttrs)
             simConfig.addMapping(new Attribute(attr, VerdictDTO.class), new Equal());
@@ -97,17 +97,6 @@ public class VerdictCBRService {
 
         simConfig.addMapping(new Attribute("financialStatus", VerdictDTO.class), financialStatusSim);
 
-        // familyObligationsViolation
-        TabularSimilarity familyObligationsSim = new TabularSimilarity(
-                Arrays.asList("Nema", "Osnovno krsenje", "Otezano zdravstvena steta", "Otezano smrt")
-        );
-        familyObligationsSim.setSimilarity("Nema", "Osnovno krsenje", 0.7);
-        familyObligationsSim.setSimilarity("Nema", "Otezano zdravstvena steta", 0.4);
-        familyObligationsSim.setSimilarity("Nema", "Otezano smrt", 0.2);
-        familyObligationsSim.setSimilarity("Osnovno krsenje", "Otezano zdravstvena steta", 0.75);
-        familyObligationsSim.setSimilarity("Osnovno krsenje", "Otezano smrt", 0.35);
-        familyObligationsSim.setSimilarity("Otezano zdravstvena steta", "Otezano smrt", 0.6);
-        //Ovde ispod su ranije bili novi atributi ali kao array, posto su sad bool, onda sam obrisao
 
     }
 
@@ -155,7 +144,6 @@ public class VerdictCBRService {
             vs.setViolates_family_obligations(dto.getViolates_family_obligations());
             vs.setUsed_force_threat_or_greed(dto.getUsed_force_threat_or_greed());
             vs.setEndangered_child_wellbeing(dto.getEndangered_child_wellbeing());
-            vs.setCommits_domestic_violence(dto.getCommits_domestic_violence());
             vs.setUsed_weapon_or_child_present(dto.getUsed_weapon_or_child_present());
             vs.setCaused_severe_injury_or_against_child(dto.getCaused_severe_injury_or_against_child());
             vs.setFamily_member_died(dto.getFamily_member_died());

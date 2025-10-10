@@ -315,53 +315,19 @@
                       Ne daje izdržavanje:
                       {{ verdict.fails_to_provide_support ? "DA" : "NE" }}
                     </p>
-                    <p
-                      *ngIf="
-                        verdict.support_duty_legally_established !== undefined
-                      "
-                    >
-                      Obaveza izdržavanja je pravno ustanovljena:
-                      {{
-                        verdict.support_duty_legally_established ? "DA" : "NE"
-                      }}
-                    </p>
-                    <p
-                      *ngIf="verdict.violates_family_obligations !== undefined"
-                    >
-                      Krši porodične obaveze:
-                      {{ verdict.violates_family_obligations ? "DA" : "NE" }}
-                    </p>
-                    <p *ngIf="verdict.used_force_threat_or_greed !== undefined">
-                      Upotrebio silu, pretnju ili je vođen pohlepom:
-                      {{ verdict.used_force_threat_or_greed ? "DA" : "NE" }}
-                    </p>
+                               
+                    
                     <p *ngIf="verdict.endangered_child_wellbeing !== undefined">
                       Ugrozio je dobrobit deteta:
                       {{ verdict.endangered_child_wellbeing ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.commits_domestic_violence !== undefined">
-                      Vrši nasilje u porodici:
-                      {{ verdict.commits_domestic_violence ? "DA" : "NE" }}
-                    </p>
                     <p
                       *ngIf="verdict.used_weapon_or_child_present !== undefined"
                     >
-                      Upotrebio oružje ili u prisustvu deteta:
+                      Upotrebio oružje u prisustvu deteta:
                       {{ verdict.used_weapon_or_child_present ? "DA" : "NE" }}
                     </p>
-                    <p
-                      *ngIf="
-                        verdict.caused_severe_injury_or_against_child !==
-                        undefined
-                      "
-                    >
-                      Prouzrokovao tešku povredu ili protiv deteta:
-                      {{
-                        verdict.caused_severe_injury_or_against_child
-                          ? "DA"
-                          : "NE"
-                      }}
-                    </p>
+                    
                     <p *ngIf="verdict.family_member_died !== undefined">
                       Član porodice je umro:
                       {{ verdict.family_member_died ? "DA" : "NE" }}

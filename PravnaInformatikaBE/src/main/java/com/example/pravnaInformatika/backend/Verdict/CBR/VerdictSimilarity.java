@@ -25,7 +25,6 @@ public class VerdictSimilarity implements CaseComponent{
     private Boolean violates_family_obligations;
     private Boolean used_force_threat_or_greed;
     private Boolean endangered_child_wellbeing;
-    private Boolean commits_domestic_violence;
     private Boolean used_weapon_or_child_present;
     private Boolean caused_severe_injury_or_against_child;
     private Boolean family_member_died;
@@ -59,7 +58,6 @@ public class VerdictSimilarity implements CaseComponent{
     public Boolean getViolates_family_obligations() {return violates_family_obligations;}
     public Boolean getUsed_force_threat_or_greed() {return used_force_threat_or_greed;}
     public Boolean getEndangered_child_wellbeing() {return endangered_child_wellbeing;}
-    public Boolean getCommits_domestic_violence() {return commits_domestic_violence;}
     public Boolean getUsed_weapon_or_child_present() {return used_weapon_or_child_present;}
     public Boolean getCaused_severe_injury_or_against_child() {return caused_severe_injury_or_against_child;}
     public Boolean getFamily_member_died() {return family_member_died;}
@@ -84,7 +82,6 @@ public class VerdictSimilarity implements CaseComponent{
     public void setViolates_family_obligations(Boolean violates_family_obligations) {this.violates_family_obligations = violates_family_obligations;}
     public void setUsed_force_threat_or_greed(Boolean used_force_threat_or_greed) {this.used_force_threat_or_greed = used_force_threat_or_greed;}
     public void setEndangered_child_wellbeing(Boolean endangered_child_wellbeing) {this.endangered_child_wellbeing = endangered_child_wellbeing;}
-    public void setCommits_domestic_violence(Boolean commits_domestic_violence) {this.commits_domestic_violence = commits_domestic_violence;}
     public void setUsed_weapon_or_child_present(Boolean used_weapon_or_child_present) {this.used_weapon_or_child_present = used_weapon_or_child_present;}
     public void setCaused_severe_injury_or_against_child(Boolean caused_severe_injury_or_against_child) {this.caused_severe_injury_or_against_child = caused_severe_injury_or_against_child;}
     public void setFamily_member_died(Boolean family_member_died) {this.family_member_died = family_member_died;}
@@ -110,7 +107,6 @@ public class VerdictSimilarity implements CaseComponent{
                 ", violates_family_obligations=" + violates_family_obligations +
                 ", used_force_threat_or_greed=" + used_force_threat_or_greed +
                 ", endangered_child_wellbeing=" + endangered_child_wellbeing +
-                ", commits_domestic_violence=" + commits_domestic_violence +
                 ", used_weapon_or_child_present=" + used_weapon_or_child_present +
                 ", caused_severe_injury_or_against_child=" + caused_severe_injury_or_against_child +
                 ", family_member_died=" + family_member_died +

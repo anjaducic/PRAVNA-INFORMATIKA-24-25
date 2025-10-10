@@ -20,7 +20,6 @@ export interface VerdictSimilarity {
   violates_family_obligations?: boolean;
   used_force_threat_or_greed?: boolean;
   endangered_child_wellbeing?: boolean;
-  commits_domestic_violence?: boolean;
   used_weapon_or_child_present?: boolean;
   caused_severe_injury_or_against_child?: boolean;
   family_member_died?: boolean;

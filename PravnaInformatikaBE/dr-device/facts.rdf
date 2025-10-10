@@ -4,16 +4,11 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
 
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_22-2015">
-        <lc:name>G_22-2015</lc:name>
-        <lc:defendant>adsdsadas</lc:defendant>
-        <lc:dependent>adsaadsd</lc:dependent>
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#G_2-2012">
+        <lc:name>G_2-2012</lc:name>
+        <lc:defendant>a</lc:defendant>
+        <lc:dependent>a</lc:dependent>
 
-        <lc:fails_to_provide_support>yes</lc:fails_to_provide_support>
-        <lc:support_duty_legally_established>yes</lc:support_duty_legally_established>
-        <lc:violates_family_obligations>yes</lc:violates_family_obligations>
         <lc:endangered_child_wellbeing>yes</lc:endangered_child_wellbeing>
-        <lc:commits_domestic_violence>yes</lc:commits_domestic_violence>
-        <lc:used_weapon_or_child_present>yes</lc:used_weapon_or_child_present>
     </lc:case>
 </rdf:RDF>
