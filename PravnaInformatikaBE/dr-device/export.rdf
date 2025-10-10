@@ -116,40 +116,40 @@
 </rdf:Property>
 
 <export:failure_to_provide_support_basic rdf:about='&export;failure_to_provide_support_basic1'>
-     <export:defendant>sadads</export:defendant>
+     <export:defendant>adsdsadas</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
 </export:failure_to_provide_support_basic>
 
 <export:failure_to_provide_support_aggravated rdf:about='&export;failure_to_provide_support_aggravated1'>
-     <export:defendant>sadads</export:defendant>
+     <export:defendant>adsdsadas</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
 </export:failure_to_provide_support_aggravated>
 
 <export:family_obligation_violation_basic rdf:about='&export;family_obligation_violation_basic1'>
-     <export:defendant>sadads</export:defendant>
+     <export:defendant>adsdsadas</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
 </export:family_obligation_violation_basic>
 
-<export:enabling_minor_extramarital_union rdf:about='&export;enabling_minor_extramarital_union1'>
-     <export:defendant>sadads</export:defendant>
+<export:child_abduction_aggravated rdf:about='&export;child_abduction_aggravated1'>
+     <export:defendant>adsdsadas</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
-</export:enabling_minor_extramarital_union>
-
-<export:child_abduction_aggravated rdf:about='&export;child_abduction_aggravated1'>
-     <export:defendant>sadads</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
 </export:child_abduction_aggravated>
 
 <export:domestic_violence_basic rdf:about='&export;domestic_violence_basic1'>
-     <export:defendant>sadads</export:defendant>
+     <export:defendant>adsdsadas</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+</export:domestic_violence_basic>
+
+<export:domestic_violence_aggravated_weapon rdf:about='&export;domestic_violence_aggravated_weapon1'>
+     <export:defendant>adsdsadas</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
-</export:domestic_violence_basic>
+</export:domestic_violence_aggravated_weapon>
 
 <export:max_imprisonment rdf:about='&export;max_imprisonment1'>
      <export:value>730</export:value>
@@ -164,33 +164,27 @@
 </export:max_imprisonment>
 
 <export:max_imprisonment rdf:about='&export;max_imprisonment3'>
-     <export:value>1020</export:value>
+     <export:value>1825</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof9</defeasible:proof>
 </export:max_imprisonment>
 
-<export:max_imprisonment rdf:about='&export;max_imprisonment4'>
-     <export:value>1825</export:value>
+<export:min_imprisonment rdf:about='&export;min_imprisonment1'>
+     <export:value>90</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof10</defeasible:proof>
-</export:max_imprisonment>
+</export:min_imprisonment>
 
-<export:min_imprisonment rdf:about='&export;min_imprisonment1'>
-     <export:value>120</export:value>
+<export:min_imprisonment rdf:about='&export;min_imprisonment2'>
+     <export:value>180</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof11</defeasible:proof>
 </export:min_imprisonment>
 
-<export:min_imprisonment rdf:about='&export;min_imprisonment2'>
-     <export:value>90</export:value>
+<export:min_imprisonment rdf:about='&export;min_imprisonment3'>
+     <export:value>365</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof12</defeasible:proof>
-</export:min_imprisonment>
-
-<export:min_imprisonment rdf:about='&export;min_imprisonment3'>
-     <export:value>180</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof13</defeasible:proof>
 </export:min_imprisonment>
 
 </rdf:RDF>

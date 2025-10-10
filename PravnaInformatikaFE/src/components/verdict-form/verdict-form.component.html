@@ -311,40 +311,60 @@
                     </p>
 
                     <!-- Rasudjivanje po pravilima -->
-                    <p *ngIf="verdict.fails_to_provide_support">
+                    <p *ngIf="verdict.fails_to_provide_support !== undefined">
                       Ne daje izdržavanje:
-                      {{ verdict.fails_to_provide_support }}
+                      {{ verdict.fails_to_provide_support ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.support_duty_legally_established">
+                    <p
+                      *ngIf="
+                        verdict.support_duty_legally_established !== undefined
+                      "
+                    >
                       Obaveza izdržavanja je pravno ustanovljena:
-                      {{ verdict.support_duty_legally_established }}
+                      {{
+                        verdict.support_duty_legally_established ? "DA" : "NE"
+                      }}
                     </p>
-                    <p *ngIf="verdict.violates_family_obligations">
+                    <p
+                      *ngIf="verdict.violates_family_obligations !== undefined"
+                    >
                       Krši porodične obaveze:
-                      {{ verdict.violates_family_obligations }}
+                      {{ verdict.violates_family_obligations ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.used_force_threat_or_greed">
+                    <p *ngIf="verdict.used_force_threat_or_greed !== undefined">
                       Upotrebio silu, pretnju ili je vođen pohlepom:
-                      {{ verdict.used_force_threat_or_greed }}
+                      {{ verdict.used_force_threat_or_greed ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.endangered_child_wellbeing">
+                    <p *ngIf="verdict.endangered_child_wellbeing !== undefined">
                       Ugrozio je dobrobit deteta:
-                      {{ verdict.endangered_child_wellbeing }}
+                      {{ verdict.endangered_child_wellbeing ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.commits_domestic_violence">
+                    <p *ngIf="verdict.commits_domestic_violence !== undefined">
                       Vrši nasilje u porodici:
-                      {{ verdict.commits_domestic_violence }}
+                      {{ verdict.commits_domestic_violence ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.used_weapon_or_child_present">
+                    <p
+                      *ngIf="verdict.used_weapon_or_child_present !== undefined"
+                    >
                       Upotrebio oružje ili u prisustvu deteta:
-                      {{ verdict.used_weapon_or_child_present }}
+                      {{ verdict.used_weapon_or_child_present ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.caused_severe_injury_or_against_child">
+                    <p
+                      *ngIf="
+                        verdict.caused_severe_injury_or_against_child !==
+                        undefined
+                      "
+                    >
                       Prouzrokovao tešku povredu ili protiv deteta:
-                      {{ verdict.caused_severe_injury_or_against_child }}
+                      {{
+                        verdict.caused_severe_injury_or_against_child
+                          ? "DA"
+                          : "NE"
+                      }}
                     </p>
-                    <p *ngIf="verdict.family_member_died">
-                      Član porodice je umro: {{ verdict.family_member_died }}
+                    <p *ngIf="verdict.family_member_died !== undefined">
+                      Član porodice je umro:
+                      {{ verdict.family_member_died ? "DA" : "NE" }}
                     </p>
                   </div>
                   <span class="open-icon">🔗</span>

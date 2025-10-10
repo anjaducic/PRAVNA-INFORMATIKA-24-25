@@ -230,127 +230,68 @@ ERROR:
            (is-a lc:case)
            (lc:defendant ?Defendant)
            (lc:caused_severe_injury_or_against_child
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
+[OBJRTBLD2] No objects of existing classes can satisfy lc:used_force_threat_or_greed restriction in object pattern.
 
 ERROR:
-(defrule MAIN::rule13-defeated-dot-gen484
-   (declare (salience (+ 1000 (calc-defeasible-priority -3 [rule13]))))
+(defrule MAIN::rule7-defeasibly-dot-gen522
+   (declare (salience (+ 1000 (calc-defeasible-priority -1 [rule7]))))
    (run-deductive-rules)
-   (object (name ?gen74)
-           (is-a domestic_violence_aggravated_weapon)
-           (defendant ?Defendant)
-           (negative-defeated $?gen77&:(subseq-pos (create$ rule13-defeated rule14 rule15 $$$ $?gen77))))
-   (test (eq (class ?gen74) domestic_violence_aggravated_weapon))
-   (not (and (object (name ?gen81)
-                     (is-a lc:case)
-                     (lc:defendant ?Defendant)
-                     (lc:commits_domestic_violence "yes")
-                     (positive ?gen80&:(>= ?gen80 1)))
-             (object (name ?gen83)
-                     (is-a lc:case)
-                     (lc:defendant ?Defendant)
-                     (lc:used_weapon_or_child_present
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
-
-ERROR:
-(defrule MAIN::rule13-defeated-gen486
-   (declare (salience (+ 1000 (calc-defeasible-priority 3 [rule13]))))
-   (run-deductive-rules)
-   (object (name ?gen81)
-           (is-a lc:case)
-           (lc:defendant ?Defendant)
-           (lc:commits_domestic_violence "yes")
-           (positive ?gen80&:(>= ?gen80 1)))
-   (object (name ?gen83)
-           (is-a lc:case)
-           (lc:defendant ?Defendant)
-           (lc:used_weapon_or_child_present
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
-
-ERROR:
-(defrule MAIN::rule13-defeasibly-dot-gen488
-   (declare (salience (+ 1000 (calc-defeasible-priority -1 [rule13]))))
-   (run-deductive-rules)
-   (object (name ?gen74)
-           (is-a domestic_violence_aggravated_weapon)
+   (object (name ?gen46)
+           (is-a enabling_minor_extramarital_union)
            (defendant ?Defendant)
            (positive 1)
-           (positive-derivator rule13 $?))
-   (test (eq (class ?gen74) domestic_violence_aggravated_weapon))
-   (not (and (object (name ?gen81)
+           (positive-derivator rule7 $?))
+   (test (eq (class ?gen46) enabling_minor_extramarital_union))
+   (not (and (object (name ?gen53)
                      (is-a lc:case)
                      (lc:defendant ?Defendant)
-                     (lc:commits_domestic_violence "yes")
-                     (positive ?gen80&:(>= ?gen80 1)))
-             (object (name ?gen83)
-                     (is-a lc:case)
-                     (lc:defendant ?Defendant)
-                     (lc:used_weapon_or_child_present
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
+                     (lc:used_force_threat_or_greed
+[OBJRTBLD2] No objects of existing classes can satisfy lc:used_force_threat_or_greed restriction in object pattern.
 
 ERROR:
-(defrule MAIN::rule13-defeasibly-gen490
-   (declare (salience (+ 1000 (calc-defeasible-priority 1 [rule13]))))
+(defrule MAIN::rule7-defeasibly-gen524
+   (declare (salience (+ 1000 (calc-defeasible-priority 1 [rule7]))))
    (run-deductive-rules)
-   (object (name ?gen81)
+   (object (name ?gen53)
            (is-a lc:case)
            (lc:defendant ?Defendant)
-           (lc:commits_domestic_violence "yes")
-           (positive ?gen80&:(>= ?gen80 1)))
-   (object (name ?gen83)
-           (is-a lc:case)
-           (lc:defendant ?Defendant)
-           (lc:used_weapon_or_child_present
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
+           (lc:used_force_threat_or_greed
+[OBJRTBLD2] No objects of existing classes can satisfy lc:used_force_threat_or_greed restriction in object pattern.
 
 ERROR:
-(defrule MAIN::rule13-overruled-dot-gen492
-   (declare (salience (+ 1000 (calc-defeasible-priority -2 [rule13]))))
+(defrule MAIN::rule7-overruled-dot-gen526
+   (declare (salience (+ 1000 (calc-defeasible-priority -2 [rule7]))))
    (run-deductive-rules)
-   (object (name ?gen74)
-           (is-a domestic_violence_aggravated_weapon)
+   (object (name ?gen46)
+           (is-a enabling_minor_extramarital_union)
            (defendant ?Defendant)
-           (negative-support $?gen77)
-           (negative-overruled $?gen78&:(subseq-pos (create$ rule13-overruled $?gen77 $$$ $?gen78))))
-   (test (eq (class ?gen74) domestic_violence_aggravated_weapon))
-   (not (and (object (name ?gen81)
+           (negative-support $?gen49)
+           (negative-overruled $?gen50&:(subseq-pos (create$ rule7-overruled $?gen49 $$$ $?gen50))))
+   (test (eq (class ?gen46) enabling_minor_extramarital_union))
+   (not (and (object (name ?gen53)
                      (is-a lc:case)
                      (lc:defendant ?Defendant)
-                     (lc:commits_domestic_violence "yes")
-                     (positive ?gen80&:(>= ?gen80 1)))
-             (object (name ?gen83)
-                     (is-a lc:case)
-                     (lc:defendant ?Defendant)
-                     (lc:used_weapon_or_child_present
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
+                     (lc:used_force_threat_or_greed
+[OBJRTBLD2] No objects of existing classes can satisfy lc:used_force_threat_or_greed restriction in object pattern.
 
 ERROR:
-(defrule MAIN::rule13-overruled-gen494
-   (declare (salience (+ 1000 (calc-defeasible-priority 2 [rule13]))))
+(defrule MAIN::rule7-overruled-gen528
+   (declare (salience (+ 1000 (calc-defeasible-priority 2 [rule7]))))
    (run-deductive-rules)
-   (object (name ?gen81)
+   (object (name ?gen53)
            (is-a lc:case)
            (lc:defendant ?Defendant)
-           (lc:commits_domestic_violence "yes")
-           (positive ?gen80&:(>= ?gen80 1)))
-   (object (name ?gen83)
-           (is-a lc:case)
-           (lc:defendant ?Defendant)
-           (lc:used_weapon_or_child_present
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
+           (lc:used_force_threat_or_greed
+[OBJRTBLD2] No objects of existing classes can satisfy lc:used_force_threat_or_greed restriction in object pattern.
 
 ERROR:
-(defrule MAIN::rule13-support-gen496
-   (declare (salience (+ 1000 (calc-defeasible-priority 5 [rule13]))))
+(defrule MAIN::rule7-support-gen530
+   (declare (salience (+ 1000 (calc-defeasible-priority 5 [rule7]))))
    (run-deductive-rules)
-   (object (name ?gen72)
+   (object (name ?gen45)
            (is-a lc:case)
            (lc:defendant ?Defendant)
-           (lc:commits_domestic_violence "yes"))
-   (object (name ?gen73)
-           (is-a lc:case)
-           (lc:defendant ?Defendant)
-           (lc:used_weapon_or_child_present
+           (lc:used_force_threat_or_greed
 [OBJRTBLD2] No objects of existing classes can satisfy lc:caused_severe_injury_or_against_child restriction in object pattern.
 
 ERROR:
@@ -379,20 +320,16 @@ ERROR:
            (is-a lc:case)
            (lc:defendant ?Defendant)
            (lc:caused_severe_injury_or_against_child
-[OBJRTBLD2] No objects of existing classes can satisfy lc:used_weapon_or_child_present restriction in object pattern.
+[OBJRTBLD2] No objects of existing classes can satisfy lc:used_force_threat_or_greed restriction in object pattern.
 
 ERROR:
-(defrule MAIN::rule13-deductive-gen270
-   (declare (salience (calc-salience domestic_violence_aggravated_weapon)))
+(defrule MAIN::rule7-deductive-gen267
+   (declare (salience (calc-salience enabling_minor_extramarital_union)))
    (run-deductive-rules)
-   (object (name ?gen72)
+   (object (name ?gen45)
            (is-a lc:case)
            (lc:defendant ?Defendant)
-           (lc:commits_domestic_violence "yes"))
-   (object (name ?gen73)
-           (is-a lc:case)
-           (lc:defendant ?Defendant)
-           (lc:used_weapon_or_child_present
+           (lc:used_force_threat_or_greed
  ok
 
 Running R-DEVICE rules...

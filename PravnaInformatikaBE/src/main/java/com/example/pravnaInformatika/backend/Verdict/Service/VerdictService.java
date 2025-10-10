@@ -107,6 +107,16 @@ public class VerdictService {
                     dto.setAccountability(values[11]);
                     dto.setIntentional(parseBoolean(values[12]));
 
+                    //Novi atributi
+                    dto.setFails_to_provide_support(parseBoolean(values[13]));
+                    dto.setSupport_duty_legally_established(parseBoolean(values[14]));
+                    dto.setViolates_family_obligations(parseBoolean(values[15]));
+                    dto.setUsed_force_threat_or_greed(parseBoolean(values[16]));
+                    dto.setEndangered_child_wellbeing(parseBoolean(values[17]));
+                    dto.setCommits_domestic_violence(parseBoolean(values[18]));
+                    dto.setUsed_weapon_or_child_present(parseBoolean(values[19]));
+                    dto.setCaused_severe_injury_or_against_child(parseBoolean(values[20]));
+                    dto.setFamily_member_died(parseBoolean(values[21]));
 
                     return dto;
                 }
@@ -674,6 +684,17 @@ public class VerdictService {
                         "propertyClaim = imovinsko pravni zahtjev;\n" +
                         "accountability = uračunljivost;\n" +
                         "intentional = sa umišljajem;\n" +
+
+                        "fails_to_provide_support = ne daje izdržavanje;\n" +
+                        "support_duty_legally_established = obaveza izdržavanja je pravno ustanovljena;\n" +
+                        "violates_family_obligations = krši porodične obaveze;\n" +
+                        "used_force_threat_or_greed = upotrebio silu, pretnju ili je vođen pohlepom;\n" +
+                        "endangered_child_wellbeing = ugrozio je dobrobit deteta;\n" +
+                        "commits_domestic_violence = vrši nasilje u porodici;\n" +
+                        "used_weapon_or_child_present = upotrebio oružje ili u prisustvu deteta;\n" +
+                        "caused_severe_injury_or_against_child = prouzrokovao tešku povredu ili protiv deteta;\n" +
+                        "family_member_died = član porodice je umro;\n" +
+
                         "articleId = član zakona;\n"+
                         "paragraphId = stav zakona;\n" +
                         "penalty = sankcija")
@@ -1140,6 +1161,17 @@ public class VerdictService {
         dto.setRepentance(verdict.getRepentance());
         dto.setPropertyClaim(verdict.getPropertyClaim());
 
+        //novi atributi
+        dto.setFails_to_provide_support(verdict.getFails_to_provide_support());
+        dto.setSupport_duty_legally_established(verdict.getSupport_duty_legally_established());
+        dto.setViolates_family_obligations(verdict.getViolates_family_obligations());
+        dto.setUsed_force_threat_or_greed(verdict.getUsed_force_threat_or_greed());
+        dto.setEndangered_child_wellbeing(verdict.getEndangered_child_wellbeing());
+        dto.setCommits_domestic_violence(verdict.getCommits_domestic_violence());
+        dto.setUsed_weapon_or_child_present(verdict.getUsed_weapon_or_child_present());
+        dto.setCaused_severe_injury_or_against_child(verdict.getCaused_severe_injury_or_against_child());
+        dto.setFamily_member_died(verdict.getFamily_member_died());
+
         return dto;
     }
 
@@ -1163,7 +1195,11 @@ public class VerdictService {
         String[] values = {verdict.getCaseName(), verdict.getAcknowledged().toString(), verdict.getConvicted().toString(),
         verdict.getFinancialStatus(), verdict.getMaintenance().toString(), verdict.getRepentance().toString(), verdict.getPreviousFamilyIssues().toString(),
                 verdict.getInjuryType(), verdict.getCorrectBehavior().toString(), verdict.getInjuredCriminalProsecution().toString(),
-                verdict.getPropertyClaim().toString(), verdict.getAccountability(), verdict.getIntentional().toString()
+                verdict.getPropertyClaim().toString(), verdict.getAccountability(), verdict.getIntentional().toString(),
+                verdict.getFails_to_provide_support().toString(), verdict.getSupport_duty_legally_established().toString(),
+                verdict.getViolates_family_obligations().toString(), verdict.getUsed_force_threat_or_greed().toString(),
+                verdict.getEndangered_child_wellbeing().toString(), verdict.getCommits_domestic_violence().toString(),
+                verdict.getUsed_weapon_or_child_present().toString(), verdict.getCaused_severe_injury_or_against_child().toString(), verdict.getFamily_member_died().toString()
         };
 
         String newRow = String.join(",", values);
