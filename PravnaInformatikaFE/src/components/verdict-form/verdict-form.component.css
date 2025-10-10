@@ -569,6 +569,29 @@ body,
 }
 
 
+.dual-section .form-subsection:last-child label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  padding: 6px 12px; 
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  font-size: 14px;
+  width: 180px;
+  margin-bottom: 6px;
+}
+
+
+
+
+.dual-section .form-subsection:last-child input[type="checkbox"] {
+  width: 18px; 
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
 
 .dual-section::-webkit-scrollbar {
   width: 10px;

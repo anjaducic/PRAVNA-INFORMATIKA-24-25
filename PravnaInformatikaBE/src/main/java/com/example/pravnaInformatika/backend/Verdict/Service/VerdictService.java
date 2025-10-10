@@ -1046,6 +1046,17 @@ public class VerdictService {
                         "propertyClaim = imovinsko pravni zahtjev;\n" +
                         "accountability = uračunljivost;\n" +
                         "intentional = sa umišljajem;\n" +
+
+                        "fails_to_provide_support = ne daje izdržavanje;\n" +
+                        "support_duty_legally_established = obaveza izdržavanja je pravno ustanovljena;\n" +
+                        "violates_family_obligations = krši porodične obaveze;\n" +
+                        "used_force_threat_or_greed = upotrebio silu, pretnju ili je vođen pohlepom;\n" +
+                        "endangered_child_wellbeing = ugrozio je dobrobit deteta;\n" +
+                        "commits_domestic_violence = vrši nasilje u porodici;\n" +
+                        "used_weapon_or_child_present = upotrebio oružje ili u prisustvu deteta;\n" +
+                        "caused_severe_injury_or_against_child = prouzrokovao tešku povredu ili protiv deteta;\n" +
+                        "family_member_died = član porodice je umro;\n" +
+
                         "articleId = broj člana zakona;\n" +
                         "paragraphId = stav zakona;\n"+
                         "penalty = sankcija;")

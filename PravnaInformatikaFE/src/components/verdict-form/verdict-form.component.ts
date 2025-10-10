@@ -232,6 +232,16 @@ export class VerdictFormComponent {
           accountability: this.attributes.accountability,
           intentional: this.attributes.intentional,
 
+          fails_to_provide_support: this.attributes.fails_to_provide_support,
+          support_duty_legally_established: this.attributes.support_duty_legally_established,
+          violates_family_obligations: this.attributes.violates_family_obligations,
+          used_force_threat_or_greed: this.attributes.used_force_threat_or_greed,
+          endangered_child_wellbeing: this.attributes.endangered_child_wellbeing,
+          commits_domestic_violence: this.attributes.commits_domestic_violence,
+          used_weapon_or_child_present: this.attributes.used_force_threat_or_greed,
+          caused_severe_injury_or_against_child: this.attributes.caused_severe_injury_or_against_child,
+          family_member_died: this.attributes.family_member_died,
+
           violations: result.violations,
           foundGuilty: result.isGuilty,
         };
