@@ -19,18 +19,4 @@ K 149-2019,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,TRUE,F
 K 320-2022,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
 K 430-2013,TRUE,FALSE,Lose,TRUE,TRUE,TRUE,Nema,TRUE,FALSE,TRUE,Uracunljiv,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
 K 606-2010,TRUE,FALSE,Dobro,TRUE,TRUE,FALSE,Nema,TRUE,FALSE,FALSE,Uracunljiv,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
-G_001-2025,FALSE,FALSE,Dobro,FALSE,TRUE,FALSE,Nema,TRUE,TRUE,FALSE,Uracunljiv,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
-G_002-2025,false,false,Dobro,true,false,true,Nema,false,true,false,Uracunljiv,false,false,true,false,false,false,true,false,false,false
-G_003-2025,false,false,Dobro,false,true,false,Nema,false,true,false,Uracunljiv,false,false,true,false,false,false,true,false,false,false
-G_003-2025,false,true,Dobro,false,false,true,Nema,false,true,false,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_004-2025,true,false,Dobro,false,true,true,Srednje,true,false,false,Uracunljiv,true,true,false,false,false,false,false,false,false,false
-G_004-2025,false,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_005-2025,false,true,Srednje,false,true,false,Nema,false,false,true,Uracunljiv,false,true,false,false,false,false,false,false,false,false
-G_005-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_006-2025,false,true,Dobro,false,true,false,Dusevne,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_006-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_009-2025,true,true,Dobro,false,true,false,Teske,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_009-2025,true,true,Dobro,false,true,false,Nema,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_010-2025,true,true,Dobro,true,false,false,Srednje,false,false,false,Uracunljiv,false,true,false,false,false,false,false,false,false,false
-G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,true,Uracunljiv,false,false,true,false,false,false,false,false,false,false
-G_011-2025,false,false,Dobro,false,false,false,Nema,false,false,false,Uracunljiv,false,false,true,false,false,false,false,false,false,false
+G_001-2025,false,false,Dobro,true,false,true,Nema,false,false,false,Uracunljiv,false,false,true,false,false,false,false,false,false,false
