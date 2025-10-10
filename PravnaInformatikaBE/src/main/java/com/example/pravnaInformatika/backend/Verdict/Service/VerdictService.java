@@ -36,7 +36,7 @@ public class VerdictService {
 
     @Autowired
     private VerdictCBRService verdictCBRService;
-    private final ChatModel gpt_model = ChatModel.GPT_4O_MINI;
+    private final ChatModel gpt_model = ChatModel.GPT_5_NANO;
 
     public List<Verdict> getAll() {
 
@@ -184,7 +184,7 @@ public class VerdictService {
                         "      <background>\n" +
                         "        <p class=\"subtitle\">P R E S U D U</p>\n" +
                         "        <p>\n" +
-                        "          Okrivljeni <party id=\"ms\" refersTo=\"#ms\" as=\"#defendant\">M.S.</party> JMB …, od oca ... i majke ..., rođene ..., rođen … godine, u ..., sa prebivalištem u ...,opština ..., državljanin Crne Gore, nezaposlen, neoženjen, pismen, sa završenom osnovnom školom, lošeg imovnog stanja, osuđivan presudom \n" +
+                        "          Okrivljeni <party id=\"ms\" refersTo=\"#ms\" as=\"#defendant\">M.S.</party> JMB …, od oca Š. i majke Š., rođene H., rođen … godine, u B.P., sa prebivalištem u mjestu rođenja, ul. N.M., opština B.P., državljanin Crne Gore, nezaposlen, neoženjen, pismen, sa završenom osnovnom školom, lošeg imovnog stanja, osuđivan presudom \n" +
                         "          <organization id=\"os\" refersTo=\"#os\">Osnovnog suda u Bijelom Polju</organization> K. br. 741/09 od 19.11.2009, zbog krivičnog djela iz \n" +
                         "          <ref href=\"/krivicni#art_220_para_1\">čl. 220.st.1 KZ CG</ref> na kaznu zatvora od tri mjeseca i presudom \n" +
                         "          <organization id=\"os\" refersTo=\"#os\">Osnovnog suda u Bijelom Polju</organization> K. br. 49/08 od 21.02.2008, zbog krivičnog djela iz \n" +
@@ -611,18 +611,7 @@ public class VerdictService {
                         "                    <ref href=\"/zkp#art_229\">\n" +
                         "                        229 ZKP-a\n" +
                         "                    </ref>\n" +
-                        "                    , okrivljeni je obavezan na plaćanje troškova paušala u iznosu od 30,00 eura, pri\n" +
-                        "                    čemu je sud imao u vidu složenost i trajanje krivičnog postupka te imovinske prilike okrivljenog, kao i da plati\n" +
-                        "                    ostale troškove krivičnog postupka, koji se tiču vještačenja po vještacima medicinske struke dr\n" +
-                        "                    <party id=\"dm\" refersTo=\"#dm\" as=\"#expertMedical\">\n" +
-                        "                        M.\n" +
-                        "                    </party>\n" +
-                        "                    i dr\n" +
-                        "                    <party id=\"gk\" refersTo=\"#gk\" as=\"#expertMedical\">\n" +
-                        "                        K.\n" +
-                        "                    </party>\n" +
-                        "                    , u ukupnom iznosu od 110,00 eura, a koji su vještacima isplaćeni iz budžetskih sredstava na ime davanja nalaza\n" +
-                        "                    i mišljenja u istražnom postupku.\n" +
+                        "                    , okrivljeni je obavezan na TEKST SANKCIJE" +
                         "                </p>\n" +
                         "                <p>\n" +
                         "                    Imovinsko-pravnog zahtjeva nije bilo.\n" +
@@ -659,131 +648,7 @@ public class VerdictService {
                         "        </conclusions>\n" +
                         "    </judgment>\n" +
                         "</akomaNtoso>\n")
-                .addDeveloperMessage("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
-                        "<akomaNtoso xmlns=\"http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd\">\n" +
-                        "  <judgment>\n" +
-                        "    <meta>\n" +
-                        "      <identification source=\"#court\">\n" +
-                        "        <FRBRWork>\n" +
-                        "          <FRBRauthor>Osnovni Sud u Bijelom Polju</FRBRauthor>\n" +
-                        "          <FRBRdate date=\"2019-06-13\">2019-06-13</FRBRdate>\n" +
-                        "          <FRBRtitle>K 106/2019</FRBRtitle>\n" +
-                        "          <FRBRcountry>CG</FRBRcountry>\n" +
-                        "        </FRBRWork>\n" +
-                        "      </identification>\n" +
-                        "      <references>\n" +
-                        "        <TLCOrganization eId=\"os\" href=\"/ontology/organization/OsnovniSud.BijeloPolje\" showAs=\"Osnovni sud u Bijelom Polju\" />\n" +
-                        "        <TLCOrganization eId=\"odt\" href=\"/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje\" showAs=\"Osnovno državno tužilaštvo u Bijelom Polju\" />\n" +
-                        "        <TLCPerson eId=\"dmrdak\" href=\"/ontology/person/dmrdak\" showAs=\"Dragan Mrdak\" />\n" +
-                        "        <TLCPerson eId=\"kljesnjak\" href=\"/ontology/person/kljesnjak\" showAs=\"Koviljka Lješnjak\" />\n" +
-                        "        <TLCPerson eId=\"sa\" href=\"/ontology/person/sa\" showAs=\"Š.A.\" />\n" +
-                        "        <TLCPerson eId=\"zdenisa\" href=\"/ontology/person/zdenisa\" showAs=\"Zvrko Denisa\" />\n" +
-                        "        <TLCPerson eId=\"lh\" href=\"/ontology/person/lh\" showAs=\"adv. L.H.\" />\n" +
-                        "        <TLCPerson eId=\"mh\" href=\"/ontology/person/mh\" showAs=\"M.H.\" />\n" +
-                        "        <TLCRole eId=\"plaintiff\" href=\"/ontology/role/plaintiff\" showAs=\"Plaintiff\" />\n" +
-                        "        <TLCRole eId=\"defendant\" href=\"/ontology/role/defendant\" showAs=\"Defendant\" />\n" +
-                        "        <TLCRole eId=\"judge\" href=\"/ontology/role/judge\" showAs=\"Judge\" />\n" +
-                        "        <TLCRole eId=\"lawyer\" href=\"/ontology/role/lawyer\" showAs=\"Lawyer\" />\n" +
-                        "        <TLCRole eId=\"clerk\" href=\"/ontology/role/clerk\" showAs=\"Clerk\" />\n" +
-                        "        <TLCRole eId=\"victim\" href=\"/ontology/role/victim\" showAs=\"Victim\" />\n" +
-                        "        <TLCRole eId=\"expertMedical\" href=\"/ontology/role/expertMedical\" showAs=\"Expert - medical\" />\n" +
-                        "      </references>\n" +
-                        "    </meta>\n" +
-                        "    <judgmentBody>\n" +
-                        "      <introduction>\n" +
-                        "        <p>\n" +
-                        "          <organization id=\"os\" refersTo=\"#os\">OSNOVNI SUD U BIJELOM POLJU</organization>, sudija pojedinac \n" +
-                        "          <party id=\"dmrdak\" refersTo=\"#dmrdak\" as=\"#judge\">Dragan Mrdak</party>, uz učešće samostalnog referenta zapisničara \n" +
-                        "          <party id=\"kljesnjak\" refersTo=\"#kljesnjak\" as=\"#clerk\">Koviljka Lješnjak</party>, rješavajući optužnom predlogu \n" +
-                        "          <organization id=\"odt\" refersTo=\"#odt\">Osnovno državno tužilaštvo u Bijelom Polju</organization>, Kt. br. 148/19 od 06.06.2019. godine, protiv okrivljenog \n" +
-                        "          <party id=\"sa\" refersTo=\"#sa\" as=\"#defendant\">Š.A.</party> iz B.P., zbog krivičnog djela nasilje u porodici ili u porodičnoj zajednici iz \n" +
-                        "          <ref href=\"/krivicni#art_220_para_2\">čl. 220 st. 2. u vezi st. 1. Krivičnog zakonika CG</ref>, akon održanog glavnog i javnog pretresa, u prisustvu državnog tužioca u ODT-u u Bijelom Polju \n" +
-                        "          <party id=\"zdenisa\" refersTo=\"#zdenisa\" as=\"#plaintiff\">Zvrko Denisa</party>, okrivljenog \n" +
-                        "          <party id=\"sa\" refersTo=\"#sa\" as=\"#defendant\">Š.A.</party>, njegovog branioca \n" +
-                        "          <party id=\"lh\" refersTo=\"#lh\" as=\"#lawyer\">adv. L.H.</party> a u odsustvu oštećenog \n" +
-                        "          <party id=\"mh\" refersTo=\"#mh\" as=\"#victim\">M.H.</party>, dana 13.06.2019. godine, donio je i objavio\n" +
-                        "        </p>\n" +
-                        "      </introduction>\n" +
-                        "      <background>\n" +
-                        "        <p class=\"subtitle\">P R E S U D U</p>\n" +
-                        "        <p>\n" +
-                        "          Okrivljeni \n" +
-                        "          <party id=\"sa\" refersTo=\"#sa\" as=\"#defendant\">Š.A.</party>, JMB …, od oca ... i majke ..., rođen … u ..., sa prebivalištem u ..., državljanin Crne Gore, govori crnogorskim jezikom, oženjen, otac troje djece, pismen, završio osnovnu školu, nezaposlen, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u Baru K. br. 564/09 od 15.01.2010. godine, zbog krivičnog djela iz \n" +
-                        "          <ref href=\"/krivicni#art_220_para_1\">čl. 220 st. 1. KZ CG</ref>, na kaznu zatvora od 2 mjeseca, uslovno na 2 godine, u pritvoru boravio od 03.06.2019. do 07.06.2019.\n" +
-                        "        </p>\n" +
-                        "      </background>\n" +
-                        "      <decision>\n" +
-                        "        <p class=\"subtitle\">K r i v j e</p>\n" +
-                        "        <p>\n" +
-                        "          Zato što je:\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          Dana 03.06.2019. godine, oko 14,00 h, u mjestu R., opština B.P., primjenom grubog nasilja narušio tjelesni integritet člana svoje porodice – ujaka oštećenog \n" +
-                        "          <party id=\"mh\" refersTo=\"#mh\" as=\"#victim\">M.H.</party> koji se kretao putem zajedno sa maloljetnim sinom M.A, na način što ga je metalnom šipkom, koje sredstvo je podobno da tijelo teško povrijedi ili zdravlje teško naruši, udario u predjelu glave, od kojeg udarca je oštećeni pao, čime mu je nanio laku tjelesnu povredu u vidu oguljotine i otoka u predjelu lijeve polovine lica pored nosa, pri čemu je bio svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno.\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          – čime je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz \n" +
-                        "          <ref href=\"/krivicni#art_220_para_2\">čl. 220 st. 2. u vezi st. 1. Krivičnog zakonika CG</ref>\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          – Za koje ga sud primjenom citiranog zakonskog propisa, te \n" +
-                        "          <ref href=\"/krivicni#art_2\">čl. 2,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_4\">4,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_5\">5,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_13\">13,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_15\">15,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_32\">32,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_41\">41,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_42\">42,</ref>\n" +
-                        "          <ref href=\"/krivicni#art_51\">51 Krivičnog zakonika</ref>\n" +
-                        "        </p>\n" +
-                        "        <p class=\"subtitle\">O S U Đ U J E</p>\n" +
-                        "        <p>\n" +
-                        "          NA KAZNU RAD U JAVNOM INTERESU u trajanju od 90 (devedeset) časova, koji rad će se obaviti u vremenskom periodu od 2 (dva) mjeseca po pravosnažnosti presude, s tim što rad ne može biti duži od 60 (šezdeset) časova u toku jednog mjeseca. U izrečenu kaznu okrivljenom se uračunava pet dana provedenih na zadržavanju i u pritvoru od 03.06.2019. do 07.06.2019., pa se ima uzeti da je okrivljeni od ukupne kazne izvršio 40 časova rada u javnom interesu.\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          Ukoliko okrivljeni ne bude vršio rad u javnom interesu, kazna će se zamijeniti kaznom zatvora, tako što će se svakih započetih 60 (šezdeset) časova rada u javnom interesu zamijeniti kaznom zatvora od 1 (jednog) mjeseca.\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          Okrivljeni se obavezuje da plati ovom sudu na ime paušala iznos od 30,00 €, iznos od 60,50 € na ime ostalih troškova, te troškove za branioca po službenoj dužnosti, koje će biti određeni posebnim rješenjem, a sve uplatiti na žiro račun 832-151-35 depozita novčanih kazni, troškova postupka i paušala, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          Imovinsko pravnog zahtjeva nije bilo.\n" +
-                        "        </p>\n" +
-                        "      </decision>\n" +
-                        "      <arguments>\n" +
-                        "        <p class=\"subtitle\">O b r a z l o ž e nj e</p>\n" +
-                        "        <p>\n" +
-                        "          Optužnim predlogom \n" +
-                        "          <organization id=\"odt\" refersTo=\"#odt\">Osnovno državno tužilaštvo u Bijelom Polju</organization>, Kt. br. 148/19 od 06.06.2019. godine, optužen je \n" +
-                        "          <party id=\"sa\" refersTo=\"#sa\" as=\"#defendant\">Š.A.</party> iz B.P., da je izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz \n" +
-                        "          <ref href=\"/krivicni#art_220_para_2\">čl. 220 st. 2. u vezi st. 1. Krivičnog zakonika CG</ref>. Glavni pretres je održan i zaključen u prisustvu državnog tužioca u ODT-u u Bijelom Polju \n" +
-                        "          <party id=\"zdenisa\" refersTo=\"#zdenisa\" as=\"#plaintiff\">Zvrko Denisa</party>, okrivljenog \n" +
-                        "          <party id=\"sa\" refersTo=\"#sa\" as=\"#defendant\">Š.A.</party>, njegovog branioca \n" +
-                        "          <party id=\"lh\" refersTo=\"#lh\" as=\"#lawyer\">adv. L.H.</party> i u odsustvu oštećenog \n" +
-                        "          <party id=\"mh\" refersTo=\"#mh\" as=\"#victim\">M.H.</party>.\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          U završnoj riječi, državni tužilac je istakao da je na osnovu dokaza izvedenih na glavnom pretresu utvrđeno da je okrivljeni izvršio krivično djelo koje mu je stavljeno na teret. Dokazi su obuhvatili iskaze svjedoka, medicinsku dokumentaciju, nalaz i mišljenje vještaka sudske medicine te službenu zabilješku nadležnih organa.\n" +
-                        "        </p>\n" +
-                        "        <p>\n" +
-                        "          Cijeneći odbranu okrivljenog i sve prikupljene dokaze, sud je utvrdio činjenično stanje i zaključio da je okrivljeni izvršio krivično djelo nasilje u porodici ili u porodičnoj zajednici iz \n" +
-                        "          <ref href=\"/krivicni#art_220_para_2\">čl. 220 st. 2. u vezi st. 1. Krivičnog zakonika CG</ref> te da je za isto kriv. \n" +
-                        "          Na temelju navedenog, sud je izrekao kaznu rada u javnom interesu.\n" +
-                        "        </p>\n" +
-                        "      </arguments>\n" +
-                        "    </judgmentBody>\n" +
-                        "    <conclusions>\n" +
-                        "      <organization class=\"subtitle\" id=\"os\" refersTo=\"#os\">OSNOVNI SUD U BIJELOM POLJU</organization>\n" +
-                        "      <p class=\"subtitle\">Dana, 13.06.2019. godine</p>\n" +
-                        "      <p>ZAPISNIČAR, S U D I J A,</p>\n" +
-                        "      <p>\n" +
-                        "        <party id=\"kljesnjak\" refersTo=\"#kljesnjak\" as=\"#clerk\">Koviljka Lješnjak</party>\n" +
-                        "        <party id=\"dmrdak\" refersTo=\"#dmrdak\" as=\"#judge\">Dragan Mrdak</party>\n" +
-                        "      </p>\n" +
-                        "    </conclusions>\n" +
-                        "  </judgment>\n" +
-                        "</akomaNtoso>\n")
+
                 .addDeveloperMessage("This is the translation of parameters of verdict into Montenegrin: caseName = presuda;\n" +
                         "court = sud;\n" +
                         "judge = sudija;\n" +
@@ -812,9 +677,10 @@ public class VerdictService {
                         "articleId = član zakona;\n"+
                         "paragraphId = stav zakona;\n" +
                         "penalty = sankcija")
-                .addDeveloperMessage(" Write text in MONTENEGRIN language and use the legal terms translations I sent you. Write the text in Latin letters. Use formal and legal language format. Don't invent information that wasn't provided, including personal details and explanations. Do not put parameter values in parentheses; instead, describe them clearly in the text. Verdict should be short and precised. Add links to law documents when mentioned.")
+                .addDeveloperMessage(" Write text in MONTENEGRIN language and use the legal terms translations I sent you. Write the text in Latin letters. Use formal and legal language format. Don't invent information that wasn't provided, including personal details and explanations. Do not put parameter values in parentheses; instead, describe them clearly in the text.")
                 .addDeveloperMessage("Mention only law articles that are in violations and penalty for each. Mention them in verdict and put ref href to law document like in the verdicts I sent you. Example of format:  <ref href=\"/krivicni#art_216_para_1\">čl. 216 st. 1 Krivičnog zakonika</ref>")
-                .addUserMessage("Generate me a verdict in akomontoso format. RETURN ONLY XML FILE. Pay attention to use tags correctly! I sent you three examples of the format, use them as a model. Write text in MONTENEGRIN language and use the legal terms translations I sent you. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
+                .addDeveloperMessage("Use all attributes and penalties I sent you in the verdict info.")
+                .addUserMessage("Generate me a verdict in akomontoso format. RETURN ONLY XML FILE. Pay attention to use tags correctly! I sent you three examples of the format, use first as a model. Write text in MONTENEGRIN language and use the legal terms translations I sent you. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
                 .model(gpt_model)
                 .build();
 
@@ -1164,6 +1030,7 @@ public class VerdictService {
                         "penalty = sankcija;")
                 .addDeveloperMessage(" Write text in MONTENEGRIN language and use the legal terms translations I sent you. Write the text in Latin letters. Use formal and legal language format. Don't invent information that wasn't provided, including personal details and explanations. Do not put parameter values in parentheses; instead, describe them clearly in the text. Verdict should be short and precised.")
                 .addDeveloperMessage("In violations are mentioned law articles and paragraphs that are broken and penalties for each violation. Mention them in verdict and put ref href to law document like in the verdicts I sent you in format: <ref href=\"/zkp#art_230_para_1\">.")
+                .addDeveloperMessage("Use all attributes and penalties I sent you in the verdict.")
                 .addUserMessage("Generate me a verdict in akomontoso format. RETURN ONLY XML FILE. Pay attention to use tags correctly! I sent you one example of the format, use it as a model. Defendant is found not guilty. Write text in MONTENEGRIN language and use the legal terms translations I sent you. Use formal and legal language format, just like in the examples. This is the data you should use when generating a verdict: " + verdict)
                 .model(gpt_model)
                 .build();

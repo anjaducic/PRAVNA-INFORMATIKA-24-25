@@ -102,24 +102,14 @@ public class RdfService {
         // Article 221 violations
         addBooleanPropertyIfTrue(rdf, violations, "fails_to_provide_support");
         addBooleanPropertyIfTrue(rdf, violations, "support_duty_legally_established");
-        addBooleanPropertyIfTrue(rdf, violations, "severe_consequences_occurred");
 
         // Article 222 violations
         addBooleanPropertyIfTrue(rdf, violations, "violates_family_obligations");
-        addBooleanPropertyIfTrue(rdf, violations, "family_member_left_in_hardship");
-        addBooleanPropertyIfTrue(rdf, violations, "severe_health_damage_occurred");
-        addBooleanPropertyIfTrue(rdf, violations, "family_member_died");
 
         // Article 216 violations
-        addBooleanPropertyIfTrue(rdf, violations, "is_adult");
-        addBooleanPropertyIfTrue(rdf, violations, "lives_in_extramarital_union_with_minor");
-        addBooleanPropertyIfTrue(rdf, violations, "is_parent_or_guardian");
-        addBooleanPropertyIfTrue(rdf, violations, "enables_minor_extramarital_union");
         addBooleanPropertyIfTrue(rdf, violations, "used_force_threat_or_greed");
 
         // Article 217 violations
-        addBooleanPropertyIfTrue(rdf, violations, "unlawfully_handles_child_custody");
-        addBooleanPropertyIfTrue(rdf, violations, "prevents_contact_execution");
         addBooleanPropertyIfTrue(rdf, violations, "endangered_child_wellbeing");
 
         // Article 220 violations
@@ -127,7 +117,6 @@ public class RdfService {
         addBooleanPropertyIfTrue(rdf, violations, "used_weapon_or_child_present");
         addBooleanPropertyIfTrue(rdf, violations, "caused_severe_injury_or_against_child");
         addBooleanPropertyIfTrue(rdf, violations, "family_member_died");
-        addBooleanPropertyIfTrue(rdf, violations, "violates_domestic_violence_protection_order");
     }
 
     private void addBooleanPropertyIfTrue(StringBuilder rdf, Map<String, Boolean> violations, String property) {

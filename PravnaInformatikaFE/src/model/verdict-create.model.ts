@@ -1,4 +1,4 @@
-import { Violation } from "./violation.model";
+import { Violation } from './violation.model';
 
 export interface VerdictCreate {
   caseName: string;
@@ -27,6 +27,17 @@ export interface VerdictCreate {
   propertyClaim?: boolean; // Imovinsko_pravni_zahtjev
   accountability?: string; // Uracunljivost
   intentional?: boolean; // Sa_umisljajem
+
+  //novi atributi za rasudjivanje po pravilima
+  fails_to_provide_support?: boolean;
+  support_duty_legally_established?: boolean;
+  violates_family_obligations?: boolean;
+  used_force_threat_or_greed?: boolean;
+  endangered_child_wellbeing?: boolean;
+  commits_domestic_violence?: boolean;
+  used_weapon_or_child_present?: boolean;
+  caused_severe_injury_or_against_child?: boolean;
+  family_member_died?: boolean;
 
   violations: Violation[];
   foundGuilty: boolean;

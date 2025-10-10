@@ -7,223 +7,248 @@
       <h3>Osnovni podaci:</h3>
       <label></label>
       <label>Naziv predmeta:*</label>
-      <input [(ngModel)]="metadata.caseName" name="caseName" pattern="^G_\d{1,3}-\d{1,4}$" #caseName="ngModel"
-        placeholder="G_123-1234">
+      <input
+        [(ngModel)]="metadata.caseName"
+        name="caseName"
+        pattern="^G_\d{1,3}-\d{1,4}$"
+        #caseName="ngModel"
+        placeholder="G_123-1234"
+      />
 
       <label>Datum:*</label>
-      <input type="date" [(ngModel)]="metadata.date" name="date" [max]="today" required>
+      <input
+        type="date"
+        [(ngModel)]="metadata.date"
+        name="date"
+        [max]="today"
+        required
+      />
 
       <label>Sud:*</label>
-      <input [(ngModel)]="metadata.court" name="court" required>
+      <input [(ngModel)]="metadata.court" name="court" required />
 
       <label>Sudija:*</label>
-      <input [(ngModel)]="metadata.judge" name="judge" required>
+      <input [(ngModel)]="metadata.judge" name="judge" required />
 
       <label>Zapisničar:*</label>
-      <input [(ngModel)]="metadata.clerk" name="clerk" required>
+      <input [(ngModel)]="metadata.clerk" name="clerk" required />
 
       <label>Optuženi:*</label>
-      <input [(ngModel)]="metadata.defendant" name="defendant" required>
+      <input [(ngModel)]="metadata.defendant" name="defendant" required />
 
       <label>Oštećeni:*</label>
-      <input [(ngModel)]="metadata.injuredParty" name="injuredParty" required>
+      <input [(ngModel)]="metadata.injuredParty" name="injuredParty" required />
 
       <label>Tužilac:</label>
-      <input [(ngModel)]="metadata.prosecutorAttorney" name="prosecutorAttorney">
+      <input
+        [(ngModel)]="metadata.prosecutorAttorney"
+        name="prosecutorAttorney"
+      />
 
       <label>Branilac:</label>
-      <input [(ngModel)]="metadata.defenseAttorney" name="defenseAttorney">
+      <input [(ngModel)]="metadata.defenseAttorney" name="defenseAttorney" />
 
       <label>Pravni zastupnik:</label>
-      <input [(ngModel)]="metadata.legalRepresentative" name="legalRepresentative">
+      <input
+        [(ngModel)]="metadata.legalRepresentative"
+        name="legalRepresentative"
+      />
 
       <label>Vještak:</label>
-      <input [(ngModel)]="metadata.expert" name="expert">
+      <input [(ngModel)]="metadata.expert" name="expert" />
 
       <label>Učesnici:</label>
-      <input [(ngModel)]="metadata.participants" name="participants">
+      <input [(ngModel)]="metadata.participants" name="participants" />
 
       <label>Organizacije:</label>
-      <input [(ngModel)]="metadata.organizations" name="organizations">
-
+      <input [(ngModel)]="metadata.organizations" name="organizations" />
     </div>
   </div>
 
-
-
   <!-- Atributi -->
   <div class="form-wrapper-right">
-  <div class="form-section dual-section">
+    <div class="form-section dual-section">
+      <!-- LEVA STRANA — Pravne činjenice -->
+      <div class="form-subsection">
+        <h3>Pravne činjenice:</h3>
 
-    <!-- LEVA STRANA — Pravne činjenice -->
-    <div class="form-subsection">
-      <h3>Pravne činjenice:</h3>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.acknowledged" />
+          Priznao
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.acknowledged"> Priznao
-      </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.convicted" /> Osuđivan
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.convicted"> Osuđivan
-      </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.maintenance" />
+          Izdržavanje članova porodice
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.maintenance"> Izdržavanje članova porodice
-      </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.repentance" /> Kajanje
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.repentance"> Kajanje
-      </label>
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.previousFamilyIssues"
+          />
+          Porodični problemi
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.previousFamilyIssues"> Porodični problemi
-      </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.correctBehavior" />
+          Korektno držanje
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.correctBehavior"> Korektno držanje
-      </label>
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.injuredCriminalProsecution"
+          />
+          Oštećeni goni krivično
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.injuredCriminalProsecution"> Oštećeni goni krivično
-      </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.propertyClaim" />
+          Imovinsko-pravni zahtjev
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.propertyClaim"> Imovinsko-pravni zahtjev
-      </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.intentional" /> Sa
+          umišljajem
+        </label>
 
-      <label>
-        <input type="checkbox" [(ngModel)]="attributes.intentional"> Sa umišljajem
-      </label>
+        <label>Materijalno stanje:</label>
+        <select
+          id="financialStatus"
+          [(ngModel)]="attributes.financialStatus"
+          class="form-select"
+        >
+          <option value="Dobro">Dobro</option>
+          <option value="Srednje">Srednje</option>
+          <option value="Lose">Lose</option>
+        </select>
 
-      <label>Materijalno stanje:</label>
-      <select id="financialStatus" [(ngModel)]="attributes.financialStatus" class="form-select">
-        <option value="Dobro">Dobro</option>
-        <option value="Srednje">Srednje</option>
-        <option value="Lose">Lose</option>
-      </select>
+        <label>Tip povrede:</label>
+        <select
+          id="injuryType"
+          [(ngModel)]="attributes.injuryType"
+          class="form-select"
+        >
+          <option value="Nema">Nema</option>
+          <option value="Lake">Lake</option>
+          <option value="Srednje">Srednje</option>
+          <option value="Teske">Teske</option>
+          <option value="Dusevne">Dusevne</option>
+        </select>
 
-      <label>Tip povrede:</label>
-      <select id="injuryType" [(ngModel)]="attributes.injuryType" class="form-select">
-        <option value="Nema">Nema</option>
-        <option value="Lake">Lake</option>
-        <option value="Srednje">Srednje</option>
-        <option value="Teske">Teske</option>
-        <option value="Dusevne">Dusevne</option>
-      </select>
+        <label>Uračunljivost:</label>
+        <select
+          id="accountability"
+          [(ngModel)]="attributes.accountability"
+          class="form-select"
+        >
+          <option value="Uracunljiv">Uracunljiv</option>
+          <option value="Smanjena uracunljivost">Smanjena uracunljivost</option>
+          <option value="Neuracunljiv">Neuracunljiv</option>
+        </select>
 
-      <label>Uračunljivost:</label>
-      <select id="accountability" [(ngModel)]="attributes.accountability" class="form-select">
-        <option value="Uracunljiv">Uracunljiv</option>
-        <option value="Smanjena uracunljivost">Smanjena uracunljivost</option>
-        <option value="Neuracunljiv">Neuracunljiv</option>
-      </select>
-    </div>
+        <!-- Rasudjivanje po pravilima -->
+        <!-- Član 221 -->
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.fails_to_provide_support"
+          />
+          Ne daje izdržavanje
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.support_duty_legally_established"
+          />
+          Obaveza izdržavanja je pravno ustanovljena
+        </label>
 
-    <div class="form-subsection">
-      <!-- Rasudjivanje po pravilima -->
-      <div class="section-separator">
-        <!--hr style="margin: 20px 0; border: 1px solid #ccc;"-->
-        <!--h3 style="color: #ffffff; font-weight: bold;">Rasuđivanje po pravilima:</h3-->
+        <!-- Član 222 -->
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.violates_family_obligations"
+          />
+          Krši porodične obaveze
+        </label>
+
+        <!-- Član 216 -->
+
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.used_force_threat_or_greed"
+          />
+          Upotrebio silu, pretnju ili je vođen pohlepom
+        </label>
+
+        <!-- Član 217 -->
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.endangered_child_wellbeing"
+          />
+          Ugrozio je dobrobit deteta
+        </label>
+
+        <!-- Član 220 -->
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.commits_domestic_violence"
+          />
+          Vrši nasilje u porodici
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.used_weapon_or_child_present"
+          />
+          Upotrebio oružje ili u prisustvu deteta
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            [(ngModel)]="attributes.caused_severe_injury_or_against_child"
+          />
+          Prouzrokovao tešku povredu ili protiv deteta
+        </label>
+        <label>
+          <input type="checkbox" [(ngModel)]="attributes.family_member_died" />
+          Član porodice je umro
+        </label>
       </div>
 
-      <!-- Article 221 -->
-      <label>Nedavanje izdržavanja:</label>
-      <div class="custom-dropdown">
-        <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article221')">
-          <span>{{ selectedConditions.article221.length > 0 ? selectedConditions.article221.length + ' izabrano' :
-            'Izaberite uslove...' }}</span>
-          <span class="arrow" [class.open]="dropdownStates.article221">▼</span>
-        </button>
-        <div class="dropdown-options" *ngIf="dropdownStates.article221">
-          <div *ngFor="let option of articleOptions.article221" class="dropdown-option"
-            (click)="toggleOption('article221', option.value)">
-            <input type="checkbox" [checked]="selectedConditions.article221.includes(option.value)">
-            <span>{{ option.label }}</span>
-          </div>
-        </div>
+      <div class="form-subsection">
+        <!-- Rasudjivanje po pravilima -->
+        <!-- <div class="section-separator"></div> -->
       </div>
-
-      <!-- Article 222 -->
-      <label>Kršenje porodičnih obaveza:</label>
-      <div class="custom-dropdown">
-        <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article222')">
-          <span>{{ selectedConditions.article222.length > 0 ? selectedConditions.article222.length + ' izabrano' :
-            'Izaberite uslove...' }}</span>
-          <span class="arrow" [class.open]="dropdownStates.article222">▼</span>
-        </button>
-        <div class="dropdown-options" *ngIf="dropdownStates.article222">
-          <div *ngFor="let option of articleOptions.article222" class="dropdown-option"
-            (click)="toggleOption('article222', option.value)">
-            <input type="checkbox" [checked]="selectedConditions.article222.includes(option.value)">
-            <span>{{ option.label }}</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Article 216 -->
-      <label>Vanbračna zajednica sa maloletnikom:</label>
-      <div class="custom-dropdown">
-        <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article216')">
-          <span>{{ selectedConditions.article216.length > 0 ? selectedConditions.article216.length + ' izabrano' :
-            'Izaberite uslove...' }}</span>
-          <span class="arrow" [class.open]="dropdownStates.article216">▼</span>
-        </button>
-        <div class="dropdown-options" *ngIf="dropdownStates.article216">
-          <div *ngFor="let option of articleOptions.article216" class="dropdown-option"
-            (click)="toggleOption('article216', option.value)">
-            <input type="checkbox" [checked]="selectedConditions.article216.includes(option.value)">
-            <span>{{ option.label }}</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Article 217 -->
-      <label>Oduzimanje deteta:</label>
-      <div class="custom-dropdown">
-        <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article217')">
-          <span>{{ selectedConditions.article217.length > 0 ? selectedConditions.article217.length + ' izabrano' :
-            'Izaberite uslove...' }}</span>
-          <span class="arrow" [class.open]="dropdownStates.article217">▼</span>
-        </button>
-        <div class="dropdown-options" *ngIf="dropdownStates.article217">
-          <div *ngFor="let option of articleOptions.article217" class="dropdown-option"
-            (click)="toggleOption('article217', option.value)">
-            <input type="checkbox" [checked]="selectedConditions.article217.includes(option.value)">
-            <span>{{ option.label }}</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Article 220 -->
-      <label>Nasilje u porodici:</label>
-      <div class="custom-dropdown">
-        <button type="button" class="dropdown-toggle" (click)="toggleDropdown('article220')">
-          <span>{{ selectedConditions.article220.length > 0 ? selectedConditions.article220.length + ' izabrano' :
-            'Izaberite uslove...' }}</span>
-          <span class="arrow" [class.open]="dropdownStates.article220">▼</span>
-        </button>
-        <div class="dropdown-options" *ngIf="dropdownStates.article220">
-          <div *ngFor="let option of articleOptions.article220" class="dropdown-option"
-            (click)="toggleOption('article220', option.value)">
-            <input type="checkbox" [checked]="selectedConditions.article220.includes(option.value)">
-            <span>{{ option.label }}</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
     </div>
   </div>
   <div>
     <!-- treca kolona: prijedlozi slicnih presuda i ispod dodati rezultate rasudjivanja po pravilima-->
-  
+
     <div>
       <div class="form-wrapper-right scrollable-column">
         Slične presude:
         <ul class="verdict-list" *ngIf="similarVerdicts$ | async as verdicts">
           <ng-container>
             <li *ngFor="let verdict of verdicts" class="verdict-item">
-              <a href="#" (click)="openVerdict(verdict.caseName); $event.preventDefault()" class="verdict-link">
+              <a
+                href="#"
+                (click)="openVerdict(verdict.caseName); $event.preventDefault()"
+                class="verdict-link"
+              >
                 <!--ime presude -->
                 <div class="verdict-left">
                   <div class="icon-name">
@@ -231,54 +256,96 @@
                     <span class="verdict-name">{{ verdict.caseName }}</span>
                   </div>
                   <div class="verdict-similarity">
-                    {{ verdict.similarity != null ? (verdict.similarity * 100 | number:'1.2-2') : '0.00' }}%
+                    {{
+                      verdict.similarity != null
+                        ? (verdict.similarity * 100 | number : "1.2-2")
+                        : "0.00"
+                    }}%
                   </div>
                 </div>
-
 
                 <!-- pravne cinjenice -->
                 <div class="verdict-right">
                   <p class="column-title">Pravne činjenice:</p>
                   <div class="verdict-attributes">
-                    <p *ngIf="verdict.acknowledged !== undefined">Priznao: {{ verdict.acknowledged ? 'DA' : 'NE' }}
+                    <p *ngIf="verdict.acknowledged !== undefined">
+                      Priznao: {{ verdict.acknowledged ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.convicted !== undefined">Osuđivan: {{ verdict.convicted ? 'DA' : 'NE' }}</p>
-                    <p *ngIf="verdict.maintenance !== undefined">Izdržavanje: {{ verdict.maintenance ? 'DA' : 'NE'
-                      }}
+                    <p *ngIf="verdict.convicted !== undefined">
+                      Osuđivan: {{ verdict.convicted ? "DA" : "NE" }}
                     </p>
-                    <p *ngIf="verdict.repentance !== undefined">Kajanje: {{ verdict.repentance ? 'DA' : 'NE' }}</p>
-                    <p *ngIf="verdict.previousFamilyIssues !== undefined">Prethodni porodični problemi: {{
-                      verdict.previousFamilyIssues ? 'DA' : 'NE' }}</p>
-                    <p *ngIf="verdict.correctBehavior !== undefined">Korektno držanje: {{ verdict.correctBehavior ?
-                      'DA'
-                      : 'NE' }}</p>
-                    <p *ngIf="verdict.injuredCriminalProsecution !== undefined">Oštećeni goni krivično: {{
-                      verdict.injuredCriminalProsecution ? 'DA' : 'NE' }}</p>
-                    <p *ngIf="verdict.propertyClaim !== undefined">Imovinsko-pravni zahtev: {{ verdict.propertyClaim
-                      ?
-                      'DA' : 'NE' }}</p>
-                    <p *ngIf="verdict.intentional !== undefined">Sa umišljajem: {{ verdict.intentional ? 'DA' : 'NE'
-                      }}
+                    <p *ngIf="verdict.maintenance !== undefined">
+                      Izdržavanje: {{ verdict.maintenance ? "DA" : "NE" }}
+                    </p>
+                    <p *ngIf="verdict.repentance !== undefined">
+                      Kajanje: {{ verdict.repentance ? "DA" : "NE" }}
+                    </p>
+                    <p *ngIf="verdict.previousFamilyIssues !== undefined">
+                      Prethodni porodični problemi:
+                      {{ verdict.previousFamilyIssues ? "DA" : "NE" }}
+                    </p>
+                    <p *ngIf="verdict.correctBehavior !== undefined">
+                      Korektno držanje:
+                      {{ verdict.correctBehavior ? "DA" : "NE" }}
+                    </p>
+                    <p *ngIf="verdict.injuredCriminalProsecution !== undefined">
+                      Oštećeni goni krivično:
+                      {{ verdict.injuredCriminalProsecution ? "DA" : "NE" }}
+                    </p>
+                    <p *ngIf="verdict.propertyClaim !== undefined">
+                      Imovinsko-pravni zahtev:
+                      {{ verdict.propertyClaim ? "DA" : "NE" }}
+                    </p>
+                    <p *ngIf="verdict.intentional !== undefined">
+                      Sa umišljajem: {{ verdict.intentional ? "DA" : "NE" }}
                     </p>
 
-                    <p *ngIf="verdict.financialStatus">Materijalno stanje: {{ verdict.financialStatus }}</p>
-                    <p *ngIf="verdict.injuryType">Tip povrede: {{ verdict.injuryType }}</p>
-                    <p *ngIf="verdict.accountability">Uračunljivost: {{ verdict.accountability }}</p>
-
+                    <p *ngIf="verdict.financialStatus">
+                      Materijalno stanje: {{ verdict.financialStatus }}
+                    </p>
+                    <p *ngIf="verdict.injuryType">
+                      Tip povrede: {{ verdict.injuryType }}
+                    </p>
+                    <p *ngIf="verdict.accountability">
+                      Uračunljivost: {{ verdict.accountability }}
+                    </p>
 
                     <!-- Rasudjivanje po pravilima -->
-                    <p *ngIf="verdict.familyObligationsViolation">Kršenje porodičnih obaveza: {{
-                      verdict.familyObligationsViolation }}</p>
-                    <p *ngIf="verdict.extramaritalRelationshipMinor">Vanbračna zajednica sa maloletnikom: {{
-                      verdict.extramaritalRelationshipMinor }}</p>
-                    <p *ngIf="verdict.unlawfulDetention">Nezakonito držanje članova porodice: {{
-                      verdict.unlawfulDetention }}</p>
-                    <p *ngIf="verdict.familyMemberMaintenance">Nedavanje izdržavanja: {{
-                      verdict.familyMemberMaintenance
-                      }}</p>
-                    <p *ngIf="verdict.domesticViolence">Nasilje u porodici: {{ verdict.domesticViolence }}</p>
-
-
+                    <p *ngIf="verdict.fails_to_provide_support">
+                      Ne daje izdržavanje:
+                      {{ verdict.fails_to_provide_support }}
+                    </p>
+                    <p *ngIf="verdict.support_duty_legally_established">
+                      Obaveza izdržavanja je pravno ustanovljena:
+                      {{ verdict.support_duty_legally_established }}
+                    </p>
+                    <p *ngIf="verdict.violates_family_obligations">
+                      Krši porodične obaveze:
+                      {{ verdict.violates_family_obligations }}
+                    </p>
+                    <p *ngIf="verdict.used_force_threat_or_greed">
+                      Upotrebio silu, pretnju ili je vođen pohlepom:
+                      {{ verdict.used_force_threat_or_greed }}
+                    </p>
+                    <p *ngIf="verdict.endangered_child_wellbeing">
+                      Ugrozio je dobrobit deteta:
+                      {{ verdict.endangered_child_wellbeing }}
+                    </p>
+                    <p *ngIf="verdict.commits_domestic_violence">
+                      Vrši nasilje u porodici:
+                      {{ verdict.commits_domestic_violence }}
+                    </p>
+                    <p *ngIf="verdict.used_weapon_or_child_present">
+                      Upotrebio oružje ili u prisustvu deteta:
+                      {{ verdict.used_weapon_or_child_present }}
+                    </p>
+                    <p *ngIf="verdict.caused_severe_injury_or_against_child">
+                      Prouzrokovao tešku povredu ili protiv deteta:
+                      {{ verdict.caused_severe_injury_or_against_child }}
+                    </p>
+                    <p *ngIf="verdict.family_member_died">
+                      Član porodice je umro: {{ verdict.family_member_died }}
+                    </p>
                   </div>
                   <span class="open-icon">🔗</span>
                 </div>
@@ -290,21 +357,28 @@
     </div>
     <div>
       <div class="form-wrapper-right scrollable-column">
-
         <!-- Deo za ispis kazni -->
         <div *ngIf="legalAnalysisResult" class="legal-analysis-section">
           <h4>Rezultat pravne analize:</h4>
           <div class="analysis-content">
             <p><strong>Optuženi:</strong> {{ metadata.defendant }}</p>
-            <p><strong>Kazna:</strong> {{ legalAnalysisResult.minSentenceDays }} - {{
-              legalAnalysisResult.maxSentenceDays }} dana
-              ({{ (legalAnalysisResult.minSentenceDays / 365).toFixed(1) }} - {{ (legalAnalysisResult.maxSentenceDays /
-              365).toFixed(1) }} godina)</p>
+            <p>
+              <strong>Kazna:</strong>
+              {{ legalAnalysisResult.minSentenceDays }} -
+              {{ legalAnalysisResult.maxSentenceDays }} dana ({{
+                (legalAnalysisResult.minSentenceDays / 365).toFixed(1)
+              }}
+              -
+              {{ (legalAnalysisResult.maxSentenceDays / 365).toFixed(1) }}
+              godina)
+            </p>
 
             <div class="proven-violations">
               <p><strong>Dokazani prekršaji:</strong></p>
               <ul>
-                <li *ngFor="let violation of legalAnalysisResult.provenViolations">
+                <li
+                  *ngFor="let violation of legalAnalysisResult.provenViolations"
+                >
                   {{ formatViolationName(violation) }}
                 </li>
               </ul>
@@ -343,8 +417,6 @@
           </div>
           <span class="open-icon">🔗</span>
         </div-->
-
-
       </div>
     </div>
 
@@ -352,21 +424,41 @@
     <div *ngIf="loading" class="spinner-overlay">
       <mat-progress-spinner mode="indeterminate" diameter="50" color="primary">
       </mat-progress-spinner>
-      <p class="loading-spinner">Molimo sačekajte, generisanje može potrajati nekoliko minuta...</p>
+      <p class="loading-spinner">
+        Molimo sačekajte, generisanje može potrajati nekoliko minuta...
+      </p>
     </div>
 
     <div *ngIf="!loading && newVerdictHTML" class="spinner-overlay">
-      <button class="fancy-btn" (click)="openCreatedVerdict(newVerdictHTML)">Pogledajte presudu</button>
+      <button class="fancy-btn" (click)="openCreatedVerdict(newVerdictHTML)">
+        Pogledajte presudu
+      </button>
     </div>
-
-    
-
   </div>
   <div class="actions">
-    <button class="fancy-btn"
-      [disabled]="!metadata.caseName ||caseName.invalid || !metadata.court || !metadata.judge || !metadata.date || !metadata.defendant || !metadata.injuredParty || !metadata.clerk"
-      (click)="executeReasoning()">⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️</button>
-  
-    <button class="fancy-btn" [disabled]="!allowVerdict" (click)="openVerdictCreateForm()">👨‍⚖️ DONESI PRESUDU 👨‍⚖️</button>
+    <button
+      class="fancy-btn"
+      [disabled]="
+        !metadata.caseName ||
+        caseName.invalid ||
+        !metadata.court ||
+        !metadata.judge ||
+        !metadata.date ||
+        !metadata.defendant ||
+        !metadata.injuredParty ||
+        !metadata.clerk
+      "
+      (click)="executeReasoning()"
+    >
+      ⚖️ IZVRŠAVANJE RASUĐIVANJA ⚖️
+    </button>
+
+    <button
+      class="fancy-btn"
+      [disabled]="!allowVerdict"
+      (click)="openVerdictCreateForm()"
+    >
+      👨‍⚖️ DONESI PRESUDU 👨‍⚖️
+    </button>
   </div>
 </div>

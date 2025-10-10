@@ -18,11 +18,6 @@
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
                             <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:support_duty_legally_established"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -49,11 +44,6 @@
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
                             <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:severe_consequences_occurred"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -77,11 +67,6 @@
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
                             <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:family_member_left_in_hardship"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
                     </ruleml:And>
                 </ruleml:if>
                 <ruleml:then>
@@ -93,108 +78,14 @@
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
 
-        <!-- Rule 4: Aggravated - severe health damage -->
-        <lrml:PrescriptiveStatement key="ps4">
-            <ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:violates_family_obligations"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:family_member_left_in_hardship"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:severe_health_damage_occurred"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>family_obligation_violation_aggravated_health</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-
-        <!-- Rule 5: Aggravated - death -->
-        <lrml:PrescriptiveStatement key="ps5">
-            <ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:violates_family_obligations"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:family_member_left_in_hardship"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:family_member_died"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>family_obligation_violation_aggravated_death</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-
         <!-- ARTICLE 216: EXTRAMARITAL UNIONS WITH MINORS -->
 
-        <!-- Rule 6: Adult living in extramarital union with minor -->
-        <lrml:PrescriptiveStatement key="ps6">
-            <ruleml:Rule key=":rule6" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:is_adult"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:lives_in_extramarital_union_with_minor"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>extramarital_union_with_minor_basic</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-
-        <!-- Rule 7: Parent/guardian enabling -->
         <lrml:PrescriptiveStatement key="ps7">
             <ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
                 <ruleml:if>
                     <ruleml:And>
                         <ruleml:Atom>
-                            <ruleml:Rel iri="lc:is_parent_or_guardian"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:enables_minor_extramarital_union"/>
+                            <ruleml:Rel iri="lc:used_force_threat_or_greed"/>
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
                             <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
                         </ruleml:Atom>
@@ -209,87 +100,13 @@
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
 
-        <!-- Rule 8: Aggravated circumstances (force, threat, or greed) -->
-        <lrml:PrescriptiveStatement key="ps8">
-            <ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:And>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:is_parent_or_guardian"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:enables_minor_extramarital_union"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:used_force_threat_or_greed"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
-                    </ruleml:And>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>enabling_minor_extramarital_union_aggravated</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-
         <!-- ARTICLE 217: CHILD ABDUCTION -->
-
-        <!-- Rule 9: Unlawful retention or abduction of child -->
-        <lrml:PrescriptiveStatement key="ps9">
-            <ruleml:Rule key=":rule9" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:Atom>
-                        <ruleml:Rel iri="lc:unlawfully_handles_child_custody"/>
-                        <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                        <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                    </ruleml:Atom>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>child_abduction_basic</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
-
-        <!-- Rule 10: Preventing contact with parent -->
-        <lrml:PrescriptiveStatement key="ps10">
-            <ruleml:Rule key=":rule10" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:Atom>
-                        <ruleml:Rel iri="lc:prevents_contact_execution"/>
-                        <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                        <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                    </ruleml:Atom>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>preventing_child_contact</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
 
         <!-- Rule 11: Aggravated form -->
         <lrml:PrescriptiveStatement key="ps11">
             <ruleml:Rule key=":rule11" closure="universal" strength="defeasible">
                 <ruleml:if>
                     <ruleml:And>
-                        <ruleml:Atom>
-                            <ruleml:Rel iri="lc:unlawfully_handles_child_custody"/>
-                            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                        </ruleml:Atom>
                         <ruleml:Atom>
                             <ruleml:Rel iri="lc:endangered_child_wellbeing"/>
                             <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
@@ -305,6 +122,7 @@
                 </ruleml:then>
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
+
 
         <!-- ARTICLE 220: DOMESTIC VIOLENCE -->
 
@@ -410,24 +228,6 @@
             </ruleml:Rule>
         </lrml:PrescriptiveStatement>
 
-        <!-- Rule 16: Violation of protection measures -->
-        <lrml:PrescriptiveStatement key="ps16">
-            <ruleml:Rule key=":rule16" closure="universal" strength="defeasible">
-                <ruleml:if>
-                    <ruleml:Atom>
-                        <ruleml:Rel iri="lc:violates_domestic_violence_protection_order"/>
-                        <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-                        <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-                    </ruleml:Atom>
-                </ruleml:if>
-                <ruleml:then>
-                    <ruleml:Atom>
-                        <ruleml:Rel>domestic_violence_protection_violation</ruleml:Rel>
-                        <ruleml:Var type=":defendant">Defendant</ruleml:Var>
-                    </ruleml:Atom>
-                </ruleml:then>
-            </ruleml:Rule>
-        </lrml:PrescriptiveStatement>
 
         <!-- PENALTY STATEMENTS -->
 
@@ -518,13 +318,14 @@
         </lrml:PenaltyStatement>
 
         <!-- Article 216 Penalties -->
+        
         <lrml:PenaltyStatement key="pen8">
             <lrml:SuborderList>
                 <lrml:Obligation>
                     <ruleml:Atom>
                         <ruleml:Rel iri=":min_imprisonment"/>
                         <ruleml:Var>Days</ruleml:Var>
-                        <ruleml:Ind>90</ruleml:Ind>
+                        <ruleml:Ind>120</ruleml:Ind>
                     </ruleml:Atom>
                 </lrml:Obligation>
             </lrml:SuborderList>
@@ -536,7 +337,7 @@
                     <ruleml:Atom>
                         <ruleml:Rel iri=":max_imprisonment"/>
                         <ruleml:Var>Days</ruleml:Var>
-                        <ruleml:Ind>1095</ruleml:Ind>
+                        <ruleml:Ind>1020</ruleml:Ind>
                     </ruleml:Atom>
                 </lrml:Obligation>
             </lrml:SuborderList>
@@ -640,7 +441,31 @@
             </lrml:SuborderList>
         </lrml:PenaltyStatement>
 
+        <lrml:PenaltyStatement key="pen17_ps13">
+            <lrml:SuborderList>
+                <lrml:Obligation>
+                    <ruleml:Atom>
+                        <ruleml:Rel iri=":max_imprisonment"/>
+                        <ruleml:Var>Days</ruleml:Var>
+                        <ruleml:Ind>1825</ruleml:Ind>
+                    </ruleml:Atom>
+                </lrml:Obligation>
+            </lrml:SuborderList>
+        </lrml:PenaltyStatement>
+
         <lrml:PenaltyStatement key="pen18">
+            <lrml:SuborderList>
+                <lrml:Obligation>
+                    <ruleml:Atom>
+                        <ruleml:Rel iri=":min_imprisonment"/>
+                        <ruleml:Var>Days</ruleml:Var>
+                        <ruleml:Ind>365</ruleml:Ind>
+                    </ruleml:Atom>
+                </lrml:Obligation>
+            </lrml:SuborderList>
+        </lrml:PenaltyStatement>
+
+        <lrml:PenaltyStatement key="pen18_ps14">
             <lrml:SuborderList>
                 <lrml:Obligation>
                     <ruleml:Atom>
@@ -739,49 +564,10 @@
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen6"/>
-                <lrml:toPrescriptiveStatement keyref="#ps4"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
 
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen6"/>
-                <lrml:toPrescriptiveStatement keyref="#ps5"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen7"/>
-                <lrml:toPrescriptiveStatement keyref="#ps4"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen7"/>
-                <lrml:toPrescriptiveStatement keyref="#ps5"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
 
         <!-- Article 216 Reparations -->
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen8"/>
-                <lrml:toPrescriptiveStatement keyref="#ps6"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen9"/>
-                <lrml:toPrescriptiveStatement keyref="#ps6"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
+        
         <lrml:ReparationStatement>
             <lrml:Reparation>
                 <lrml:appliesPenalty keyref="#pen8"/>
@@ -793,38 +579,11 @@
             <lrml:Reparation>
                 <lrml:appliesPenalty keyref="#pen9"/>
                 <lrml:toPrescriptiveStatement keyref="#ps7"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen10"/>
-                <lrml:toPrescriptiveStatement keyref="#ps8"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen11"/>
-                <lrml:toPrescriptiveStatement keyref="#ps8"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
         <!-- Article 217 Reparations -->
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen12"/>
-                <lrml:toPrescriptiveStatement keyref="#ps9"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen13"/>
-                <lrml:toPrescriptiveStatement keyref="#ps10"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
+        
         <lrml:ReparationStatement>
             <lrml:Reparation>
                 <lrml:appliesPenalty keyref="#pen14"/>
@@ -863,14 +622,14 @@
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen17"/>
+                <lrml:appliesPenalty keyref="#pen17_ps13"/>
                 <lrml:toPrescriptiveStatement keyref="#ps13"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
         <lrml:ReparationStatement>
             <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen18"/>
+                <lrml:appliesPenalty keyref="#pen18_ps14"/>
                 <lrml:toPrescriptiveStatement keyref="#ps14"/>
             </lrml:Reparation>
         </lrml:ReparationStatement>
@@ -896,13 +655,6 @@
             </lrml:Reparation>
         </lrml:ReparationStatement>
 
-        <lrml:ReparationStatement>
-            <lrml:Reparation>
-                <lrml:appliesPenalty keyref="#pen22"/>
-                <lrml:toPrescriptiveStatement keyref="#ps16"/>
-            </lrml:Reparation>
-        </lrml:ReparationStatement>
-
         <!-- OVERRIDE STATEMENTS -->
 
         <!-- Article 221 Overrides -->
@@ -910,32 +662,9 @@
             <lrml:Override under="#ps2" over="#ps1"/>
         </lrml:OverrideStatement>
 
-        <!-- Article 222 Overrides -->
-        <lrml:OverrideStatement>
-            <lrml:Override under="#ps4" over="#ps3"/>
-        </lrml:OverrideStatement>
-
-        <lrml:OverrideStatement>
-            <lrml:Override under="#ps5" over="#ps3"/>
-        </lrml:OverrideStatement>
-
-        <lrml:OverrideStatement>
-            <lrml:Override under="#ps5" over="#ps4"/>
-        </lrml:OverrideStatement>
-
-        <!-- Article 216 Overrides -->
-        <lrml:OverrideStatement>
-            <lrml:Override under="#ps8" over="#ps7"/>
-        </lrml:OverrideStatement>
-
-        <!-- Article 217 Overrides -->
-        <lrml:OverrideStatement>
-            <lrml:Override under="#ps11" over="#ps9"/>
-        </lrml:OverrideStatement>
-
         <!-- Article 220 Overrides -->
         <lrml:OverrideStatement>
-            <lrml:Override under="#ps13" over="#ps12"/>
+            <lrml:Override under="#`13" over="#ps12"/>
         </lrml:OverrideStatement>
 
         <lrml:OverrideStatement>
