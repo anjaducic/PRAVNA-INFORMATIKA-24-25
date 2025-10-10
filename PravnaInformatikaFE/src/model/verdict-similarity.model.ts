@@ -15,13 +15,13 @@ export interface VerdictSimilarity {
   similarity?: number;
 
   //novi atributi za rasudjivanje po pravilima
-  fails_to_provide_support: boolean;
-  support_duty_legally_established: boolean;
-  violates_family_obligations: boolean;
-  used_force_threat_or_greed: boolean;
-  endangered_child_wellbeing: boolean;
-  commits_domestic_violence: boolean;
-  used_weapon_or_child_present: boolean;
-  caused_severe_injury_or_against_child: boolean;
-  family_member_died: boolean;
+  fails_to_provide_support?: boolean;
+  support_duty_legally_established?: boolean;
+  violates_family_obligations?: boolean;
+  used_force_threat_or_greed?: boolean;
+  endangered_child_wellbeing?: boolean;
+  commits_domestic_violence?: boolean;
+  used_weapon_or_child_present?: boolean;
+  caused_severe_injury_or_against_child?: boolean;
+  family_member_died?: boolean;
 }
